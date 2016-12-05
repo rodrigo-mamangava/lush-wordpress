@@ -1,0 +1,939 @@
+/*
+Theme Name: LUSH 2.0
+Author: Plau & Mamangava
+Description: Description
+Version: 2.0.0
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+lush_2.0 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> bootstrap core:
+----------------------------------------------------------------*/
+@import "bootstrap.less";
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Reset
+# Fontes
+# Cores
+# Elementos
+# Forms
+# Navigation
+        ## Links
+        ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+        ## Posts and pages
+        ## Comments
+# Infinite scroll
+# Media
+        ## Captions
+        ## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+    border: 0;
+    border-top: 0;
+    border-left: 0;
+    .box-shadow(none);
+}
+
+input{
+    .box-shadow(none)!important;
+    border: 0;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-menu-right, .carousel-control .glyphicon-menu-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 5;
+    display: inline-block;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+
+@FairfieldLTW01-45Light:'FairfieldLTW01-45Light'; 
+
+@FairfieldLTW01-46LightI:'FairfieldLTW01-46LightI'; 
+
+@FairfieldLTW01-55Medium:'FairfieldLTW01-55Medium 706181';
+
+@FairfieldLTW01-56Medium:'FairfieldLTW01-56Medium';
+
+@FairfieldLTW01-75Bold:'FairfieldLTW01-75Bold'; 
+
+@FairfieldLTW01-76BoldIt:'FairfieldLTW01-76BoldIt'; 
+
+@FairfieldLTW01-85Heavy:'FairfieldLTW01-85Heavy'; 
+
+@FairfieldLTW01-86HeavyI:'FairfieldLTW01-86HeavyI'; 
+
+@FairfieldLTW01-45LightC:'FairfieldLTW01-45LightC 706178'; 
+
+@FairfieldLTW01-55Medium :'FairfieldLTW01-55Medium 706178'; 
+
+@FairfieldLTW01-75BoldCa:'FairfieldLTW01-75BoldCa'; 
+
+@FairfieldLTW01-85HeavyC:'FairfieldLTW01-85HeavyC'; 
+
+@GrotesqueDispMTW01-Bold:'GrotesqueDispMTW01-Bold 706605';
+
+@knockout: "Knockout 28 A", "Knockout 28 B";
+
+@fairfield: 'FairfieldLTW01-45Light';
+
+@grotesque: 'GrotesqueDispMTW01-Bold 706605';
+
+@junior: "Knockout 34 A", "Knockout 34 B";
+
+body{
+    font-family: @FairfieldLTW01-55Medium;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/*--------------------------------------------------------------
+# Cores
+--------------------------------------------------------------*/
+@branco: white;
+@preto: black;
+@roxo: rgb(63,42,86);
+@roxo-claro: #D0C5DB;
+@lilas: #A44FC7;
+@rosa: rgb(176, 103, 206);
+@cinza-claro: rgb(242,242,242);
+@cinza-escuro: rgb(153,153,153);
+
+@filtro-image-color:rgba(0,0,0,0.3);
+
+@font-cinza: #666666;
+@font-roxo: #3F2A56;
+
+
+
+/*--------------------------------------------------------------
+# Botoes
+--------------------------------------------------------------*/
+
+.btn-padrao-lush(@cor: @roxo){
+    .btn;
+    .button-variant(@cor, transparent, @cor);
+    border-radius: 0;    
+    text-transform: uppercase;
+    //font-size: 14px;
+
+    .sombra-padrao;
+    font-family: @junior;
+}
+
+.btn-lupa{
+    .btn;
+    .button-variant(@branco, transparent, transparent);  
+    img{
+        width: 21.8px;
+        height: 21.8px;
+    }
+}
+.btn-reservar{
+    .btn-padrao-lush(@branco);
+    box-shadow: 0 2px 0 #ffffff;
+    width: 136px;
+    font-size: 14px;
+}
+.btn-reservar-lilas{
+    .btn-padrao-lush(@lilas);
+    box-shadow: 0 2px 0 @lilas;
+    width: 136px;
+    font-size: 14px;
+    color: @lilas !important;
+}
+
+.btn-padrao-roxo{
+    .btn-padrao-lush;
+}
+
+.btn-enviar{
+    .btn-padrao-lush;
+}
+
+.btn-lilas{
+    .btn;
+    .button-variant(@branco, @lilas, @lilas); 
+    font-family: @junior;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 2px 0 @lilas;
+}
+
+
+
+/*--------------------------------------------------------------
+# Elementos
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Menu
+--------------------------------------------------------------*/
+#menu{
+    background: @roxo !important;
+}
+
+.menu-link span, .menu-link span::before, .menu-link span::after{
+    height: 2px !important;
+}
+
+.hamburger {
+    position: absolute;
+    top: 31px;
+}
+
+.fat-nav {
+    background: @roxo;
+}
+
+.hamburger__icon, .hamburger__icon:after, .hamburger__icon:before{
+    background-color: @branco;
+}
+
+
+
+
+/*--------------------------------------------------------------
+## Imagem filter (cover))
+--------------------------------------------------------------*/
+.img-filter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @filtro-image-color;
+    z-index: 51;
+}
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+    .header-content{
+
+        padding-top: 33px;
+
+        .header-item{
+            z-index: 100;
+        }
+
+        .titulo{
+
+            .text-center;
+
+            a{
+                color: @branco;
+                text-transform: uppercase;
+
+                img{
+                    width: 81.51px;
+                    height: 14.22px;
+                    margin-top: 13px;
+                }
+
+            }
+
+        }
+
+        .botoes-r{
+            .list-inline;
+            text-align: right;
+        }
+
+        .menu-link{
+            position: absolute;
+            margin-top: -25px;
+            //width: 65px;
+        }
+    }
+
+
+}
+
+#menu-menu-principal{
+    font-family: @junior;
+    font-size: 16px;
+}
+.header-branco{
+    .header;
+
+    position: relative;
+    height: 105px;
+
+
+    h1{
+        color: rgb(63,42,86) !important;
+    }
+
+
+
+}
+
+
+.term-suite{
+
+    .hamburger__icon, .hamburger__icon:after, .hamburger__icon:before {
+        background-color: rgb(63,42,86)!important;
+    }
+
+    .botoes-r a{
+        //color: rgb(63,42,86)!important;
+    }
+
+    .btn-reservar{
+        border-color: rgb(63,42,86)!important;
+    }
+
+    .btn-reservar:hover {
+        color: rgb(63,42,86)!important;
+        background-color: rgba(0, 0, 0, 0)!important;
+        border-color: #e0e0e0!important;
+    }
+
+
+}
+
+
+.sombra-padrao{
+    box-shadow: 0 2px 0 @font-roxo;
+}
+
+/*--------------------------------------------------------------
+## Vitrine
+--------------------------------------------------------------*/
+.vitrine{
+    position: relative;
+    z-index: 50;
+
+    .vitrine-content{
+
+        position: relative;
+        z-index: 50;
+
+
+        .image-vitrine{            
+            img{
+                .img-responsive;
+                width:100%;
+            }
+        }
+
+        .sub-titulo{
+
+            position: absolute;
+            .text-center;
+            bottom: 40%;
+            color: @branco;
+            z-index: 52;
+
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            h2{
+                font-family: @FairfieldLTW01-56Medium;
+                font-size: 50px;
+                line-height: 60px;
+
+            }
+        }
+
+
+        .img-filter{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: @filtro-image-color;
+            z-index: 51;
+        }
+
+        .seta-baixo{
+            position: absolute;
+            .text-center;
+            bottom: 60px;        
+            color: @branco;
+            z-index: 52;
+
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            img{
+                .center-block;
+                width: 40px;
+                height: auto;
+            }
+
+        }
+
+    }
+
+
+
+    .sub-titulo{
+
+
+
+    }
+
+
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+footer{
+    background-color: @roxo;
+    height: 160px;
+    color: @branco;
+    padding-top: 72px;
+
+    .endereco{
+        .text-center;
+    }
+
+    ul{
+        .list-inline;
+        text-align: right;
+
+        li{
+            &:first-of-type{
+                padding-right: 34px;
+            }
+        }
+    }
+
+    .logo{
+        width: 32px;
+        height: auto;
+    }
+
+    .rede-social{
+        width: 26px;
+        height: auto; 
+    }
+
+
+
+}
+
+/*--------------------------------------------------------------
+# Paginas
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Home
+--------------------------------------------------------------*/
+.home{
+
+    .faixa-quartos{
+
+        .card-quarto{
+
+            margin-top: 62px;
+            margin-bottom: 78px;
+
+            img{
+                .img-responsive;
+            }
+
+            .btn-padrao-roxo{
+                margin-top: 16px;
+                width: 100%;
+            }
+
+
+        }
+
+    }//faixa-quartos
+
+    .faixa-cinza{
+        background-color: @cinza-claro;        
+        color: @cinza-escuro;
+
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        .logo_L{
+            .img-responsive;
+            width: 83.75px;
+            height: auto;
+            padding-top: 6px;
+        }
+
+        .vem-pro-lush{
+            font-family: @FairfieldLTW01-55Medium;
+            font-size: 19px;
+            line-height: 30px;
+        }
+
+
+
+    }//faixa-cinza
+
+    .faixa-news-letter{
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+
+        .card-news-letter{
+
+            border: solid 1px @roxo;
+            border-top:0px;
+            .sombra-padrao;
+
+            .card-header{
+                background-color: @roxo;
+                font-family: @junior;
+                font-size: 14px;
+                line-height: 20px;
+
+                color: @branco;
+                text-transform: uppercase;
+                .text-center;
+                padding-top: 32px;
+                padding-bottom: 32px;
+
+
+            }
+
+            .card-body{
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .form-titulo{
+
+                    color: @roxo;
+                    .text-center;
+                    margin-bottom: 40px 
+
+                }
+
+                .campo-linha{
+                    border-radius: 0;
+                    border:0;
+                    border-bottom: solid 1px @cinza-escuro;
+                    padding-left: 0
+                }
+
+
+
+                .btn-enviar{
+                    margin-top: 42px;
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }//faixa-news-letter
+}
+
+.faixa-orderby{
+    background-color: @cinza-claro;
+    .text-center;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    .text-uppercase;
+
+
+    p{
+        color: @roxo;
+
+        a{            
+            color: @cinza-escuro;
+
+            &.active{
+                color: @roxo;
+            }
+
+        }
+    }
+
+}//faixa-orderby
+
+
+
+.lista-suites{
+
+    .item-suite{
+
+        padding-top: 32px;
+
+        .detalhes{
+            padding-top: 165px;
+            .text-center;
+
+            h3{
+                padding-bottom: 30px;
+                color: @roxo;
+                font-size: 40px;
+                text-transform: uppercase;
+                font-family: @junior;
+                font-size: 28px;
+                //line-height: 36;
+
+            }
+
+            .price{
+                color: @cinza-escuro;     
+                font-family: @FairfieldLTW01-56Medium;
+                font-size: 16px;
+                .amout{
+
+                }   
+            }
+
+            .amount{
+                color: @roxo;
+                font-size: 30px;
+                text-transform: uppercase;
+                font-family: @junior;
+            }
+
+            a{
+
+                color: @rosa;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: @junior;
+                font-size: 13px;
+
+                &:hover{
+                    color:  darken(@rosa, 15%);
+                    text-decoration: none;
+                }
+
+                p{
+                    padding-top: 45px;
+                }
+            }
+
+
+        }
+
+        .foto-produto{
+
+            &:nth-child(even) {
+                padding-right: 0px;
+            }
+            &:nth-child(odd) {
+                padding-left: 0px;
+            }
+
+            img{
+                .img-responsive;
+                width: 100%;
+
+            }
+        }
+
+
+
+    }
+}//.lista-suites
+
+
+
+.faixa-btn{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .text-center;
+
+
+    .btn-concierge{
+        .btn-padrao-roxo;
+        width: 100%;
+    }
+
+}//faixa-btn
+
+
+
+.suite-single{
+
+    .faixa-detalhes{
+        padding-top: 56px;
+        padding-bottom: 68px; 
+
+
+        .descricao{
+            font-size: 20px;
+
+            p{
+
+                color: @font-cinza;
+            }
+
+            ul{
+                padding-top: 23px;
+                li{
+                    font-size: 20px;
+                    color: @font-roxo;
+                }
+            }
+        }
+
+        .info-preco{
+
+            .tabela-preco{
+                table{
+                    width: 100%;
+                    border: 1px solid @roxo;
+                    //border-bottom: 3px solid @roxo;
+                    text-transform: uppercase;
+
+
+                    .sombra-padrao;
+
+                    font-size: 18px;
+                    font-size: 1.8rem;
+                    font-family: @junior;
+
+                    color: @font-roxo;
+
+
+                    tbody{
+                        tr{
+
+                            &:first-of-type{
+                                th{
+                                    padding-top: 26px;
+                                }
+                            }
+
+                            td{
+                                padding-top: 10px;
+                                padding-left: 32px;
+                                padding-right: 32px;
+                                &:nth-of-type(1){
+
+                                }
+                                &:nth-of-type(2){
+                                    text-align: right;
+
+                                }
+
+                                hr{
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    border: 0;
+                                    border-top: 1px solid @roxo-claro;
+                                }
+
+                                &.linha{
+                                    padding-top: 5px;
+                                    padding-bottom: 0px;
+                                }
+
+                                .btn-reservar{
+                                    .btn-lilas;
+                                    margin-top: 12px;
+                                    margin-bottom: 34px;
+                                    font-size: 13px;
+                                }
+
+                            }
+
+                        }
+                    }
+
+                }
+
+
+            }//tabela-preco
+
+            .compartilhar{
+
+                p{
+                    color: @roxo;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    font-family: @junior;
+                }
+
+                padding-top: 80px;
+
+                ul{                 
+                    padding-top: 23px;
+                    .list-inline;
+
+                    li{
+                        border: 2px solid @roxo;
+                        border-radius: 50px;
+                        padding: 6px 7px;
+                        margin-right: 26px;
+
+
+                        img{
+                            height: 17.9px;
+                            width: auto;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .faixa-fotos-produto{
+
+
+
+        .carousel{
+            img{
+                .img-responsive;
+                width: 100%;
+            }
+
+
+        }
+    }
+
+
+
+}
+
+
+.faixa-outras-suites-list{
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+
+    .titulo{
+        .text-center;
+        font-family: @FairfieldLTW01-56Medium;
+        font-size: 42px;
+        font-size: 4.2rem;
+        color: @roxo;
+        padding-bottom: 43px;
+
+    }
+
+
+    .suite-item{
+
+        padding-bottom: 24px;
+
+        .outra-site-item{
+            position: relative;
+
+            img{
+                .img-responsive;
+                width: 100%
+            }
+
+            .info-suite{
+                position: absolute;
+                top: 40%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: 52;
+
+                color: @branco;
+
+                .text-center;
+
+                h3{
+                    color: @branco;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-family: @junior;
+                    margin-bottom: 3px;
+                }
+
+                .price{
+                    color: @branco;
+                    color: @branco;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-family: @FairfieldLTW01-56Medium;
+                    margin-bottom: 6px;
+
+                }
+
+                .amount{
+                    color: @branco;
+                    font-size: 22px;
+                    line-height: 26px;
+                    font-family: @junior;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}//faixa-outras-suites-list

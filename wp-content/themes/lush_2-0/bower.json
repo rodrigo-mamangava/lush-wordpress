@@ -1,0 +1,17 @@
+{
+  "name": "lush_2-0",
+  "homepage": "https://github.com/rodrigo-mamangava/lush",
+  "authors": [
+    "rodrigo-mamangava <rodrigo@mamangava.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
