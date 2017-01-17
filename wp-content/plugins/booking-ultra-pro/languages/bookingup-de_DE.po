@@ -1,0 +1,3710 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Booking Ultra Pro\n"
+"POT-Creation-Date: 2017-01-04 01:20-0300\n"
+"PO-Revision-Date: 2017-01-04 01:20-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/tabs/appointments.php:62 ../classes/bookingultra.admin.php:59
+msgid "Appointments"
+msgstr "Termine"
+
+#: ../admin/tabs/appointments.php:65
+msgid "Add New Appointment "
+msgstr "Neuen Termin hinzufügen"
+
+#: ../admin/tabs/appointments.php:73 ../admin/tabs/fields.php:252
+#: ../admin/tabs/orders.php:44 ../classes/bookingultra.admin.php:1373
+msgid "Success "
+msgstr "Erfolg"
+
+#: ../admin/tabs/appointments.php:80 ../admin/tabs/main.php:72
+#: ../classes/bookingultra.appointment.php:681
+#: ../classes/bookingultra.appointment.php:852
+#: ../classes/bookingultra.appointment.php:1426
+#: ../classes/bookingultra.appointment.php:1483
+msgid "Pending"
+msgstr "in Bearbeitung"
+
+#: ../admin/tabs/appointments.php:81 ../admin/tabs/main.php:73
+#: ../classes/bookingultra.appointment.php:1430
+#: ../classes/bookingultra.appointment.php:1491
+msgid "Cancelled"
+msgstr "Abgesagt"
+
+#: ../admin/tabs/appointments.php:83 ../admin/tabs/main.php:75
+#: ../classes/bookingultra.appointment.php:1432
+#: ../classes/bookingultra.appointment.php:1495
+msgid "No-Show"
+msgstr ""
+
+#: ../admin/tabs/appointments.php:85 ../classes/bookingultra.order.php:734
+msgid "Total"
+msgstr "Summe"
+
+#: ../admin/tabs/appointments.php:95
+msgid "All Months"
+msgstr "Alle Monate"
+
+#: ../admin/tabs/appointments.php:109
+msgid "All Days"
+msgstr "Alle Tage"
+
+#: ../admin/tabs/appointments.php:123
+msgid "All Years"
+msgstr "Alle Jahre"
+
+#: ../admin/tabs/appointments.php:138
+msgid "All Locations"
+msgstr "Alle Orte"
+
+#: ../admin/tabs/appointments.php:156 ../admin/tabs/appointments.php:157
+#: ../admin/tabs/appointments.php:158 ../admin/tabs/appointments.php:159
+#: ../admin/tabs/appointments.php:160
+msgid "Per Page"
+msgstr "Pro Seite"
+
+#: ../admin/tabs/appointments.php:164 ../admin/tabs/main.php:144
+#: ../admin/tabs/orders.php:108
+msgid "Filter"
+msgstr "Filter"
+
+#: ../admin/tabs/appointments.php:192 ../admin/tabs/orders.php:145
+#: ../classes/bookingultra.appointment.php:863
+msgid "#"
+msgstr "#"
+
+#: ../admin/tabs/appointments.php:195 ../admin/tabs/orders.php:147
+#: ../classes/bookingultra.appointment.php:864
+#: ../classes/bookingultra.class.php:773 ../classes/bookingultra.order.php:735
+msgid "Date"
+msgstr "Datum"
+
+#: ../admin/tabs/appointments.php:199
+msgid "Location"
+msgstr "Lage"
+
+#: ../admin/tabs/appointments.php:203 ../admin/tabs/orders.php:149
+#: ../admin/templates/new_appointment.php:35
+msgid "Client"
+msgstr "Auftraggeber"
+
+#: ../admin/tabs/appointments.php:204 ../classes/bookingultra.class.php:547
+#: ../classes/bookingultra.class.php:580
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+#: ../admin/tabs/appointments.php:205
+msgid "Provider"
+msgstr "Anbieter"
+
+#: ../admin/tabs/appointments.php:206 ../admin/tabs/orders.php:150
+#: ../classes/bookingultra.class.php:705 ../classes/bookingultra.class.php:769
+msgid "Service"
+msgstr "Service"
+
+#: ../admin/tabs/appointments.php:207
+msgid "At"
+msgstr "um"
+
+#: ../admin/tabs/appointments.php:210 ../admin/tabs/orders.php:154
+#: ../admin/templates/edit_appointment.php:61
+#: ../classes/bookingultra.appointment.php:867
+#: ../classes/bookingultra.order.php:737
+msgid "Status"
+msgstr "Status"
+
+#: ../admin/tabs/appointments.php:211
+#: ../classes/bookingultra.appointment.php:869
+#: ../classes/bookingultra.service.php:3527
+msgid "Actions"
+msgstr "Aktionen"
+
+#: ../admin/tabs/appointments.php:245
+msgid "See Details"
+msgstr ""
+
+#: ../admin/tabs/appointments.php:261 ../classes/bookingultra.admin.php:1529
+#: ../classes/bookingultra.appointment.php:894
+#: ../classes/bookingultra.service.php:3472
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ../admin/tabs/appointments.php:261 ../classes/bookingultra.admin.php:1529
+#: ../classes/bookingultra.appointment.php:893
+#: ../classes/bookingultra.service.php:553
+#: ../classes/bookingultra.service.php:3472
+#: ../classes/bookingultra.service.php:3547
+#: ../classes/bookingultra.user.php:647
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../admin/tabs/appointments.php:270
+msgid "There are no appointments yet."
+msgstr "Es gibt noch keine Termine."
+
+#: ../admin/tabs/appointments.php:281 ../admin/tabs/appointments.php:313
+#: ../admin/tabs/fields.php:282 ../admin/tabs/licence.php:16
+#: ../admin/tabs/main.php:176 ../admin/tabs/main.php:198
+#: ../admin/tabs/services.php:48 ../admin/tabs/settings.php:563
+#: ../admin/tabs/users.php:136 ../admin/tabs/users.php:146
+#: ../classes/bookingultra.admin.php:285 ../classes/bookingultra.class.php:902
+#: ../classes/bookingultra.class.php:912 ../classes/bookingultra.class.php:914
+#: ../classes/bookingultra.service.php:3162
+msgid "Please wait ..."
+msgstr "Bitte warten …"
+
+#: ../admin/tabs/appointments.php:284 ../admin/tabs/main.php:41
+#: ../admin/tabs/main.php:160
+msgid "Create New Appointment"
+msgstr "Neuen Termin erstellen"
+
+#: ../admin/tabs/appointments.php:285 ../admin/tabs/main.php:161
+msgid "Edit Appointment"
+msgstr "Termin bearbeiten"
+
+#: ../admin/tabs/appointments.php:286 ../admin/tabs/main.php:162
+msgid "Appointment Created"
+msgstr "Termin Erstellt"
+
+#: ../admin/tabs/appointments.php:287 ../admin/tabs/main.php:163
+msgid "Add Payment"
+msgstr "Zahlung hinzufügen"
+
+#: ../admin/tabs/appointments.php:288 ../admin/tabs/main.php:164
+msgid "Confirmation"
+msgstr "Bestätigung"
+
+#: ../admin/tabs/appointments.php:289 ../admin/tabs/main.php:165
+msgid "Add Note"
+msgstr "Notiz hinzufügen"
+
+#: ../admin/tabs/appointments.php:290 ../admin/tabs/main.php:166
+#: ../classes/bookingultra.admin.php:266
+msgid "Pending Appointments"
+msgstr "Ausstehende Termine"
+
+#: ../admin/tabs/appointments.php:291 ../admin/tabs/main.php:169
+msgid "Appointment Status"
+msgstr "Termin-Status"
+
+#: ../admin/tabs/appointments.php:293 ../admin/tabs/main.php:168
+msgid "Create New Client"
+msgstr "Neuen Kunden erstellen"
+
+#: ../admin/tabs/appointments.php:297 ../admin/tabs/main.php:182
+msgid "Please select a payment date."
+msgstr "Bitte wählen sie das Zahlungsdatum"
+
+#: ../admin/tabs/appointments.php:298 ../admin/tabs/main.php:183
+msgid "Please input an amount"
+msgstr "Bitte geben Sie die Menge an"
+
+#: ../admin/tabs/appointments.php:299 ../admin/tabs/main.php:184
+msgid "Are you totally sure that you want to delete this payment?"
+msgstr "Wollen Sie diese Zahlung wirklich löschen?"
+
+#: ../admin/tabs/appointments.php:301 ../admin/tabs/main.php:186
+msgid "Please input a title."
+msgstr "Bitte geben Sie einen Titel an"
+
+#: ../admin/tabs/appointments.php:302 ../admin/tabs/main.php:187
+msgid "Please input some text"
+msgstr "Bitte geben Sie einen Text an."
+
+#: ../admin/tabs/appointments.php:303 ../admin/tabs/main.php:188
+msgid "Are you totally sure that you want to delete this note?"
+msgstr "Bist du ganz sicher, dass Sie diese Notiz löschen möchten?"
+
+#: ../admin/tabs/appointments.php:306 ../admin/tabs/main.php:191
+msgid "The appointment has been rescheduled."
+msgstr "Der Termin wurde verschoben"
+
+#: ../admin/tabs/appointments.php:307 ../admin/tabs/main.php:192
+msgid "The information has been updated."
+msgstr "Die Information wurde aktualisiert."
+
+#: ../admin/tabs/appointments.php:309 ../admin/tabs/main.php:194
+#: ../classes/bookingultra.service.php:1004
+#: ../classes/bookingultra.service.php:1294
+#: ../classes/bookingultra.service.php:1597
+#: ../classes/bookingultra.service.php:2035
+msgid "Please select a date."
+msgstr "Bitte wählen Sie ein Datum."
+
+#: ../admin/tabs/appointments.php:310 ../admin/tabs/main.php:195
+#: ../classes/bookingultra.service.php:1012
+#: ../classes/bookingultra.service.php:1302
+#: ../classes/bookingultra.service.php:1605
+msgid "Please select a service."
+msgstr "Bitte wählen Sie einen Service."
+
+#: ../admin/tabs/appointments.php:311 ../admin/tabs/main.php:196
+msgid "Please select a time."
+msgstr "Bitte wählen Sie eine Uhrzeit."
+
+#: ../admin/tabs/appointments.php:312 ../admin/tabs/main.php:197
+msgid "Please select a client."
+msgstr "Bitte wählen Sie einen Kunden."
+
+#: ../admin/tabs/fields.php:22
+msgid "Fields Customizer"
+msgstr ""
+
+#: ../admin/tabs/fields.php:25
+msgid ""
+"Organize profile fields, add custom fields to profiles, control privacy of "
+"each field, and more using the following customizer. You can drag and drop "
+"the fields to change the order in which they are displayed on profiles and "
+"the registration form."
+msgstr ""
+"Organisiere Profilfelder, fügen Sie benutzerdefinierte Felder den Profilen "
+"hinzu, kontrollieren Sie die Privatsphäre der einzelnen Felder und mehr mit "
+"den folgenden Anpassungen. Sie können per Drag & Drop die Felder, die "
+"Reihenfolge, in der sie über Profile und das Anmeldeformular angezeigt "
+"werden, ändern."
+
+#: ../admin/tabs/fields.php:30
+msgid "Fields have been restored"
+msgstr ""
+
+#: ../admin/tabs/fields.php:34
+msgid "Click here to add new field"
+msgstr "Klicken Sie hier, neues Feld hinzuzufügen"
+
+#: ../admin/tabs/fields.php:39
+msgid "Click here to restore default fields"
+msgstr "Klicken Sie hier, um die Standardfelder wiederherstellen"
+
+#: ../admin/tabs/fields.php:50
+msgid "Custom Form:"
+msgstr "Benutzerdefiniertes Formular"
+
+#: ../admin/tabs/fields.php:58
+msgid "Default Registration Form"
+msgstr "Standard-Anmeldeformular"
+
+#: ../admin/tabs/fields.php:86
+msgid "Duplicate Current Form"
+msgstr "Dupliziere aktuelles Formular"
+
+#: ../admin/tabs/fields.php:105
+msgid "Type"
+msgstr "Typ"
+
+#: ../admin/tabs/fields.php:109 ../classes/bookingultra.admin.php:1096
+msgid "Profile Field"
+msgstr "Profil Feld"
+
+#: ../admin/tabs/fields.php:112 ../classes/bookingultra.admin.php:1099
+msgid "Separator"
+msgstr "Trennzeichen"
+
+#: ../admin/tabs/fields.php:115 ../classes/bookingultra.admin.php:1102
+msgid "You can create a separator or a usermeta (profile field)"
+msgstr "Sie können einen Separator oder eine usermeta (Profilfeld) erstellen"
+
+#: ../admin/tabs/fields.php:120
+msgid "Editor / Input Type"
+msgstr "Editor / Eingangstyp"
+
+#: ../admin/tabs/fields.php:129 ../classes/bookingultra.admin.php:1120
+msgid ""
+"When user edit profile, this field can be an input (text, textarea, image "
+"upload, etc.)"
+msgstr ""
+"Wenn Benutzerprofil bearbeiten kann dieses Feld eine Eingabe sein (Text, "
+"Textarea, Bild-Upload, etc.)"
+
+#: ../admin/tabs/fields.php:134
+msgid "New Custom Meta Key"
+msgstr "Neuer benutzerdefinierter Meta Key"
+
+#: ../admin/tabs/fields.php:139 ../classes/bookingultra.admin.php:1130
+msgid ""
+"Enter a custom meta key for this profile field if do not want to use a "
+"predefined meta field above. It is recommended to only use alphanumeric "
+"characters and underscores, for example my_custom_meta is a proper meta key."
+msgstr ""
+"Geben Sie eine benutzerdefinierte Meta-Taste für dieses Profil Feld, wenn "
+"Sie nicht, einen vordefinierten Meta-Feld oben verwenden möchten. Es wird "
+"empfohlen, nur alphanumerische Zeichen und Unterstriche, zum Beispiel "
+"my_custom_meta ist eine richtige Meta-Taste."
+
+#: ../admin/tabs/fields.php:145
+msgid "Label"
+msgstr "Kennzeichnung"
+
+#: ../admin/tabs/fields.php:151 ../classes/bookingultra.admin.php:1141
+msgid ""
+"Enter the label / name of this field as you want it to appear in front-end "
+"(Profile edit/view)"
+msgstr ""
+"Geben Sie die Bezeichnung / Name dieses Feldes, wie Sie wollen, dass es in "
+"Front-End zu erscheinen (Profil bearbeiten / anzeigen)"
+
+#: ../admin/tabs/fields.php:156 ../classes/bookingultra.admin.php:1150
+msgid "Tooltip Text"
+msgstr "Tooltip Text"
+
+#: ../admin/tabs/fields.php:162 ../classes/bookingultra.admin.php:1155
+msgid "A tooltip text can be useful for social buttons on profile header."
+msgstr "Ein Tooltip Text kann für Social-Buttons im Profilkopf nützlich sein."
+
+#: ../admin/tabs/fields.php:168 ../classes/bookingultra.admin.php:1160
+msgid "Help Text"
+msgstr "Hilfetext"
+
+#: ../admin/tabs/fields.php:171 ../classes/bookingultra.admin.php:1162
+msgid "A help text can be useful for provide information about the field."
+msgstr ""
+"Ein Hilfetext kann nützlich sein um Informationen über das Feld zur "
+"Verfügung zu stellen."
+
+#: ../admin/tabs/fields.php:173 ../classes/bookingultra.admin.php:1164
+msgid "Show this help text under the profile field."
+msgstr "Dieses Hilfetext unter dem Profilfeld."
+
+#: ../admin/tabs/fields.php:181 ../classes/bookingultra.admin.php:1177
+msgid "User can edit"
+msgstr "Benutzer darf bearbeiten"
+
+#: ../admin/tabs/fields.php:185 ../admin/tabs/fields.php:207
+#: ../admin/tabs/fields.php:222 ../admin/tabs/gateway.php:253
+#: ../admin/tabs/settings.php:407 ../admin/tabs/settings.php:421
+#: ../classes/bookingultra.admin.php:1181
+#: ../classes/bookingultra.admin.php:1201
+#: ../classes/bookingultra.admin.php:1221
+#: ../classes/bookingultra.admin.php:1258
+msgid "Yes"
+msgstr "Ja"
+
+#: ../admin/tabs/fields.php:188 ../admin/tabs/fields.php:204
+#: ../admin/tabs/fields.php:219 ../admin/tabs/gateway.php:252
+#: ../admin/tabs/settings.php:406 ../admin/tabs/settings.php:420
+#: ../admin/tabs/settings.php:599 ../classes/bookingultra.admin.php:1184
+#: ../classes/bookingultra.admin.php:1198
+#: ../classes/bookingultra.admin.php:1218
+#: ../classes/bookingultra.admin.php:1255
+msgid "No"
+msgstr "Nein"
+
+#: ../admin/tabs/fields.php:191 ../classes/bookingultra.admin.php:1187
+msgid "Users can edit this profile field or not."
+msgstr "Benutzer können diese Profilfeld bearbeiten oder nicht."
+
+#: ../admin/tabs/fields.php:200
+msgid "This field is required"
+msgstr "Dieses Feld ist erforderlich"
+
+#: ../admin/tabs/fields.php:210 ../classes/bookingultra.admin.php:1224
+msgid ""
+"Selecting yes will force user to provide a value for this field at "
+"registration and edit profile. Registration or profile edits will not be "
+"accepted if this field is left empty."
+msgstr ""
+"Wählen Sie Ja, Benutzer zu zwingen, um einen Wert für dieses Feld bei der "
+"Registrierung und bearbeiten Profil bereitzustellen. Registrierung oder "
+"Profil Bearbeitungen werden nicht angenommen, wenn dieses Feld leer bleiben."
+
+#: ../admin/tabs/fields.php:215
+msgid "Show on Registration form"
+msgstr "Beim Anmeldeformular anzeigen"
+
+#: ../admin/tabs/fields.php:225
+msgid ""
+"Show this field on the registration form? If you choose no, this field will "
+"be shown on edit profile only and not on the registration form. Most users "
+"prefer fewer fields when registering, so use this option with care."
+msgstr ""
+"Zeigen Sie dieses Feld auf dem Anmeldeformular? Wenn Sie nicht wählen, wird "
+"dieses Feld auf Profil bearbeiten angezeigt werden und sind nicht auf dem "
+"Anmeldeformular. Die meisten Anwender bevorzugen weniger Felder bei der "
+"Anmeldung, so verwenden Sie diese Option mit Vorsicht."
+
+#: ../admin/tabs/fields.php:238
+msgid "Icon for this field"
+msgstr "Symbol für dieses Feld"
+
+#: ../admin/tabs/fields.php:241 ../classes/bookingultra.admin.php:1312
+#: ../classes/bookingultra.admin.php:1334
+#: ../classes/bookingultra.admin.php:1343
+msgid "None"
+msgstr "Keine"
+
+#: ../admin/tabs/fields.php:253
+msgid "Submit New Field"
+msgstr "Neues Feld senden"
+
+#: ../admin/tabs/fields.php:255 ../classes/bookingultra.admin.php:1379
+#: ../classes/bookingultra.user.php:1676 ../classes/bookingultra.user.php:2091
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../admin/tabs/fields.php:272
+msgid "Are you totally sure that you want to delete this field?"
+msgstr "Möchtest Du das Feld wirklich löschen?"
+
+#: ../admin/tabs/fields.php:274
+msgid "Are you totally sure that you want to restore the default fields?"
+msgstr ""
+"Sind Sie ganz sicher, dass Sie die Standardfelder wiederhergestellt werden?"
+
+#: ../admin/tabs/fields.php:276
+msgid "Please input a name"
+msgstr "Bitte geben Sie einen Namen an"
+
+#: ../admin/tabs/gateway.php:4
+msgid "Payment Gateways Settings"
+msgstr "Einstellung Zahlungsmöglichkeiten"
+
+#: ../admin/tabs/gateway.php:12
+msgid "Stripe Settings"
+msgstr "Strips (Zahlungssystem) Einstellungen:"
+
+#: ../admin/tabs/gateway.php:14
+msgid ""
+"Stripe is a payment gateway for mechants. If you don't have a Stripe "
+"account, you can <a href='https://stripe.com/'> sign up for one account "
+"here</a> "
+msgstr "Zahlungs-Schnittstelle für Stripe.com"
+
+#: ../admin/tabs/gateway.php:16
+msgid ""
+"Here you can configure Stripe if you wish to accept credit card payments "
+"directly in your website. Find your Stripe API keys here <a href=\"https://"
+"dashboard.stripe.com/account/apikeys\">https://dashboard.stripe.com/account/"
+"apikeys</a>"
+msgstr ""
+"Hier können Sie Stripe konfigurieren, wenn Sie wollen, Kreditkartenzahlungen "
+"direkt auf Ihrer Website akzeptieren. Finden Sie Ihr Stripe API-Schlüssel "
+"hier <a href=„https://dashboard.stripe.com/account/apikeys“>https://"
+"dashboard.stripe.com/account/apikeys</a>"
+
+#: ../admin/tabs/gateway.php:25
+msgid "Activate Stripe"
+msgstr "Aktiviere Stripe"
+
+#: ../admin/tabs/gateway.php:27 ../admin/tabs/gateway.php:28
+msgid "If checked, Stripe will be activated as payment method"
+msgstr ""
+"Wenn diese Option aktiviert, werden Stripe als Zahlungsmethode aktiviert "
+"werden"
+
+#: ../admin/tabs/gateway.php:35
+msgid "Test Secret Key"
+msgstr "Privaten Schlüssel testen"
+
+#: ../admin/tabs/gateway.php:36 ../admin/tabs/gateway.php:37
+#: ../admin/tabs/gateway.php:44 ../admin/tabs/gateway.php:45
+#: ../admin/tabs/gateway.php:52 ../admin/tabs/gateway.php:53
+#: ../admin/tabs/gateway.php:60 ../admin/tabs/gateway.php:61
+msgid "You can get this on stripe.com"
+msgstr "Sie erhalten das auf stripe.com"
+
+#: ../admin/tabs/gateway.php:43
+msgid "Test Publishable Key"
+msgstr "Öffentlichen Schlüssel testen"
+
+#: ../admin/tabs/gateway.php:51
+msgid "Live Secret Key"
+msgstr "Live Secret Key"
+
+#: ../admin/tabs/gateway.php:59
+msgid "Live Publishable Key"
+msgstr "Live Publishable Key"
+
+#: ../admin/tabs/gateway.php:68 ../admin/tabs/gateway.php:171
+#: ../admin/tabs/gateway.php:279
+msgid "Currency"
+msgstr "Währung"
+
+#: ../admin/tabs/gateway.php:69 ../admin/tabs/gateway.php:70
+#: ../admin/tabs/gateway.php:172 ../admin/tabs/gateway.php:173
+#: ../admin/tabs/gateway.php:280 ../admin/tabs/gateway.php:281
+msgid "Please enter the currency, example USD."
+msgstr "Bitte Währung eingeben, z.B. USD"
+
+#: ../admin/tabs/gateway.php:76 ../admin/tabs/gateway.php:179
+#: ../admin/tabs/gateway.php:382
+msgid "Custom Message"
+msgstr "Benutzerdefinierte Mitteilung"
+
+#: ../admin/tabs/gateway.php:77 ../admin/tabs/gateway.php:78
+#: ../admin/tabs/gateway.php:180 ../admin/tabs/gateway.php:181
+#: ../admin/tabs/gateway.php:383 ../admin/tabs/gateway.php:384
+#: ../admin/tabs/settings.php:197 ../admin/tabs/settings.php:198
+msgid ""
+"Input here a custom message that will be displayed to the client once the "
+"booking has been confirmed at the front page."
+msgstr ""
+"Geben Sie hier eine benutzerdefinierte Nachricht ein, die auf dem Kunden "
+"angezeigt wird, sobald die Buchung im Frontend bestätigt wurde."
+
+#: ../admin/tabs/gateway.php:84 ../admin/tabs/gateway.php:187
+#: ../admin/tabs/gateway.php:288 ../admin/tabs/gateway.php:392
+#: ../admin/tabs/settings.php:160
+msgid "Custom Success Page Redirect "
+msgstr "Eigene Erfolg-Seite"
+
+#: ../admin/tabs/gateway.php:86 ../admin/tabs/gateway.php:87
+#: ../admin/tabs/gateway.php:189 ../admin/tabs/gateway.php:190
+#: ../admin/tabs/gateway.php:290 ../admin/tabs/gateway.php:291
+msgid ""
+"If checked, the users will be taken to this page once the payment has been "
+"confirmed"
+msgstr ""
+"Wenn diese Option aktiviert wurde, werden die Nutzer auf diese Seite "
+"umgeleitet sobald die Zahlung bestätigt wurde"
+
+#: ../admin/tabs/gateway.php:94 ../admin/tabs/gateway.php:197
+#: ../admin/tabs/gateway.php:298 ../admin/tabs/gateway.php:402
+msgid "Success Page"
+msgstr "Erfolgsseite"
+
+#: ../admin/tabs/gateway.php:96 ../admin/tabs/gateway.php:97
+#: ../admin/tabs/gateway.php:300 ../admin/tabs/gateway.php:301
+msgid ""
+"Select the sucess page. The user will be taken to this page if the payment "
+"was approved by stripe."
+msgstr ""
+"Wählen Sie den Erfolg-Seite. Der Benutzer wird auf diese Seite umgeleitet "
+"wenn die Zahlung von stripe genehmigt wurde."
+
+#: ../admin/tabs/gateway.php:104 ../admin/tabs/gateway.php:207
+#: ../admin/tabs/gateway.php:328
+msgid "Mode"
+msgstr "Modus"
+
+#: ../admin/tabs/gateway.php:106 ../admin/tabs/gateway.php:209
+#: ../admin/tabs/gateway.php:330
+msgid "Production Mode"
+msgstr "Produktivmodus"
+
+#: ../admin/tabs/gateway.php:107 ../admin/tabs/gateway.php:210
+#: ../admin/tabs/gateway.php:331
+msgid "Test Mode (Sandbox)"
+msgstr "Test-Modus (Sandbox)"
+
+#: ../admin/tabs/gateway.php:110 ../admin/tabs/gateway.php:111
+#: ../admin/tabs/gateway.php:213 ../admin/tabs/gateway.php:214
+#: ../admin/tabs/gateway.php:334 ../admin/tabs/gateway.php:335
+#: ../admin/tabs/settings.php:558 ../admin/tabs/settings.php:697
+msgid "."
+msgstr "."
+
+#: ../admin/tabs/gateway.php:130
+msgid "Authorize.NET AIM Settings"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:132 ../admin/tabs/gateway.php:134
+msgid " "
+msgstr ""
+
+#: ../admin/tabs/gateway.php:143
+msgid "Activate Authorize"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:145 ../admin/tabs/gateway.php:146
+msgid "If checked, Authorize will be activated as payment method"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:154
+msgid "API Login ID"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:155 ../admin/tabs/gateway.php:156
+#: ../admin/tabs/gateway.php:163 ../admin/tabs/gateway.php:164
+msgid "You can get this on authorize.net"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:162
+msgid "API Transaction Key"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:199
+msgid ""
+"Select the sucess page. The user will be taken to this page if the payment "
+"was approved by Authorize.net "
+msgstr ""
+
+#: ../admin/tabs/gateway.php:200
+msgid ""
+"Select the sucess page. The user will be taken to this page if the payment "
+"was approved by Authorize.net"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:230
+msgid "PayPal"
+msgstr "PayPal"
+
+#: ../admin/tabs/gateway.php:232
+msgid "Here you can configure PayPal if you wish to accept paid registrations"
+msgstr ""
+"Hier können Sie PayPal konfigurieren, wenn Sie kostenpflichtige "
+"Registrierungen akzeptieren wollen"
+
+#: ../admin/tabs/gateway.php:241
+msgid "Activate PayPal"
+msgstr "Aktivieren Sie PayPal"
+
+#: ../admin/tabs/gateway.php:243 ../admin/tabs/gateway.php:244
+msgid "If checked, PayPal will be activated as payment method"
+msgstr ""
+"Wenn diese Option aktiviert wurde, wird PayPal als Zahlungsmethode aktiviert"
+
+#: ../admin/tabs/gateway.php:250
+msgid "The Paypal IPN response will be sent to the admin"
+msgstr "Die Paypal IPN Antwort wird an den Administrator gesendet werden"
+
+#: ../admin/tabs/gateway.php:256 ../admin/tabs/gateway.php:257
+msgid ""
+"If 'yes' the admin will receive the whole Paypal IPN response. This helps to "
+"troubleshoot issues."
+msgstr ""
+"Wenn „Ja“ wird der Administrator die gesamten Paypal IPN Antwort erhalten. "
+"Dies hilft, um Probleme zu beheben."
+
+#: ../admin/tabs/gateway.php:263
+msgid "PayPal Email Address"
+msgstr "PayPal Email Adresse"
+
+#: ../admin/tabs/gateway.php:264 ../admin/tabs/gateway.php:265
+msgid "Enter email address associated to your PayPal account."
+msgstr "Geben Sie Ihrem PayPal-Konto verknüpfte e-Mail-Adresse."
+
+#: ../admin/tabs/gateway.php:271
+msgid "Paypal Sandbox Email Address"
+msgstr "PayPal Sandbox E-Mail-Addresse"
+
+#: ../admin/tabs/gateway.php:272 ../admin/tabs/gateway.php:273
+msgid "This is not used for production, you can use this email for testing."
+msgstr ""
+"Dies ist nicht für den Produktivmodus, Sie können diese E-Mail zum Testen "
+"verwenden."
+
+#: ../admin/tabs/gateway.php:308
+msgid "Custom Cancellation Page Redirect "
+msgstr ""
+
+#: ../admin/tabs/gateway.php:310 ../admin/tabs/gateway.php:311
+msgid ""
+"If checked, the users will be taken to this page if the payment is cancelled "
+"at PayPal website"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:318 ../admin/tabs/settings.php:213
+msgid "Cancellation Page"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:320 ../admin/tabs/gateway.php:321
+msgid ""
+"Select the cancellation page. The user will be taken to this page if the "
+"payment is cancelled at PayPal Website"
+msgstr ""
+
+#: ../admin/tabs/gateway.php:352
+msgid "Bank Deposit/Cash Other"
+msgstr "Banküberweisung / Geld / Andere"
+
+#: ../admin/tabs/gateway.php:354
+msgid ""
+"Here you can configure the information that will be sent to the client. This "
+"could be your bank account details."
+msgstr ""
+"Geben Sie hier die Informationen ein, die an den Kunden gesendet werden. "
+"Dies könnte z.B. Ihre Bankverbindung sein."
+
+#: ../admin/tabs/gateway.php:363
+msgid "Activate Bank Deposit"
+msgstr "Aktivieren Sie die Banküberweisung"
+
+#: ../admin/tabs/gateway.php:365 ../admin/tabs/gateway.php:366
+msgid "If checked, Bank Payment Deposit will be activated as payment method"
+msgstr "Wenn aktiviert, wird die Banküberweisung als Zahlungsmethode aktiviert"
+
+#: ../admin/tabs/gateway.php:373
+msgid "Custom Label"
+msgstr "Eigene Bezeichnung"
+
+#: ../admin/tabs/gateway.php:374 ../admin/tabs/gateway.php:375
+msgid "Example: Bank Deposit , Cash, Wire etc."
+msgstr "Banküberweisung / Geld / Andere"
+
+#: ../admin/tabs/gateway.php:394 ../admin/tabs/gateway.php:395
+#: ../admin/tabs/settings.php:163
+msgid "If checked, the users will be taken to this page "
+msgstr ""
+"Wenn diese Option aktiviert wurde, werden die Nutzer auf diese Seite "
+"umgeleitet"
+
+#: ../admin/tabs/gateway.php:404 ../admin/tabs/gateway.php:405
+msgid ""
+"Select the sucess page. The user will be taken to this page on purchase "
+"confirmation"
+msgstr ""
+"Wählen Sie den Erfolg-Seite. Der Benutzer wird auf diese Seite umgeleitet um "
+"den Kauf zu bestätigen"
+
+#: ../admin/tabs/gateway.php:416
+msgid "Default Status for Local Payments"
+msgstr "Standard-Status für Zahlungen"
+
+#: ../admin/tabs/gateway.php:418
+msgid ""
+"Set the default status an appointment will have when using local payment "
+"method. You won't have to approve the appointments manually, they will get "
+"approved automatically."
+msgstr ""
+"Stellen Sie den Standard-Status eines Termins ein, wenn die Zahlungsmethode "
+"benutzt wird. Sie werden die Termine nicht manuell genehmigen müssen, sie "
+"werden automatisch genehmigt."
+
+#: ../admin/tabs/gateway.php:419
+msgid ""
+"et the default status an appointment will have when using local payment "
+"method."
+msgstr ""
+"erhalten Sie den Status einer Buchung wenn diese Zahlungsmethode genutzt "
+"wird."
+
+#: ../admin/tabs/gateway.php:432 ../admin/tabs/mail.php:707
+#: ../admin/tabs/settings.php:457 ../admin/tabs/settings.php:541
+#: ../admin/tabs/settings.php:563 ../admin/tabs/settings.php:613
+#: ../admin/tabs/settings.php:685 ../admin/tabs/settings.php:750
+#: ../admin/tabs/settings.php:801 ../classes/bookingultra.service.php:3162
+#: ../classes/bookingultra.user.php:982 ../classes/bookingultra.user.php:1065
+msgid "Save Changes"
+msgstr "Änderungen Speichern"
+
+#: ../admin/tabs/help.php:8
+msgid "Documentation and User Guide"
+msgstr "Dokumentation und Benutzerhandbuch"
+
+#: ../admin/tabs/help.php:13
+msgid ""
+"Here there are some useful shortocodes and tutorials that will help you to "
+"start receiving online appointments in minutes."
+msgstr ""
+"Hier gibt es einige nützliche shortocodes und Tutorials, die Ihnen helfen, "
+"Online-Verabredungen in Minuten Aufnahme zu starten."
+
+#: ../admin/tabs/help.php:20
+msgid "Getting Started"
+msgstr ""
+
+#: ../admin/tabs/help.php:24
+msgid "Getting Started Guide"
+msgstr "Kurzanleitung"
+
+#: ../admin/tabs/help.php:26
+msgid "Adding or Deleting Staff Members"
+msgstr "Hinzufügen oder Löschen von MitarbeiterInnen"
+
+#: ../admin/tabs/help.php:28
+msgid "Adding New Services and Categories"
+msgstr "Hinzufügen neuer Service und Kategorien"
+
+#: ../admin/tabs/help.php:30
+msgid "Activating the Front-end Booking Form"
+msgstr ""
+
+#: ../admin/tabs/help.php:42
+msgid "Troubleshooting"
+msgstr "Troubleshooting"
+
+#: ../admin/tabs/help.php:46
+msgid "User Registration is Currently Not Allowed"
+msgstr "Eine Registrierung ist im Moment nicht erlaubt."
+
+#: ../admin/tabs/help.php:48
+msgid "I can't access to my WordPress Site or WP Admin"
+msgstr ""
+
+#: ../admin/tabs/help.php:50
+msgid "Troubleshooting Theme & Plugin Conflicts"
+msgstr ""
+
+#: ../admin/tabs/help.php:52
+msgid "WordPress Is not Sending Emails Issue"
+msgstr ""
+
+#: ../admin/tabs/help.php:64
+msgid "Shopping cart"
+msgstr ""
+
+#: ../admin/tabs/help.php:68
+msgid "How To Activate The Shopping Cart Feature?"
+msgstr ""
+
+#: ../admin/tabs/help.php:72
+msgid "How To Change The Shopping Cart Columns & Labels?"
+msgstr ""
+
+#: ../admin/tabs/help.php:84
+msgid "FAQs"
+msgstr ""
+
+#: ../admin/tabs/help.php:88
+msgid "How To Display Locations on Booking Form?"
+msgstr ""
+
+#: ../admin/tabs/help.php:90
+msgid "How To Add Custom Fields in Email Templates?"
+msgstr ""
+
+#: ../admin/tabs/help.php:92
+msgid "How To Translate The Plugin?"
+msgstr ""
+
+#: ../admin/tabs/help.php:94
+msgid "How To Reschedule an Appointment?"
+msgstr ""
+
+#: ../admin/tabs/help.php:106
+msgid "Payment Gateways"
+msgstr ""
+
+#: ../admin/tabs/help.php:110
+msgid "PayPal IPN"
+msgstr ""
+
+#: ../admin/tabs/help.php:124
+msgid "Front-end booking form"
+msgstr "Front-End-Buchungsformular"
+
+#: ../admin/tabs/help.php:131
+msgid " Contact Us"
+msgstr "Kontaktiere uns"
+
+#: ../admin/tabs/help.php:135
+msgid "Contact Us"
+msgstr "Kontaktiere uns"
+
+#: ../admin/tabs/licence.php:8
+msgid "Validate your copy"
+msgstr "Bestätigen Sie Ihre Kopie"
+
+#: ../admin/tabs/licence.php:9
+msgid ""
+"Please fill out the form below with the serial number generated when you "
+"registered your domain through your account at BookingUltraPro.com"
+msgstr ""
+"Bitte füllen Sie das folgende Formular aus mit der Seriennummer generiert, "
+"wenn Sie Ihre Domain über Ihr Konto bei BookingUltraPro.com registriert"
+
+#: ../admin/tabs/licence.php:11
+msgid "INPUT YOUR SERIAL KEY"
+msgstr "Geben Sie Ihre Seriennummer ein"
+
+#: ../admin/tabs/licence.php:16
+msgid "CLICK HERE TO VALIDATE YOUR COPY"
+msgstr "Klicken Sie hier, um Ihre Kopie zu validieren"
+
+#: ../admin/tabs/mail.php:4
+msgid "Advanced Email Options"
+msgstr "Erweiterte E-Mail-Optionen"
+
+#: ../admin/tabs/mail.php:11
+msgid ""
+"Here you can control how Booking Ultra Pro will send the notification to "
+"your users."
+msgstr ""
+"Hier können Sie steuern, wie das Terminmodul die Meldung an die Benutzer "
+"sendet."
+
+#: ../admin/tabs/mail.php:15
+msgid "Privacy"
+msgstr ""
+
+#: ../admin/tabs/mail.php:26
+msgid "Send Email Notifications to Admin?:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:28 ../admin/tabs/mail.php:41
+#: ../admin/tabs/mail.php:55 ../admin/tabs/settings.php:319
+#: ../admin/tabs/settings.php:331 ../admin/tabs/settings.php:372
+#: ../admin/tabs/settings.php:384 ../admin/tabs/settings.php:522
+#: ../classes/bookingultra.service.php:2979
+msgid "YES"
+msgstr "JA"
+
+#: ../admin/tabs/mail.php:29 ../admin/tabs/mail.php:42
+#: ../admin/tabs/mail.php:56 ../admin/tabs/settings.php:318
+#: ../admin/tabs/settings.php:332 ../admin/tabs/settings.php:373
+#: ../admin/tabs/settings.php:385 ../admin/tabs/settings.php:521
+#: ../classes/bookingultra.service.php:2978
+msgid "NO"
+msgstr "NEIN"
+
+#: ../admin/tabs/mail.php:32 ../admin/tabs/mail.php:33
+msgid ""
+"This allows you to block email notifications that are sent to the admin."
+msgstr ""
+
+#: ../admin/tabs/mail.php:39
+msgid "Send Email Notifications to Staff Members?:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:45 ../admin/tabs/mail.php:46
+msgid ""
+"This allows you to block email notifications that are sent to the staff "
+"members."
+msgstr ""
+
+#: ../admin/tabs/mail.php:53
+msgid "Send Email Notifications to Clients?:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:59 ../admin/tabs/mail.php:60
+msgid ""
+"This allows you to block email notifications that are sent to the clients."
+msgstr ""
+
+#: ../admin/tabs/mail.php:79
+msgid "Send From Name"
+msgstr "Senden Von Name"
+
+#: ../admin/tabs/mail.php:80 ../admin/tabs/mail.php:81
+msgid "Enter the your name or company name here."
+msgstr "Geben Sie den Ihren Namen oder Firmennamen ein."
+
+#: ../admin/tabs/mail.php:87
+msgid "Send From Email"
+msgstr "Senden Von E-Mail"
+
+#: ../admin/tabs/mail.php:88 ../admin/tabs/mail.php:89
+msgid "Enter the email address to be used when sending emails."
+msgstr ""
+"Geben Sie die E-Mail-Adresse ein, die für das Senden benutzt werden soll."
+
+#: ../admin/tabs/mail.php:95
+msgid "Mailer:"
+msgstr "Mailer"
+
+#: ../admin/tabs/mail.php:97
+msgid "Use the PHP mail() function to send emails"
+msgstr ""
+
+#: ../admin/tabs/mail.php:98
+msgid "Send all Booking Ultra emails via SMTP"
+msgstr ""
+
+#: ../admin/tabs/mail.php:99
+msgid "Send all Booking Ultra emails via Mandrill"
+msgstr ""
+
+#: ../admin/tabs/mail.php:100
+msgid "Send all Booking Ultra emails via Third-party plugin"
+msgstr ""
+
+#: ../admin/tabs/mail.php:104 ../admin/tabs/mail.php:105
+msgid "Specify which mailer method Users Ultra should use when sending emails."
+msgstr ""
+
+#: ../admin/tabs/mail.php:111
+msgid "Return Path"
+msgstr ""
+
+#: ../admin/tabs/mail.php:113 ../admin/tabs/mail.php:114
+msgid "Set the return-path to match the From Email"
+msgstr ""
+
+#: ../admin/tabs/mail.php:122
+msgid "SMTP Settings"
+msgstr ""
+
+#: ../admin/tabs/mail.php:125
+msgid ""
+"This options should be set only if you have chosen to send email via SMTP"
+msgstr ""
+
+#: ../admin/tabs/mail.php:132
+msgid "SMTP Host:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:133 ../admin/tabs/mail.php:134
+msgid "Specify host name or ip address."
+msgstr ""
+
+#: ../admin/tabs/mail.php:140
+msgid "SMTP Port:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:141 ../admin/tabs/mail.php:142
+msgid "Specify Port."
+msgstr ""
+
+#: ../admin/tabs/mail.php:149
+msgid "Encryption:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:151
+msgid "No encryption"
+msgstr ""
+
+#: ../admin/tabs/mail.php:152
+msgid "Use SSL encryption"
+msgstr ""
+
+#: ../admin/tabs/mail.php:153
+msgid "Use TLS encryption"
+msgstr ""
+
+#: ../admin/tabs/mail.php:157 ../admin/tabs/mail.php:158
+msgid "Specify the encryption method."
+msgstr ""
+
+#: ../admin/tabs/mail.php:164
+msgid "Authentication:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:166
+msgid "No. Do not use SMTP authentication"
+msgstr ""
+
+#: ../admin/tabs/mail.php:167
+msgid "Yes. Use SMTP Authentication"
+msgstr ""
+
+#: ../admin/tabs/mail.php:171 ../admin/tabs/mail.php:172
+msgid "Specify the authentication method."
+msgstr ""
+
+#: ../admin/tabs/mail.php:178
+msgid "Username:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:179 ../admin/tabs/mail.php:180
+msgid "Specify Username."
+msgstr ""
+
+#: ../admin/tabs/mail.php:186
+msgid "Password:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:187 ../admin/tabs/mail.php:188
+msgid "Input Password."
+msgstr ""
+
+#: ../admin/tabs/mail.php:198
+msgid ""
+"This options should be set only if you have chosen to send email via Mandrill"
+msgstr ""
+
+#: ../admin/tabs/mail.php:208
+msgid "Mandrill API Key:"
+msgstr ""
+
+#: ../admin/tabs/mail.php:209
+msgid ""
+"Specify Mandrill API. Find out more info here: https://mandrillapp.com/api/"
+"docs/"
+msgstr ""
+
+#: ../admin/tabs/mail.php:210
+msgid "Specify Mandrill API."
+msgstr ""
+
+#: ../admin/tabs/mail.php:220
+msgid "Admin Message New Booking"
+msgstr "Admin Nachricht Neue Buchung"
+
+#: ../admin/tabs/mail.php:222
+msgid ""
+"This is the welcome email that is sent to the admin when a new booking is "
+"generated."
+msgstr ""
+"Diese ist die Willkommens Email, welche an den Admin gesendet wird, wenn ein "
+"neuer Termin gebucht wurde."
+
+#: ../admin/tabs/mail.php:232 ../admin/tabs/mail.php:271
+#: ../admin/tabs/mail.php:310 ../admin/tabs/mail.php:350
+#: ../admin/tabs/mail.php:390 ../admin/tabs/mail.php:431
+#: ../admin/tabs/mail.php:473 ../admin/tabs/mail.php:514
+#: ../admin/tabs/mail.php:555 ../admin/tabs/mail.php:595
+#: ../admin/tabs/mail.php:635 ../admin/tabs/mail.php:677
+msgid "Subject:"
+msgstr "Betreff:"
+
+#: ../admin/tabs/mail.php:233 ../admin/tabs/mail.php:234
+#: ../admin/tabs/mail.php:272 ../admin/tabs/mail.php:273
+#: ../admin/tabs/mail.php:311 ../admin/tabs/mail.php:312
+#: ../admin/tabs/mail.php:351 ../admin/tabs/mail.php:352
+#: ../admin/tabs/mail.php:391 ../admin/tabs/mail.php:392
+#: ../admin/tabs/mail.php:432 ../admin/tabs/mail.php:433
+#: ../admin/tabs/mail.php:474 ../admin/tabs/mail.php:475
+#: ../admin/tabs/mail.php:515 ../admin/tabs/mail.php:516
+#: ../admin/tabs/mail.php:556 ../admin/tabs/mail.php:557
+#: ../admin/tabs/mail.php:596 ../admin/tabs/mail.php:597
+#: ../admin/tabs/mail.php:636 ../admin/tabs/mail.php:637
+#: ../admin/tabs/mail.php:678 ../admin/tabs/mail.php:679
+msgid "Set Email Subject."
+msgstr "E-Mail Betreff"
+
+#: ../admin/tabs/mail.php:240 ../admin/tabs/mail.php:279
+#: ../admin/tabs/mail.php:318 ../admin/tabs/mail.php:358
+#: ../admin/tabs/mail.php:398 ../admin/tabs/mail.php:439
+#: ../admin/tabs/mail.php:481 ../admin/tabs/mail.php:522
+#: ../admin/tabs/mail.php:563 ../admin/tabs/mail.php:603
+#: ../admin/tabs/mail.php:643 ../admin/tabs/mail.php:685
+msgid "Message"
+msgstr "Nachricht"
+
+#: ../admin/tabs/mail.php:241 ../admin/tabs/mail.php:242
+#: ../admin/tabs/mail.php:280 ../admin/tabs/mail.php:281
+#: ../admin/tabs/mail.php:319 ../admin/tabs/mail.php:320
+#: ../admin/tabs/mail.php:359 ../admin/tabs/mail.php:360
+#: ../admin/tabs/mail.php:399 ../admin/tabs/mail.php:400
+#: ../admin/tabs/mail.php:440 ../admin/tabs/mail.php:441
+#: ../admin/tabs/mail.php:482 ../admin/tabs/mail.php:483
+#: ../admin/tabs/mail.php:523 ../admin/tabs/mail.php:524
+#: ../admin/tabs/mail.php:564 ../admin/tabs/mail.php:565
+#: ../admin/tabs/mail.php:604 ../admin/tabs/mail.php:605
+#: ../admin/tabs/mail.php:644 ../admin/tabs/mail.php:645
+#: ../admin/tabs/mail.php:686 ../admin/tabs/mail.php:687
+msgid "Set Email Message here."
+msgstr "E-Mail-Nachricht"
+
+#: ../admin/tabs/mail.php:251 ../admin/tabs/mail.php:290
+#: ../admin/tabs/mail.php:331 ../admin/tabs/mail.php:371
+#: ../admin/tabs/mail.php:411 ../admin/tabs/mail.php:452
+#: ../admin/tabs/mail.php:494 ../admin/tabs/mail.php:535
+#: ../admin/tabs/mail.php:576 ../admin/tabs/mail.php:616
+#: ../admin/tabs/mail.php:656 ../admin/tabs/mail.php:698
+msgid "RESTORE DEFAULT TEMPLATE"
+msgstr "Standart Template wiederherstellen"
+
+#: ../admin/tabs/mail.php:259
+msgid "Staff Message New Booking"
+msgstr ""
+
+#: ../admin/tabs/mail.php:261
+msgid ""
+"This is the welcome email that is sent to the staff member when a new "
+"booking is generated."
+msgstr ""
+
+#: ../admin/tabs/mail.php:298
+msgid "Client Message New Booking"
+msgstr ""
+
+#: ../admin/tabs/mail.php:300
+msgid ""
+"This is the welcome email that is sent to the client when a new booking is "
+"generated."
+msgstr ""
+
+#: ../admin/tabs/mail.php:338
+msgid "Reschedule Message For Clients"
+msgstr ""
+
+#: ../admin/tabs/mail.php:340
+msgid "This message is sent to the CLIENT when an appointment is rescheduled."
+msgstr ""
+
+#: ../admin/tabs/mail.php:378
+msgid "Reschedule Message For Staff Member"
+msgstr ""
+
+#: ../admin/tabs/mail.php:380
+msgid ""
+"This message is sent to the STAFF MEMBER when an appointment is rescheduled."
+msgstr ""
+
+#: ../admin/tabs/mail.php:419
+msgid "Reschedule Message For The Admin"
+msgstr ""
+
+#: ../admin/tabs/mail.php:421
+msgid "This message is sent to the ADMIN when an appointment is rescheduled."
+msgstr ""
+
+#: ../admin/tabs/mail.php:461
+msgid "Bank Payment Message For the Client"
+msgstr ""
+
+#: ../admin/tabs/mail.php:463
+msgid ""
+"This message will be sent to the client when the selected payment method is "
+"bank."
+msgstr ""
+
+#: ../admin/tabs/mail.php:502
+msgid "Bank Payment Message For the Admin"
+msgstr ""
+
+#: ../admin/tabs/mail.php:504
+msgid ""
+"This message will be sent to the admin when the selected payment method is "
+"bank."
+msgstr ""
+
+#: ../admin/tabs/mail.php:543
+msgid "Appointment Status Changed Admin Email"
+msgstr ""
+
+#: ../admin/tabs/mail.php:545
+msgid ""
+"This message will be sent to the admin when status of an appointment changes."
+msgstr ""
+
+#: ../admin/tabs/mail.php:583
+msgid "Appointment Status Changed Staff Email"
+msgstr ""
+
+#: ../admin/tabs/mail.php:585
+msgid ""
+"This message will be sent to the staff member when status of an appointment "
+"changes."
+msgstr ""
+
+#: ../admin/tabs/mail.php:623
+msgid "Appointment Status Changed Client Email"
+msgstr ""
+
+#: ../admin/tabs/mail.php:625
+msgid ""
+"This message will be sent to the client when status of an appointment "
+"changes."
+msgstr ""
+
+#: ../admin/tabs/mail.php:665
+msgid "Staff Password Change"
+msgstr ""
+
+#: ../admin/tabs/mail.php:667
+msgid ""
+"This message will be sent to the staff member every time the password is "
+"changed in the staff account."
+msgstr ""
+
+#: ../admin/tabs/main.php:30
+msgid "Welcome to Booking Ultra Pro!"
+msgstr ""
+
+#: ../admin/tabs/main.php:36
+msgid "Quick Actions"
+msgstr ""
+
+#: ../admin/tabs/main.php:54
+msgid "Planning"
+msgstr "Planung"
+
+#: ../admin/tabs/main.php:58 ../classes/bookingultra.admin.php:256
+#: ../classes/bookingultra.admin.php:295 ../classes/bookingultra.class.php:925
+#: ../classes/bookingultra.class.php:987
+msgid "Today"
+msgstr "Heute"
+
+#: ../admin/tabs/main.php:59
+msgid "Tomorrow"
+msgstr "Morgen"
+
+#: ../admin/tabs/main.php:60
+msgid "This Week"
+msgstr "Diese Woche"
+
+#: ../admin/tabs/main.php:77
+msgid "Unpaid"
+msgstr "Unbezahlt"
+
+#: ../admin/tabs/main.php:88
+msgid "Upcoming Appointments"
+msgstr "Bevorstehende Termine"
+
+#: ../admin/tabs/main.php:101
+msgid "Site Time: "
+msgstr "Lokale Zeit der Site"
+
+#: ../admin/tabs/main.php:101
+msgid "GMT: "
+msgstr "GMT"
+
+#: ../admin/tabs/main.php:110 ../classes/bookingultra.user.php:719
+msgid "Locations"
+msgstr "Standorte"
+
+#: ../admin/tabs/main.php:129
+msgid ""
+"Do you need more features or manage multiple locations, google calendar "
+"integration, change legends & colors?"
+msgstr ""
+
+#: ../admin/tabs/orders.php:36 ../classes/bookingultra.admin.php:60
+msgid "Payments"
+msgstr "Zahlungen"
+
+#: ../admin/tabs/orders.php:55
+msgid "Keywords: "
+msgstr "Schlüsselwörter:"
+
+#: ../admin/tabs/orders.php:56
+msgid "Month: "
+msgstr "Monat"
+
+#: ../admin/tabs/orders.php:57
+msgid "Day: "
+msgstr "Tag"
+
+#: ../admin/tabs/orders.php:58
+msgid "Year: "
+msgstr "Jahr:"
+
+#: ../admin/tabs/orders.php:62
+msgid "write some text here ..."
+msgstr "Schreiben Sie Text hier ..."
+
+#: ../admin/tabs/orders.php:64 ../admin/tabs/orders.php:77
+#: ../admin/tabs/orders.php:90
+msgid "All"
+msgstr "alle"
+
+#: ../admin/tabs/orders.php:115
+msgid "Total: "
+msgstr "Gesamt:"
+
+#: ../admin/tabs/orders.php:115
+msgid "Displaying per page: "
+msgstr "Anzeige pro Seite:"
+
+#: ../admin/tabs/orders.php:146
+msgid "A. #"
+msgstr "A. #"
+
+#: ../admin/tabs/orders.php:151 ../classes/bookingultra.appointment.php:865
+msgid "Transaction ID"
+msgstr "Transaktionsnummer"
+
+#: ../admin/tabs/orders.php:153 ../classes/bookingultra.appointment.php:866
+msgid "Method"
+msgstr "Methode"
+
+#: ../admin/tabs/orders.php:155 ../classes/bookingultra.appointment.php:868
+msgid "Amount"
+msgstr "Betrag"
+
+#: ../admin/tabs/orders.php:189 ../classes/bookingultra.appointment.php:904
+msgid "There are no transactions yet."
+msgstr "Es gibt noch keine Transaktionen."
+
+#: ../admin/tabs/services.php:36
+msgid "Set Flexible Pricing"
+msgstr ""
+
+#: ../admin/tabs/services.php:37 ../classes/bookingultra.admin.php:280
+msgid "Add Category"
+msgstr "Neue Kategorie hinzufügen"
+
+#: ../admin/tabs/services.php:42
+msgid "Please input a name."
+msgstr "Bitte geben Sie einen Namen an"
+
+#: ../admin/tabs/settings.php:1
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: ../admin/tabs/settings.php:15
+msgid "General"
+msgstr "Allgemein"
+
+#: ../admin/tabs/settings.php:17 ../admin/tabs/settings.php:557
+msgid "Business Hours"
+msgstr "Geschäftszeiten:"
+
+#: ../admin/tabs/settings.php:19
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#: ../admin/tabs/settings.php:22 ../classes/bookingultra.user.php:828
+msgid "Google Calendar"
+msgstr ""
+
+#: ../admin/tabs/settings.php:24 ../classes/bookingultra.service.php:495
+#: ../templates/appointment.php:229
+msgid "Shopping Cart"
+msgstr ""
+
+#: ../admin/tabs/settings.php:36
+msgid "Premium  Settings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:41 ../admin/tabs/settings.php:121
+msgid ""
+"This section allows you to set your company name, phone number and many "
+"other useful things such as set time slot, date format."
+msgstr ""
+"In diesem Bereich können Sie Ihren Firmennamen, Telefonnummer und viele "
+"andere nützliche Informationen wie Zeit-Intervall und Datumsformat "
+"einstellen."
+
+#: ../admin/tabs/settings.php:50
+msgid "What To Display in BUP Admin Calendar?"
+msgstr ""
+
+#: ../admin/tabs/settings.php:52 ../admin/tabs/settings.php:507
+msgid "Staff Name"
+msgstr ""
+
+#: ../admin/tabs/settings.php:53 ../admin/tabs/settings.php:508
+msgid "Client Name"
+msgstr ""
+
+#: ../admin/tabs/settings.php:55 ../admin/tabs/settings.php:56
+msgid ""
+"You can set what will be displayed in the BUP Dashboard Calendar. You can "
+"set either Staff Name or Client Name"
+msgstr ""
+
+#: ../admin/tabs/settings.php:60
+msgid "Disabled."
+msgstr ""
+
+#: ../admin/tabs/settings.php:61
+msgid "1 hour."
+msgstr ""
+
+#: ../admin/tabs/settings.php:62
+msgid "2 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:63
+msgid "3 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:64
+msgid "4 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:65
+msgid "5 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:66
+msgid "6 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:67
+msgid "7 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:68
+msgid "8 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:69
+msgid "9 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:70
+msgid "10 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:71
+msgid "11 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:72
+msgid "12 hours."
+msgstr ""
+
+#: ../admin/tabs/settings.php:73
+msgid "1 day"
+msgstr ""
+
+#: ../admin/tabs/settings.php:74
+msgid "2 days."
+msgstr ""
+
+#: ../admin/tabs/settings.php:75
+msgid "3 days."
+msgstr ""
+
+#: ../admin/tabs/settings.php:76
+msgid "4 days."
+msgstr ""
+
+#: ../admin/tabs/settings.php:77
+msgid "5 days"
+msgstr ""
+
+#: ../admin/tabs/settings.php:78
+msgid "6 days"
+msgstr ""
+
+#: ../admin/tabs/settings.php:79
+msgid "1 week."
+msgstr ""
+
+#: ../admin/tabs/settings.php:80
+msgid "2 weeks."
+msgstr ""
+
+#: ../admin/tabs/settings.php:81
+msgid "3 weeks."
+msgstr ""
+
+#: ../admin/tabs/settings.php:82
+msgid "4 Weeks."
+msgstr ""
+
+#: ../admin/tabs/settings.php:90
+msgid "Minimum time requirement prior to booking:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:92 ../admin/tabs/settings.php:93
+msgid ""
+"Set how late appointments can be booked (for example, require customers to "
+"book at least 1 hour before the appointment time)."
+msgstr ""
+
+#: ../admin/tabs/settings.php:103
+msgid ""
+"These settings are included in the premium version of Booking Ultra Pro. If "
+"you find the plugin useful for your business please consider buying a "
+"licence for the full version."
+msgstr ""
+
+#: ../admin/tabs/settings.php:119
+msgid "Miscellaneous  Settings"
+msgstr "Verschiedene Einstellungen"
+
+#: ../admin/tabs/settings.php:131
+msgid "Company Name:"
+msgstr "Firmenname:"
+
+#: ../admin/tabs/settings.php:132 ../admin/tabs/settings.php:133
+msgid "Enter your company name here."
+msgstr "Geben Sie den Namen Ihres Unternehmens hier."
+
+#: ../admin/tabs/settings.php:139
+msgid "Company Phone Number:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:140 ../admin/tabs/settings.php:141
+msgid "Enter your company phone number here."
+msgstr "Geben Sie Ihre Firma Telefonnummer hier."
+
+#: ../admin/tabs/settings.php:147
+msgid "Registration Type"
+msgstr ""
+
+#: ../admin/tabs/settings.php:149
+msgid "Paid Booking"
+msgstr "Bezahlte Buchung"
+
+#: ../admin/tabs/settings.php:150
+msgid "Free Booking"
+msgstr "Kostenlose Buchung"
+
+#: ../admin/tabs/settings.php:152
+msgid ""
+"Free Booking allows users to book and appointment for free, the payment "
+"methods will not be displayed. "
+msgstr ""
+
+#: ../admin/tabs/settings.php:153
+msgid ""
+"Free Booking allows users to book and appointment for free, the payment "
+"methods will not be displayed."
+msgstr ""
+
+#: ../admin/tabs/settings.php:162
+msgid ""
+"If checked, the users will be taken to this page. This option is used only "
+"when you have set Free Bookins as Regitration Type "
+msgstr ""
+
+#: ../admin/tabs/settings.php:170
+msgid "Success Page for Free Bookings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:172 ../admin/tabs/settings.php:173
+msgid ""
+"Select the sucess page. The user will be taken to this page right after the "
+"booking confirmation."
+msgstr ""
+
+#: ../admin/tabs/settings.php:185
+msgid "Default Status for Free Appointments"
+msgstr ""
+
+#: ../admin/tabs/settings.php:187
+msgid ""
+"Set the default status an appointment will have when NOT using a payment "
+"method. You won't have to approve the appointments manually, they will get "
+"approved automatically."
+msgstr ""
+
+#: ../admin/tabs/settings.php:188
+msgid ""
+"et the default status an appointment will have when NOT using a payment "
+"method."
+msgstr ""
+
+#: ../admin/tabs/settings.php:196
+msgid "Custom Message for Free Bookings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:205
+msgid "Redirect Cancellation link? "
+msgstr ""
+
+#: ../admin/tabs/settings.php:207
+msgid ""
+"If checked, the clients will be able to cancel the appointment by using the "
+"cancellation link displayed in the appointment details email and they will "
+"be redirected to your custom page specified above. "
+msgstr ""
+
+#: ../admin/tabs/settings.php:208
+msgid ""
+"If checked, the clients will be able to cancel the appointment by using the "
+"cancellation link displayed in the appointment details email. "
+msgstr ""
+
+#: ../admin/tabs/settings.php:215
+msgid ""
+"Select the cancellation page. The appointment cancellation needs a page. "
+"Please create your cancellation page and set it here. IMPORTANT: Setting a "
+"page is very important, otherwise this feature will not work."
+msgstr ""
+
+#: ../admin/tabs/settings.php:216
+msgid ""
+"Select the cancellation page. The appointment cancellation needs a page. "
+"Please create your cancellation page and set it here."
+msgstr ""
+
+#: ../admin/tabs/settings.php:278
+msgid "Date Format:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:280 ../admin/tabs/settings.php:281
+msgid "Select the date format to be used"
+msgstr ""
+
+#: ../admin/tabs/settings.php:288
+msgid "Date Picker Format:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:290 ../admin/tabs/settings.php:291
+#: ../admin/tabs/settings.php:299 ../admin/tabs/settings.php:300
+msgid "Select the date format to be used on the Date Picker"
+msgstr ""
+
+#: ../admin/tabs/settings.php:297
+msgid "Admin Date Format:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:306
+msgid "Display Time Format:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:308 ../admin/tabs/settings.php:309
+msgid "Select the time format to be used"
+msgstr ""
+
+#: ../admin/tabs/settings.php:316
+msgid "Display only from hour?"
+msgstr ""
+
+#: ../admin/tabs/settings.php:321
+msgid ""
+"Use this option if you don't wish to display the the whole time range, "
+"example 08:30 – 09:00 "
+msgstr ""
+
+#: ../admin/tabs/settings.php:322
+msgid ""
+"Use this option if you don't wish to display the the whole time range, "
+"example 08:30 – 09:00  "
+msgstr ""
+
+#: ../admin/tabs/settings.php:329
+msgid "Is Phone Number Mandatory?"
+msgstr ""
+
+#: ../admin/tabs/settings.php:334
+msgid ""
+"Use this option if you don't wish to require a phone number at the step 3 "
+msgstr ""
+
+#: ../admin/tabs/settings.php:335
+msgid ""
+"Use this option if you don't wish to require a phone number at the step 3  "
+msgstr ""
+
+#: ../admin/tabs/settings.php:341
+msgid "Calendar Slot Length:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:343 ../admin/tabs/settings.php:344
+msgid "Select the slot length to be used on the Calendar"
+msgstr ""
+
+#: ../admin/tabs/settings.php:350
+msgid "Days to display on Step 2:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:352 ../admin/tabs/settings.php:353
+msgid "Set how many days will be displayed on the step 2"
+msgstr ""
+
+#: ../admin/tabs/settings.php:362
+msgid "Currency Symbol"
+msgstr ""
+
+#: ../admin/tabs/settings.php:363 ../admin/tabs/settings.php:364
+msgid "Input the currency symbol: Example: $"
+msgstr ""
+
+#: ../admin/tabs/settings.php:370
+msgid "Display service price on staff list?"
+msgstr ""
+
+#: ../admin/tabs/settings.php:375 ../admin/tabs/settings.php:376
+msgid ""
+"Use this option if you don't wish to display the service's price on the "
+"staff drop/down list "
+msgstr ""
+
+#: ../admin/tabs/settings.php:382
+msgid "Display unavailable slots on booking form?"
+msgstr ""
+
+#: ../admin/tabs/settings.php:387
+msgid ""
+"Use this option if you don't wish to display the unavailable slots in the "
+"front-end booking form."
+msgstr ""
+
+#: ../admin/tabs/settings.php:388
+msgid ""
+"Use this option if you don't wish to display the unavailable slots in the "
+"front-end booking form. "
+msgstr ""
+
+#: ../admin/tabs/settings.php:394
+msgid "Time slot length:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:396 ../admin/tabs/settings.php:397
+msgid ""
+"Select the time interval that will be used in frontend and backend, e.g. in "
+"calendar, second step of the booking process, while indicating the working "
+"hours, etc."
+msgstr ""
+
+#: ../admin/tabs/settings.php:404
+msgid "Use Booking Ultra Avatar"
+msgstr ""
+
+#: ../admin/tabs/settings.php:410 ../admin/tabs/settings.php:411
+msgid ""
+"If you select \"yes\", Booking Ultra will override the default WordPress "
+"Avatar"
+msgstr ""
+
+#: ../admin/tabs/settings.php:418
+msgid "Auto Rotation Fixer"
+msgstr ""
+
+#: ../admin/tabs/settings.php:424 ../admin/tabs/settings.php:425
+msgid ""
+"If you select 'yes', Booking Ultra will Automatically fix the rotation of "
+"JPEG images using PHP's EXIF extension, immediately after they are uploaded "
+"to the server. This is implemented for iPhone rotation issues"
+msgstr ""
+
+#: ../admin/tabs/settings.php:430
+msgid "Avatar Width:"
+msgstr ""
+
+#: ../admin/tabs/settings.php:431 ../admin/tabs/settings.php:432
+msgid "Width in pixels"
+msgstr ""
+
+#: ../admin/tabs/settings.php:438
+msgid "Avatar Height"
+msgstr ""
+
+#: ../admin/tabs/settings.php:439 ../admin/tabs/settings.php:440
+msgid "Height in pixels"
+msgstr ""
+
+#: ../admin/tabs/settings.php:470
+msgid "Google Calendar Settings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:477
+msgid ""
+"This module gives you the capability to sync the plugin with Google "
+"Calendar. Each Staff member can have a different Google Calendar linked to "
+"their accounts."
+msgstr ""
+
+#: ../admin/tabs/settings.php:487
+msgid "Client ID"
+msgstr ""
+
+#: ../admin/tabs/settings.php:488 ../admin/tabs/settings.php:489
+msgid ""
+"Fill out this field with your Client ID obtained from the Developers Console"
+msgstr ""
+
+#: ../admin/tabs/settings.php:495
+msgid "Client Secret"
+msgstr ""
+
+#: ../admin/tabs/settings.php:496 ../admin/tabs/settings.php:497
+#: ../admin/tabs/settings.php:789 ../admin/tabs/settings.php:790
+msgid ""
+"Fill out this field with your Client Secret obtained from the Developers "
+"Console."
+msgstr ""
+
+#: ../admin/tabs/settings.php:504
+msgid "What To Display in Google Calendar?"
+msgstr ""
+
+#: ../admin/tabs/settings.php:506
+msgid "Service Name"
+msgstr ""
+
+#: ../admin/tabs/settings.php:511 ../admin/tabs/settings.php:512
+msgid ""
+"Set what information should be placed in the title of Google Calendar event"
+msgstr ""
+
+#: ../admin/tabs/settings.php:519
+msgid "Debug Mode?"
+msgstr ""
+
+#: ../admin/tabs/settings.php:525 ../admin/tabs/settings.php:526
+msgid ""
+"This option will display the detail of the error message if the Google "
+"Calendar Insert Method fails."
+msgstr ""
+
+#: ../admin/tabs/settings.php:533
+msgid "Redirect URI"
+msgstr ""
+
+#: ../admin/tabs/settings.php:534
+msgid "Enter this URL as a redirect URI in the Developers Console"
+msgstr ""
+
+#: ../admin/tabs/settings.php:547 ../admin/tabs/settings.php:759
+#: ../admin/tabs/settings.php:807
+msgid ""
+"This function is disabled in the free version of Booking Ultra Pro. If you "
+"find the plugin useful for your business please consider buying a licence "
+"for the full version."
+msgstr ""
+
+#: ../admin/tabs/settings.php:587 ../admin/tabs/settings.php:621
+msgid "Aweber Settings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:589
+msgid "Here you can activate your preferred newsletter tool."
+msgstr ""
+
+#: ../admin/tabs/settings.php:597
+msgid "Activate Newsletter"
+msgstr ""
+
+#: ../admin/tabs/settings.php:600
+msgid "AWeber"
+msgstr ""
+
+#: ../admin/tabs/settings.php:601
+msgid "MailChimp"
+msgstr ""
+
+#: ../admin/tabs/settings.php:604 ../admin/tabs/settings.php:605
+msgid "Just set \"NO\" to deactivate the newsletter tool."
+msgstr ""
+
+#: ../admin/tabs/settings.php:623
+msgid ""
+"This module gives you the capability to subscribe your clients automatically "
+"to any of your Aweber List when they complete the purchase."
+msgstr ""
+
+#: ../admin/tabs/settings.php:633
+msgid "APP ID"
+msgstr ""
+
+#: ../admin/tabs/settings.php:634 ../admin/tabs/settings.php:635
+#: ../admin/tabs/settings.php:708 ../admin/tabs/settings.php:709
+msgid ""
+"Fill out this field with your MailChimp API key here to allow integration "
+"with MailChimp subscription."
+msgstr ""
+
+#: ../admin/tabs/settings.php:641
+msgid "Consumer Key"
+msgstr ""
+
+#: ../admin/tabs/settings.php:642 ../admin/tabs/settings.php:643
+#: ../admin/tabs/settings.php:650 ../admin/tabs/settings.php:651
+#: ../admin/tabs/settings.php:716 ../admin/tabs/settings.php:717
+msgid "Fill out this field your list ID."
+msgstr ""
+
+#: ../admin/tabs/settings.php:649
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../admin/tabs/settings.php:660
+msgid "Auto Checked Aweber"
+msgstr ""
+
+#: ../admin/tabs/settings.php:662 ../admin/tabs/settings.php:663
+#: ../admin/tabs/settings.php:727 ../admin/tabs/settings.php:728
+msgid ""
+"If checked, the user will not need to click on the mailchip checkbox. It "
+"will appear checked already."
+msgstr ""
+
+#: ../admin/tabs/settings.php:668
+msgid "Aweber Text"
+msgstr ""
+
+#: ../admin/tabs/settings.php:669 ../admin/tabs/settings.php:670
+#: ../admin/tabs/settings.php:734 ../admin/tabs/settings.php:735
+msgid ""
+"Please input the text that will appear when asking users to get periodical "
+"updates."
+msgstr ""
+
+#: ../admin/tabs/settings.php:676
+msgid "Aweber Header Text"
+msgstr ""
+
+#: ../admin/tabs/settings.php:677 ../admin/tabs/settings.php:678
+#: ../admin/tabs/settings.php:742 ../admin/tabs/settings.php:743
+msgid ""
+"Please input the text that will appear as header when mailchip is active."
+msgstr ""
+
+#: ../admin/tabs/settings.php:695
+msgid "MailChimp Settings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:707
+msgid "MailChimp API Key"
+msgstr ""
+
+#: ../admin/tabs/settings.php:715
+msgid "MailChimp List ID"
+msgstr ""
+
+#: ../admin/tabs/settings.php:725
+msgid "Auto Checked MailChimp"
+msgstr ""
+
+#: ../admin/tabs/settings.php:733
+msgid "MailChimp Text"
+msgstr ""
+
+#: ../admin/tabs/settings.php:741
+msgid "MailChimp Header Text"
+msgstr ""
+
+#: ../admin/tabs/settings.php:772
+msgid "Shopping Cart Settings"
+msgstr ""
+
+#: ../admin/tabs/settings.php:779
+msgid ""
+"This module gives you the capability to allow users to purchase multiple "
+"services at once."
+msgstr ""
+
+#: ../admin/tabs/settings.php:788
+msgid "Purchase Description"
+msgstr ""
+
+#: ../admin/tabs/users.php:109
+msgid "'s Picture"
+msgstr ""
+
+#: ../admin/tabs/users.php:133
+msgid "Add Breaks"
+msgstr ""
+
+#: ../admin/templates/edit_appointment.php:23
+msgid "Created on : "
+msgstr ""
+
+#: ../admin/templates/edit_appointment.php:23
+#: ../classes/bookingultra.appointment.php:1687
+msgid "Appointment Date: "
+msgstr "Termin Datum:"
+
+#: ../admin/templates/edit_appointment.php:23
+msgid "at "
+msgstr "am"
+
+#: ../admin/templates/edit_appointment.php:23
+msgid "Client: "
+msgstr "Kunde:"
+
+#: ../admin/templates/edit_appointment.php:32
+#: ../admin/templates/new_appointment.php:8
+#: ../classes/bookingultra.class.php:733
+msgid "Select Service"
+msgstr "Service auswählen"
+
+#: ../admin/templates/edit_appointment.php:39
+#: ../admin/templates/new_appointment.php:15
+#: ../classes/bookingultra.class.php:737
+msgid "On or After"
+msgstr "Am oder nach dem"
+
+#: ../admin/templates/edit_appointment.php:46
+#: ../admin/templates/new_appointment.php:22
+#: ../classes/bookingultra.class.php:745
+#: ../classes/bookingultra.service.php:3824
+#: ../classes/bookingultra.service.php:3880
+#: ../classes/bookingultra.service.php:3998
+msgid "With"
+msgstr "Mit"
+
+#: ../admin/templates/edit_appointment.php:61
+#: ../classes/bookingultra.appointment.php:1426
+#: ../classes/bookingultra.appointment.php:1428
+#: ../classes/bookingultra.appointment.php:1430
+#: ../classes/bookingultra.appointment.php:1432
+msgid "Change Status"
+msgstr "Status ändern"
+
+#: ../admin/templates/edit_appointment.php:66
+msgid "Reschedule Appointment"
+msgstr "Termin neu ausmachen"
+
+#: ../admin/templates/edit_appointment.php:72
+#: ../admin/templates/new_appointment.php:45
+msgid "Check Availability"
+msgstr "Verfügbarkeit prüfen"
+
+#: ../admin/templates/edit_appointment.php:84
+#: ../admin/templates/new_appointment.php:55
+msgid "Availability"
+msgstr "Verfügbarkeit"
+
+#: ../admin/templates/edit_appointment.php:88
+msgid ""
+"Please click on the Check Availability to display the available time slots."
+msgstr ""
+"Klicken Sie auf Verfügbarkeit prüfen, um die verfügbaren Zeitfenster "
+"anzuzeigen."
+
+#: ../admin/templates/edit_appointment.php:96
+#: ../admin/templates/edit_appointment.php:139
+#: ../admin/templates/new_appointment.php:68
+msgid "Send Notification To Client"
+msgstr ""
+
+#: ../admin/templates/edit_appointment.php:102
+msgid "Confirm Reschedule "
+msgstr "Neuen Termin bestätigen"
+
+#: ../admin/templates/edit_appointment.php:121
+msgid "Update Info"
+msgstr "Info aktualisieren"
+
+#: ../admin/templates/new_appointment.php:37
+msgid "Input Name or Email Address"
+msgstr "Name oder E-Mail Adresse eingeben"
+
+#: ../classes/bookingultra.admin.php:56
+msgid "Dashboard"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:57
+#: ../classes/bookingultra.service.php:3506
+#: ../classes/bookingultra.user.php:655
+msgid "Services"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:58 ../classes/bookingultra.class.php:781
+#: ../classes/bookingultra.user.php:1507
+msgid "Staff"
+msgstr "Mitarbeitern"
+
+#: ../classes/bookingultra.admin.php:61
+msgid "Fields"
+msgstr "Felder"
+
+#: ../classes/bookingultra.admin.php:62
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../classes/bookingultra.admin.php:63
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: ../classes/bookingultra.admin.php:65
+msgid "Gateways"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:66
+msgid "Help"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:67
+msgid "PREMIUM FEATURES!"
+msgstr "Premium-Funktionen"
+
+#: ../classes/bookingultra.admin.php:257
+msgid "Week"
+msgstr "Woche"
+
+#: ../classes/bookingultra.admin.php:258
+msgid "Day"
+msgstr "Tag"
+
+#: ../classes/bookingultra.admin.php:259
+msgid "Month"
+msgstr "Monat"
+
+#: ../classes/bookingultra.admin.php:260
+msgid "All Day"
+msgstr "Ganztägig"
+
+#: ../classes/bookingultra.admin.php:261
+msgid "No staff selected"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:262
+msgid "New appointment"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:263
+msgid "Edit appointment"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:264
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: ../classes/bookingultra.admin.php:267
+msgid "Cancelled Appointments"
+msgstr "Stornierte Termine"
+
+#: ../classes/bookingultra.admin.php:268
+msgid "No-show Appointments"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:269
+msgid "Unpaid Appointments"
+msgstr "Unbezahlte Termine"
+
+#: ../classes/bookingultra.admin.php:276
+msgid "Are you totally sure that you wan to delete this category?"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:277
+msgid "Edit Service"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:278
+msgid "Add Service"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:279
+msgid "Edit Category"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:281
+msgid "Please input a title"
+msgstr "Bitte geben Sie einen Titel an"
+
+#: ../classes/bookingultra.admin.php:282
+msgid "Please input a price"
+msgstr "Bitte einen Preis angeben"
+
+#: ../classes/bookingultra.admin.php:283
+msgid "Are you totally sure that you wan to delete this service?"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:284
+msgid "Are you totally sure that you wan to delete this user?"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:294 ../classes/bookingultra.class.php:922
+#: ../classes/bookingultra.class.php:986
+msgid "Done"
+msgstr "Erledigt"
+
+#: ../classes/bookingultra.admin.php:296 ../classes/bookingultra.class.php:923
+#: ../classes/bookingultra.class.php:988
+msgid "Prev"
+msgstr "Zurück"
+
+#: ../classes/bookingultra.admin.php:297 ../classes/bookingultra.class.php:924
+#: ../classes/bookingultra.class.php:989
+msgid "Next"
+msgstr "Weiter"
+
+#: ../classes/bookingultra.admin.php:300 ../classes/bookingultra.class.php:992
+msgid "Show a different month"
+msgstr "Zeige einen anderen Monat"
+
+#: ../classes/bookingultra.admin.php:389
+#, php-format
+msgid "%d  pending bookings"
+msgstr "%d ausstehenden Buchungen"
+
+#: ../classes/bookingultra.admin.php:392
+#, php-format
+msgid "Booking Ultra %s"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:396
+msgid "Booking Ultra"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:399
+msgid "Booking Ultra Pro"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:405
+msgid "More Functionality!"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:481
+msgid "Booking Ultra Plugin"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:496
+msgid "New Appointment Request has been received"
+msgstr "Neue Buchungsanfrage wurde empfangen"
+
+#: ../classes/bookingultra.admin.php:499
+msgid "You have a new appointment"
+msgstr "Sie haben einen neuen Termin"
+
+#: ../classes/bookingultra.admin.php:501
+msgid "Thank you for your appointment"
+msgstr "Vielen Dank für deine Buchung"
+
+#: ../classes/bookingultra.admin.php:505 ../classes/bookingultra.admin.php:506
+#: ../classes/bookingultra.admin.php:507
+msgid "Appointment Reschedule"
+msgstr "Buchung verschieben"
+
+#: ../classes/bookingultra.admin.php:510
+msgid "Appointment Details"
+msgstr "Buchungs-Details"
+
+#: ../classes/bookingultra.admin.php:513
+msgid "New Appointment"
+msgstr "Neue Buchung"
+
+#: ../classes/bookingultra.admin.php:516 ../classes/bookingultra.admin.php:518
+#: ../classes/bookingultra.admin.php:520
+msgid "Appointment Status Changed"
+msgstr "Buchungs-Status wurde geändert"
+
+#: ../classes/bookingultra.admin.php:523
+msgid "Password Changed"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:538 ../classes/bookingultra.admin.php:675
+#: ../classes/bookingultra.admin.php:695
+msgid "Hello Admin "
+msgstr "Hallo Admin"
+
+#: ../classes/bookingultra.admin.php:539
+msgid ""
+"A new booking has been received. Below are the details of the appointment."
+msgstr "Eine neue Buchungsanfrage ist eingegangen. Hier sind die Details."
+
+#: ../classes/bookingultra.admin.php:541 ../classes/bookingultra.admin.php:559
+#: ../classes/bookingultra.admin.php:578 ../classes/bookingultra.admin.php:599
+#: ../classes/bookingultra.admin.php:617 ../classes/bookingultra.admin.php:635
+#: ../classes/bookingultra.admin.php:659 ../classes/bookingultra.admin.php:679
+#: ../classes/bookingultra.admin.php:700 ../classes/bookingultra.admin.php:720
+#: ../classes/bookingultra.admin.php:739
+msgid "Appointment Details:"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:542 ../classes/bookingultra.admin.php:560
+#: ../classes/bookingultra.admin.php:579 ../classes/bookingultra.admin.php:600
+#: ../classes/bookingultra.admin.php:618 ../classes/bookingultra.admin.php:636
+#: ../classes/bookingultra.admin.php:660 ../classes/bookingultra.admin.php:680
+#: ../classes/bookingultra.admin.php:701 ../classes/bookingultra.admin.php:721
+#: ../classes/bookingultra.admin.php:740
+msgid "Service: {{bup_booking_service}}"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:543 ../classes/bookingultra.admin.php:561
+#: ../classes/bookingultra.admin.php:661 ../classes/bookingultra.admin.php:681
+msgid "Client: {{bup_client_name}}"
+msgstr "Kunde: {{bup_client_name}}"
+
+#: ../classes/bookingultra.admin.php:544 ../classes/bookingultra.admin.php:562
+#: ../classes/bookingultra.admin.php:580 ../classes/bookingultra.admin.php:601
+#: ../classes/bookingultra.admin.php:619 ../classes/bookingultra.admin.php:637
+#: ../classes/bookingultra.admin.php:662 ../classes/bookingultra.admin.php:682
+#: ../classes/bookingultra.admin.php:702 ../classes/bookingultra.admin.php:722
+#: ../classes/bookingultra.admin.php:741
+msgid "Date: {{bup_booking_date}}"
+msgstr "Datum: {{Bup_booking_date}}"
+
+#: ../classes/bookingultra.admin.php:545 ../classes/bookingultra.admin.php:563
+#: ../classes/bookingultra.admin.php:581 ../classes/bookingultra.admin.php:602
+#: ../classes/bookingultra.admin.php:620 ../classes/bookingultra.admin.php:638
+#: ../classes/bookingultra.admin.php:663 ../classes/bookingultra.admin.php:683
+#: ../classes/bookingultra.admin.php:703 ../classes/bookingultra.admin.php:723
+#: ../classes/bookingultra.admin.php:742
+msgid "Time: {{bup_booking_time}}"
+msgstr "Zeit: {{bup_booking_time}}"
+
+#: ../classes/bookingultra.admin.php:546 ../classes/bookingultra.admin.php:564
+#: ../classes/bookingultra.admin.php:582 ../classes/bookingultra.admin.php:603
+#: ../classes/bookingultra.admin.php:621 ../classes/bookingultra.admin.php:639
+#: ../classes/bookingultra.admin.php:664 ../classes/bookingultra.admin.php:684
+#: ../classes/bookingultra.admin.php:704 ../classes/bookingultra.admin.php:724
+#: ../classes/bookingultra.admin.php:743
+msgid "With: {{bup_booking_staff}}"
+msgstr "Mit: {{bup_booking_staff}}"
+
+#: ../classes/bookingultra.admin.php:547 ../classes/bookingultra.admin.php:565
+#: ../classes/bookingultra.admin.php:583 ../classes/bookingultra.admin.php:604
+#: ../classes/bookingultra.admin.php:622 ../classes/bookingultra.admin.php:640
+#: ../classes/bookingultra.admin.php:665 ../classes/bookingultra.admin.php:685
+msgid "Cost: {{bup_booking_cost}}"
+msgstr "Kosten: {{bup_booking_cost}}"
+
+#: ../classes/bookingultra.admin.php:549 ../classes/bookingultra.admin.php:567
+#: ../classes/bookingultra.admin.php:585 ../classes/bookingultra.admin.php:606
+#: ../classes/bookingultra.admin.php:624 ../classes/bookingultra.admin.php:642
+#: ../classes/bookingultra.admin.php:667 ../classes/bookingultra.admin.php:687
+#: ../classes/bookingultra.admin.php:706 ../classes/bookingultra.admin.php:726
+#: ../classes/bookingultra.admin.php:745 ../classes/bookingultra.admin.php:756
+msgid "Best Regards!"
+msgstr "Beste Grüße!"
+
+#: ../classes/bookingultra.admin.php:557
+msgid "You have a new appointment. "
+msgstr "Sie haben einen neuen Termin."
+
+#: ../classes/bookingultra.admin.php:576
+msgid ""
+"Thank you for booking {{bup_booking_service}}. Below are the details of your "
+"appointment."
+msgstr ""
+"Vielen Dank für die Buchung {{bup_booking_service}}. Hier sind die Details."
+
+#: ../classes/bookingultra.admin.php:590
+msgid ""
+"Please, use the following link in case you'd like to cancel your appointment."
+msgstr ""
+"Bitte verwenden Sie den folgenden Link, falls Sie Buchung absagen müssen."
+
+#: ../classes/bookingultra.admin.php:597
+msgid "Your appointment has been rescheduled . "
+msgstr "Ihr Termin wurde verschoben."
+
+#: ../classes/bookingultra.admin.php:615
+msgid "One of your appointments has been rescheduled . "
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:633
+msgid "This is a confirmation that an appointment has been rescheduled . "
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:653
+msgid "Please deposit the payment in the following bank account: "
+msgstr "Bitte hinterlegen Sie die Bankverbindung des folgenden Bankkontos:"
+
+#: ../classes/bookingultra.admin.php:676
+msgid "A new appointment with local payment has been submited. "
+msgstr "Ein neuer Termin mit lokaler Zahlung wurde bestätigt."
+
+#: ../classes/bookingultra.admin.php:696 ../classes/bookingultra.admin.php:715
+msgid "The status of the following appointment has changed. "
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:698 ../classes/bookingultra.admin.php:717
+#: ../classes/bookingultra.admin.php:737
+msgid "New Status: {{bup_booking_status}}"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:735
+msgid "The status of your appointment has changed. "
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:754
+msgid "This is a notification that your password has been changed. "
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1083
+msgid "Position"
+msgstr "Position"
+
+#: ../classes/bookingultra.admin.php:1088
+msgid ""
+"Please use a unique position. Position lets you place the new field in the "
+"place you want exactly in Profile view."
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1092
+msgid "Field Type"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1108
+msgid "Field Input"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1125
+msgid "Custom Meta Field"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1137
+msgid "Label / Name"
+msgstr "Bezeichnung / Name"
+
+#: ../classes/bookingultra.admin.php:1194
+msgid "Allow HTML"
+msgstr "HTML zulassen"
+
+#: ../classes/bookingultra.admin.php:1204
+msgid "If yes, users will be able to write HTML code in this field."
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1214
+msgid "This field is Required"
+msgstr "Dieses Feld ist erforderlich."
+
+#: ../classes/bookingultra.admin.php:1251
+msgid "Show on Registration Form"
+msgstr "Beim Anmeldeformular anzeigen"
+
+#: ../classes/bookingultra.admin.php:1261
+msgid "Show this profile field on the registration form"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1279
+msgid "Available Choices"
+msgstr "Auswahl"
+
+#: ../classes/bookingultra.admin.php:1286
+msgid ""
+"<strong>PLEASE NOTE: </strong>Enter values separated by commas, example: "
+"1,2,3. The choices will be available for front end user to choose from."
+msgstr ""
+"<strong>Bitte beachten Sie:</strong> Geben Sie die Werte durch Kommas "
+"getrennt an, Beispiel: 1,2,3. Die Auswahlmöglichkeiten werden dem Benutzer "
+"zur Auswahl angezeigt."
+
+#: ../classes/bookingultra.admin.php:1289
+msgid ""
+"<strong>PLEASE NOTE:</strong> Enter one choice per line please. The choices "
+"will be available for front end user to choose from."
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1300
+msgid ""
+"Enter one choice per line please. The choices will be available for front "
+"end user to choose from."
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1308
+msgid "Enable Predefined Choices"
+msgstr "Aktivieren Sie eine vordefinierte Auswahl"
+
+#: ../classes/bookingultra.admin.php:1315
+msgid "List of Countries"
+msgstr "Länder anzeigen"
+
+#: ../classes/bookingultra.admin.php:1319
+msgid "Age"
+msgstr "Alter"
+
+#: ../classes/bookingultra.admin.php:1322
+msgid ""
+"You can enable a predefined filter for choices. e.g. List of countries It "
+"enables country selection in profiles and saves you time to do it on your "
+"own."
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1327
+msgid "Field Icon:"
+msgstr "Feld Icon"
+
+#: ../classes/bookingultra.admin.php:1339
+msgid "Change Icon"
+msgstr "Icon ändern"
+
+#: ../classes/bookingultra.admin.php:1378
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: ../classes/bookingultra.admin.php:1397 ../classes/bookingultra.class.php:613
+msgid "Appointment Info"
+msgstr "Termin-Info"
+
+#: ../classes/bookingultra.admin.php:1410 ../classes/bookingultra.class.php:626
+msgid "Comments"
+msgstr "Kommentare"
+
+#: ../classes/bookingultra.admin.php:1514
+msgid " - Separator"
+msgstr "- Separator"
+
+#: ../classes/bookingultra.admin.php:1518
+msgid " - Profile Field"
+msgstr "- Profil Feld"
+
+#: ../classes/bookingultra.admin.php:1540
+msgid "Success! This field has been deleted "
+msgstr "Erfolg! Dieses Feld wurde gelöscht"
+
+#: ../classes/bookingultra.admin.php:1638
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+#: ../classes/bookingultra.admin.php:1769
+#: ../classes/bookingultra.admin.php:1804
+msgid "Congratulations!. Your copy has been validated"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1776
+#: ../classes/bookingultra.admin.php:1811
+msgid "We are sorry the serial key you have used has expired"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1783
+#: ../classes/bookingultra.admin.php:1818
+msgid "We are sorry your serial key is not valid"
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1891
+msgid "Email Template has been restored."
+msgstr ""
+
+#: ../classes/bookingultra.admin.php:1899
+msgid "Rewrite Rules were Saved."
+msgstr ""
+
+#: ../classes/bookingultra.appointment.php:350
+#: ../classes/bookingultra.appointment.php:354
+#: ../classes/bookingultra.appointment.php:378
+#: ../classes/bookingultra.class.php:1212
+#: ../classes/bookingultra.class.php:1216
+#: ../classes/bookingultra.class.php:1226
+#: ../classes/bookingultra.class.php:1236
+#: ../classes/bookingultra.class.php:1277
+#: ../classes/bookingultra.class.php:1443
+#: ../classes/bookingultra.class.php:1447
+#: ../classes/bookingultra.class.php:1470
+msgid " * This input is required!"
+msgstr ""
+
+#: ../classes/bookingultra.appointment.php:668
+msgid "Amount:"
+msgstr "Menge:"
+
+#: ../classes/bookingultra.appointment.php:670
+msgid "Transaction ID:"
+msgstr "Transaktionsnummer"
+
+#: ../classes/bookingultra.appointment.php:672
+msgid "Date:"
+msgstr "Datum:"
+
+#: ../classes/bookingultra.appointment.php:679
+msgid "Status:"
+msgstr "Status:"
+
+#: ../classes/bookingultra.appointment.php:682
+msgid "Confirmed"
+msgstr "Bestätigt"
+
+#: ../classes/bookingultra.appointment.php:756
+msgid "Done!. The appointment has been rescheduled. Below are the new details."
+msgstr ""
+"Erledigt!. Der Termin wurde verschoben. Im folgenden finden Sie die neuen "
+"Informationen."
+
+#: ../classes/bookingultra.appointment.php:757
+#: ../classes/bookingultra.appointment.php:807
+#: ../classes/bookingultra.appointment.php:999
+msgid "Appointment Details."
+msgstr "Buchungs-Details"
+
+#: ../classes/bookingultra.appointment.php:759
+#: ../classes/bookingultra.appointment.php:809
+#: ../classes/bookingultra.appointment.php:1001
+msgid "Service: "
+msgstr "Service:"
+
+#: ../classes/bookingultra.appointment.php:760
+#: ../classes/bookingultra.appointment.php:810
+#: ../classes/bookingultra.appointment.php:1002
+msgid "Date: "
+msgstr "Datum:"
+
+#: ../classes/bookingultra.appointment.php:761
+#: ../classes/bookingultra.appointment.php:811
+#: ../classes/bookingultra.appointment.php:1003
+msgid "Time: "
+msgstr "Uhrzeit:"
+
+#: ../classes/bookingultra.appointment.php:762
+#: ../classes/bookingultra.appointment.php:812
+#: ../classes/bookingultra.appointment.php:1004
+msgid "With: "
+msgstr "Mit:"
+
+#: ../classes/bookingultra.appointment.php:763
+#: ../classes/bookingultra.appointment.php:813
+#: ../classes/bookingultra.appointment.php:1005
+#: ../classes/bookingultra.appointment.php:1686
+msgid "Cost: "
+msgstr "Kosten:"
+
+#: ../classes/bookingultra.appointment.php:850
+msgid "Service Cost"
+msgstr "Service Kosten"
+
+#: ../classes/bookingultra.appointment.php:851
+msgid "Paid"
+msgstr "Bezahlt"
+
+#: ../classes/bookingultra.appointment.php:998
+msgid "The appointment has been created."
+msgstr "Der Termin wurde erstellt."
+
+#: ../classes/bookingultra.appointment.php:1428
+#: ../classes/bookingultra.appointment.php:1487
+msgid "Approved"
+msgstr "Genehmigt"
+
+#: ../classes/bookingultra.appointment.php:1607
+msgid "Cancel Appointment"
+msgstr "Termin absagen"
+
+#: ../classes/bookingultra.appointment.php:1609
+msgid "No-Show Appointment"
+msgstr ""
+
+#: ../classes/bookingultra.appointment.php:1611
+msgid "Confirm Appointment"
+msgstr "Termin bestätigen"
+
+#: ../classes/bookingultra.appointment.php:1615
+#: ../classes/bookingultra.appointment.php:1685
+#: ../classes/bookingultra.appointment.php:1786
+msgid "with"
+msgstr "mit"
+
+#: ../classes/bookingultra.appointment.php:1626
+msgid "There are no appointments"
+msgstr "Es liegen keine Termine vor"
+
+#: ../classes/bookingultra.appointment.php:1681
+msgid "Confirm Payment"
+msgstr "Zahlungseingang bestätigen"
+
+#: ../classes/bookingultra.appointment.php:1698
+msgid "There are no unpaid orders"
+msgstr "Es gibt keine unbezahlte Aufträge"
+
+#: ../classes/bookingultra.appointment.php:1797
+msgid "There are no upcoming appointments"
+msgstr "Es gibt keine anstehenden Termine."
+
+#: ../classes/bookingultra.break.php:70
+msgid "Done!"
+msgstr "Erledigt!"
+
+#: ../classes/bookingultra.break.php:74
+msgid "ERROR. Duplicated Break!"
+msgstr "FEHLER. Doppelte Pause!"
+
+#: ../classes/bookingultra.break.php:99
+#: ../classes/bookingultra.service.php:3133
+#: ../classes/bookingultra.service.php:3137
+#: ../classes/bookingultra.service.php:3141
+#: ../classes/bookingultra.service.php:3145
+#: ../classes/bookingultra.service.php:3149
+#: ../classes/bookingultra.service.php:3153
+#: ../classes/bookingultra.service.php:3157
+#: ../classes/bookingultra.service.php:3180
+#: ../classes/bookingultra.service.php:3184
+#: ../classes/bookingultra.service.php:3188
+#: ../classes/bookingultra.service.php:3192
+#: ../classes/bookingultra.service.php:3196
+#: ../classes/bookingultra.service.php:3200
+#: ../classes/bookingultra.service.php:3204
+msgid "to"
+msgstr "zu"
+
+#: ../classes/bookingultra.break.php:101
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: ../classes/bookingultra.break.php:173 ../classes/bookingultra.class.php:956
+#: ../classes/bookingultra.service.php:3132
+#: ../classes/bookingultra.service.php:3179
+msgid "Monday"
+msgstr "Montag"
+
+#: ../classes/bookingultra.break.php:175 ../classes/bookingultra.break.php:191
+#: ../classes/bookingultra.break.php:206 ../classes/bookingultra.break.php:220
+#: ../classes/bookingultra.break.php:234 ../classes/bookingultra.break.php:249
+#: ../classes/bookingultra.break.php:263
+msgid "Add Break"
+msgstr "Pause hinzufügen"
+
+#: ../classes/bookingultra.break.php:189 ../classes/bookingultra.class.php:957
+#: ../classes/bookingultra.service.php:3136
+#: ../classes/bookingultra.service.php:3183
+msgid "Tuesday"
+msgstr "Dienstag"
+
+#: ../classes/bookingultra.break.php:204 ../classes/bookingultra.class.php:958
+#: ../classes/bookingultra.service.php:3140
+#: ../classes/bookingultra.service.php:3187
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+#: ../classes/bookingultra.break.php:218
+#: ../classes/bookingultra.service.php:3144
+#: ../classes/bookingultra.service.php:3191
+msgid "Thursday "
+msgstr "Donnerstag"
+
+#: ../classes/bookingultra.break.php:232 ../classes/bookingultra.class.php:960
+msgid "Friday"
+msgstr "Freitag"
+
+#: ../classes/bookingultra.break.php:247 ../classes/bookingultra.class.php:961
+msgid "Saturday"
+msgstr "Samstag"
+
+#: ../classes/bookingultra.break.php:261 ../classes/bookingultra.class.php:955
+msgid "Sunday"
+msgstr "Sonntag"
+
+#: ../classes/bookingultra.break.php:329
+msgid "Delete Break"
+msgstr "Pause löschen"
+
+#: ../classes/bookingultra.break.php:338
+msgid "There are no breaks for this day."
+msgstr "Für diesen Tag gibt es keine Pausen."
+
+#: ../classes/bookingultra.captchamodules.php:86
+msgid "Human Check"
+msgstr "Sind Sie ein Mensch?"
+
+#: ../classes/bookingultra.captchamodules.php:94
+msgid "Prove you're not a robot"
+msgstr "Beweise, dass du kein Roboter bist"
+
+#: ../classes/bookingultra.captchamodules.php:281
+msgid "Enter Verification Words"
+msgstr "Tragen Sie das Überprüfungsword ein"
+
+#: ../classes/bookingultra.captchamodules.php:285
+msgid "Load Image"
+msgstr "Bild laden"
+
+#: ../classes/bookingultra.captchamodules.php:286
+msgid "Load Audio"
+msgstr "Audio laden"
+
+#: ../classes/bookingultra.captchamodules.php:287
+msgid "Refresh Image"
+msgstr "Bild aktualisieren"
+
+#: ../classes/bookingultra.class.php:510
+msgid "Text"
+msgstr "Text"
+
+#: ../classes/bookingultra.class.php:512
+msgid "Textarea"
+msgstr "Textbereich"
+
+#: ../classes/bookingultra.class.php:513
+msgid "Select Dropdown"
+msgstr "Auswahl Dropdown"
+
+#: ../classes/bookingultra.class.php:514
+msgid "Radio"
+msgstr "Radiobutton"
+
+#: ../classes/bookingultra.class.php:515
+msgid "Checkbox"
+msgstr "Checkbox"
+
+#: ../classes/bookingultra.class.php:516
+msgid "Date Picker"
+msgstr "Datumsauswahl"
+
+#: ../classes/bookingultra.class.php:529 ../classes/bookingultra.class.php:561
+msgid "Your Name"
+msgstr "Ihr Name"
+
+#: ../classes/bookingultra.class.php:537 ../classes/bookingultra.class.php:569
+#: ../classes/bookingultra.user.php:808
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: ../classes/bookingultra.class.php:550
+msgid "Input your phone number"
+msgstr "Telefonnummer eintragen"
+
+#: ../classes/bookingultra.class.php:572
+msgid "Information about your booking will be sent to you."
+msgstr "Die Informationen zu Ihrer Buchung wird Ihnen zugesandt."
+
+#: ../classes/bookingultra.class.php:583
+msgid "Input your Phone Number"
+msgstr "Telefonnummer eintragen"
+
+#: ../classes/bookingultra.class.php:595
+msgid "Username or Email"
+msgstr "Benutzername oder Mail-Adresse"
+
+#: ../classes/bookingultra.class.php:603
+msgid "Password"
+msgstr "Passwort"
+
+#: ../classes/bookingultra.class.php:709 ../classes/bookingultra.class.php:777
+msgid "Time"
+msgstr "Uhrzeit"
+
+#: ../classes/bookingultra.class.php:713
+msgid "Details & Payment"
+msgstr "Details & Zahlung"
+
+#: ../classes/bookingultra.class.php:717
+msgid "Cart"
+msgstr ""
+
+#: ../classes/bookingultra.class.php:721
+msgid "Thank you"
+msgstr "Danke sehr!"
+
+#: ../classes/bookingultra.class.php:729
+msgid "Select Location"
+msgstr ""
+
+#: ../classes/bookingultra.class.php:741
+msgid "Check-out date"
+msgstr ""
+
+#: ../classes/bookingultra.class.php:749
+msgid ""
+"Please select service, date and provider then click on the Find Appointments "
+"button."
+msgstr ""
+"Bitte wählen Sie Dienst, Datum und Anbieter. Dann klicken Sie auf den Button."
+
+#: ../classes/bookingultra.class.php:753
+msgid ""
+"Below you can find a list of available time slots for <strong>[BUP_SERVICE]</"
+"strong> by <strong>[BUP_PROVIDER]</strong>."
+msgstr ""
+"Hier finden Sie eine Liste der verfügbaren Termine für "
+"<strong>[BUP_SERVICE]</strong> von <strong>[BUP_PROVIDER]</strong>."
+
+#: ../classes/bookingultra.class.php:757
+msgid ""
+"You're booking <strong>[BUP_SERVICE]</strong> by <strong>[BUP_PROVIDER]</"
+"strong> at <strong>[BUP_AT]</strong> on <strong>[BUP_DAY]</strong>"
+msgstr ""
+"Sie buchen <strong>[BUP_SERVICE]</strong> von <strong>[BUP_PROVIDER]</"
+"strong> am <strong>[BUP_AT]</strong> am <strong>[BUP_DAY]</strong>."
+
+#: ../classes/bookingultra.class.php:761
+msgid "Please fill out the following form to confirm your purchase "
+msgstr ""
+
+#: ../classes/bookingultra.class.php:785
+msgid "Qty"
+msgstr ""
+
+#: ../classes/bookingultra.class.php:789
+#: ../classes/bookingultra.service.php:2945
+#: ../classes/bookingultra.service.php:3524
+#: ../classes/bookingultra.service.php:3621
+msgid "Price"
+msgstr "Preis"
+
+#: ../classes/bookingultra.class.php:793
+msgid "Action"
+msgstr ""
+
+#: ../classes/bookingultra.class.php:909
+msgid "Search Again"
+msgstr "Erneut suchen"
+
+#: ../classes/bookingultra.class.php:910
+msgid "<< Back"
+msgstr "<< Zurück"
+
+#: ../classes/bookingultra.class.php:911
+msgid "Book More"
+msgstr ""
+
+#: ../classes/bookingultra.class.php:927
+msgid "January"
+msgstr "Januar"
+
+#: ../classes/bookingultra.class.php:928
+msgid "February"
+msgstr "Februar"
+
+#: ../classes/bookingultra.class.php:929
+msgid "March"
+msgstr "März"
+
+#: ../classes/bookingultra.class.php:930
+msgid "April"
+msgstr "April"
+
+#: ../classes/bookingultra.class.php:931 ../classes/bookingultra.class.php:945
+msgid "May"
+msgstr "Mai"
+
+#: ../classes/bookingultra.class.php:932
+msgid "June"
+msgstr "Juni"
+
+#: ../classes/bookingultra.class.php:933
+msgid "July"
+msgstr "Juli"
+
+#: ../classes/bookingultra.class.php:934
+msgid "August"
+msgstr "August"
+
+#: ../classes/bookingultra.class.php:935
+msgid "September"
+msgstr "September"
+
+#: ../classes/bookingultra.class.php:936
+msgid "October"
+msgstr "Oktober"
+
+#: ../classes/bookingultra.class.php:937
+msgid "November"
+msgstr "November"
+
+#: ../classes/bookingultra.class.php:938
+msgid "December"
+msgstr "Dezember"
+
+#: ../classes/bookingultra.class.php:941
+msgid "Jan"
+msgstr "Jan"
+
+#: ../classes/bookingultra.class.php:942
+msgid "Feb"
+msgstr "Feb"
+
+#: ../classes/bookingultra.class.php:943
+msgid "Mar"
+msgstr "Mär"
+
+#: ../classes/bookingultra.class.php:944
+msgid "Apr"
+msgstr "Apr"
+
+#: ../classes/bookingultra.class.php:946
+msgid "Jun"
+msgstr "Jun"
+
+#: ../classes/bookingultra.class.php:947
+msgid "Jul"
+msgstr "Jul"
+
+#: ../classes/bookingultra.class.php:948
+msgid "Aug"
+msgstr "Aug"
+
+#: ../classes/bookingultra.class.php:949
+msgid "Sep"
+msgstr "Sep"
+
+#: ../classes/bookingultra.class.php:950
+msgid "Oct"
+msgstr "Okt"
+
+#: ../classes/bookingultra.class.php:951
+msgid "Nov"
+msgstr "Nov"
+
+#: ../classes/bookingultra.class.php:952
+msgid "Dec"
+msgstr "Dez"
+
+#: ../classes/bookingultra.class.php:959
+msgid "Thursday"
+msgstr "Donnerstag"
+
+#: ../classes/bookingultra.class.php:964
+msgid "Sun"
+msgstr "So"
+
+#: ../classes/bookingultra.class.php:965
+msgid "Mon"
+msgstr "Mo"
+
+#: ../classes/bookingultra.class.php:966
+msgid "Tue"
+msgstr "Di"
+
+#: ../classes/bookingultra.class.php:967
+msgid "Wed"
+msgstr "Mi"
+
+#: ../classes/bookingultra.class.php:968
+msgid "Thu"
+msgstr "Do"
+
+#: ../classes/bookingultra.class.php:969
+msgid "Fri"
+msgstr "Fr"
+
+#: ../classes/bookingultra.class.php:970
+msgid "Sat"
+msgstr "Sa"
+
+#: ../classes/bookingultra.class.php:973
+msgid "Su"
+msgstr "So"
+
+#: ../classes/bookingultra.class.php:974
+msgid "Mo"
+msgstr "Mo"
+
+#: ../classes/bookingultra.class.php:975
+msgid "Tu"
+msgstr "Di"
+
+#: ../classes/bookingultra.class.php:976
+msgid "We"
+msgstr "Mi"
+
+#: ../classes/bookingultra.class.php:977
+msgid "Th"
+msgstr "Do"
+
+#: ../classes/bookingultra.class.php:978
+msgid "Fr"
+msgstr "Fr"
+
+#: ../classes/bookingultra.class.php:979
+msgid "Sa"
+msgstr "Sa"
+
+#: ../classes/bookingultra.class.php:1040
+msgid "Sign Up"
+msgstr "Registrieren"
+
+#: ../classes/bookingultra.class.php:1118
+msgid "Fields with (*) are required"
+msgstr "Felder mit (*) sind Pflichtfelder!"
+
+#: ../classes/bookingultra.class.php:1119
+msgid "Account Info"
+msgstr "Konto Informationen"
+
+#: ../classes/bookingultra.class.php:1271
+#: ../classes/bookingultra.class.php:1277
+msgid "Re-type your email"
+msgstr "Geben Sie Ihre Email Adresse erneut ein"
+
+#: ../classes/bookingultra.class.php:1568
+msgid ""
+"If you would like to change the password type a new one. Otherwise leave "
+"this blank."
+msgstr ""
+"Wenn Sie Ihr Passwort ändern wollen, geben Sie bitte hier ein neues ein, "
+"anderenfalls bitte leer lassen."
+
+#: ../classes/bookingultra.class.php:1572
+msgid "Type your new password again."
+msgstr "Geben Sie erneut Ihr neues Passwort ein."
+
+#: ../classes/bookingultra.class.php:1610
+msgid "Payment Details"
+msgstr "Zahlungsinformationen"
+
+#: ../classes/bookingultra.class.php:1629
+msgid "Persons:"
+msgstr "Personen"
+
+#: ../classes/bookingultra.class.php:1662
+msgid "Available:"
+msgstr "Verfügbar:"
+
+#: ../classes/bookingultra.class.php:1667
+msgid "Total:"
+msgstr "Gesamt:"
+
+#: ../classes/bookingultra.class.php:1679
+msgid "Select Payment Method"
+msgstr "Zahlungsart wählen"
+
+#: ../classes/bookingultra.class.php:1691
+msgid "I will pay locally"
+msgstr "Ich werde vor Ort zahlen"
+
+#: ../classes/bookingultra.class.php:1713
+msgid "Pay with PayPal"
+msgstr "Mit PayPal bezahlen"
+
+#: ../classes/bookingultra.class.php:1729
+#: ../classes/bookingultra.class.php:1778
+msgid "Pay with Credit Card"
+msgstr "Mit Kreditkarte zahlen"
+
+#: ../classes/bookingultra.class.php:1747
+#: ../classes/bookingultra.class.php:1796
+msgid "Credit Card Number"
+msgstr "Kreditkartennummer"
+
+#: ../classes/bookingultra.class.php:1753
+#: ../classes/bookingultra.class.php:1802
+msgid "Expiration Date"
+msgstr "Gültig bis"
+
+#: ../classes/bookingultra.class.php:1764
+#: ../classes/bookingultra.class.php:1813
+msgid "Card Security Code"
+msgstr "Kartenprüfnummer"
+
+#: ../classes/bookingultra.class.php:1835
+#: ../classes/bookingultra.class.php:1881
+msgid "Receive Daily Updates "
+msgstr "Tägliche Aktualisierungen erhalten"
+
+#: ../classes/bookingultra.class.php:1886
+msgid "Yes, I want to receive daily updates. "
+msgstr "Ja, ich möchte täglich Aktualisierungen erhalten."
+
+#: ../classes/bookingultra.class.php:1931 ../classes/bookingultra.user.php:814
+msgid "Submit"
+msgstr "Senden"
+
+#: ../classes/bookingultra.class.php:2013
+msgid "Upload Avatar"
+msgstr "Profilbild hochladen"
+
+#: ../classes/bookingultra.class.php:2014
+msgid "Avatar"
+msgstr ""
+
+#: ../classes/bookingultra.class.php:2096
+msgid "Connect with "
+msgstr "Anmelden mit"
+
+#: ../classes/bookingultra.order.php:714
+msgid "You have no orders."
+msgstr "Sie haben keine Bestellungen."
+
+#: ../classes/bookingultra.order.php:733
+msgid "Order #"
+msgstr "Bestellung #"
+
+#: ../classes/bookingultra.order.php:736
+msgid "Package"
+msgstr "Paket"
+
+#: ../classes/bookingultra.paypal.php:466
+msgid " - Purchase Details:"
+msgstr ""
+
+#: ../classes/bookingultra.register.php:85
+msgid "<strong>ERROR:</strong> Please enter a username."
+msgstr "<strong>FEHLER</strong>: Bitte Benutzernamen eintragen."
+
+#: ../classes/bookingultra.register.php:98
+msgid "<strong>ERROR:</strong> Please type your e-mail address."
+msgstr "<strong>FEHLER:</strong> Bitte Email-Adresse eintragen"
+
+#: ../classes/bookingultra.register.php:102
+msgid "<strong>ERROR:</strong> The email address isn't correct."
+msgstr "<strong>Fehler:</strong> Die Email-Adresse ist nicht korrekt."
+
+#: ../classes/bookingultra.register.php:127
+msgid "<strong>ERROR:</strong> Please complete Captcha Test first."
+msgstr ""
+"<strong>ERROR:</strong> Bitte komplettieren Sie vorerst den Captcha Test."
+
+#: ../classes/bookingultra.register.php:1258
+msgid "Registration successful. Please check your email."
+msgstr "Registrierung erfolgreich. Bitte überprüfen Sie Ihre Email."
+
+#: ../classes/bookingultra.service.php:499
+msgid "You have: "
+msgstr ""
+
+#: ../classes/bookingultra.service.php:499
+msgid " items in your cart "
+msgstr ""
+
+#: ../classes/bookingultra.service.php:576
+msgid "Clear Cart"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:577
+msgid "Checkout"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:585
+#: ../classes/bookingultra.service.php:595
+#: ../classes/bookingultra.service.php:732
+#: ../classes/bookingultra.service.php:742
+msgid "Your cart is empty, please select at least one service."
+msgstr ""
+
+#: ../classes/bookingultra.service.php:942
+msgid "Thank you for your booking. Please check your email."
+msgstr "Vielen Dank für Ihre Buchung. Bitte überprüfen Sie Ihre Emails."
+
+#: ../classes/bookingultra.service.php:1022
+#: ../classes/bookingultra.service.php:1312
+msgid "Below you can find a list of available time slots for "
+msgstr "Unten finden Sie eine Liste der verfügbaren Termine für"
+
+#: ../classes/bookingultra.service.php:1022
+#: ../classes/bookingultra.service.php:1312
+msgid "by "
+msgstr "von"
+
+#: ../classes/bookingultra.service.php:1137
+#: ../classes/bookingultra.service.php:1430
+#: ../classes/bookingultra.service.php:1777
+#: ../classes/bookingultra.service.php:2191
+msgid "Unavailable"
+msgstr "Nicht verfügbar"
+
+#: ../classes/bookingultra.service.php:1142
+#: ../classes/bookingultra.service.php:1436
+msgid "Select Time Slot"
+msgstr "Bitte wählen Sie ein Zeitfenster …"
+
+#: ../classes/bookingultra.service.php:1176
+#: ../classes/bookingultra.service.php:1487
+#: ../classes/bookingultra.service.php:1882
+#: ../classes/bookingultra.service.php:2288
+msgid "This Provider doesn't offer this service."
+msgstr "Dieser Anbieter kann diesen Service nicht anbieten."
+
+#: ../classes/bookingultra.service.php:1217
+#: ../classes/bookingultra.service.php:3320
+#: ../classes/bookingultra.service.php:3401
+msgid "OFF"
+msgstr "AUS"
+
+#: ../classes/bookingultra.service.php:1613
+msgid "Please select a provider."
+msgstr "Bitte wählen Sie einen Anbieter aus."
+
+#: ../classes/bookingultra.service.php:1785
+#: ../classes/bookingultra.service.php:2200 ../templates/slots.php:44
+msgid "Book Appointment"
+msgstr "Termin buchen"
+
+#: ../classes/bookingultra.service.php:1862
+msgid "There are no available time slots on this day."
+msgstr ""
+
+#: ../classes/bookingultra.service.php:2514
+msgid " time slot"
+msgstr "Zeitfenster"
+
+#: ../classes/bookingultra.service.php:2908
+msgid ""
+"Here you can update the information of this service. Once you have modified "
+"the information click on the save button."
+msgstr ""
+"Hier können Sie die Informationen dieses Dienstes aktualisieren. Sobald Sie "
+"die Informationen geändert haben, klicken Sie auf den Speicher-Button."
+
+#: ../classes/bookingultra.service.php:2912
+msgid ""
+"Here you can create a new service. Once you have filled in the form click on "
+"the save button."
+msgstr ""
+"Hie können Sie einen neuen Dienst erstellen. Sobald Sie die Felder "
+"ausgefüllt haben, klicken Sie auf den Speicher-Button."
+
+#: ../classes/bookingultra.service.php:2926
+#: ../classes/bookingultra.service.php:3522
+msgid "Title"
+msgstr "Titel"
+
+#: ../classes/bookingultra.service.php:2928
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: ../classes/bookingultra.service.php:2930
+msgid "Font Color"
+msgstr "Schriftfarbe"
+
+#: ../classes/bookingultra.service.php:2933
+#: ../classes/bookingultra.service.php:3523
+msgid "Duration"
+msgstr "Dauer"
+
+#: ../classes/bookingultra.service.php:2940
+msgid "Padding time (before and after)"
+msgstr "Pufferzeit (bevor und danach)"
+
+#: ../classes/bookingultra.service.php:2950
+#: ../classes/bookingultra.service.php:3525
+#: ../classes/bookingultra.user.php:218
+msgid "Capacity"
+msgstr "Kapazität"
+
+#: ../classes/bookingultra.service.php:2952
+#: ../classes/bookingultra.service.php:3526
+msgid "Category"
+msgstr "Kategorie"
+
+#: ../classes/bookingultra.service.php:2977
+#: ../classes/bookingultra.service.php:3012
+msgid "Allow Group Bookings?"
+msgstr "Gruppen-Buchung erlauben?"
+
+#: ../classes/bookingultra.service.php:3000
+msgid "Calculation Way"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:3001
+msgid "Common Method (Quantity X Price)"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:3002
+msgid "Sum All Prices"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:3003
+msgid "Total Bassed on Quantity"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:3012
+msgid " Available on Premium Versions"
+msgstr "Auf Premium-Versionen verfügbar"
+
+#: ../classes/bookingultra.service.php:3088
+#: ../classes/bookingultra.service.php:3112
+msgid "Name:"
+msgstr "Name:"
+
+#: ../classes/bookingultra.service.php:3114
+msgid "Last Name:"
+msgstr "Nachname:"
+
+#: ../classes/bookingultra.service.php:3116
+msgid "Email:"
+msgstr "E-Mail:"
+
+#: ../classes/bookingultra.service.php:3148
+#: ../classes/bookingultra.service.php:3195
+msgid "Friday "
+msgstr "Freitag"
+
+#: ../classes/bookingultra.service.php:3152
+#: ../classes/bookingultra.service.php:3199
+msgid "Saturday  "
+msgstr "Samstag"
+
+#: ../classes/bookingultra.service.php:3156
+#: ../classes/bookingultra.service.php:3203
+msgid "Sunday "
+msgstr "Sonntag"
+
+#: ../classes/bookingultra.service.php:3455
+msgid "Categories"
+msgstr "Kategorien"
+
+#: ../classes/bookingultra.service.php:3457
+msgid "Add New Category"
+msgstr "Neue Kategorie hinzufügen"
+
+#: ../classes/bookingultra.service.php:3480
+msgid "reload all"
+msgstr "Alle neu laden"
+
+#: ../classes/bookingultra.service.php:3485
+msgid "There are no categories"
+msgstr "Es gibt keine Kategorien"
+
+#: ../classes/bookingultra.service.php:3508
+msgid "Add New Service"
+msgstr "Neuen Service hinzufügen"
+
+#: ../classes/bookingultra.service.php:3521
+msgid "ID"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:3562
+msgid "There are no services within this category"
+msgstr "Es gibt keine Services in dieser Kategorie"
+
+#: ../classes/bookingultra.service.php:3620
+msgid "Person/s"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:3637
+msgid " Person"
+msgstr ""
+
+#: ../classes/bookingultra.service.php:3826
+#: ../classes/bookingultra.service.php:3915
+#: ../classes/bookingultra.service.php:4032
+#: ../classes/bookingultra.user.php:1314
+msgid "Any"
+msgstr "Alle"
+
+#: ../classes/bookingultra.service.php:4080
+#: ../classes/bookingultra.service.php:4124
+msgid "Select a Service"
+msgstr "Service auswählen"
+
+#: ../classes/bookingultra.service.php:4181
+msgid "All Day "
+msgstr "Ganztägig"
+
+#: ../classes/bookingultra.user.php:91
+msgid ""
+"Here you can add new staff members. Please fill in with the full name and "
+"email then click on the Add button."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:101 ../classes/bookingultra.user.php:798
+msgid "Full Name"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:103
+msgid "Email"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:104
+msgid "Username"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:109
+msgid ""
+"If you need to add more than one staff member, please consider upgrading "
+"your plugin. The lite version allows you to have only one Staff Member. "
+msgstr ""
+
+#: ../classes/bookingultra.user.php:216
+msgid "Signed up"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:227
+msgid "Untitled"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:386 ../classes/bookingultra.user.php:471
+msgid ""
+"<strong>ERROR:</strong> This username is already registered. Please choose "
+"another one."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:390 ../classes/bookingultra.user.php:475
+msgid "<strong>ERROR:</strong> All fields are mandatory."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:467 ../classes/bookingultra.user.php:535
+msgid ""
+"<strong>ERROR:</strong> This email is already registered. Please choose "
+"another one."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:522
+msgid "<strong>ERROR:</strong> Please input an email address."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:527
+msgid "<strong>ERROR:</strong> Please input a Full Name."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:558
+msgid "<strong>Done!</strong>"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:637
+msgid "Details"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:645
+msgid "ID: "
+msgstr ""
+
+#: ../classes/bookingultra.user.php:668
+msgid "Schedule"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:680
+msgid "Special Schedule"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:694
+msgid ""
+"Please consider upgrading your plugin if you need to set special rules for "
+"your schedule. This feature allows you to set your availability on a "
+"particular day in advance."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:703
+msgid "Breaks"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:733
+msgid ""
+"Please consider upgrading your plugin if you need to manage multiple "
+"locations."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:745
+msgid "Days off"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:759
+msgid "Please consider upgrading your plugin if you need to add breaks."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:790
+msgid "Update Pic"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:799
+msgid "Your Full Name"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:803
+msgid "Phone"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:804
+msgid "Your Phone Number"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:809
+msgid "Your Email"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:840
+msgid ""
+"Please consider upgrading your plugin if you wish to use Google Calendar "
+"features."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1186
+msgid "All Staff Members"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1241
+msgid "Select User"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1432
+msgid "« Previous"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1433
+msgid "Next »"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1508
+msgid "Add New Staff Member"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1538
+msgid "There are no staff members."
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1661
+msgid "Drop "
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1667
+msgid "Select Image"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1672
+msgid "Remove"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1720
+msgid "Allowed Files"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1777
+msgid "You may only upload one image at a time!"
+msgstr ""
+
+#: ../classes/bookingultra.user.php:1792
+msgid "The file you selected exceeds the maximum filesize limit."
+msgstr ""
+"Die ausgewählte Datei überschreitet die maximale Dateigröße zu begrenzen."
+
+#: ../classes/bookingultra.user.php:2083
+msgid "Crop & Save"
+msgstr "Ausschneiden und Speichern"
+
+#: ../classes/bookingultra.user.php:2505
+msgid "No results found"
+msgstr "Keine Ergebnisse gefunden"
+
+#: ../templates/appointment.php:207 ../templates/appointment_hotels.php:140
+msgid "Please select provider"
+msgstr ""
+
+#: ../templates/appointment.php:233 ../templates/appointment_hotels.php:156
+msgid "Find Available Appointments"
+msgstr "Verfügbare Termine"
+
+#~ msgid "Price 2"
+#~ msgstr "Preis 2"
+
+#~ msgid "Profile Fields Customizer"
+#~ msgstr "Benutzerdefinierte Profil-Felder"
+
+#~ msgid "Profile fields have been restored"
+#~ msgstr "Profilfelder wurden aktualisiert."
+
+#~ msgid "Documentation Center"
+#~ msgstr "Dokumentation Center"
+
+#~ msgid "Doc"
+#~ msgstr "DOC"
+
+#~ msgid "Do you need more features or manage multiple locations?"
+#~ msgstr "Standorte/Lage verwalten"
+
+#~ msgid "Company Phone Nunber:"
+#~ msgstr "Telefonnummer der Firma"
+
+#~ msgid "Please select service"
+#~ msgstr "Alle"

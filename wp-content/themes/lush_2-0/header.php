@@ -19,37 +19,3 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <div class="header">
-            <div class="container-fluid">
-                <div class="header-content">
-                    <div class="row">
-                        <div class="col-xs-4">
-
-                            <div class="fat-nav">
-                                <?php
-                                wp_nav_menu_lush(array('container_class' => 'fat-nav__wrapper'));
-                                ?>
-                            </div>
-
-
-                        </div>
-                        <div class="col-xs-4 titulo header-item">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" ><img src="<?php uri() ?>/img/logo_lush_branco@2x.png"></a>
-                        </div>
-                        <div class="col-xs-4 header-item">
-                            <ul class="botoes-r">
-
-                                <li><a href="#" class="btn-lupa"><img src="<?php uri() ?>/img/lupa@2x.png" class="img-responsive"></a></li>
-                                <li><a class="btn-reservar">Reservar</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-

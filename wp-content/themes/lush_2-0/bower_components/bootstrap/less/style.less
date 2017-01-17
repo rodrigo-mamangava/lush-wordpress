@@ -2,7 +2,7 @@
 Theme Name: LUSH 2.0
 Author: Plau & Mamangava
 Description: Description
-Version: 2.0.0
+Version: 2.0.1
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -48,11 +48,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Reset
 --------------------------------------------------------------*/
 
-h1, h2, h3, h4, h5, p, a{
+h1, h2, h3, h4, h5, p, a, hr{
     margin: 0;
     padding: 0;
 }
-
 
 textarea:focus,
 input[type="text"]:focus,
@@ -69,7 +68,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus {
     border: 0;
     border-top: 0;
     border-left: 0;
@@ -89,8 +88,11 @@ input{
     display: inline-block;
 }
 
-
-
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
 
 
 /*--------------------------------------------------------------
@@ -98,44 +100,34 @@ input{
 --------------------------------------------------------------*/
 
 
-@FairfieldLTW01-45Light:'FairfieldLTW01-45Light'; 
+@FairfieldLTW01-45Light:'FairfieldLTW01-45Light';
 
-@FairfieldLTW01-46LightI:'FairfieldLTW01-46LightI'; 
+@FairfieldLTW01-46LightI:'FairfieldLTW01-46LightI';
 
-@FairfieldLTW01-55Medium:'FairfieldLTW01-55Medium 706181';
+@FairfieldRegular:'FairfieldLTW01-55Medium 706181';
 
-@FairfieldLTW01-56Medium:'FairfieldLTW01-56Medium';
+@FairfieldItalic:'FairfieldLTW01-56Medium';
 
-@FairfieldLTW01-75Bold:'FairfieldLTW01-75Bold'; 
+@FairfieldLTW01-75Bold:'FairfieldLTW01-75Bold';
 
-@FairfieldLTW01-76BoldIt:'FairfieldLTW01-76BoldIt'; 
+@FairfieldLTW01-76BoldIt:'FairfieldLTW01-76BoldIt';
 
-@FairfieldLTW01-85Heavy:'FairfieldLTW01-85Heavy'; 
+@FairfieldLTW01-85Heavy:'FairfieldLTW01-85Heavy';
 
-@FairfieldLTW01-86HeavyI:'FairfieldLTW01-86HeavyI'; 
+@FairfieldLTW01-86HeavyI:'FairfieldLTW01-86HeavyI';
 
-@FairfieldLTW01-45LightC:'FairfieldLTW01-45LightC 706178'; 
-
-@FairfieldLTW01-55Medium :'FairfieldLTW01-55Medium 706178'; 
-
-@FairfieldLTW01-75BoldCa:'FairfieldLTW01-75BoldCa'; 
-
-@FairfieldLTW01-85HeavyC:'FairfieldLTW01-85HeavyC'; 
-
-@GrotesqueDispMTW01-Bold:'GrotesqueDispMTW01-Bold 706605';
-
-@knockout: "Knockout 28 A", "Knockout 28 B";
-
+@FairfieldLTW01-45LightC:'FairfieldLTW01-45LightC 706178';
 @fairfield: 'FairfieldLTW01-45Light';
 
-@grotesque: 'GrotesqueDispMTW01-Bold 706605';
-
-@junior: "Knockout 34 A", "Knockout 34 B";
+@knockout29: "Knockout 29 A", "Knockout 29 B";
+@knockout34: "Knockout 34 A", "Knockout 34 B";
+@knockout26: "Knockout 26 A", "Knockout 26 B";
 
 body{
-    font-family: @FairfieldLTW01-55Medium;
+    font-family: @FairfieldRegular;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+    width:100%; height:100%; margin:0; padding:0;
 }
 
 /*--------------------------------------------------------------
@@ -145,47 +137,94 @@ body{
 @preto: black;
 @roxo: rgb(63,42,86);
 @roxo-claro: #D0C5DB;
+
+@roxo-fosco-v2: #6e5e8b;
+
+@roxo-v2-titulo: #3f2658;
+
 @lilas: #A44FC7;
 @rosa: rgb(176, 103, 206);
 @cinza-claro: rgb(242,242,242);
 @cinza-escuro: rgb(153,153,153);
+
+@cinza-v2-texto: #b8b8b8;
+
+@cinza-v2-fundo: #f2f2f2;
 
 @filtro-image-color:rgba(0,0,0,0.3);
 
 @font-cinza: #666666;
 @font-roxo: #3F2A56;
 
+@verde-agua: #00d0b0;
 
 
+
+/*--------------------------------------------------------------
+# Elementos
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Texto
+--------------------------------------------------------------*/
+.subtitulo-h2{
+    margin-top: 124px;
+    margin-bottom:  46px;
+    .text-center;
+    font-family: @knockout29;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: @cinza-v2-texto;
+}
+
+.texto-padrao-cinza{
+    font-family: @FairfieldItalic;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #969696;
+}
 /*--------------------------------------------------------------
 # Botoes
 --------------------------------------------------------------*/
 
+.btn{
+    .transition(all .5s);
+
+    &:hover{
+        .transition(all .5s);
+    }
+}
+
 .btn-padrao-lush(@cor: @roxo){
     .btn;
     .button-variant(@cor, transparent, @cor);
-    border-radius: 0;    
+    border-radius: 0;
     text-transform: uppercase;
-    //font-size: 14px;
-
     .sombra-padrao;
-    font-family: @junior;
+    font-family: @knockout29;
+
+    padding: 11px 48px;
 }
 
 .btn-lupa{
     .btn;
-    .button-variant(@branco, transparent, transparent);  
+    .button-variant(@branco, transparent, transparent);
     img{
         width: 21.8px;
         height: 21.8px;
     }
 }
+
 .btn-reservar{
     .btn-padrao-lush(@branco);
     box-shadow: 0 2px 0 #ffffff;
     width: 136px;
     font-size: 14px;
 }
+
 .btn-reservar-lilas{
     .btn-padrao-lush(@lilas);
     box-shadow: 0 2px 0 @lilas;
@@ -204,49 +243,1226 @@ body{
 
 .btn-lilas{
     .btn;
-    .button-variant(@branco, @lilas, @lilas); 
-    font-family: @junior;
+    .button-variant(@branco, @lilas, @lilas);
+    font-family: @knockout34;
     width: 100%;
     border-radius: 0;
     box-shadow: 0 2px 0 @lilas;
 }
 
+.sombra-padrao{
+    box-shadow: 0 2px 0 @font-roxo;
+}
+
+.btn-branco-v2{
+    .btn;
+    .button-variant(@verde-agua, @branco, @branco);
+    border-radius: 0;
+    text-transform: uppercase;
+    //font-size: 14px;
+
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #008672;
+    font-family: @knockout34;
+}
+
+.btn-participar-v2{
+    .btn;
+    .button-variant(@branco, @roxo-fosco-v2, @roxo-fosco-v2);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2.2px;
+
+    //.sombra-padrao;
+    box-shadow: 0 2px 0 0 #3f2658;
+    font-family: @knockout29;
+
+}
+
+.btn-roxo-v02{
+    .btn;
+    .button-variant(@branco, #6e5e8b, #6e5e8b) !important;
+    border-radius: 0;
+    text-transform: uppercase;
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #3f2658 !important;
+    font-family: @knockout29;
+    margin-top: 9px;
+    padding: 11px 48px !important;
+    font-size: 18px;
+    letter-spacing: 2.2px;
+
+
+}
+
+
+.btn-verde-v02{
+    .btn;
+    .button-variant(@branco, @verde-agua, @verde-agua) !important;
+    border-radius: 0;
+    text-transform: uppercase;
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #008672 !important;
+    font-family: @knockout29;
+    margin-top: 9px;
+    padding: 11px 48px;
+    font-size: 18px;
+    letter-spacing: 2.2px;
+
+
+}
+
+.btn-reserva-v2{
+    .btn-verde-v02;
+    margin-right: 10px;
+    padding: 11px 48px !important;
+}
+
+
+.btn-tipo-knockout34{
+    font-family: @knockout34;
+    margin-top: 9px;
+    padding: 11px 48px;
+}
+
+.btn-tipo-knockout29{
+    font-family: @knockout29;
+    margin-top: 9px;
+    padding: 11px 48px;
+}
+
+.btn-transparente{
+    .btn;
+    .button-variant(#b8b8b8, transparent, transparent) !important;
+    border-radius: 0;
+    text-transform: uppercase;
+
+    .btn-tipo-knockout34;
+
+
+    font-size: 18px;
+    letter-spacing: 1.8px;
+
+}
+
+.btn-servico-concierge{
+    .btn;
+    .button-variant(#6e5e8b, @branco, @branco);
+    border-radius: 0;
+    text-transform: uppercase;
+
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #3f2658 !important;
+
+    .btn-tipo-knockout29;
+}
+
+.btn-explore-cardapio{
+    .btn;
+    .button-variant(@branco, @roxo-fosco-v2, @roxo-fosco-v2);
+    border-radius: 0;
+    text-transform: uppercase;
+
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #3f2658 !important;
+
+    .btn-tipo-knockout34
+}
+
+/*--------------------------------------------------------------
+# forms
+--------------------------------------------------------------*/
+.form-lush{
+    .campo{
+        margin-bottom: 36px;
+
+        background: transparent;
+        border-bottom: solid 1px #b8b8b8;
+        width: 384px;
+
+        font-family: @FairfieldRegular;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: 0.2px;
+        color: #3f2658;
+
+        &:focus{
+            border-bottom: solid 1px #3f2658;
+
+            outline: none;
+            outline-color: none;
+            outline-style: none;
+            outline-width: 0;
+        }
+
+    }
+
+
+    .btn-participar-v2{
+        margin-bottom: 0px;
+        padding: 11px 42px;
+    }
+}
+
+/*--------------------------------------------------------------
+# listas
+--------------------------------------------------------------*/
+.list-language, .list-social{
+    .list-inline;
+    color: @branco;
+    font-family: @knockout29;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    .pull-right;
+
+    a{
+
+        color: #ffffff;
+
+        &:active, &.active, &:hover{
+            color: @cinza-escuro;
+            text-decoration: none;
+        }
+
+        i{
+
+        }
+    }
+
+}
+
+.list-language{
+    margin-right: 42px;
+}
+.list-social{
+    li{
+        padding-right: 32px;
+    }
+}
+
+/*--------------------------------------------------------------
+# MENU
+--------------------------------------------------------------*/
+
+.menu-header{
+
+    padding-top: 106px;
+
+    .logo{
+        img{
+            height: 20px;
+            width: auto;
+        }
+    }
+
+    .menu-itens{
+        .text-right;
+
+
+
+    }
+
+}
+
+
+
+
+.menu-principal{
+
+    .navbar{
+        left: 0;
+        right: 0;
+        top: 0;
+        border:0;
+        min-height: 64px;
+        margin-bottom: 0px;
+        z-index: 1000;
+
+        background-color: rgba(242,242,242,0.9);
+
+        .navbar-header{
+            .navbar-brand{
+
+                background-color: @roxo;
+                height: 64px;
+                width: 64px;
+
+                img.logo{
+                    width: 27px;
+                    height: auto;
+                    margin-left: 3px;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+        .navbar-nav > li > a {
+            padding-top: 21px;
+            padding-bottom: 21px;
+            font-family: @knockout29;
+            font-size: 18px;
+            letter-spacing: 1.4px;
+            color: #969696;
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #3f2658;
+    background-color: initial;
+}
 
 
 /*--------------------------------------------------------------
-# Elementos
+# HOME
 --------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
-## Menu
---------------------------------------------------------------*/
-#menu{
-    background: @roxo !important;
+.faixa-vitrine {
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 92vh;
+
+    #video-container{
+
+        position: absolute;
+        top:0%;
+        left:0%;
+        height:100%;
+        width:100%;
+        overflow: hidden;
+
+        .bg-video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+
+        }
+
+    }
+
+
+    .vitrine{
+
+        width: 100%;
+        overflow-y: hidden;
+
+        .menu-header{
+            height: 100%;
+        }
+
+    }//.vitrine
+
+    .vitrine-chamada {
+
+        padding-top: 126px;
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        h1 {
+            font-family: @knockout26;
+            font-size: 98px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 0.8;
+            letter-spacing: 2px;
+            color: #ffffff;
+
+            .text-uppercase;
+
+            span{
+                padding-top: 32px;
+
+                font-family: @FairfieldLTW01-46LightI;
+                font-size: 26px;
+                font-weight: 500;
+                font-stretch: normal;
+                line-height: 1.08;
+                letter-spacing: 0.3px;
+                text-align: center;
+                color: #ffffff;
+
+                text-transform: initial;
+            }
+
+
+        }//h1
+
+        p{
+
+
+        }
+
+    }//.vitrine-chamada
+
+    .seta-baixo{
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        right: 0;
+
+        .text-center;
+
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
 }
 
-.menu-link span, .menu-link span::before, .menu-link span::after{
-    height: 2px !important;
+
+
+
+.faixa-carousel-suites{
+
+    margin-bottom: 123px;
+    padding-top: 125px;
+
+
+    .carousel-slick{
+        background-color: @branco;
+
+        .suite{
+            position: relative;
+            height: 800px;
+
+            img{
+                width: 95%;
+                height: auto;
+            }
+
+            .suite-card{
+                position: absolute;
+                bottom: 0px;
+                left: 100px;
+                width: 656px;
+                background-color: #ffffff;
+                box-shadow: 0 -4px 0 0 #3f2658;
+                padding: 30px 32px;
+
+                .escolha{
+                    font-family: @knockout29;
+                    font-size: 16px;
+                    letter-spacing: 1.6px;
+                    color: #969696;
+                    margin-bottom: 12px;
+                    text-transform: uppercase;
+                    color: #969696;
+                }
+
+
+                h2{
+                    font-family: @FairfieldLTW01-46LightI;
+                    font-size: 42px;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: 0.4px;
+                    color: #3f2658;
+
+                    margin-bottom: 9px;
+                }
+
+                .descricao{
+                    font-family: @FairfieldRegular;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 1.56;
+                    letter-spacing: 0.2px;
+                    color: #969696;
+                    margin-bottom: 48px;
+                }
+
+                .btn-verde-v02{
+                    font-size: 18px;
+                    letter-spacing: 2.2px;
+                    font-family: @knockout29;
+                }
+
+                .explorar{
+                    font-family: @knockout29;
+                    font-size: 18px;
+                    letter-spacing: 1.8px;
+                    color: #b8b8b8;
+
+                    padding-left: 33px;
+                }
+            }
+
+
+        }
+    }
+
+
+
+    .slick-slide{
+        opacity: 0.5;
+    }
+
+    .slick-active{
+        opacity: 1;
+    }
+
+    .slick-prev, .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+
+        width: 62px;
+        height: 62px;
+        background-color: #3f2658;
+
+
+        padding: 0;
+
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        z-index: 100;
+
+
+        &:hover, &:focus{
+            color: @branco;
+            outline: none;
+            background-color: #3f2658;
+        }
+    }
+
+    .slick-prev {
+        left: 40px;
+    }
+    .slick-next {
+        right: 40px;
+    }
+
+    .slick-next:before {
+        font-family: FontAwesome;
+        content: '\f105';
+        font-size: 40px;
+    }
+    .slick-prev:before {
+        font-family: FontAwesome;
+        content: '\f104';
+        font-size: 40px;
+    }
+
 }
 
-.hamburger {
-    position: absolute;
-    top: 31px;
+.faixa-faichada{
+    height: 540px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &:hover{
+        .img-filter{
+            background-color: rgba(0, 0, 0, 0.1);
+            .transition(all 1s);
+        }
+    }
+
+    .img-filter{
+        .transition(all 1s);
+    }
+
+}//faixa-fachada
+
+
+
+
+.faixa-intercalada{
+
+    background-color: white;
+    padding-bottom: 126px;
+
+
+
+    h2{
+        .subtitulo-h2;
+
+        font-family: @knockout29;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #b8b8b8;
+
+    }
+
+    .subfaixa-destaque{
+        position: relative;
+        padding: 0;
+        background-color: white;
+        margin-bottom: 10px;
+        border: 2px solid @cinza-v2-fundo;
+
+        .destaque-img{
+            height: 100%;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+        }
+
+        .destaque-texto{
+            padding: 8em 5em 5em;
+            .text-center;
+
+
+            .icon-destaque{
+                width: 25.8px;
+                height: auto;
+                margin-bottom: 2em;
+            }
+
+            h3{
+                font-family: @FairfieldItalic;
+                font-size: 38px;
+                font-weight: 500;
+                line-height: 0.7;
+                letter-spacing: 0.4px;
+                color: @roxo-v2-titulo;
+
+            }
+
+            p{
+                margin-top: 22px;
+                margin-bottom:  47px;
+                .texto-padrao-cinza;
+                font-family: @FairfieldRegular;
+                padding: 0 4em;
+
+            }
+
+            a{
+                font-family: @knockout29;
+                font-size: 18px;
+                letter-spacing: 1.8px;
+                text-align: center;
+                color: #b8b8b8;
+                text-transform: uppercase;
+
+                img{
+                    width: 12px;
+                    height: auto;
+                    padding-left: 7.5px;
+                }
+            }
+
+        }
+
+
+
+    }
+
+
+}//faixa-intercalada
+
+.faixa-saiba-mais{
+    .faixa-intercalada;
+
+
+
+
+
+}//faixa-saiba-mais
+
+.faixa-mapa{
+
+    h2{
+        .subtitulo-h2;
+    }
+
+    .mapa-wrap{
+
+        position: relative;
+        z-index: 50;
+
+        h3{
+            font-family: @FairfieldItalic;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+            text-align: center;
+            color: #3f2658;
+
+            position: absolute;
+            z-index: 52;
+            width: 150px;
+            left: 50%;
+            margin-left: -75px;
+            top: 60%;
+
+        }
+        img{
+            .img-responsive;
+            position: relative;
+            z-index: 50;
+        }
+    }
+
+    p{
+        margin-top: 47px;
+        margin-bottom: 127px;
+
+        .texto-padrao-cinza;
+    }
+
 }
 
-.fat-nav {
-    background: @roxo;
+
+
+.faixa-lush-member{
+    background-color: @cinza-v2-fundo;
+    .text-center;
+
+    padding-top: 84px;
+    padding-bottom: 100px;
+
+    h2{
+        font-family: @knockout29;
+        font-size: 18px;
+        letter-spacing: 1.6px;
+        color: #969696;
+
+        margin-bottom: 32px;
+
+
+    }
+
+    h3{
+        font-family: @FairfieldItalic;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 0.74;
+        letter-spacing: 0.4px;
+        color: #696969;
+
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-family: @FairfieldRegular;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #969696;
+
+        margin-bottom: 60px;
+    }
+
+
+
+
+
 }
 
-.hamburger__icon, .hamburger__icon:after, .hamburger__icon:before{
+
+.faixa-destaque{
+    background-color: #2a1a3c;
+    padding-top: 64px;
+
+    .para-presentear{
+
+        position: relative;
+        background-color: #ffffff;
+        margin-top: 127px;
+        margin-bottom: 146px;
+        padding-left: 31px;
+        padding-bottom: 27px;
+
+        h2{
+            font-family: @knockout29;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1.6px;
+            color: #969696;
+
+            .text-uppercase;
+
+            padding-top: 30px;
+        }
+
+        h3{
+            font-family: @FairfieldItalic;
+            font-size: 42px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.43;
+            letter-spacing: 0.4px;
+            color: #3f2658;
+
+            padding-top: 6px;
+        }
+
+        p{
+            font-family: @FairfieldRegular;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.56;
+            letter-spacing: 0.2px;
+            color: #969696;
+
+            padding-top: 9px;
+            padding-bottom:  26px;
+        }
+
+        .btn-verde-v02{
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 2.2px;
+
+            padding: 11px 22.5px;
+
+        }
+
+        .gift-cards{
+            position: absolute;
+            right:0;
+            top: 0;
+            max-width: 592px;
+            height: auto;
+            margin-right: -300px;
+            margin-top: -55px;
+
+            width: 100%;
+
+        }
+
+    }
+
+}
+
+.faixa-destaque-home{
+    .faixa-destaque;
     background-color: @branco;
 }
 
+.faixa-explore{
+
+    background-color: @verde-agua;
+
+    margin-top: 32px;
+
+    .text-center;
+
+    p{
+        font-family: @knockout29;
+        font-size: 18px;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #048572;
+
+        margin-top: 100px;
+    }
+    h2{
+        font-family: @FairfieldItalic;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 0.7;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #ffffff;
+
+        margin-top: 45px;
+    }
+    .btn-reservar-v2{
+        .btn-branco-v2;
+
+
+        margin-top: 62px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.page-chegar{
+    .faixa-mapa-como-chegar{
+        height: 736px;
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .card-endereco{
+            .text-center;
+            background-color: @branco;
+            padding-top: 18px;
+            padding-bottom: 35px;
+            margin-top: 85%;
+
+            h1{
+                font-family: @FairfieldRegular;
+                font-size: 24px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.17;
+                letter-spacing: 0.3px;
+                text-align: center;
+                color: #3f2658;
+
+                margin-bottom: 9px;
+            }
+
+            p{
+                font-family: @FairfieldRegular;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.63;
+                text-align: center;
+                color: #969696;              
+
+                &.a-partir{
+                    font-family: @FairfieldItalic;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    line-height: 1.4;
+                    text-align: center;
+                    color: #3f2658;
+                }
+            }
+
+            hr{    
+                border: 0;
+                border-top: 1px solid #3f2658;
+                margin: 0 40px;
+                margin-top: 22px;
+                margin-bottom: 16px;
+            }
+
+        }
+
+    }//faixa-mapa-como-chegar    
+
+    .faixa-explore{
+        margin-top: 0;
+
+        .btn-reservar-v2{
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 2.2px;
+            text-align: center;
+            color: #00d0b0;
+
+            padding: 11px 0;
+
+            width: 176px;
+        }
+
+    }
+}
 
 
 
-/*--------------------------------------------------------------
-## Imagem filter (cover))
---------------------------------------------------------------*/
+
+.faixa-orderby{
+    background-color: @cinza-claro;
+    .text-center;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+
+    p{
+        color: @roxo;
+
+        span{
+            color: @cinza-escuro;
+        }
+    }
+
+
+}//faixa-orderby
+
+
+
+.post-type-archive-suite{
+
+    .lista-suites{
+
+        .item-suite{
+
+            &:first-of-type{
+                margin-top: 64px;
+            }
+
+            background-color: @branco;
+
+            .detalhes{
+                position: relative;
+
+                padding-top: 115px;
+                .text-center;
+
+                .info-entra{
+                    position: absolute;
+                    top: -50px;
+                    left: 50%;
+                    width: 200px;
+                    margin-left: -100px;
+                    .text-center;
+                    color: #3f2658;
+                    font-size: 40px;
+
+
+                }
+
+                h2{
+                    padding-bottom: 17px;
+                    font-family: @FairfieldItalic;
+                    font-size: 42px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    line-height: 1.43;
+                    letter-spacing: 0.4px;
+                    text-align: center;
+                    color: #3f2658;
+                }
+
+                .price{
+
+                    //color: @cinza-escuro;
+                    font-family: @FairfieldItalic;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-style: italic;
+                    font-stretch: normal;
+                    letter-spacing: 0.2px;
+                    text-align: center;
+                    color: #b8b8b8;
+                }
+
+                .amout{
+                    padding-top: 15px;
+                    padding-bottom: 106px;
+
+                    font-family: @knockout26;
+                    font-size: 98px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 0.8;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    color: #3f2658;
+                }
+            }
+
+
+
+            a{
+                font-family: @knockout29;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 1.8px;
+                color: #00d0b0;
+                .text-uppercase;
+                .transition(all 1s);
+
+                &:hover{
+                    color:  darken(#00d0b0, 15%);
+                    text-decoration: none;
+                    .transition(all 1s);
+                }
+
+            }
+
+
+        }
+
+        .foto-produto{
+            position: relative;
+            z-index: 50;
+
+            &:nth-child(even) {
+                padding-right: 0px;
+            }
+            &:nth-child(odd) {
+                padding-left: 0px;
+            }
+
+            img{
+                .img-responsive;
+                width: 100%;
+                position: relative;
+                position: 51;
+                .transition(all 1s);
+            }
+
+            a{
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                margin-left: -100px;
+                z-index: 1000;
+                display: none;
+
+                .text-uppercase;
+
+                font-family: @knockout29;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 2.2px;
+                text-align: center;
+                color: #ffffff;
+
+                .transition(all 1s);
+
+                &:hover{
+                    color:  darken(#ffffff, 15%);
+                    text-decoration: none;
+                }
+
+
+
+            }
+
+            &:hover{
+                img {
+                    filter: brightness(50%);
+                    .transition(all 1s);
+                }
+                a {
+                    display: block;
+                    .transition(all 1s);
+
+                }
+
+                /*                -moz-transition: all 1s;
+                                -webkit-transition: all 1s;
+                                transition: all 1s;*/
+            }
+
+        }
+
+    }
+}
+
+//post-type-archive-suite
+
+.faixa-concierge{
+    .faixa-explore;
+    margin-top: 0;
+
+    background-color: #6e5e8b;
+    p{
+        color: @branco;
+        font-family: @knockout29;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #ffffff;
+    }
+    h2{
+        color: @branco;
+        padding-bottom: 62px;
+
+        font-family: @FairfieldItalic;
+        font-size: 38px;
+        font-weight: 500;
+        font-stretch: normal;
+        line-height: 0.74;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #ffffff;
+
+    }
+
+    .btn-servico-concierge{
+        margin-bottom: 132px;
+
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 2.2px;
+        text-align: center;
+        padding: 11px 24px;
+
+
+
+    }
+
+}
+
+.brn-reserve-suite{
+    .btn-verde-v02;
+    font-size: 22px;
+    letter-spacing: 2.7px;
+}
+
+
+.faixa-btn{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .text-center;
+
+
+    .btn-concierge{
+        .btn-padrao-roxo;
+    }
+
+}//faixa-btn
+
+
 .img-filter{
     width: 100%;
     height: 100%;
@@ -257,119 +1473,80 @@ body{
     z-index: 51;
 }
 
-/*--------------------------------------------------------------
-## Header
---------------------------------------------------------------*/
-.header{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+
+.info-compartilhe{
+
+    padding-top: 60px;
+    background-color: transparent;
+
+    .text-center;
+
+    .compartilhar{
+
+        p{
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1.6px;
+            text-align: center;
+            color: #3f2658;
 
 
-    .header-content{
-
-        padding-top: 33px;
-
-        .header-item{
-            z-index: 100;
         }
 
-        .titulo{
+        padding-top: 80px;
 
-            .text-center;
+        ul{
+            padding-top: 27px;
+            .list-inline;
 
-            a{
-                color: @branco;
-                text-transform: uppercase;
+            li{
+                margin-right: 32.5px;
 
                 img{
-                    width: 81.51px;
-                    height: 14.22px;
-                    margin-top: 13px;
+                    height: 26px;
+                    width: auto;
                 }
-
             }
 
         }
 
-        .botoes-r{
-            .list-inline;
-            text-align: right;
-        }
-
-        .menu-link{
-            position: absolute;
-            margin-top: -25px;
-            //width: 65px;
-        }
     }
+}//.info-compartilhe
 
 
-}
-
-#menu-menu-principal{
-    font-family: @junior;
-    font-size: 16px;
-}
-.header-branco{
-    .header;
-
-    position: relative;
-    height: 105px;
-
-
-    h1{
-        color: rgb(63,42,86) !important;
-    }
-
-
-
-}
-
-
-.term-suite{
-
-    .hamburger__icon, .hamburger__icon:after, .hamburger__icon:before {
-        background-color: rgb(63,42,86)!important;
-    }
-
-    .botoes-r a{
-        //color: rgb(63,42,86)!important;
-    }
-
-    .btn-reservar{
-        border-color: rgb(63,42,86)!important;
-    }
-
-    .btn-reservar:hover {
-        color: rgb(63,42,86)!important;
-        background-color: rgba(0, 0, 0, 0)!important;
-        border-color: #e0e0e0!important;
-    }
-
-
-}
-
-
-.sombra-padrao{
-    box-shadow: 0 2px 0 @font-roxo;
-}
-
-/*--------------------------------------------------------------
-## Vitrine
---------------------------------------------------------------*/
-.vitrine{
+.vitrine-interna{
     position: relative;
     z-index: 50;
 
+
+
+
     .vitrine-content{
+        height: 360px;
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         position: relative;
         z-index: 50;
 
+        &:hover{
+            .img-filter{
+                .transition(all 1s);
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
 
-        .image-vitrine{            
+        .img-filter{
+            .transition(all 1s);
+
+        }
+
+
+        .image-vitrine{
             img{
                 .img-responsive;
                 width:100%;
@@ -377,23 +1554,27 @@ body{
         }
 
         .sub-titulo{
-
             position: absolute;
             .text-center;
             bottom: 40%;
-            color: @branco;
             z-index: 52;
-
             left: 0;
             right: 0;
             margin: 0 auto;
 
             h2{
-                font-family: @FairfieldLTW01-56Medium;
-                font-size: 50px;
-                line-height: 60px;
-
+                font-family: @knockout26;
+                font-size: 98px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.8;
+                letter-spacing: 2px;
+                text-align: center;
+                color: #ffffff;
+                text-transform: uppercase;
             }
+
         }
 
 
@@ -404,13 +1585,19 @@ body{
             top: 0;
             left: 0;
             background-color: @filtro-image-color;
-            z-index: 51;
+            z-index: 51;            
+            .transition(all 1s);
+
+            :hover{
+                .transition(all 1s);
+                background-color: rgba(0, 0, 0, 0.1);
+            }
         }
 
         .seta-baixo{
             position: absolute;
             .text-center;
-            bottom: 60px;        
+            bottom: 60px;
             color: @branco;
             z-index: 52;
 
@@ -439,400 +1626,742 @@ body{
 
 }
 
-/*--------------------------------------------------------------
-## Footer
---------------------------------------------------------------*/
-
-footer{
-    background-color: @roxo;
-    height: 160px;
-    color: @branco;
-    padding-top: 72px;
-
-    .endereco{
-        .text-center;
-    }
-
-    ul{
-        .list-inline;
-        text-align: right;
-
-        li{
-            &:first-of-type{
-                padding-right: 34px;
-            }
-        }
-    }
-
-    .logo{
-        width: 32px;
-        height: auto;
-    }
-
-    .rede-social{
-        width: 26px;
-        height: auto; 
-    }
-
-
-
-}
-
-/*--------------------------------------------------------------
-# Paginas
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-## Home
---------------------------------------------------------------*/
-.home{
-
-    .faixa-quartos{
-
-        .card-quarto{
-
-            margin-top: 62px;
-            margin-bottom: 78px;
-
-            img{
-                .img-responsive;
-            }
-
-            .btn-padrao-roxo{
-                margin-top: 16px;
-                width: 100%;
-            }
-
-
-        }
-
-    }//faixa-quartos
-
-    .faixa-cinza{
-        background-color: @cinza-claro;        
-        color: @cinza-escuro;
-
-        padding-top: 90px;
-        padding-bottom: 90px;
-
-        .logo_L{
-            .img-responsive;
-            width: 83.75px;
-            height: auto;
-            padding-top: 6px;
-        }
-
-        .vem-pro-lush{
-            font-family: @FairfieldLTW01-55Medium;
-            font-size: 19px;
-            line-height: 30px;
-        }
-
-
-
-    }//faixa-cinza
-
-    .faixa-news-letter{
-        padding-top: 80px;
-        padding-bottom: 80px;
-
-
-        .card-news-letter{
-
-            border: solid 1px @roxo;
-            border-top:0px;
-            .sombra-padrao;
-
-            .card-header{
-                background-color: @roxo;
-                font-family: @junior;
-                font-size: 14px;
-                line-height: 20px;
-
-                color: @branco;
-                text-transform: uppercase;
-                .text-center;
-                padding-top: 32px;
-                padding-bottom: 32px;
-
-
-            }
-
-            .card-body{
-                padding-top: 30px;
-                padding-bottom: 30px;
-
-                .form-titulo{
-
-                    color: @roxo;
-                    .text-center;
-                    margin-bottom: 40px 
-
-                }
-
-                .campo-linha{
-                    border-radius: 0;
-                    border:0;
-                    border-bottom: solid 1px @cinza-escuro;
-                    padding-left: 0
-                }
-
-
-
-                .btn-enviar{
-                    margin-top: 42px;
-                    width: 100%;
-                }
-
-            }
-        }
-
-    }//faixa-news-letter
-}
-
-.faixa-orderby{
-    background-color: @cinza-claro;
-    .text-center;
-
-    padding-top: 28px;
-    padding-bottom: 28px;
-
-    .text-uppercase;
-
-
-    p{
-        color: @roxo;
-
-        a{            
-            color: @cinza-escuro;
-
-            &.active{
-                color: @roxo;
-            }
-
-        }
-    }
-
-}//faixa-orderby
-
-
-
-.lista-suites{
-
-    .item-suite{
-
-        padding-top: 32px;
-
-        .detalhes{
-            padding-top: 165px;
-            .text-center;
-
-            h3{
-                padding-bottom: 30px;
-                color: @roxo;
-                font-size: 40px;
-                text-transform: uppercase;
-                font-family: @junior;
-                font-size: 28px;
-                //line-height: 36;
-
-            }
-
-            .price{
-                color: @cinza-escuro;     
-                font-family: @FairfieldLTW01-56Medium;
-                font-size: 16px;
-                .amout{
-
-                }   
-            }
-
-            .amount{
-                color: @roxo;
-                font-size: 30px;
-                text-transform: uppercase;
-                font-family: @junior;
-            }
-
-            a{
-
-                color: @rosa;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-family: @junior;
-                font-size: 13px;
-
-                &:hover{
-                    color:  darken(@rosa, 15%);
-                    text-decoration: none;
-                }
-
-                p{
-                    padding-top: 45px;
-                }
-            }
-
-
-        }
-
-        .foto-produto{
-
-            &:nth-child(even) {
-                padding-right: 0px;
-            }
-            &:nth-child(odd) {
-                padding-left: 0px;
-            }
-
-            img{
-                .img-responsive;
-                width: 100%;
-
-            }
-        }
-
-
-
-    }
-}//.lista-suites
-
-
-
-.faixa-btn{
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    .text-center;
-
-
-    .btn-concierge{
-        .btn-padrao-roxo;
-        width: 100%;
-    }
-
-}//faixa-btn
-
-
-
 .suite-single{
 
     .faixa-detalhes{
-        padding-top: 56px;
-        padding-bottom: 68px; 
+        padding-top: 66px;
+        padding-bottom: 100px;
 
+        .atributos{
 
-        .descricao{
-            font-size: 20px;
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.89;
+            letter-spacing: 0.3px;
+            color: #b8b8b8;
 
-            p{
-
-                color: @font-cinza;
-            }
+            .text-uppercase;
 
             ul{
-                padding-top: 23px;
+                padding-top: 5px;
+                list-style-type: none;
                 li{
-                    font-size: 20px;
-                    color: @font-roxo;
+
+                    &:before {    
+                        font-family: 'FontAwesome';
+                        content: '\f0da';
+                        margin:0 5px 0 -15px;
+                        //color: #f00;
+                    }
+
                 }
             }
         }
 
         .info-preco{
 
+            .descricao{
+               	font-family: @FairfieldRegular;
+                font-size: 22px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.55;
+                letter-spacing: 0.2px;
+                color: #3f2658;
+            }
+
             .tabela-preco{
-                table{
-                    width: 100%;
-                    border: 1px solid @roxo;
-                    //border-bottom: 3px solid @roxo;
-                    text-transform: uppercase;
+
+                margin-top: -19px;
+
+                p{
+                    font-family: @FairfieldItalic;
+                    font-size: 22px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    color: #6e5e8b;
+
+                    padding-top: 19px;
+                    padding-bottom: 16px;
+
+                    position: relative;
+
+                    border-bottom: 1px solid #e6e6e6;
+
+                    span{
+                        font-family: @knockout29;
+                        font-size: 24px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 1.1px;
+                        color: #6e5e8b;
+
+                        position: absolute;
+                        right: 0;
+                        top: 18px;
+                    }
+                }
 
 
-                    .sombra-padrao;
+            }
 
-                    font-size: 18px;
-                    font-size: 1.8rem;
-                    font-family: @junior;
+            .info-checkin{
+                padding-top: 46px;
 
-                    color: @font-roxo;
+                font-family: @FairfieldLTW01-46LightI;
+                font-size: 20px;
+                font-weight: 500;
+                font-stretch: normal;
+                color: #b8b8b8;
+                .text-center;
+            }
+
+        }
+
+        .info-reserve{
+            padding-top: 81px;
+            .text-center;
+            .center-block;
+
+            .brn-reserve-suite{
+                text-transform: uppercase;
+                font-size: 22px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 2.7px;
+                padding: 13px 87px 15px;
+
+            }
+
+        }
+
+        .info-compartilhe{
+
+            padding-top: 0;
+
+            .compartilhar{
+                padding-top: 54px;
+
+                ul{
+                    li{
+                        margin-right: 25px;
+
+                        img {
+                            height: auto;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
 
 
-                    tbody{
-                        tr{
 
-                            &:first-of-type{
-                                th{
-                                    padding-top: 26px;
-                                }
-                            }
+    }
 
-                            td{
-                                padding-top: 10px;
-                                padding-left: 32px;
-                                padding-right: 32px;
-                                &:nth-of-type(1){
+    .faixa-fotos-produto{
+        .carousel{
+            img{
+                .img-responsive;
+                width: 100%;
+            }
+        }
+    }
 
-                                }
-                                &:nth-of-type(2){
-                                    text-align: right;
+    .faixa-outras-suites-list{
 
-                                }
+        padding-top: 125px;
+        padding-bottom: 130px - 39px;
 
-                                hr{
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                    border: 0;
-                                    border-top: 1px solid @roxo-claro;
-                                }
 
-                                &.linha{
-                                    padding-top: 5px;
-                                    padding-bottom: 0px;
-                                }
+        .titulo{
+            .text-center;
 
-                                .btn-reservar{
-                                    .btn-lilas;
-                                    margin-top: 12px;
-                                    margin-bottom: 34px;
-                                    font-size: 13px;
-                                }
+            h2{
+                font-family: @knockout29;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 1.6px;
+                text-align: center;
+                color: #b8b8b8;
+            }
 
-                            }
+            padding-bottom: 50px;
+            text-transform: uppercase;
 
+        }
+
+
+        .suite-item{
+
+            a{
+                text-decoration: none;
+            }
+
+            padding-bottom: 39px;
+
+            .outra-site-item{
+                position: relative;
+                img{
+                    .img-responsive;
+                    width: 100%
+
+                }
+
+                &:hover{
+                    .img-filter{
+                        background-color: rgba(0, 0, 0, 0);
+                        .transition(all 1s);
+                    }
+                }
+
+                .img-filter{
+                    .transition(all 1s);
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+
+
+            }
+
+            p{
+                font-family: @FairfieldItalic;
+                font-size: 30px;
+                font-weight: 500;
+                font-stretch: normal;
+                color: #b8b8b8;
+
+                padding-top: 7px;
+
+                span{
+                    font-family: @knockout26;
+                    font-size: 34px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: 1.7px;
+                    color: #3f2658;
+                    margin-right: 12px;
+                }
+            }
+
+        }
+
+
+    }//faixa-outras-suites-list
+
+}
+
+/*--------------------------------------------------------------
+# gastronomia
+--------------------------------------------------------------*/
+.gastronomia{
+
+    .vitrine-content{
+        background-position-y: 10%;
+    }
+
+    .faixa-explore-cardapio{
+
+        .faixa-intercalada;
+        padding-bottom: 0px;
+        background-color: transparent;
+        margin-bottom: 200px;
+
+        .text-center;
+
+        p{
+            font-family: @FairfieldRegular;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.55;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #969696;
+            margin-top: 72px;
+            margin-bottom: 50px;
+        }
+
+        .btn-explore-cardapio{
+            font-family: @knockout29;
+            font-size: 22px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 2.7px;
+
+            padding: 13px 93.5px;
+
+        }
+
+    }//faixa-explore-cardapio
+
+    .faixa-gastronomia-cats{
+
+        .faixa-saiba-mais;
+        padding-bottom: 136px;
+        background-color: transparent;
+
+        .subfaixa-destaque{
+            border: solid 2px #f2f2f2;
+
+            .item-subfaixa{
+
+                .destaque-img{
+
+                }
+
+                .destaque-texto{
+                    padding-top: 100px;
+                    padding-bottom: 0;
+
+                    h3{
+                        font-family: @FairfieldItalic;
+                        font-size: 38px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 0.74;
+                        letter-spacing: 0.4px;
+                        text-align: center;
+                        color: #3f2658;
+
+                    }
+
+                    p{
+                        font-family: @FairfieldRegular;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.56;
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                        color: #969696;
+                    }
+
+                    a{
+                        font-family: @knockout29;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 1.8px;
+                        text-align: center;
+                        color: #b8b8b8;
+
+                        cursor: pointer;
+
+                        &:hover{
+                            text-decoration: none;
+                        }
+
+                        i{
+                            font-size: 14px;
                         }
                     }
 
                 }
+            }
 
 
-            }//tabela-preco
 
-            .compartilhar{
+        }
 
-                p{
-                    color: @roxo;
-                    font-size: 13px;
-                    text-transform: uppercase;
-                    font-family: @junior;
+
+
+    }//faixa-gastronomia-cats
+
+}
+
+/*--------------------------------------------------------------
+# experiencia
+--------------------------------------------------------------*/
+.experiencia{
+
+
+
+
+    .faixa-pacotes-exp{
+
+        .faixa-saiba-mais;
+        background-color: transparent;
+
+        .subfaixa-destaque{
+            border: solid 2px #f2f2f2;
+
+
+
+            .item-subfaixa{
+
+                .destaque-img{
+                    img{
+                        .transition(all 1s);  
+                        filter: brightness(85%);
+                    }
                 }
 
-                padding-top: 80px;
+                .destaque-texto{
+                    padding-top: 80px;
+                    padding-bottom: 0;
 
-                ul{                 
-                    padding-top: 23px;
-                    .list-inline;
+                    .icon-destaque{
+                        margin-bottom: 22px;
+                        width: 29px;
+                        height: auto;
 
-                    li{
-                        border: 2px solid @roxo;
-                        border-radius: 50px;
-                        padding: 6px 7px;
-                        margin-right: 26px;
+                    }
+
+                    h3{
+                        font-family: @FairfieldItalic;
+                        font-size: 38px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 0.74;
+                        letter-spacing: 0.4px;
+                        text-align: center;
+                        color: #3f2658;
+
+                    }
+
+                    p{
+                        font-family: @FairfieldRegular;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.56;
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                        color: #969696;
+                    }
+
+                    a{
+                        font-family: @knockout29;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 1.8px;
+                        text-align: center;
+                        color: #b8b8b8;
+                    }
+
+                }
+            }
+
+            &:hover{
+                .destaque-img{
+                    img{
+                        .transition(all 1s);
+                        filter: brightness(100%);
+                    }
+                }
+            }
 
 
-                        img{
-                            height: 17.9px;
-                            width: auto;
-                        }
+
+        }
+
+
+
+    }//faixa-gastronomia-cats
+
+}
+
+/*--------------------------------------------------------------
+# experiencia-single
+--------------------------------------------------------------*/
+.experiencia-single{
+
+    .pacote-loop{
+
+        .pacote-item{
+            padding-top: 72px;
+            padding-bottom: 64px;
+
+            border-bottom: solid 1px #e6e6e6;
+
+            &:last-of-type{
+                border-bottom: 0;
+            }
+
+
+
+            .item-texto{
+                h3{
+                    font-family: @knockout29;
+                    font-size: 34px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: 1.6px;
+                    color: #3f2658;
+
+                    padding-bottom: 16px;
+                }
+
+                .descricao{
+                    font-family: @fairfield;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.56;
+                    letter-spacing: 0.3px;
+                    color: #7e7e7e;
+                }
+            }
+
+            .item-reserve{
+
+                .text-right;
+
+                .preco{
+                    p{
+                        font-family: @knockout29;
+                        font-size: 22px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 1px;
+                        color: #3f2658;
+                    }
+
+
+                    padding-top: 12px;
+                    padding-bottom: 23px;
+                }
+                .btn-roxo-v02{
+                    padding: 11px 39.5px;
+
+                }
+            }
+
+        }
+
+    }
+
+    .info-compartilhe{
+
+        padding-top: 0;
+        padding-bottom: 118px-32px;
+
+        .compartilhar{
+
+            padding-top: 165px - 64px;
+
+            p{
+                font-family: @knockout29;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #3f2658;
+
+                .text-uppercase;
+            }
+
+            .icones{
+                li{
+                    img{
+                        width: 21px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+}
+
+.faixa-texto-simples{
+
+    padding-top: 89px;
+    padding-bottom: (110px-72px);
+
+    .text-center;
+
+    h2{
+        font-family: @FairfieldRegular;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.55;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #969696;
+    }
+
+}
+
+
+
+
+.flag{
+    width: 110px;
+    height: 23px;
+    position: relative;
+
+    margin-top: -23px;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 1px;
+
+    font-family: @knockout29;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+
+    text-align: center;
+    .text-uppercase;
+
+    &:hover{
+        color: white;
+    }
+}
+
+#flag-midia {
+    .flag;
+
+    background: #b8b8b8;
+
+    &:before, &:after{
+        content: "";
+        position: absolute;        
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-top: 11.5px solid transparent;
+        border-bottom: 11.5px solid transparent;
+    }
+
+    @angulo: 6px;
+
+    &:before {
+        border-left: @angulo solid #fff;
+        left: -1px;
+    }
+
+    &:after {
+        border-right: @angulo solid #fff;
+        right: -1px;
+    }
+}
+
+#flag-essencia{
+
+    .flag;
+
+    background-color: #6e5e8b;
+    border-radius: 10px;
+
+}
+
+
+/*--------------------------------------------------------------
+# bastidores
+--------------------------------------------------------------*/
+.faixa-bastidores{
+
+    margin-top: 50px;
+
+    .bastidores-item{
+
+        padding-top: 65px;
+        padding-bottom: 45px;
+
+        //border-bottom: solid 1px #e6e6e6;
+
+
+        .meta-dados{
+
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1.8px;
+            color: #b8b8b8;
+
+            padding-top: 17px;
+
+        }
+
+
+
+        h2{
+            font-family: @FairfieldItalic;
+            font-size: 30px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: 0.2px;
+            color: #3f2658;
+
+            padding-bottom: 12px;
+        }
+
+        .intro{
+            font-family: @FairfieldRegular;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.56;
+            letter-spacing: 0.2px;
+            color: #b8b8b8;
+        }
+
+    }
+
+    .passador{
+
+        font-family: @knockout29;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+
+        .text-uppercase;
+
+        padding-top: 90px;
+        padding-bottom: 146px;
+
+
+        ul{
+            .list-inline;
+
+            li{
+
+                a{
+                    color: #d2d2d2;
+
+                    &:hover, &:active{
+                        text-decoration: none;
+                        color: #6e5e8b;
                     }
 
                 }
@@ -842,18 +2371,96 @@ footer{
         }
 
     }
+}//faixa-bastidores
 
-    .faixa-fotos-produto{
+/*--------------------------------------------------------------
+# bastidores-single
+--------------------------------------------------------------*/
+.bastidores-single{
+    padding-top: 164px;
+    padding-bottom: 110px;
 
+    h1{
+        padding-top: 20px;
 
+        font-family: @FairfieldItalic;
+        font-size: 42px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.21;
+        letter-spacing: 0.4px;
+        color: #3f2658;
+    }
 
-        .carousel{
-            img{
-                .img-responsive;
-                width: 100%;
+    .intro{
+        padding-top: 58px;
+
+        .data{
+            padding-top: 5px;
+            padding-bottom: 46px;
+
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1.8px;
+            color: #b8b8b8;
+        }
+
+        ul{
+            .list-inline;
+
+            li{
+                a{
+                    color: #b8b8b8;
+                    font-size: 16px;
+                }
             }
+        }
+
+        .texto{
+            font-family: @fairfield;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            color: #696969;
+
+            padding-bottom: 64px;
+        }
 
 
+
+    }
+
+    .img-destaque{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .conteudo{
+        font-family: @fairfield;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.6;
+        letter-spacing: 0.2px;
+        color: #696969;
+
+        p{
+            padding-top: 53.5px;
+        }
+
+        a{
+            font-style: italic;
+            color: #696969;
         }
     }
 
@@ -862,78 +2469,162 @@ footer{
 }
 
 
-.faixa-outras-suites-list{
+/*--------------------------------------------------------------
+# contato
+--------------------------------------------------------------*/
 
-    padding-top: 80px;
-    padding-bottom: 80px;
+.contato{
+    padding-top: 164px;
+    padding-bottom: 110px;
 
+    .conhecer{
+        p{
+            padding-bottom: 64px;
 
-    .titulo{
-        .text-center;
-        font-family: @FairfieldLTW01-56Medium;
-        font-size: 42px;
-        font-size: 4.2rem;
-        color: @roxo;
-        padding-bottom: 43px;
+            font-family: @fairfield;
+            font-size: 20px;
+            font-weight: 300;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+            color: #696969;
 
+            &.destaque{
+                padding-bottom: 18px;
+
+                font-family: @FairfieldItalic;
+                font-size: 32px;
+                font-weight: 500;
+                font-stretch: normal;
+                line-height: 1.19;
+                letter-spacing: 0.3px;
+                color: #3f2658;
+            }
+
+        }
     }
 
 
-    .suite-item{
 
-        padding-bottom: 24px;
+    .form-lush{
+        width: 100%;
 
-        .outra-site-item{
-            position: relative;
+        .campo{
+            width: 100%;
+            margin-bottom: 36px;
+            padding-bottom: 11px;
+        }
 
-            img{
-                .img-responsive;
-                width: 100%
-            }
+        .btn-participar-v2{
 
-            .info-suite{
-                position: absolute;
-                top: 40%;
-                left: 0;
-                right: 0;
-                margin: auto;
-                z-index: 52;
+            margin-top: 64px - 36px;
+            width: 176px;
 
-                color: @branco;
+            .center-block;
+            .text-center;
+        }
+    }
 
+    .trabalhar{
+        padding-top: 116px;
+        text-align: center;
+
+        .destaque{
+            font-family: @FairfieldItalic;
+            font-size: 32px;
+            font-weight: 500;
+            font-stretch: normal;
+            line-height: 0.88;
+            letter-spacing: 0.4px;
+
+            color: #3f2658;
+
+            padding-top: 32px;
+        }
+
+        .normal{
+            font-family: @FairfieldItalic;
+            font-size: 24px;
+            font-weight: 500;
+            font-stretch: normal;
+            line-height: 1.17;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #969696;
+
+            padding-top: 32px;
+        }
+
+        .destaque-2{
+            padding-top: 89px;
+        }
+
+        .list-social{
+            float: initial !important;
+
+            margin-top: 32px;
+
+            li{
                 .text-center;
+                padding-right: 0px; 
+                padding-left: 32px;
 
-                h3{
-                    color: @branco;
-                    font-size: 18px;
-                    line-height: 22px;
-                    font-family: @junior;
-                    margin-bottom: 3px;
-                }
-
-                .price{
-                    color: @branco;
-                    color: @branco;
-                    font-size: 16px;
-                    line-height: 19px;
-                    font-family: @FairfieldLTW01-56Medium;
-                    margin-bottom: 6px;
-
-                }
-
-                .amount{
-                    color: @branco;
+                a{
+                    color: #3f2658;
                     font-size: 22px;
-                    line-height: 26px;
-                    font-family: @junior;
+                }
+            }
+        }
 
+
+    }
+}
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+footer{
+
+    background-color: #2a1a3c;
+
+    padding-top: 90px;
+    padding-bottom: 103px;
+
+    .logo{
+        width: 72px;
+        height: auto;
+
+        margin-bottom: 68.4px;
+    }
+
+    p{
+        font-family: @FairfieldRegular;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.2;
+        letter-spacing: 0.2px;
+        color: #6e5e8b;
+    }
+
+    .menu-footer, .list-social, .list-language{
+        list-style-type: none;
+        li{
+            a{
+                .text-uppercase;
+                font-family: @knockout29;
+                font-size: 16px;
+                line-height: 2.2;
+                letter-spacing: 1.4px;
+                color: #6e5e8b;
+
+                &:hover, &:active, &.active{
+                    color: white;
+                    text-decoration: none;
                 }
 
             }
 
         }
-
     }
 
-
-}//faixa-outras-suites-list
+}

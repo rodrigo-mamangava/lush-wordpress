@@ -17,7 +17,7 @@ woocommerce_output_content_wrapper();
 <?php if (have_posts()) : ?>
 
     <?php
-    woocommerce_catalog_ordering_lush_suite();
+    //woocommerce_catalog_ordering_lush_suite();
     ?>
 
     <?php //woocommerce_product_loop_start(); ?>
