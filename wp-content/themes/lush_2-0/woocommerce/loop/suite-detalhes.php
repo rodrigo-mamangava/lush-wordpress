@@ -3,8 +3,5 @@
 <?php woocommerce_template_loop_price() ?>
 
 <?php woocommerce_template_loop_product_link_open() ?>
-<p>
-    Explorar suite
-    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</p>
+    quero reservar
 <?php woocommerce_template_loop_product_link_close(); ?>

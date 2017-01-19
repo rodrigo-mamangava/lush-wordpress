@@ -46,6 +46,7 @@ if (!function_exists('lush_2_0_setup')) :
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
             'principal' => esc_html__('Menu principal', 'lush_2-0'),
+            'footer' => esc_html__('Menu footer', 'lush_2-0'),
             'social' => esc_html__('Menu Social', 'lush_2-0'),
             'idioma' => esc_html__('Menu Idioma', 'lush_2-0'),
         ));

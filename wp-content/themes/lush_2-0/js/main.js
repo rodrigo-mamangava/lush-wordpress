@@ -5,12 +5,14 @@
  */
 
 
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     
     console.log('ok');
     
     
     $(".navbar").affix({offset: {top: $(".faixa-vitrine").outerHeight(true)} });
+    
+    //$("#menu-geral").data('spy', 'affix');
     
     
     $('.carousel-slick').slick({

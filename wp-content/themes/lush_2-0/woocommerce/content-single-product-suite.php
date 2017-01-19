@@ -20,8 +20,6 @@ if (!defined('ABSPATH')) {
 }
 ?>
 
-
-
 <?php
 /**
  * woocommerce_before_single_product hook.
@@ -38,78 +36,50 @@ if (post_password_required()) {
 
 
 <div  itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class('suite-single'); ?> >
-    
-    <?php getVitrine(get_the_post_thumbnail($post->ID), false, get_the_title(), '#conteudo'); ?>
 
+    <?php get_new_vitrine_completo(); ?>
 
-    <div id="conteudo" class="container-fluid faixa-detalhes">
+    <div  class="container-fluid faixa-detalhes">
         <div class="row">
 
-            <div class="col-sm-5 col-sm-offset-1 descricao">
+            <div class="col-sm-5 col-sm-offset-1 atributos">
                 <?php the_content(); ?>
             </div><!-- descricao --> 
 
             <div class="col-sm-4 col-sm-offset-1 info-preco">
 
                 <div class="tabela-preco">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Período</td>
-                                <td>R$ 480,00</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="linha"><hr/></td>
-                            </tr>
-                            <tr>
-                                <td>Pernoite (Dom a Qui)</td>
-                                <td>R$ 480,00</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="linha"><hr/></td>
-                            </tr>
-                            <tr>
-                                <td>Pernoite (Sab e Dom)</td>
-                                <td>R$ 515,00</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="linha"><hr/></td>
-                            </tr>
-                            <tr>
-                                <td>Promocional 3h</td>
-                                <td>R$ 350,00</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <a class="btn-reservar">Reservar suite</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
+                    <p>Período <span>R$ 500</span></p>
+                    <p>Período (domingo à quinta) <span>R$ 500</span></p>
+                    <p>Período (sábado e domingo)<span>R$ 500</span></p>
+                    <p>Período (3h)<span>R$ 500</span></p>
+                    <p>Hora adicional <span>R$ 500</span></p>
                 </div>
-
-                <?php get_template_part( 'template-parts/compartilhar' );?>
-
+                
+                <p class="info-checkin">
+                    Check-in 15h e check-out as 13h do dia seguinte.
+                </p>
+                
             </div><!-- info-preco -->
-
-
         </div><!-- row -->
+        
+        <div class="col-xs-12 info-reserve">
+            <a href="#" class="brn-reserve-suite">RESERVAR ESTA SUÍTE</a>
+        </div>
+        
+        <!-- faixa-compartilhar.php -->
+        
     </div><!-- faixa-detalhes -->
 
     <div class="container-fluid faixa-fotos-produto">
-
         <div class="row">
-
-
-            <?php woocommerce_show_product_images_carousel(); ?>
-
+            <?php woocommerce_show_product_images_carousel(); ?>            
         </div>
-
     </div><!-- faixa-fotos-produto -->
 
-    
-<?php wc_get_template_part('content', 'suites-simple-loop'); ?>
+
+    <?php wc_get_template_part('content', 'suites-simple-loop'); ?>
 
 
 </div><!-- suite-single -->
+

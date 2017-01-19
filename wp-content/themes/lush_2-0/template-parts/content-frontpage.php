@@ -18,7 +18,6 @@ get_header('home');
 
     <div class="row">
         <div class="vitrine">
-
             <div class="menu-header">
                 <div class="">
                     <div class="col-lg-offset-1 col-lg-4 col-xs-5 logo">
@@ -68,7 +67,7 @@ get_header('home');
 </div><!-- .faixa-vitrine -->
 
 <?php
-get_template_part('template-parts/menu/principal');
+get_template_part('template-parts/menu/home');
 ?>
 
 
@@ -90,46 +89,18 @@ get_template_part('template-parts/menu/principal');
 
         <div>
             <div class="row">
-                <div class="subfaixa-destaque col-xs-12">
-                    <div class="row">
-                        <div class="item-subfaixa">
-                            <div class="col-sm-5 destaque-img">
-                                <img src="<?php echo get_field('faixa_destaque_01_foto'); ?>" class="img-destaque">
-                            </div>
-                            <div class=" col-sm-7 destaque-texto">
-                                <img class="icon-destaque" src="<?php echo get_field('faixa_destaque_01_icone'); ?>">
-                                <h3><?php echo get_field('faixa_destaque_01_titulo'); ?></h3>
-                                <p>
-                                    <?php echo get_field('faixa_destaque_01_texto'); ?>
-                                </p>
 
-                                <a>VER EXPERIÊNCIAS</a>
-                            </div>
-                        </div>
-                    </div>
+                <?php
+                faixa_destaque_par(
+                        get_field('faixa_destaque_01_foto'), get_field('faixa_destaque_01_icone'), get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), '#', 'VER EXPERIÊNCIAS'
+                );
 
-                </div>
+                faixa_destaque_impar(
+                        get_field('faixa_destaque_01_foto'), get_field('faixa_destaque_01_icone'), get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), '#', 'VER EXPERIÊNCIAS'
+                );
+                ?>
 
-                <div class="subfaixa-destaque col-xs-12">
-                    <div class="row">
-                        <div class="item-subfaixa">
-                            <div class=" col-sm-7 destaque-texto">
-                                <img class="icon-destaque" src="<?php echo get_field('faixa_destaque_01_icone'); ?>">
-                                <h3><?php echo get_field('faixa_destaque_01_titulo'); ?></h3>
-                                <p>
-                                    <?php echo get_field('faixa_destaque_01_texto'); ?>
-                                </p>
 
-                                <a>VER EXPERIÊNCIAS</a>
-                            </div>
-                            <div class="col-sm-5 destaque-img">
-                                <img src="<?php echo get_field('faixa_destaque_01_foto'); ?>" class="img-destaque">
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </div>

@@ -7,7 +7,11 @@ if (!defined('ABSPATH')) {
 }
 
 
-get_header('branco');
+get_header('home');
+?>
+
+<?php
+get_template_part('template-parts/menu/geral');
 ?>
 
 <?php
@@ -74,13 +78,7 @@ do_action('woocommerce_after_main_content');
 ?>
 
 
-<div class="container-fluid faixa-btn">
-    <div class="row">
-        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-            <a class="btn-concierge">Serviços de concierge</a>
-        </div>
-    </div>
-</div>
+<?php get_template_part( 'template-parts/faixa/concierge'); ?>
 
 
 

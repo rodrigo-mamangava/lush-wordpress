@@ -14,8 +14,6 @@ $args = array(
     ),
 );
 $the_query = new WP_Query($args);
-
-
 ?>
 <div class="container-fluid faixa-outras-suites-list">
     <div class="row">
@@ -34,22 +32,16 @@ $the_query = new WP_Query($args);
 
                 <?php global $product; ?>
 
-                <div class="col-sm-6 suite-item">
-                    <a href="<?php echo get_permalink();?>">
+                <div class="col-sm-6 col-md-4 suite-item">
+                    <a href="<?php echo get_permalink(); ?>">
                         <div class="outra-site-item">
 
                             <?php the_post_thumbnail('loop-simples'); ?>
-
-                            <div class="info-suite">
-
-                                <?php woocommerce_template_loop_product_title() ?> 
-                                <p><span class="price">a partir de</span></p>
-                                <?php woocommerce_template_loop_price() ?>
-
-                            </div><!-- info-suite -->
                             <div class="img-filter"></div>
                         </div><!-- outra-site-item -->
+                        <p><span><?php wc_get_template( 'loop/price-simple.php' ); ?></span> <?php echo get_the_title(); ?> </p>
                     </a>
+
                 </div><!-- suite-item -->
 
                 <?php

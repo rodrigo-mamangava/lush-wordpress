@@ -20,18 +20,26 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-get_header();
+get_header('home');
 ?>
 
-<?php
-woocommerce_output_content_wrapper()
-?>
+<?php get_template_part('template-parts/menu/geral'); ?>
+
+<?php woocommerce_output_content_wrapper(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <?php wc_get_template_part('content', 'single-product-suite'); ?>
+    <?php
 
-<?php endwhile; // end of the loop.  ?>
+    if (mmgv_has_product_cat('suite')) {
+        wc_get_template_part('content', 'single-product-suite');
+    } else {
+        wc_get_template_part('content', 'single-product');
+    }
+    ?>
+
+
+<?php endwhile; // end of the loop.    ?>
 
 <?php
 

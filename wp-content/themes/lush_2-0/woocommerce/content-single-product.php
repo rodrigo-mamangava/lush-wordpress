@@ -39,7 +39,7 @@ if (post_password_required()) {
 
 
 </div>
-<?php getVitrine(get_the_post_thumbnail($post->ID), get_the_title()); ?>
+<?php //getVitrine(get_the_post_thumbnail($post->ID), get_the_title()); ?>
 
 <?php
 /**

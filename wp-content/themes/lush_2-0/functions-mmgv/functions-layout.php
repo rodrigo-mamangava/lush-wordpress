@@ -45,6 +45,45 @@ function getVitrine($img, $isUrl, $titulo, $link = '#') {
     <?php
 }
 
+/**
+ * Get vitrine for product single page SUITE
+ * @param type $img
+ * @param type $isUrl
+ * @param type $titulo
+ * @param type $link
+ */
+function get_new_vitrine($img, $titulo) {
+    ?>
+    <div class = "container-fluid vitrine-interna">
+        <div class = "row">
+            <div class="vitrine-content" style="background-image: url(<?php echo $img; ?>)">
+                <div class = " sub-titulo">
+                    <h2><?php echo $titulo; ?></h2>                    
+                </div>
+                <div class="img-filter"></div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
+
+function get_new_vitrine_completo() {
+
+    global $post;
+    ?>
+    <div class = "container-fluid vitrine-interna">
+        <div class = "row">
+            <div class="vitrine-content" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID); ?>)">
+                <div class = " sub-titulo">
+                    <h2><?php echo get_the_title(); ?></h2>                    
+                </div>
+                <div class="img-filter"></div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
+
 function wp_nav_menu_lush($args = array()) {
     static $menu_id_slugs = array();
 
@@ -90,14 +129,14 @@ function wp_nav_menu_lush($args = array()) {
         return $nav_menu;
     }
 
-    // Get the nav menu based on the requested menu
+// Get the nav menu based on the requested menu
     $menu = wp_get_nav_menu_object($args->menu);
 
-    // Get the nav menu based on the theme_location
+// Get the nav menu based on the theme_location
     if (!$menu && $args->theme_location && ( $locations = get_nav_menu_locations() ) && isset($locations[$args->theme_location]))
         $menu = wp_get_nav_menu_object($locations[$args->theme_location]);
 
-    // get the first menu that has items if we still can't find a menu
+// get the first menu that has items if we still can't find a menu
     if (!$menu && !$args->theme_location) {
         $menus = wp_get_nav_menus();
         foreach ($menus as $menu_maybe) {
@@ -112,7 +151,7 @@ function wp_nav_menu_lush($args = array()) {
         $args->menu = $menu;
     }
 
-    // If the menu exists, get its items.
+// If the menu exists, get its items.
     if ($menu && !is_wp_error($menu) && !isset($menu_items))
         $menu_items = wp_get_nav_menu_items($menu->term_id, array('update_post_term_cache' => false));
 
@@ -151,7 +190,7 @@ function wp_nav_menu_lush($args = array()) {
         }
     }
 
-    // Set up the $menu_item variables
+// Set up the $menu_item variables
     _wp_menu_item_classes_by_context($menu_items);
 
     $sorted_menu_items = $menu_items_with_children = array();
@@ -161,7 +200,7 @@ function wp_nav_menu_lush($args = array()) {
             $menu_items_with_children[$menu_item->menu_item_parent] = true;
     }
 
-    // Add the menu-item-has-children class where applicable
+// Add the menu-item-has-children class where applicable
     if ($menu_items_with_children) {
         foreach ($sorted_menu_items as &$menu_item) {
             if (isset($menu_items_with_children[$menu_item->ID]))
@@ -184,7 +223,7 @@ function wp_nav_menu_lush($args = array()) {
     $items .= walk_nav_menu_tree($sorted_menu_items, $args->depth, $args);
     unset($sorted_menu_items);
 
-    // Attributes
+// Attributes
     if (!empty($args->menu_id)) {
         $wrap_id = $args->menu_id;
     } else {
@@ -223,7 +262,7 @@ function wp_nav_menu_lush($args = array()) {
      */
     $items = apply_filters("wp_nav_menu_{$menu->slug}_items", $items, $args);
 
-    // Don't print any markup if there are no items at this point.
+// Don't print any markup if there are no items at this point.
     if (empty($items))
         return false;
 
@@ -253,4 +292,100 @@ function wp_nav_menu_lush($args = array()) {
 
 function woocommerce_show_product_images_carousel() {
     wc_get_template('single-product/product-images-carousel.php');
+}
+
+add_filter('wp_nav_menu_items', 'add_reserva_in_menu', 10, 2);
+
+function add_reserva_in_menu($items, $args) {
+    if ($args->theme_location == 'principal') {
+
+        $items .= '</ul>';
+        $items .= '<ul class="nav navbar-nav navbar-right">';
+        $items .= '<li><a class="btn-reserva-v2" href="#">Reservar</a></li>';
+        $items .= '</ul>';
+    }
+    return $items;
+}
+
+/**
+ * Imprime a FAIXA DESTAQUE PAR (img e texto)
+ * @param type $url_img
+ * @param type $icone
+ * @param type $titulo
+ * @param type $texto
+ * @param type $link
+ * @param type $frase_link
+ */
+function faixa_destaque_par($url_img, $icone, $titulo, $texto, $link, $frase_link) {
+    ?>
+    <div class="subfaixa-destaque col-xs-12">
+        <div class="row">
+            <div class="item-subfaixa">
+                <div class="col-sm-5 destaque-img">
+                    <img src="<?php echo $url_img; ?>" class="img-destaque">
+                </div>
+                <div class=" col-sm-7 destaque-texto">
+                    <?php if($icone):?>
+                    <img class="icon-destaque" src="<?php echo $icone; ?>">
+                    <?php endif;?>
+                    <h3><?php echo $titulo; ?></h3>
+                    <p>
+                        <?php echo $texto; ?>
+                    </p>
+                    <a href="<?php echo $link; ?>"><?php echo $frase_link; ?></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
+
+/**
+ * Imprime a FAIXA DESTAQUE IMPAR (texto e img)
+ * @param type $url_img
+ * @param type $icone
+ * @param type $titulo
+ * @param type $texto
+ * @param type $link
+ * @param type $frase_link
+ */
+function faixa_destaque_impar($url_img, $icone, $titulo, $texto, $link, $frase_link) {
+    ?>
+    <div class="subfaixa-destaque col-xs-12">
+        <div class="row">
+            <div class="item-subfaixa">
+                <div class=" col-sm-7 destaque-texto">
+                    <?php if($icone):?>
+                    <img class="icon-destaque" src="<?php echo $icone; ?>">
+                    <?php endif;?>
+                    <h3><?php echo $titulo; ?></h3>
+                    <p>
+                        <?php echo $texto; ?>
+                    </p>
+                    <a href="<?php echo $link; ?>"><?php echo $frase_link; ?></a>
+                </div>
+                <div class="col-sm-5 destaque-img">
+                    <img src="<?php echo $url_img; ?>" class="img-destaque">
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
+
+function get_faixa_simples($class, $texto, $class_btn, $link_btn, $texto_btn) {
+    ?>
+    <div class="container <?php echo $class; ?>">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <p>
+                    <?php echo $texto; ?>
+                </p>
+                <a class="<?php echo $class_btn; ?>" href="<?php echo $link_btn; ?>">
+                    <?php echo $texto_btn; ?>
+                </a>
+            </div>
+        </div>
+    </div><!-- faixa-explore -->
+    <?php
 }

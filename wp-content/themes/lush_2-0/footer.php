@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-xs-12">
-                <img class="logo" src="img/logo_lush_branco@2x.png">
+                <img class="logo" src="<?php uri() ?>/img/logo_lush_branco@2x.png">
             </div>
             <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-12">
 
@@ -32,23 +32,31 @@
             <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-12">
 
                 <?php
-                $menu_name = 'principal';
-                $locations = get_nav_menu_locations();
-                $menu = wp_get_nav_menu_object($locations[$menu_name]);
-                $menuitems = wp_get_nav_menu_items($menu->term_id, array('order' => 'DESC'));
-                
-                debug($menuitems);
-                
+                wp_nav_menu(
+                        array(
+                            'theme_location' => 'footer',
+                            'menu_class' => 'menu-footer',
+                        )
+                );
                 ?>
 
             </div>
             <div class="col-lg-3 col-sm-3">
-<?php
-wp_nav_menu(array(
-    'theme_location' => 'social',
-    'menu_class' => 'list-language',
-));
-?>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'social',
+                    'menu_class' => 'list-language',
+                ));
+
+                wp_nav_menu(
+                        array(
+                            'theme_location' => 'idioma',
+                            'menu_class' => 'list-language',
+                        )
+                );
+                
+                ?>
+
             </div>
         </div>
     </div>

@@ -13,8 +13,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">
-                        <img class="logo" src="<?php uri() ?>/img/logo_roxo@3x.jpg">
+                    <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>">
+                        <img class="logo" src="<?php uri() ?>/img/logo@3x.png">
                     </a>
                 </div>
 
@@ -32,6 +32,9 @@
                     'walker' => new wp_bootstrap_navwalker())
                 );
                 ?>
+
+                
+                               
             </div><!-- /.container-fluid -->
         </nav>
 

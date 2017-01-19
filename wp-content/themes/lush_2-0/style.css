@@ -9537,18 +9537,18 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
 .faixa-orderby p span {
   color: #999999;
 }
-.post-type-archive-suite .lista-suites .item-suite {
+.lista-suites .item-suite {
   background-color: white;
 }
-.post-type-archive-suite .lista-suites .item-suite:first-of-type {
+.lista-suites .item-suite:first-of-type {
   margin-top: 64px;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes {
+.lista-suites .item-suite .detalhes {
   position: relative;
   padding-top: 115px;
   text-align: center;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes .info-entra {
+.lista-suites .item-suite .detalhes .info-entra {
   position: absolute;
   top: -50px;
   left: 50%;
@@ -9558,7 +9558,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   color: #3f2658;
   font-size: 40px;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes h2 {
+.lista-suites .item-suite .detalhes h3 {
   padding-bottom: 17px;
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 42px;
@@ -9569,7 +9569,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   text-align: center;
   color: #3f2658;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes .price {
+.lista-suites .item-suite .detalhes .price {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 18px;
   font-weight: 500;
@@ -9579,7 +9579,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   text-align: center;
   color: #b8b8b8;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes .amout {
+.lista-suites .item-suite .detalhes .amout {
   padding-top: 15px;
   padding-bottom: 106px;
   font-family: "Knockout 26 A", "Knockout 26 B";
@@ -9592,7 +9592,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   text-align: center;
   color: #3f2658;
 }
-.post-type-archive-suite .lista-suites .item-suite a {
+.lista-suites .item-suite a {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
   font-weight: normal;
@@ -9605,24 +9605,24 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   -o-transition: all 1s;
   transition: all 1s;
 }
-.post-type-archive-suite .lista-suites .item-suite a:hover {
+.lista-suites .item-suite a:hover {
   color: #00846f;
   text-decoration: none;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
 }
-.post-type-archive-suite .lista-suites .foto-produto {
+.lista-suites .foto-produto {
   position: relative;
   z-index: 50;
 }
-.post-type-archive-suite .lista-suites .foto-produto:nth-child(even) {
+.lista-suites .foto-produto:nth-child(even) {
   padding-right: 0px;
 }
-.post-type-archive-suite .lista-suites .foto-produto:nth-child(odd) {
+.lista-suites .foto-produto:nth-child(odd) {
   padding-left: 0px;
 }
-.post-type-archive-suite .lista-suites .foto-produto img {
+.lista-suites .foto-produto img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -9633,7 +9633,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   -o-transition: all 1s;
   transition: all 1s;
 }
-.post-type-archive-suite .lista-suites .foto-produto a {
+.lista-suites .foto-produto a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9654,22 +9654,22 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   -o-transition: all 1s;
   transition: all 1s;
 }
-.post-type-archive-suite .lista-suites .foto-produto a:hover {
+.lista-suites .foto-produto a:hover {
   color: #d9d9d9;
   text-decoration: none;
 }
-.post-type-archive-suite .lista-suites .foto-produto:hover {
+.lista-suites .foto-produto:hover {
   /*                -moz-transition: all 1s;
                                 -webkit-transition: all 1s;
                                 transition: all 1s;*/
 }
-.post-type-archive-suite .lista-suites .foto-produto:hover img {
+.lista-suites .foto-produto:hover img {
   filter: brightness(50%);
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
 }
-.post-type-archive-suite .lista-suites .foto-produto:hover a {
+.lista-suites .foto-produto:hover a {
   display: block;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
