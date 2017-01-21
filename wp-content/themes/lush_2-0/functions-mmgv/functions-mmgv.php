@@ -35,10 +35,42 @@ function mmgv_has_product_cat($nome_cat) {
     $terms = get_the_terms($post->ID, 'product_cat');
     foreach ($terms as $term) {
 
-        if($term->slug == $nome_cat){
+        if ($term->slug == $nome_cat) {
             return true;
             exit;
         }
     }
     return false;
 }
+
+/**
+ * Imprime o TIPO-BASTIDORES de um determinado BASTIDORES ITEM
+ * @global type $post
+ * @return boolean
+ */
+function get_bastibores_item_cat() {
+    global $post;
+
+    $terms = get_the_terms($post->ID, 'tipo-bastidores');
+
+    if (!$terms) {
+        return false;
+    }
+
+    $term_name = $terms[0]->name;
+    $term_slug = $terms[0]->slug;
+
+    if ($term_slug == 'lush-na-midia') {
+        echo '<a href="#"  id="flag-midia" >' . $term_name . '</a>';
+    } else {
+        echo '<a href="#" id="flag-essencia" >' . $term_name . '</a>';
+    }
+}
+
+function post_on() {
+    global $post;
+    $time_string = esc_html(get_the_date());
+    echo $time_string;
+}
+
+

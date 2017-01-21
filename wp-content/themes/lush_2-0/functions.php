@@ -177,5 +177,6 @@ require get_template_directory() . '/functions-mmgv/functions-mmgv.php';
 require get_template_directory() . '/functions-mmgv/functions-woocommerce.php';
 require get_template_directory() . '/functions-mmgv/functions-layout.php';
 require get_template_directory() . '/functions-mmgv/functions-admin.php';
+require get_template_directory() . '/functions-mmgv/functions-custom-post-type.php';
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
