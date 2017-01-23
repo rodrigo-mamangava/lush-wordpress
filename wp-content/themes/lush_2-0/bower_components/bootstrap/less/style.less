@@ -1226,170 +1226,170 @@ body{
 
 
 
-    .lista-suites{
+.lista-suites{
 
-        .item-suite{
+    .item-suite{
 
-            &:first-of-type{
-                margin-top: 64px;
-            }
-
-            background-color: @branco;
-
-            .detalhes{
-                position: relative;
-
-                padding-top: 115px;
-                .text-center;
-
-                .info-entra{
-                    position: absolute;
-                    top: -50px;
-                    left: 50%;
-                    width: 200px;
-                    margin-left: -100px;
-                    .text-center;
-                    color: #3f2658;
-                    font-size: 40px;
-
-
-                }
-
-                h3{
-                    padding-bottom: 17px;
-                    font-family: @FairfieldItalic;
-                    font-size: 42px;
-                    font-weight: 500;
-                    font-stretch: normal;
-                    line-height: 1.43;
-                    letter-spacing: 0.4px;
-                    text-align: center;
-                    color: #3f2658;
-                }
-
-                .price{
-
-                    //color: @cinza-escuro;
-                    font-family: @FairfieldItalic;
-                    font-size: 18px;
-                    font-weight: 500;
-                    font-style: italic;
-                    font-stretch: normal;
-                    letter-spacing: 0.2px;
-                    text-align: center;
-                    color: #b8b8b8;
-                }
-
-                .amout{
-                    padding-top: 15px;
-                    padding-bottom: 106px;
-
-                    font-family: @knockout26;
-                    font-size: 98px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: 0.8;
-                    letter-spacing: 2px;
-                    text-align: center;
-                    color: #3f2658;
-                }
-            }
-
-
-
-            a{
-                font-family: @knockout29;
-                font-size: 18px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                letter-spacing: 1.8px;
-                color: #00d0b0;
-                .text-uppercase;
-                .transition(all 1s);
-
-                &:hover{
-                    color:  darken(#00d0b0, 15%);
-                    text-decoration: none;
-                    .transition(all 1s);
-                }
-
-            }
-
-
+        &:first-of-type{
+            margin-top: 64px;
         }
 
-        .foto-produto{
+        background-color: @branco;
+
+        .detalhes{
             position: relative;
-            z-index: 50;
 
-            &:nth-child(even) {
-                padding-right: 0px;
-            }
-            &:nth-child(odd) {
-                padding-left: 0px;
-            }
+            padding-top: 115px;
+            .text-center;
 
-            img{
-                .img-responsive;
-                width: 100%;
-                position: relative;
-                position: 51;
-                .transition(all 1s);
-            }
-
-            a{
+            .info-entra{
                 position: absolute;
-                text-align: center;
-                top: 50%;
+                top: -50px;
                 left: 50%;
                 width: 200px;
                 margin-left: -100px;
-                z-index: 1000;
-                display: none;
-
-                .text-uppercase;
-
-                font-family: @knockout29;
-                font-size: 18px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                letter-spacing: 2.2px;
-                text-align: center;
-                color: #ffffff;
-
-                .transition(all 1s);
-
-                &:hover{
-                    color:  darken(#ffffff, 15%);
-                    text-decoration: none;
-                }
-
+                .text-center;
+                color: #3f2658;
+                font-size: 40px;
 
 
             }
 
+            h3{
+                padding-bottom: 17px;
+                font-family: @FairfieldItalic;
+                font-size: 42px;
+                font-weight: 500;
+                font-stretch: normal;
+                line-height: 1.43;
+                letter-spacing: 0.4px;
+                text-align: center;
+                color: #3f2658;
+            }
+
+            .price{
+
+                //color: @cinza-escuro;
+                font-family: @FairfieldItalic;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: italic;
+                font-stretch: normal;
+                letter-spacing: 0.2px;
+                text-align: center;
+                color: #b8b8b8;
+            }
+
+            .amout{
+                padding-top: 15px;
+                padding-bottom: 106px;
+
+                font-family: @knockout26;
+                font-size: 98px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.8;
+                letter-spacing: 2px;
+                text-align: center;
+                color: #3f2658;
+            }
+        }
+
+
+
+        a{
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1.8px;
+            color: #00d0b0;
+            .text-uppercase;
+            .transition(all 1s);
+
             &:hover{
-                img {
-                    filter: brightness(50%);
-                    .transition(all 1s);
-                }
-                a {
-                    display: block;
-                    .transition(all 1s);
-
-                }
-
-                /*                -moz-transition: all 1s;
-                                -webkit-transition: all 1s;
-                                transition: all 1s;*/
+                color:  darken(#00d0b0, 15%);
+                text-decoration: none;
+                .transition(all 1s);
             }
 
         }
 
+
     }
+
+    .foto-produto{
+        position: relative;
+        z-index: 50;
+
+        &:nth-child(even) {
+            padding-right: 0px;
+        }
+        &:nth-child(odd) {
+            padding-left: 0px;
+        }
+
+        img{
+            .img-responsive;
+            width: 100%;
+            position: relative;
+            position: 51;
+            .transition(all 1s);
+        }
+
+        a{
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            margin-left: -100px;
+            z-index: 1000;
+            display: none;
+
+            .text-uppercase;
+
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 2.2px;
+            text-align: center;
+            color: #ffffff;
+
+            .transition(all 1s);
+
+            &:hover{
+                color:  darken(#ffffff, 15%);
+                text-decoration: none;
+            }
+
+
+
+        }
+
+        &:hover{
+            img {
+                filter: brightness(50%);
+                .transition(all 1s);
+            }
+            a {
+                display: block;
+                .transition(all 1s);
+
+            }
+
+            /*                -moz-transition: all 1s;
+                            -webkit-transition: all 1s;
+                            transition: all 1s;*/
+        }
+
+    }
+
+}
 
 
 //post-type-archive-suite
@@ -1712,6 +1712,7 @@ body{
 
             .info-checkin{
                 padding-top: 46px;
+                padding-bottom: 46px;
 
                 font-family: @FairfieldLTW01-46LightI;
                 font-size: 20px;
@@ -1719,6 +1720,18 @@ body{
                 font-stretch: normal;
                 color: #b8b8b8;
                 .text-center;
+            }
+
+            .wc-bookings-booking-form{
+
+                .label{
+                    font-family: @FairfieldLTW01-46LightI;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    color: #b8b8b8;
+                }
+
             }
 
         }
@@ -2112,7 +2125,7 @@ body{
                     padding-bottom: 16px;
                 }
 
-                .descricao{
+                p{
                     font-family: @fairfield;
                     font-size: 18px;
                     font-weight: 500;
@@ -2147,6 +2160,8 @@ body{
                     padding: 11px 39.5px;
 
                 }
+
+
             }
 
         }
@@ -2625,6 +2640,14 @@ footer{
             }
 
         }
+    }
+
+}
+
+
+.tmce-active {
+    .wp-editor-area{
+        color: black !important;        
     }
 
 }

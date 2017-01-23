@@ -70,7 +70,6 @@ get_header('home');
 get_template_part('template-parts/menu/home');
 ?>
 
-
 <?php  wc_get_template( 'home/content-loop-suite-home.php' ); ?>
 
 <div class="container-fluid faixa-faichada" style="background-image: url(<?php echo get_field('faixa_de_imagem_01'); ?>)">

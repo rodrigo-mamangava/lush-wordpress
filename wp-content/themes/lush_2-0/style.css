@@ -9660,8 +9660,8 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
 }
 .lista-suites .foto-produto:hover {
   /*                -moz-transition: all 1s;
-                                -webkit-transition: all 1s;
-                                transition: all 1s;*/
+                            -webkit-transition: all 1s;
+                            transition: all 1s;*/
 }
 .lista-suites .foto-produto:hover img {
   filter: brightness(50%);
@@ -10307,12 +10307,20 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-detalhes .info-preco .info-checkin {
   padding-top: 46px;
+  padding-bottom: 46px;
   font-family: 'FairfieldLTW01-46LightI';
   font-size: 20px;
   font-weight: 500;
   font-stretch: normal;
   color: #b8b8b8;
   text-align: center;
+}
+.suite-single .faixa-detalhes .info-preco .wc-bookings-booking-form .label {
+  font-family: 'FairfieldLTW01-46LightI';
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  color: #b8b8b8;
 }
 .suite-single .faixa-detalhes .info-reserve {
   padding-top: 81px;
@@ -10799,7 +10807,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: #3f2658;
   padding-bottom: 16px;
 }
-.experiencia-single .pacote-loop .pacote-item .item-texto .descricao {
+.experiencia-single .pacote-loop .pacote-item .item-texto p {
   font-family: 'FairfieldLTW01-45Light';
   font-size: 18px;
   font-weight: 500;
@@ -11228,4 +11236,7 @@ footer .list-social li a.active,
 footer .list-language li a.active {
   color: white;
   text-decoration: none;
+}
+.tmce-active .wp-editor-area {
+  color: black !important;
 }

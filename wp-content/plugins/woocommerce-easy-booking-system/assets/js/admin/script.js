@@ -1,1 +1,0 @@
-!function(o){o(document).ready(function(){o(".color-field").wpColorPicker()})}(jQuery);

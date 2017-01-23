@@ -47,27 +47,23 @@ if (post_password_required()) {
             </div><!-- descricao --> 
 
             <div class="col-sm-4 col-sm-offset-1 info-preco">
-
-                <div class="tabela-preco">
-                    <p>Período <span>R$ 500</span></p>
-                    <p>Período (domingo à quinta) <span>R$ 500</span></p>
-                    <p>Período (sábado e domingo)<span>R$ 500</span></p>
-                    <p>Período (3h)<span>R$ 500</span></p>
-                    <p>Hora adicional <span>R$ 500</span></p>
-                </div>
                 
-                <p class="info-checkin">
-                    Check-in 15h e check-out as 13h do dia seguinte.
-                </p>
+                
+                <?php echo get_field('preço_e_reserva'); ?>
+                
+                <?php woocommerce_template_single_add_to_cart(); ?>
+                
+                
+                
                 
             </div><!-- info-preco -->
         </div><!-- row -->
         
-        <div class="col-xs-12 info-reserve">
-            <a href="#" class="brn-reserve-suite">RESERVAR ESTA SUÍTE</a>
-        </div>
+<!--        <div class="col-xs-12 info-reserve">
+            <a href="#" class="brn-reserve-suite">RESERVAR ESTA SUÍTE</a>            
+        </div>-->
         
-        <!-- faixa-compartilhar.php -->
+        <?php get_template_part( 'template-parts/compartilhar' ); ?>
         
     </div><!-- faixa-detalhes -->
 
@@ -76,6 +72,26 @@ if (post_password_required()) {
             <?php woocommerce_show_product_images_carousel(); ?>            
         </div>
     </div><!-- faixa-fotos-produto -->
+    
+    
+    <?php
+    /**
+     * woocommerce_single_product_summary hook.
+     *
+     * @hooked woocommerce_template_single_title - 5
+     * @hooked woocommerce_template_single_rating - 10
+     * @hooked woocommerce_template_single_price - 10
+     * @hooked woocommerce_template_single_excerpt - 20
+     * @hooked woocommerce_template_single_add_to_cart - 30
+     * @hooked woocommerce_template_single_meta - 40
+     * @hooked woocommerce_template_single_sharing - 50
+     */
+    //do_action('woocommerce_single_product_summary');
+
+    
+    
+    ?>
+    
 
 
     <?php wc_get_template_part('content', 'suites-simple-loop'); ?>
