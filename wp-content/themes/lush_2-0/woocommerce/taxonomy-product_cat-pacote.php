@@ -46,10 +46,8 @@ get_template_part('template-parts/menu/geral');
         </div>
         <div class="pacote-loop">
             <div class="container-fluid">
-
                 <?php
                 foreach ($wp_query->posts as $key => $suite) {
-
                     the_post();
                     ?>
                     <div class="row">

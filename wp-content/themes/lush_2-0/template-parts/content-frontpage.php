@@ -79,12 +79,11 @@ get_template_part('template-parts/menu/home');
 </div><!-- faixa-faichada -->
 
 
-
 <div class=" faixa-saiba-mais">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                <h2>SAIBA MAIS SOBRE O LUSH</h2>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">?
+                <h2><?php _e("[:pb]Saiba mais [:en]More"); ?></h2>
             </div>
         </div>
 
@@ -111,11 +110,11 @@ get_template_part('template-parts/menu/home');
 <div class="container-fluid faixa-mapa">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
-            <h2 class=""> Como chegar no Lush Motel</h2>
+            <h2 class="">Como chegar no Lush Motel</h2>
         </div>
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
             <div class="mapa-wrap">
-                <h3>#VemProLush</h3>
+                <h3><?php echo get_field('hashtag'); ?></h3>
                 <img src="<?php uri() ?>/img/mapa@2x.png">
             </div>
         </div>
@@ -132,7 +131,7 @@ get_template_part('template-parts/menu/home');
     <div class="row">
         <div class="col-xs-12">
             <h2>LUSH MEMBER</h2>
-            <h3>Seja um Lush Member agora mesmo</h3>
+            <h3><?php _e("[:pb]Seja um Lush Member agora mesmo [:en] Be a Lush Member"); ?></h3>
             <p>Seja o primeiro a saber das novidades e ganhe descontos exclusivos.</p>
             <form class="form-lush">
                 <input type="text" id="nome" name="nome" placeholder="Nome" class="campo"><br/>

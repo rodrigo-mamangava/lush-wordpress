@@ -49,19 +49,37 @@
 
             <?php
             faixa_destaque_par(
-                    get_field('faixa_destaque_02_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('faixa_destaque_01_link'), get_field('faixa_destaque_01_texto_botao')
+                    get_field('faixa_destaque_02_foto'),                     
+                    false, get_field('faixa_destaque_01_titulo'), 
+                    get_field('faixa_destaque_01_texto'), 
+                    get_field('faixa_destaque_01_link'), 
+                    get_field('faixa_destaque_01_texto_botao')
             );
 
             faixa_destaque_impar(
-                    get_field('faixa_destaque_02_foto'), false, get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_03_texto'), get_field('faixa_destaque_02_link'), get_field('faixa_destaque_02_texto_botao')
+                    get_field('faixa_destaque_02_foto'), 
+                    false, 
+                    get_field('faixa_destaque_02_titulo'), 
+                    get_field('faixa_destaque_03_texto'), 
+                    get_field('faixa_destaque_02_link'), 
+                    get_field('faixa_destaque_02_texto_botao')
             );
 
             faixa_destaque_par(
-                    get_field('faixa_destaque_03_foto'), false, get_field('faixa_destaque_03_titulo'), get_field('faixa_destaque_03_texto'), get_field('faixa_destaque_03_link'), get_field('faixa_destaque_03_texto_botao')
+                    get_field('faixa_destaque_03_foto'), 
+                    false, 
+                    get_field('faixa_destaque_03_titulo'), 
+                    get_field('faixa_destaque_03_texto'), 
+                    get_field('faixa_destaque_03_link'), 
+                    get_field('faixa_destaque_03_texto_botao')
             );
 
             faixa_destaque_impar(
-                    get_field('faixa_destaque_04_foto'), false, get_field('faixa_destaque_04_titulo'), get_field('faixa_destaque_03_texto'), get_field('faixa_destaque_04_link'), get_field('faixa_destaque_04_texto_botao')
+                    get_field('faixa_destaque_04_foto'), 
+                    false, get_field('faixa_destaque_04_titulo'), 
+                    get_field('faixa_destaque_03_texto'), 
+                    get_field('faixa_destaque_04_link'), 
+                    get_field('faixa_destaque_04_texto_botao')
             );
 
 
