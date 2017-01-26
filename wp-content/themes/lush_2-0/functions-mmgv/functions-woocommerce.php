@@ -47,3 +47,9 @@ function woocommerce_catalog_ordering_lush_suite() {
 }
 
 
+
+//custom get price html
+add_filter( 'woocommerce_get_price_html', 'custom_price_html', 100, 2 );
+function custom_price_html( $price, $product ){
+    return str_replace( '</del>', '<span class="del-img"></span></del>', $price );
+}

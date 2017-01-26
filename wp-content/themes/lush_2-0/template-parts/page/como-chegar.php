@@ -2,27 +2,24 @@
 
 <div class="page-chegar"> 
 
-    <div class="container-fluid faixa-mapa-como-chegar" style="background-image: url(img/mapa@2x.png)">
+    <div class="container-fluid faixa-mapa-como-chegar" style="background-image: url(<?php echo get_field('img_mapa');?>)">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                 <div class="card-endereco">
                     <h1>Lush Motel</h1>
 
                     <p>
-                        Av. do Estado, 6600 - Cambuci
-                    </p>
-                    <p>
-                        São Paulo - SP, 01516-100, Brazil
+                        <?php echo get_field('endereco'); ?>
                     </p>
 
                     <hr>
 
                     <p class="a-partir">
-                        A partir de um ponto
+                        <?php _e('From one point', 'lush_2-0'); ?>
                     </p>
 
-                    <p>Aeroporto de Congonhas </p>
-                    <p>Parque Ibirapuera </p>
+                    <p><?php _e('From one point', 'lush_2-0'); ?></p>
+                    <p><?php _e('Ibirapuera park', 'lush_2-0'); ?></p>
                     <p>Av. Paulista Praça da sé</p>
 
                 </div>
@@ -36,9 +33,9 @@
     <div class="container-fluid faixa-explore">
         <div class="row">
             <div class="col-xs-12">
-                <p>FAÇA UMA RESERVA</p>
-                <h2>Explore todos os seus sentidos</h2>
-                <a class="btn-reservar-v2" href="#">RESERVAR</a>
+                <p><?php _e('Make a Reservation', 'lush_2-0'); ?></p>
+                <h2><?php _e('Explore all your senses', 'lush_2-0'); ?></h2>
+                <a class="btn-reservar-v2" href="#"><?php _e('Book', 'lush_2-0'); ?></a>
 
             </div>
         </div>

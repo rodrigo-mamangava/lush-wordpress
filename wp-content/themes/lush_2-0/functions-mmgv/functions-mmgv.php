@@ -69,7 +69,7 @@ function get_bastibores_item_cat() {
 
 function post_on() {
     global $post;
-    $time_string = esc_html(get_the_date());
+    $time_string = _e(esc_html(get_the_date()));
     echo $time_string;
 }
 

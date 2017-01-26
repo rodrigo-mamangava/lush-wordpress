@@ -9,13 +9,13 @@
 <?php get_new_vitrine_completo(); ?>
 
 <?php
+
+
 $class = 'faixa-explore-cardapio';
-$texto = 'Um exclusivo cardápio gourmet, carta de vinhos, carta de cervejas 
-        importadas e drinks especiais fazem do Lush uma experiência completa e 
-        única.';
+$texto = get_field('frase_exclusivo_cardapio');
 $class_btn = 'btn-explore-cardapio';
 $link_btn = '#';
-$texto_btn = 'EXPLORAR CARDÁPIO';
+$texto_btn = 'Explore menu';
 get_faixa_simples($class, $texto, $class_btn, $link_btn, $texto_btn);
 ?>
 
@@ -27,29 +27,22 @@ get_faixa_simples($class, $texto, $class_btn, $link_btn, $texto_btn);
             <?php
             
             faixa_destaque_par(
-                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('link'), get_field('texto_do_botão')
+                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('link_01'), get_field('texto_do_botão_01')
             );
             
             faixa_destaque_impar(
-                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('link'), get_field('texto_do_botão')
+                    get_field('faixa_destaque_02_foto'), false, get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_02_texto'), get_field('link_02'), get_field('texto_do_botão_02')
             );
             
             faixa_destaque_par(
-                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('link'), get_field('texto_do_botão')
+                    get_field('faixa_destaque_03_foto'), false, get_field('faixa_destaque_03_titulo'), get_field('faixa_destaque_03_texto'), get_field('link_03'), get_field('texto_do_botão_03')
             );
             
             faixa_destaque_impar(
-                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('link'), get_field('texto_do_botão')
-            );
-            
-            faixa_destaque_par(
-                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('link'), get_field('texto_do_botão')
+                    get_field('faixa_destaque_04_foto'), false, get_field('faixa_destaque_04_titulo'), get_field('faixa_destaque_04_texto'), get_field('link_04'), get_field('texto_do_botão_04')
             );
             
             ?>
-
-
-
 
         </div>
     </div>

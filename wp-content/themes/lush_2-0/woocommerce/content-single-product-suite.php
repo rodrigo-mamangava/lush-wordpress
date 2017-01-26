@@ -47,24 +47,31 @@ if (post_password_required()) {
             </div><!-- descricao --> 
 
             <div class="col-sm-4 col-sm-offset-1 info-preco">
-                
-                
+
+                <div class="tabela-preco">
+                    <p><?php _e('Period', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo');?></span></p>
+                    <p><?php _e('Period (Sunday to Thursday)', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo_dom_qui');?></span></p>
+                    <p><?php _e('Period (Saturday and Sunday)', 'lush_2-0'); ?><span>R$ <?php echo get_field('periodo_sab_dom');?></span></p>
+                    <p><?php _e('Period (3h)', 'lush_2-0'); ?>Período (3h)<span>R$ <?php echo get_field('periodo_3hr');?></span></p>
+                    <p><?php _e('Additional time', 'lush_2-0'); ?> <span>R$ <?php echo get_field('hora_add');?></span></p>
+                </div>
+
+
                 <?php echo get_field('preço_e_reserva'); ?>
-                
+
+                <p class="info-checkin">
+                    <?php _e('Check-in 3pm and check-out at 1pm the next day.', 'lush_2-0'); ?>
+                </p>
+
                 <?php woocommerce_template_single_add_to_cart(); ?>
-                
-                
-                
-                
+
+
             </div><!-- info-preco -->
         </div><!-- row -->
-        
-<!--        <div class="col-xs-12 info-reserve">
-            <a href="#" class="brn-reserve-suite">RESERVAR ESTA SUÍTE</a>            
-        </div>-->
-        
-        <?php get_template_part( 'template-parts/compartilhar' ); ?>
-        
+
+
+        <?php get_template_part('template-parts/compartilhar'); ?>
+
     </div><!-- faixa-detalhes -->
 
     <div class="container-fluid faixa-fotos-produto">
@@ -72,8 +79,8 @@ if (post_password_required()) {
             <?php woocommerce_show_product_images_carousel(); ?>            
         </div>
     </div><!-- faixa-fotos-produto -->
-    
-    
+
+
     <?php
     /**
      * woocommerce_single_product_summary hook.
@@ -87,11 +94,8 @@ if (post_password_required()) {
      * @hooked woocommerce_template_single_sharing - 50
      */
     //do_action('woocommerce_single_product_summary');
-
-    
-    
     ?>
-    
+
 
 
     <?php wc_get_template_part('content', 'suites-simple-loop'); ?>

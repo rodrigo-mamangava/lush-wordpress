@@ -1,6 +1,6 @@
 <div class="col-xs-12 info-compartilhe">
     <div class="compartilhar">
-        <p>CONVIDE SEU PAR PARA COMPARTILHAR ESTA SUÍTE:</p>
+        <p><?php _e('INVITE YOUR PARTNER TO SHARE THIS SUITE:', 'lush_2-0'); ?></p>
         <ul class="icones">
             <li>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink() ?>" target="_blank">

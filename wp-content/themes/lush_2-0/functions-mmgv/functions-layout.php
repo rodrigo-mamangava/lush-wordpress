@@ -297,11 +297,14 @@ function woocommerce_show_product_images_carousel() {
 add_filter('wp_nav_menu_items', 'add_reserva_in_menu', 10, 2);
 
 function add_reserva_in_menu($items, $args) {
+    
+
+    
     if ($args->theme_location == 'principal') {
 
         $items .= '</ul>';
         $items .= '<ul class="nav navbar-nav navbar-right">';
-        $items .= '<li><a class="btn-reserva-v2" href="#">Reservar</a></li>';
+        $items .= '<li><a class="btn-reserva-v2" href="#"> Reservar</a></li>';
         $items .= '</ul>';
     }
     return $items;
@@ -362,7 +365,7 @@ function faixa_destaque_impar($url_img, $icone, $titulo, $texto, $link, $frase_l
                     <p>
                         <?php echo $texto; ?>
                     </p>
-                    <a href="<?php echo $link; ?>"><?php echo $frase_link; ?></a>
+                    <a href="<?php echo $link; ?>"><?php _e($frase_link, 'lush-2-0') ?></a>
                 </div>
                 <div class="col-sm-5 destaque-img">
                     <img src="<?php echo $url_img; ?>" class="img-destaque">
@@ -382,7 +385,7 @@ function get_faixa_simples($class, $texto, $class_btn, $link_btn, $texto_btn) {
                     <?php echo $texto; ?>
                 </p>
                 <a class="<?php echo $class_btn; ?>" href="<?php echo $link_btn; ?>">
-                    <?php echo $texto_btn; ?>
+                    <?php _e($texto_btn, 'lush-2-0') ?>
                 </a>
             </div>
         </div>
