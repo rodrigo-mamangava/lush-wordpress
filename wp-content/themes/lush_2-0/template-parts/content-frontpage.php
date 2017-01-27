@@ -162,7 +162,7 @@ get_template_part('template-parts/menu/home');
                         </div>
                     </div>
 
-                    <a class="btn-verde-v02"><?php _e('Buy now', 'lush_2-0')?></a>
+                    <a class="btn-verde-v02" href="<?php echo get_term_link( 'gift-card' ,'product_cat')?>" ><?php _e('Buy now', 'lush_2-0')?></a>
 
                     <img class="gift-cards" src="<?php uri() ?>/img/bitmap@3x.png" >
 

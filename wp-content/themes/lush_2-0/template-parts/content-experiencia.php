@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <a class="btn-verde-v02"><?php _e('Buy now', 'lush_2-0')?></a>
+                <a class="btn-verde-v02" href="<?php echo get_term_link( 'gift-card' ,'product_cat')?>" ><?php _e('Buy now', 'lush_2-0')?></a>
 
                 <img class="gift-cards" src="<?php uri() ?>/img/bitmap@3x.png" >
 
@@ -44,19 +44,19 @@
 
             <?php
             faixa_destaque_par(
-                    get_field('faixa_destaque_02_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('faixa_destaque_01_link'), get_field('faixa_destaque_01_texto_botao')
+                    get_field('faixa_destaque_01_foto'), get_field('faixa_destaque_01_icone'), get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_term_link( 'pacote' ,'product_cat'), get_field('faixa_destaque_01_texto_botao')
             );
 
             faixa_destaque_impar(
-                    get_field('faixa_destaque_02_foto'), false, get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_03_texto'), get_field('faixa_destaque_02_link'), get_field('faixa_destaque_02_texto_botao')
+                    get_field('faixa_destaque_02_foto'), get_field('faixa_destaque_02_icone'), get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_03_texto'), get_term_link( 'pacote' ,'product_cat'), get_field('faixa_destaque_01_texto_botao')
             );
 
             faixa_destaque_par(
-                    get_field('faixa_destaque_03_foto'), false, get_field('faixa_destaque_03_titulo'), get_field('faixa_destaque_03_texto'), get_field('faixa_destaque_03_link'), get_field('faixa_destaque_03_texto_botao')
+                    get_field('faixa_destaque_03_foto'), get_field('faixa_destaque_03_icone'), get_field('faixa_destaque_03_titulo'), get_field('faixa_destaque_03_texto'), get_term_link( 'pacote' ,'product_cat'), get_field('faixa_destaque_01_texto_botao')
             );
 
             faixa_destaque_impar(
-                    get_field('faixa_destaque_04_foto'), false, get_field('faixa_destaque_04_titulo'), get_field('faixa_destaque_03_texto'), get_field('faixa_destaque_04_link'), get_field('faixa_destaque_04_texto_botao')
+                    get_field('faixa_destaque_04_foto'), get_field('faixa_destaque_04_icone'), get_field('faixa_destaque_04_titulo'), get_field('faixa_destaque_03_texto'), get_term_link( 'pacote' ,'product_cat'), get_field('faixa_destaque_01_texto_botao')
             );
             ?>
 

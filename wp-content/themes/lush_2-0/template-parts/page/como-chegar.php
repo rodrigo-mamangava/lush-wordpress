@@ -18,9 +18,10 @@
                         <?php _e('From one point', 'lush_2-0'); ?>
                     </p>
 
-                    <p><?php _e('From one point', 'lush_2-0'); ?></p>
+                    <p><?php _e('Congonhas Airport', 'lush_2-0'); ?></p>
+                    <p><?php _e('Av. Paulista', 'lush_2-0'); ?></p>
+                    <p><?php _e('Praça da Sé', 'lush_2-0'); ?></p>
                     <p><?php _e('Ibirapuera park', 'lush_2-0'); ?></p>
-                    <p>Av. Paulista Praça da sé</p>
 
                 </div>
 

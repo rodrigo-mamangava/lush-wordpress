@@ -70,7 +70,7 @@ if (post_password_required()) {
         </div><!-- row -->
 
 
-        <?php get_template_part('template-parts/compartilhar'); ?>
+        <?php get_template_part('template-parts/compartilhar', 'suite'); ?>
 
     </div><!-- faixa-detalhes -->
 

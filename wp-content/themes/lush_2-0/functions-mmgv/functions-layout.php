@@ -66,6 +66,20 @@ function get_new_vitrine($img, $titulo) {
     </div>
     <?php
 }
+function get_new_vitrine_tradutor($img, $titulo) {
+    ?>
+    <div class = "container-fluid vitrine-interna">
+        <div class = "row">
+            <div class="vitrine-content" style="background-image: url(<?php echo $img; ?>)">
+                <div class = " sub-titulo">
+                    <h2><?php _e($titulo, 'lush_2-0') ?></h2>                    
+                </div>
+                <div class="img-filter"></div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
 
 function get_new_vitrine_completo() {
 

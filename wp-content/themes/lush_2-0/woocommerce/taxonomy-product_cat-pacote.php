@@ -16,6 +16,13 @@ get_template_part('template-parts/menu/geral');
 
 <div class="experiencia-single">
 
+
+    <?php
+    $img = get_template_directory_uri() . '/img/img-centro@2x_1.jpg';
+    $titulo = 'Romantic night';
+    get_new_vitrine_tradutor($img, $titulo);
+    ?>
+
     <?php
     woocommerce_output_content_wrapper();
     ?>
@@ -51,19 +58,19 @@ get_template_part('template-parts/menu/geral');
                     the_post();
                     ?>
                     <div class="row">
-                        
-                        <?php global $product;?>
+
+                        <?php global $product; ?>
 
                         <div class="pacote-item col-xs-12 col-sm-10 col-sm-offset-1">
                             <div class="row">
                                 <div class="col-sm-6 item-texto">                      
-                                   <?php the_title('<h3>', '</h3>'); ?>
-                                   <?php the_content(); ?>
+                                    <?php the_title('<h3>', '</h3>'); ?>
+                                    <?php the_content(); ?>
                                 </div><!-- item-texto -->
                                 <div class="col-sm-6 item-reserve">
                                     <div class="preco">
                                         <p>
-                                            <?php 
+                                            <?php
 //                                            $price = get_post_meta( get_the_ID(), '_regular_price', true);;
 //                                            echo $price;
                                             echo $product->get_price_html();
@@ -101,6 +108,16 @@ get_template_part('template-parts/menu/geral');
 
     <?php endif; ?>
 
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <?php get_template_part('template-parts/compartilhar', 'pacote'); ?>
+
+        </div>
+
+    </div>
+
     <?php
     /**
      * woocommerce_after_main_content hook.
@@ -109,6 +126,8 @@ get_template_part('template-parts/menu/geral');
      */
     do_action('woocommerce_after_main_content');
     ?>
+
+
 
 </div>
 

@@ -1,55 +1,56 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: LUSH 2.0\n"
-"POT-Creation-Date: 2017-01-26 14:49-0200\n"
-"PO-Revision-Date: 2017-01-26 14:51-0200\n"
+"POT-Creation-Date: 2017-01-27 13:38-0200\n"
+"PO-Revision-Date: 2017-01-27 13:46-0200\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: \n"
-"Language: pt_BR\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "Ups! Essa página não pode ser encontrada."
 
 #: 404.php:21
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Parece que nada foi encontrado aqui. Tente um dos links abaixo ou pesquise."
 
 #: 404.php:33
 msgid "Most Used Categories"
-msgstr ""
+msgstr "Categorias mais usadas"
 
 #: 404.php:51
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Tente procurar no arquivo mensal. %1$s"
 
 #: comments.php:31
 #, php-format
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "Um comentário em &ldquo;%s&rdquo;"
 msgstr[1] ""
 
 #: comments.php:40 comments.php:61
 msgid "Comment navigation"
-msgstr ""
+msgstr "Navegação por comentários"
 
 #: comments.php:43 comments.php:64
 msgid "Older Comments"
@@ -65,7 +66,7 @@ msgstr ""
 
 #: functions-mmgv/functions-custom-post-type.php:38
 msgid "Description."
-msgstr ""
+msgstr "Descrição de"
 
 #: functions-mmgv/functions-custom-post-type.php:69
 msgid "Parent"
@@ -131,7 +132,7 @@ msgstr ""
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Postado em %s"
 
 #: inc/template-tags.php:33
 #, php-format
@@ -168,33 +169,57 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: template-parts/content-frontpage.php:86
-msgid "Saiba mais"
-msgstr ""
+#: template-parts/compartilhar-pacote.php:3
+msgid "INVITE WHO WILL LIVE AN UNFORGETTABLE EXPERIENCE WITH YOU.:"
+msgstr "CONVIDAR QUEM VIVERÁ UMA EXPERIÊNCIA INESQUECÍVEL COM VOCÊ.:"
 
-#: template-parts/content-frontpage.php:99
-msgid "frase cardapio"
-msgstr ""
+#: template-parts/compartilhar-suite.php:3
+msgid "INVITE YOUR PARTNER TO SHARE THIS SUITE:"
+msgstr "CONVIDE SEU PARCEIRO PARA COMPARTILHAR ESTA SUITE:"
+
+#: template-parts/content-experiencia.php:15
+#: template-parts/content-frontpage.php:157
+msgid "To gift"
+msgstr "Para presentear"
+
+#: template-parts/content-experiencia.php:16
+#: template-parts/content-frontpage.php:158
+msgid "Lush Gift Card"
+msgstr "Lush Gift Card"
+
+#: template-parts/content-experiencia.php:23
+#: template-parts/content-frontpage.php:165
+msgid "Buy now"
+msgstr "Comprar agora"
+
+#: template-parts/content-experiencia.php:39
+msgid "Special packages"
+msgstr "Pacotes especiais"
+
+#: template-parts/content-frontpage.php:86
+msgid "Know more"
+msgstr "Mais"
 
 #: template-parts/content-frontpage.php:133
 msgid "Lush Member"
-msgstr ""
+msgstr "Lush Member"
 
-#: template-parts/content-frontpage.php:157
-msgid "para presentear"
-msgstr ""
+#: template-parts/content-frontpage.php:141 template-parts/page/contato.php:21
+#: woocommerce/single-product-reviews.php:73
+msgid "Name"
+msgstr "Nome"
 
-#: template-parts/content-frontpage.php:158
-msgid "Lush Gift Card"
-msgstr ""
+#: template-parts/content-frontpage.php:142 template-parts/page/contato.php:22
+msgid "E-mail"
+msgstr "E-mail"
 
-#: template-parts/content-frontpage.php:165
-msgid "Compre agora"
-msgstr ""
+#: template-parts/content-frontpage.php:143
+msgid "Subscribe"
+msgstr "Assinar"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nada encontrado"
 
 #: template-parts/content-none.php:21
 #, php-format
@@ -223,6 +248,74 @@ msgstr ""
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
+#: template-parts/faixa/concierge.php:4
+msgid "Concierge"
+msgstr "Concierge"
+
+#: template-parts/faixa/concierge.php:5
+msgid "Make your evening even more special"
+msgstr "Faça sua noite ainda mais especial"
+
+#: template-parts/faixa/concierge.php:7
+msgid "Concierge service"
+msgstr "-Serviço de Concierge"
+
+#: template-parts/page/como-chegar.php:18
+msgid "From one point"
+msgstr "De um ponto"
+
+#: template-parts/page/como-chegar.php:21
+msgid "Congonhas Airport"
+msgstr "Aeroporto de Congonhas"
+
+#: template-parts/page/como-chegar.php:22
+msgid "Av. Paulista"
+msgstr "Av. Paulista"
+
+#: template-parts/page/como-chegar.php:23
+msgid "Praça da Sé"
+msgstr "Praça da Sé"
+
+#: template-parts/page/como-chegar.php:24
+msgid "Ibirapuera park"
+msgstr "Parque Ibirapuera"
+
+#: template-parts/page/como-chegar.php:37
+msgid "Make a Reservation"
+msgstr "Faça sua Reserva"
+
+#: template-parts/page/como-chegar.php:38
+msgid "Explore all your senses"
+msgstr "Explore todos os seus sentidos"
+
+#: template-parts/page/como-chegar.php:39
+msgid "Book"
+msgstr "Livro"
+
+#: template-parts/page/contato.php:23
+msgid "Subject"
+msgstr ""
+
+#: template-parts/page/contato.php:24
+msgid "Message"
+msgstr ""
+
+#: template-parts/page/contato.php:25
+msgid "Send"
+msgstr "Enviar"
+
+#: template-parts/page/contato.php:33
+msgid "Do you want to work with us?"
+msgstr "Quer trabalhar connosco?"
+
+#: template-parts/page/contato.php:36
+msgid "Submit your resume to"
+msgstr "Envie seu currículo para"
+
+#: template-parts/page/contato.php:38
+msgid "Lush on social networks"
+msgstr "Lush nas redes sociais"
+
 #: woocommerce-bookings/booking-form/date-picker.php:5
 #: woocommerce-bookings/booking-form/datetime-picker.php:6
 msgid "F j, Y"
@@ -231,7 +324,7 @@ msgstr ""
 #: woocommerce-bookings/booking-form/date-picker.php:9
 #: woocommerce-bookings/booking-form/datetime-picker.php:10
 msgid "Choose..."
-msgstr ""
+msgstr "Escolher..."
 
 #: woocommerce-bookings/booking-form/date-picker.php:16
 msgid "Start"
@@ -303,6 +396,8 @@ msgid ""
 "The following booking has been cancelled by the customer. The details of the "
 "cancelled booking can be found below."
 msgstr ""
+"A seguir reserva foi cancelada pelo cliente. Os detalhes da reserva "
+"cancelada podem ser encontrados abaixo."
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:18
 #: woocommerce-bookings/emails/admin-new-booking.php:25
@@ -311,7 +406,7 @@ msgstr ""
 #: woocommerce-bookings/emails/customer-booking-notification.php:14
 #: woocommerce-bookings/emails/customer-booking-reminder.php:18
 msgid "Booked Product"
-msgstr ""
+msgstr "Produto reservado"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:23
 #: woocommerce-bookings/emails/admin-new-booking.php:29
@@ -320,7 +415,7 @@ msgstr ""
 #: woocommerce-bookings/emails/customer-booking-notification.php:18
 #: woocommerce-bookings/emails/customer-booking-reminder.php:22
 msgid "Booking ID"
-msgstr ""
+msgstr "ID de reserva"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:28
 #: woocommerce-bookings/emails/admin-new-booking.php:34
@@ -329,7 +424,7 @@ msgstr ""
 #: woocommerce-bookings/emails/customer-booking-notification.php:23
 #: woocommerce-bookings/emails/customer-booking-reminder.php:27
 msgid "Booking Type"
-msgstr ""
+msgstr "Tipo de reserva"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:33
 #: woocommerce-bookings/emails/admin-new-booking.php:39
@@ -338,7 +433,7 @@ msgstr ""
 #: woocommerce-bookings/emails/customer-booking-notification.php:28
 #: woocommerce-bookings/emails/customer-booking-reminder.php:32
 msgid "Booking Start Date"
-msgstr ""
+msgstr "Data de Início da Reserva"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:37
 #: woocommerce-bookings/emails/admin-new-booking.php:43
@@ -347,7 +442,7 @@ msgstr ""
 #: woocommerce-bookings/emails/customer-booking-notification.php:32
 #: woocommerce-bookings/emails/customer-booking-reminder.php:36
 msgid "Booking End Date"
-msgstr ""
+msgstr "Data de Término da Reserva: %s"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:47
 #: woocommerce-bookings/emails/admin-new-booking.php:53
@@ -362,14 +457,14 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-notification.php:31
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:33
 msgid "Person(s)"
-msgstr ""
+msgstr "Pessoa (s)"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:58
 #: woocommerce-bookings/emails/admin-new-booking.php:68
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:36
 #, php-format
 msgid "You can view and edit this booking in the dashboard here: %s"
-msgstr ""
+msgstr "Você pode visualizar esta reserva no dashboard aqui: %s"
 
 #: woocommerce-bookings/emails/admin-new-booking.php:10
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:12
@@ -378,6 +473,7 @@ msgid ""
 "A booking has been made by %s and is awaiting your approval. The details of "
 "this booking are as follows:"
 msgstr ""
+"A nova reserva foi feita por %s. Os detalhes desta reserva são os seguintes:"
 
 #: woocommerce-bookings/emails/admin-new-booking.php:12
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:14
@@ -386,6 +482,7 @@ msgid ""
 "A new booking has been made by %s. The details of this booking are as "
 "follows:"
 msgstr ""
+"A nova reserva foi feita por %s. Os detalhes desta reserva são os seguintes:"
 
 #: woocommerce-bookings/emails/admin-new-booking.php:65
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:47
@@ -393,6 +490,8 @@ msgid ""
 "This booking is awaiting your approval. Please check it and inform the "
 "customer if the date is available or not."
 msgstr ""
+"Esta reserva está aguardando sua aprovação. Por favor, verifique-a e "
+"informar o cliente se a data está disponível ou não."
 
 #: woocommerce-bookings/emails/customer-booking-cancelled.php:13
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:13
@@ -402,7 +501,7 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:10
 #, php-format
 msgid "Hello %s"
-msgstr ""
+msgstr "Olá %s"
 
 #: woocommerce-bookings/emails/customer-booking-cancelled.php:16
 #: woocommerce-bookings/emails/plain/customer-booking-cancelled.php:13
@@ -410,33 +509,37 @@ msgid ""
 "We are sorry to say that your booking could not be confirmed and has been "
 "cancelled. The details of the cancelled booking can be found below."
 msgstr ""
+"Infelizmente a sua reserva não pode ser confirmada e foi cancelada. Os "
+"pormenores da reserva cancelada podem ser encontrados abaixo."
 
 #: woocommerce-bookings/emails/customer-booking-cancelled.php:60
 #: woocommerce-bookings/emails/plain/customer-booking-cancelled.php:40
 msgid "Please contact us if you have any questions or concerns."
 msgstr ""
+"Entre em contato conosco se você tiver quaisquer perguntas ou preocupações."
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:16
 msgid ""
 "Your booking has been confirmed. The details of your booking are shown below."
 msgstr ""
+"Sua reserva para confirmada. Os detalhes da sua reserva são mostrados abaixo."
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:63
 #: woocommerce-bookings/emails/plain/customer-booking-confirmed.php:42
 #, php-format
 msgid "To pay for this booking please use the following link: %s"
-msgstr ""
+msgstr "Para pagar esta reserva, por favor use o seguinte link: %s"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:63
 msgid "Pay for booking"
-msgstr ""
+msgstr "Pagar pela reserva"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:68
 #: woocommerce-bookings/myaccount/bookings.php:35
 #: woocommerce-bookings/myaccount/my-bookings.php:30
 #: woocommerce/myaccount/my-orders.php:13
 msgid "Order"
-msgstr ""
+msgstr "Ordem"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:73
 #: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:79
@@ -445,23 +548,23 @@ msgstr ""
 #: woocommerce/emails/email-order-details.php:34
 #: woocommerce/order/order-details.php:32
 msgid "Product"
-msgstr ""
+msgstr "Produto"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:74
 #: woocommerce/cart/cart.php:38 woocommerce/cart/cart.php:103
 #: woocommerce/emails/email-order-details.php:35
 msgid "Quantity"
-msgstr ""
+msgstr "Quantidade"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:75
 #: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:97
 #: woocommerce/emails/email-order-details.php:36
 msgid "Price"
-msgstr ""
+msgstr "Preço"
 
 #: woocommerce-bookings/emails/customer-booking-reminder.php:13
 msgid "This is a reminder that your booking will take place tomorrow."
-msgstr ""
+msgstr "Este é um lembrete de que sua reserva  amanhã."
 
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:13
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:23
@@ -471,7 +574,7 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:17
 #, php-format
 msgid "Booked: %s"
-msgstr ""
+msgstr "Reservado: %s"
 
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:14
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:24
@@ -481,7 +584,7 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:18
 #, php-format
 msgid "Booking ID: %s"
-msgstr ""
+msgstr "ID da Reserva: %s"
 
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:17
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:27
@@ -491,7 +594,7 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:21
 #, php-format
 msgid "Booking Type: %s"
-msgstr ""
+msgstr "Tipo de Reserva: %s"
 
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:20
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:30
@@ -501,7 +604,7 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:24
 #, php-format
 msgid "Booking Start Date: %s"
-msgstr ""
+msgstr "Data de Início da Reserva: %s"
 
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:21
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:31
@@ -511,7 +614,7 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:25
 #, php-format
 msgid "Booking End Date: %s"
-msgstr ""
+msgstr "Data de Término da Reserva: %s"
 
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:30
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:40
@@ -521,71 +624,74 @@ msgstr ""
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:34
 #, php-format
 msgid "%s: %d"
-msgstr ""
+msgstr "%s: % d"
 
 #: woocommerce-bookings/emails/plain/customer-booking-confirmed.php:13
 msgid ""
 "Your booking for has been confirmed. The details of your booking are shown "
 "below."
 msgstr ""
+"Sua reserva para confirmada. Os detalhes da sua reserva são mostrados abaixo."
 
 #: woocommerce-bookings/emails/plain/customer-booking-confirmed.php:47
 #: woocommerce/emails/plain/email-order-details.php:25
 #, php-format
 msgid "Order number: %s"
-msgstr ""
+msgstr "Número do Pedido: %s"
 
 #: woocommerce-bookings/emails/plain/customer-booking-confirmed.php:48
 #, php-format
 msgid "Order date: %s"
-msgstr ""
+msgstr "Data do Pedido: %s"
 
 #: woocommerce-bookings/emails/plain/customer-booking-notification.php:11
 msgid "The details of your booking are shown below."
-msgstr ""
+msgstr "Os detalhes da sua reserva são mostrados abaixo."
 
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:13
 msgid ""
 "This is a reminder that your booking will take place tomorrow. The details "
 "of your booking are shown below."
 msgstr ""
+"Este é um lembrete de que a sua reserva será amanhã. Os detalhes da sua "
+"reserva são mostrados abaixo."
 
 #: woocommerce-bookings/myaccount/bookings.php:33
 #: woocommerce-bookings/myaccount/my-bookings.php:28
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: woocommerce-bookings/myaccount/bookings.php:34
 #: woocommerce-bookings/myaccount/my-bookings.php:29
 msgid "Booked"
-msgstr ""
+msgstr "Reservado"
 
 #: woocommerce-bookings/myaccount/bookings.php:36
 #: woocommerce-bookings/myaccount/my-bookings.php:31
 msgid "Start Date"
-msgstr ""
+msgstr "Data de Início"
 
 #: woocommerce-bookings/myaccount/bookings.php:37
 #: woocommerce-bookings/myaccount/my-bookings.php:32
 msgid "End Date"
-msgstr ""
+msgstr "Data Final"
 
 #: woocommerce-bookings/myaccount/bookings.php:38
 #: woocommerce-bookings/myaccount/my-bookings.php:33
 #: woocommerce/myaccount/my-orders.php:15
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: woocommerce-bookings/myaccount/bookings.php:65
 #: woocommerce-bookings/myaccount/my-bookings.php:60
 #: woocommerce/myaccount/my-orders.php:80 woocommerce/myaccount/orders.php:76
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: woocommerce-bookings/myaccount/bookings.php:78
 #: woocommerce/myaccount/downloads.php:98 woocommerce/myaccount/orders.php:119
 msgid "Go Shop"
-msgstr ""
+msgstr "Ir à Loja"
 
 #: woocommerce-bookings/myaccount/bookings.php:80
 msgid "No bookings available yet."
@@ -593,7 +699,7 @@ msgstr ""
 
 #: woocommerce-bookings/myaccount/my-bookings.php:23
 msgid "My Bookings"
-msgstr ""
+msgstr "Pedidos de Reservas"
 
 #: woocommerce-bookings/single-product/add-to-cart/booking.php:17
 msgid "Your browser must support JavaScript in order to make a booking."
@@ -636,41 +742,44 @@ msgstr ""
 
 #: woocommerce/auth/form-login.php:35 woocommerce/myaccount/form-login.php:44
 msgid "Username or email address"
-msgstr ""
+msgstr "Nome de Usuário ou Endereço de Email"
 
 #: woocommerce/auth/form-login.php:39 woocommerce/global/form-login.php:39
 #: woocommerce/myaccount/form-login.php:48
 #: woocommerce/myaccount/form-login.php:98
 msgid "Password"
-msgstr ""
+msgstr "Senha"
 
 #: woocommerce/auth/form-login.php:44 woocommerce/global/form-login.php:48
 #: woocommerce/myaccount/form-login.php:37
 #: woocommerce/myaccount/form-login.php:56
 msgid "Login"
-msgstr ""
+msgstr "Entrar"
 
 #: woocommerce/auth/header.php:29
 msgid "Application Authentication Request"
-msgstr ""
+msgstr "Requisição de Autenticação de Aplicação"
 
 #: woocommerce/cart/cart-empty.php:28
 msgid "Your cart is currently empty."
-msgstr ""
+msgstr "Seu carrinho está vazio."
 
 #: woocommerce/cart/cart-empty.php:36
 msgid "Return To Shop"
-msgstr ""
+msgstr "Voltar para a Loja"
 
 #: woocommerce/cart/cart-shipping.php:48
 msgid "Shipping costs will be calculated once you have provided your address."
 msgstr ""
+"Os custos de transporte serão calculados após preenchimento da sua morada."
 
 #: woocommerce/cart/cart-shipping.php:50
 msgid ""
 "There are no shipping methods available. Please double check your address, "
 "or contact us if you need any help."
 msgstr ""
+"Não há métodos de envio disponíveis. Por favor, verifique o seu endereço, ou "
+"contate-nos se você precisar de alguma ajuda."
 
 #: woocommerce/cart/cart-totals.php:28
 msgid "Cart Totals"
@@ -709,15 +818,15 @@ msgstr ""
 
 #: woocommerce/cart/cart.php:138
 msgid "Coupon:"
-msgstr ""
+msgstr "Cupom:"
 
 #: woocommerce/cart/cart.php:138 woocommerce/checkout/form-coupon.php:36
 msgid "Coupon code"
-msgstr ""
+msgstr "Código de Cupom"
 
 #: woocommerce/cart/cart.php:138 woocommerce/checkout/form-coupon.php:40
 msgid "Apply Coupon"
-msgstr ""
+msgstr "Aplicar Cupom"
 
 #: woocommerce/cart/cart.php:144
 msgid "Update Cart"
@@ -921,11 +1030,35 @@ msgstr ""
 msgid "Payment Method:"
 msgstr ""
 
+#: woocommerce/content-single-product-suite.php:52
+msgid "Period"
+msgstr "Período"
+
+#: woocommerce/content-single-product-suite.php:53
+msgid "Period (Sunday to Thursday)"
+msgstr "Período (domingo a quinta-feira)"
+
+#: woocommerce/content-single-product-suite.php:54
+msgid "Period (Saturday and Sunday)"
+msgstr "Período (sábado e domingo)"
+
+#: woocommerce/content-single-product-suite.php:55
+msgid "Period (3h)"
+msgstr "Período (3h)"
+
+#: woocommerce/content-single-product-suite.php:56
+msgid "Additional time"
+msgstr "Hora adicional"
+
+#: woocommerce/content-single-product-suite.php:63
+msgid "Check-in 3pm and check-out at 1pm the next day."
+msgstr "Check-in  às 15:00 e check-out às 13:00 no dia seguinte."
+
 #: woocommerce/emails/admin-cancelled-order.php:28
 #: woocommerce/emails/plain/admin-cancelled-order.php:25
 #, php-format
 msgid "The order #%d from %s has been cancelled. The order was as follows:"
-msgstr ""
+msgstr "O pedido #%d de %s foi cancelado. A ordem foi a seguinte:"
 
 #: woocommerce/emails/admin-failed-order.php:28
 #: woocommerce/emails/plain/admin-failed-order.php:25
@@ -1160,6 +1293,14 @@ msgstr[1] ""
 #: woocommerce/loop/sale-flash.php:28
 #: woocommerce/single-product/sale-flash.php:28
 msgid "Sale!"
+msgstr ""
+
+#: woocommerce/loop/suite-detalhes.php:2
+msgid "from"
+msgstr ""
+
+#: woocommerce/loop/suite-detalhes.php:6
+msgid "I want to book"
 msgstr ""
 
 #: woocommerce/myaccount/dashboard.php:28
@@ -1483,10 +1624,6 @@ msgstr ""
 #: woocommerce/single-product-reviews.php:70
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr ""
-
-#: woocommerce/single-product-reviews.php:73
-msgid "Name"
 msgstr ""
 
 #: woocommerce/single-product-reviews.php:75
