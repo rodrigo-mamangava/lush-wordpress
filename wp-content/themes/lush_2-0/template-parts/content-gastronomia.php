@@ -9,8 +9,6 @@
 <?php get_new_vitrine_completo(); ?>
 
 <?php
-
-
 $class = 'faixa-explore-cardapio';
 $texto = get_field('frase_exclusivo_cardapio');
 $class_btn = 'btn-explore-cardapio';
