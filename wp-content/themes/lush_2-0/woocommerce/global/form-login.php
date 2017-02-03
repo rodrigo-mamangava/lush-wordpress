@@ -15,48 +15,51 @@
  * @package 	WooCommerce/Templates
  * @version     2.1.0
  */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
 }
 
-if ( is_user_logged_in() ) {
-	return;
+if (is_user_logged_in()) {
+    return;
 }
-
 ?>
-<form method="post" class="login" <?php if ( $hidden ) echo 'style="display:none;"'; ?>>
 
-	<?php do_action( 'woocommerce_login_form_start' ); ?>
 
-	<?php if ( $message ) echo wpautop( wptexturize( $message ) ); ?>
 
-	<p class="form-row form-row-first">
-		<label for="username"><?php _e( 'Username or email', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input type="text" class="input-text" name="username" id="username" />
-	</p>
-	<p class="form-row form-row-last">
-		<label for="password"><?php _e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
-		<input class="input-text" type="password" name="password" id="password" />
-	</p>
-	<div class="clear"></div>
+<form method="post" class="login" <?php if ($hidden) echo 'style="display:none;"'; ?>>
 
-	<?php do_action( 'woocommerce_login_form' ); ?>
+    <?php do_action('woocommerce_login_form_start'); ?>
 
-	<p class="form-row">
-		<?php wp_nonce_field( 'woocommerce-login' ); ?>
-		<input type="submit" class="button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
-		<input type="hidden" name="redirect" value="<?php echo esc_url( $redirect ) ?>" />
-		<label for="rememberme" class="inline">
-			<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> <?php _e( 'Remember me', 'woocommerce' ); ?>
-		</label>
-	</p>
-	<p class="lost_password">
-		<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?', 'woocommerce' ); ?></a>
-	</p>
+    <?php if ($message) echo wpautop(wptexturize($message)); ?>
+    <div class="form-group">
+        <input type="text" placeholder="<?php _e('Type your e-mail', 'lush_2-0'); ?>" class="input-text form-control" name="username" id="username" />
+    </div>
+    <div class="form-group">
+        <input class="input-text form-control" type="password" placeholder="<?php _e('Type your password', 'lush_2-0'); ?>" name="password" id="password" />
+    </div>
 
-	<div class="clear"></div>
+    <?php do_action('woocommerce_login_form'); ?>
 
-	<?php do_action( 'woocommerce_login_form_end' ); ?>
+    <?php wp_nonce_field('woocommerce-login'); ?>
+    
+    <div class="area-btn">
+
+    <input type="submit" class="button btn-login" name="login" value="<?php esc_attr_e('Login', 'woocommerce'); ?>" />
+
+    <input type="hidden" name="redirect" value="<?php echo esc_url($redirect) ?>" />
+    
+    <br/>
+
+    <label for="rememberme" class="lembrar">
+        <input name="rememberme" type="checkbox" id="rememberme" value="forever" /> <?php _e('Remember me', 'woocommerce'); ?>
+    </label>
+    
+    <p class="perdeu-senha">
+        <a href="<?php echo esc_url(wp_lostpassword_url()); ?>"><?php _e('Lost your password?', 'woocommerce'); ?></a>
+    </p>
+    
+    </div>
+
+    <?php do_action('woocommerce_login_form_end'); ?>
 
 </form>

@@ -42,18 +42,21 @@ if (post_password_required()) {
     <div  class="container-fluid faixa-detalhes">
         <div class="row">
 
-            <div class="col-sm-5 col-sm-offset-1 atributos">
-                <?php the_content(); ?>
+            <div class="col-sm-4 col-sm-offset-1">
+
+                <?php woocommerce_template_single_add_to_cart(); ?>
+
+
             </div><!-- descricao --> 
 
-            <div class="col-sm-4 col-sm-offset-1 info-preco">
+            <div class="col-sm-6 col-sm-offset-1 info-preco">
 
                 <div class="tabela-preco">
-                    <p><?php _e('Period', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo');?></span></p>
-                    <p><?php _e('Period (Sunday to Thursday)', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo_dom_qui');?></span></p>
-                    <p><?php _e('Period (Saturday and Sunday)', 'lush_2-0'); ?><span>R$ <?php echo get_field('periodo_sab_dom');?></span></p>
-                    <p><?php _e('Period (3h)', 'lush_2-0'); ?>Período (3h)<span>R$ <?php echo get_field('periodo_3hr');?></span></p>
-                    <p><?php _e('Additional time', 'lush_2-0'); ?> <span>R$ <?php echo get_field('hora_add');?></span></p>
+                    <p><?php _e('Period', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo'); ?></span></p>
+                    <p><?php _e('Period (Sunday to Thursday)', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo_dom_qui'); ?></span></p>
+                    <p><?php _e('Period (Saturday and Sunday)', 'lush_2-0'); ?><span>R$ <?php echo get_field('periodo_sab_dom'); ?></span></p>
+                    <p><?php _e('Period (3h)', 'lush_2-0'); ?>Período (3h)<span>R$ <?php echo get_field('periodo_3hr'); ?></span></p>
+                    <p><?php _e('Additional time', 'lush_2-0'); ?> <span>R$ <?php echo get_field('hora_add'); ?></span></p>
                 </div>
 
 
@@ -63,10 +66,15 @@ if (post_password_required()) {
                     <?php _e('Check-in 3pm and check-out at 1pm the next day.', 'lush_2-0'); ?>
                 </p>
 
-                <?php woocommerce_template_single_add_to_cart(); ?>
+
 
 
             </div><!-- info-preco -->
+        </div><!-- row -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 atributos">
+                <?php the_content(); ?>
+            </div>
         </div><!-- row -->
 
 

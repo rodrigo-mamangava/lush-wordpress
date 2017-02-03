@@ -23,6 +23,7 @@ function uri() {
 add_image_size('carousel-suite', 814, 593, true);
 add_image_size('loop-simples', 442, 281, true);
 add_image_size('faixa-destaque', 500, 474, true);
+add_image_size('add-pacote', 240, 92, true);
 
 /**
  * Verificar se produto tem determinada categoria

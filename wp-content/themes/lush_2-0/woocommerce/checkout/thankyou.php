@@ -15,57 +15,78 @@
  * @package 	WooCommerce/Templates
  * @version     2.2.0
  */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if (!defined('ABSPATH')) {
+    exit;
 }
+?>
+<div class="compra-finalizada">
+    <div class="container">
 
-if ( $order ) : ?>
+        <?php if ($order) : ?>
 
-	<?php if ( $order->has_status( 'failed' ) ) : ?>
 
-		<p class="woocommerce-thankyou-order-failed"><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce' ); ?></p>
 
-		<p class="woocommerce-thankyou-order-failed-actions">
-			<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php _e( 'Pay', 'woocommerce' ) ?></a>
-			<?php if ( is_user_logged_in() ) : ?>
-				<a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="button pay"><?php _e( 'My Account', 'woocommerce' ); ?></a>
-			<?php endif; ?>
-		</p>
+            <?php if ($order->has_status('failed')) : ?>
 
-	<?php else : ?>
+                <p class="woocommerce-thankyou-order-failed"><?php _e('Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce'); ?></p>
 
-		<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); ?></p>
+                <p class="woocommerce-thankyou-order-failed-actions">
+                    <a href="<?php echo esc_url($order->get_checkout_payment_url()); ?>" class="button pay"><?php _e('Pay', 'woocommerce') ?></a>
+                    <?php if (is_user_logged_in()) : ?>
+                        <a href="<?php echo esc_url(wc_get_page_permalink('myaccount')); ?>" class="button pay"><?php _e('My Account', 'woocommerce'); ?></a>
+                    <?php endif; ?>
+                </p>
 
-		<ul class="woocommerce-thankyou-order-details order_details">
-			<li class="order">
-				<?php _e( 'Order Number:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_order_number(); ?></strong>
-			</li>
-			<li class="date">
-				<?php _e( 'Date:', 'woocommerce' ); ?>
-				<strong><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong>
-			</li>
-			<li class="total">
-				<?php _e( 'Total:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_formatted_order_total(); ?></strong>
-			</li>
-			<?php if ( $order->payment_method_title ) : ?>
-			<li class="method">
-				<?php _e( 'Payment Method:', 'woocommerce' ); ?>
-				<strong><?php echo $order->payment_method_title; ?></strong>
-			</li>
-			<?php endif; ?>
-		</ul>
-		<div class="clear"></div>
+            <?php else : ?>
 
-	<?php endif; ?>
+                <div class="row">
 
-	<?php do_action( 'woocommerce_thankyou_' . $order->payment_method, $order->id ); ?>
-	<?php do_action( 'woocommerce_thankyou', $order->id ); ?>
+                    <div class="col-xs-12">
+                        <h1><?php _e('Success!', 'lush_2-0'); ?></h1>
+                    </div>
+                </div>
 
-<?php else : ?>
+                <div class="row">
 
-	<p class="woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></p>
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
 
-<?php endif; ?>
+                        <div class="row">
+                            <div class="col-sm-3 col-sm-offset-1">
+                                <img src="">
+                            </div>
+                            <div class="col-sm-6 col-sm-offset-1">
+                                <p class="aviso">
+                                    <?php _e('Your purchase has been successfully completed.', 'lush_2-0'); ?>
+                                </p>
+                                <p class="aviso">
+                                    <?php _e('We will send to your e-mail to register all the data of your reservation..', 'lush_2-0'); ?>
+                                </p>
+                                <p class="aviso-varicao">
+                                    <?php _e('Enjoy your stay with us and discover the advantages of a LUSH experience.', 'lush_2-0'); ?>
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                    </div><!-- col-xs-12 col-sm-8 col-sm-offset-2 -->
+
+
+                    <?php get_template_part('template-parts/compartilhar', 'lush'); ?>
+
+                </div>
+
+
+
+            <?php endif; ?>
+
+            <?php //do_action('woocommerce_thankyou_' . $order->payment_method, $order->id); ?>
+            <?php //do_action('woocommerce_thankyou', $order->id); ?>
+
+        <?php else : ?>
+
+            <p class="woocommerce-thankyou-order-received"><?php echo apply_filters('woocommerce_thankyou_order_received_text', __('Thank you. Your order has been received.', 'woocommerce'), null); ?></p>
+
+        <?php endif; ?>
+    </div>
+</div>

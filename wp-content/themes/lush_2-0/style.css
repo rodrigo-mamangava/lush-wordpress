@@ -8115,6 +8115,133 @@ fieldset[disabled] .btn-verde-v02.focus {
   color: #00d0b0 !important;
   background-color: white !important;
 }
+.btn-cinza-roxo {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #3f2658 !important;
+  background-color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 3px 0 0 #d2d2d2 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px;
+  font-size: 16px;
+  letter-spacing: 2.2px;
+}
+.btn-cinza-roxo:focus,
+.btn-cinza-roxo:active:focus,
+.btn-cinza-roxo.active:focus,
+.btn-cinza-roxo.focus,
+.btn-cinza-roxo:active.focus,
+.btn-cinza-roxo.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-cinza-roxo:hover,
+.btn-cinza-roxo:focus,
+.btn-cinza-roxo.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn-cinza-roxo:active,
+.btn-cinza-roxo.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-cinza-roxo.disabled,
+.btn-cinza-roxo[disabled],
+fieldset[disabled] .btn-cinza-roxo {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-cinza-roxo.disabled,
+fieldset[disabled] a.btn-cinza-roxo {
+  pointer-events: none;
+}
+.btn-cinza-roxo:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.btn-cinza-roxo:focus,
+.btn-cinza-roxo.focus {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #b2b2b2 !important;
+}
+.btn-cinza-roxo:hover {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d3d3d3 !important;
+}
+.btn-cinza-roxo:active,
+.btn-cinza-roxo.active,
+.open > .dropdown-toggle.btn-cinza-roxo {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d3d3d3 !important;
+}
+.btn-cinza-roxo:active:hover,
+.btn-cinza-roxo.active:hover,
+.open > .dropdown-toggle.btn-cinza-roxo:hover,
+.btn-cinza-roxo:active:focus,
+.btn-cinza-roxo.active:focus,
+.open > .dropdown-toggle.btn-cinza-roxo:focus,
+.btn-cinza-roxo:active.focus,
+.btn-cinza-roxo.active.focus,
+.open > .dropdown-toggle.btn-cinza-roxo.focus {
+  color: #3f2658 !important;
+  background-color: #c7c7c7 !important;
+  border-color: #b2b2b2 !important;
+}
+.btn-cinza-roxo:active,
+.btn-cinza-roxo.active,
+.open > .dropdown-toggle.btn-cinza-roxo {
+  background-image: none !important;
+}
+.btn-cinza-roxo.disabled:hover,
+.btn-cinza-roxo[disabled]:hover,
+fieldset[disabled] .btn-cinza-roxo:hover,
+.btn-cinza-roxo.disabled:focus,
+.btn-cinza-roxo[disabled]:focus,
+fieldset[disabled] .btn-cinza-roxo:focus,
+.btn-cinza-roxo.disabled.focus,
+.btn-cinza-roxo[disabled].focus,
+fieldset[disabled] .btn-cinza-roxo.focus {
+  background-color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
+}
+.btn-cinza-roxo .badge {
+  color: #f2f2f2 !important;
+  background-color: #3f2658 !important;
+}
 .btn-reserva-v2 {
   display: inline-block;
   margin-bottom: 0;
@@ -10141,6 +10268,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 1.6px;
   text-align: center;
   color: #3f2658;
+  text-transform: uppercase;
 }
 .info-compartilhe .compartilhar ul {
   padding-top: 27px;
@@ -10245,6 +10373,26 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   width: 40px;
   height: auto;
 }
+.suite-single {
+  /*--------------------------------------------------------------
+# calandario page single produto suite
+--------------------------------------------------------------*/
+  /* Month header background color */
+  /* Previous/Next month arrow background color */
+  /* Previous/Next month arrows if not allowed, and calendar dates that are not available */
+  /* Days of the week header background color */
+  /* Days of the week header font color */
+  /* Past calendar days background color (not available) */
+  /* Available calendar days background color */
+  /* Available calendar day hover background color */
+  /* Fully booked calendar days */
+  /* Days not bookable based on the availability rules */
+  /* Today's date on calendar background color */
+  /* Partially Booked Red Triangle */
+  /* Time Blocks */
+  /* Time Blocks Hover */
+  /* Selected Date*/
+}
 .suite-single .faixa-detalhes {
   padding-top: 66px;
   padding-bottom: 100px;
@@ -10257,7 +10405,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   font-stretch: normal;
   line-height: 1.89;
   letter-spacing: 0.3px;
-  color: #b8b8b8;
+  color: #848484;
   text-transform: uppercase;
 }
 .suite-single .faixa-detalhes .atributos ul {
@@ -10330,13 +10478,13 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   margin-right: auto;
 }
 .suite-single .faixa-detalhes .info-reserve .brn-reserve-suite {
-  text-transform: uppercase;
-  font-size: 22px;
+  text-transform: uppercase !important;
+  font-size: 22px !important;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 2.7px;
-  padding: 13px 87px 15px;
+  letter-spacing: 2.7px !important;
+  padding: 13px 87px 15px !important;
 }
 .suite-single .faixa-detalhes .info-compartilhe {
   padding-top: 0;
@@ -10420,6 +10568,149 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 1.7px;
   color: #3f2658;
   margin-right: 12px;
+}
+.suite-single .picker {
+  width: 100%;
+  position: relative;
+}
+.suite-single .wc-bookings-booking-form {
+  border: 0;
+  padding: 0;
+}
+.suite-single legend {
+  display: none;
+}
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker-header {
+  background-color: transparent !important;
+  border: 0 !important;
+  background-image: none !important;
+}
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker .ui-datepicker-next,
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker .ui-datepicker-prev {
+  background-color: #fff !important;
+}
+.suite-single .ui-state-disabled,
+.suite-single .ui-widget-content .ui-state-disabled,
+.suite-single .ui-widget-header .ui-state-disabled {
+  opacity: 0.35;
+}
+.suite-single .ui-datepicker-calendar thead {
+  background-color: transparent;
+}
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker th {
+  color: #acacac;
+}
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a {
+  background-color: transparent !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #3f2658 !important;
+}
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a:hover {
+  background-color: #e4d5ff !important;
+}
+.suite-single .wc-bookings-date-picker .ui-datepicker td.fully_booked a,
+.suite-single .wc-bookings-date-picker .ui-datepicker td.fully_booked span {
+  background-color: #000000 !important;
+  color: #d2d2d2 !important;
+}
+.suite-single .wc-bookings-date-picker .ui-datepicker td.not_bookable {
+  background-color: #FFFFFF !important;
+  color: #d2d2d2 !important;
+}
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-today a {
+  background-color: transparent !important;
+}
+.suite-single .wc-bookings-date-picker .ui-datepicker td.partial_booked a:before {
+  border: none;
+  /* This style removes the red triangle */
+}
+.suite-single #wc-bookings-booking-form .block-picker li a {
+  background-color: #FFFFFF !important;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:hover {
+  background-color: #000000 !important;
+}
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-current-day a {
+  background-color: #e4d5ff !important;
+}
+.suite-single .wc-bookings-booking-form-button {
+  width: 100%;
+}
+.suite-single .wc-bookings-booking-cost {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #848484;
+}
+.suite-single .wc-bookings-booking-cost .woocommerce-Price-amount {
+  position: absolute;
+  right: 0;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: right;
+  color: #301a46;
+  padding-right: 17px;
+  margin-top: -10px;
+}
+.suite-single .wc-bookings-booking-form .wc-bookings-booking-cost {
+  background: transparent;
+  border: 0;
+  position: relative;
+  margin: 0 -1em;
+  padding: 1em;
+}
+.suite-single .woocommerce div.product form.cart .button {
+  vertical-align: middle;
+  float: left;
+  font-family: "Knockout 29 A", "Knockout 29 B" !important;
+  font-size: 22px !important;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.6px !important;
+  text-align: center !important;
+  color: #ffffff !important;
+}
+.suite-single .wc-bookings-date-picker .ui-datepicker .ui-datepicker-title {
+  background-color: #fff;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #6e5e8b;
+}
+.woocommerce button.button {
+  font-size: 22px !important;
+  letter-spacing: 2.6px !important;
+}
+.wc-bookings-date-picker .ui-icon-circle-triangle-e {
+  background-image: url(img/instagram@3x.jpg) !important;
+  background-position: 0;
+}
+.ui-icon {
+  width: 100%;
+  height: 100%;
 }
 /*--------------------------------------------------------------
 # gastronomia
@@ -11323,6 +11614,1370 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   line-height: 1.67;
   letter-spacing: 0.2px;
   color: #696969;
+}
+/*--------------------------------------------------------------
+# woocommerce-cart
+--------------------------------------------------------------*/
+.woocommerce-cart {
+  padding-top: 64px;
+}
+/*--------------------------------------------------------------
+# faixa-addpacote
+--------------------------------------------------------------*/
+.faixa-addpacote {
+  padding-top: 100px;
+  padding-bottom: 103px;
+}
+.faixa-addpacote h2 {
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3f2658;
+  text-transform: uppercase;
+}
+.faixa-addpacote p {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #696969;
+}
+.faixa-addpacote .item-addpacote {
+  height: 180px;
+}
+.faixa-addpacote .item-addpacote h3 {
+  float: left;
+  width: 60%;
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  color: #6e5e8b;
+  padding-top: 10px;
+}
+.faixa-addpacote .item-addpacote .woocommerce-Price-amount {
+  padding-top: 4px !important;
+  float: right;
+  width: 40%;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: right;
+  color: #301a46;
+}
+.faixa-addpacote .item-addpacote .img-space {
+  position: relative;
+}
+.faixa-addpacote .item-addpacote .img-space img {
+  width: 100%;
+  height: auto;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+  font-size: 20px;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.focus {
+  color: #333;
+  text-decoration: none;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.disabled,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus[disabled],
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-plus {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.disabled,
+fieldset[disabled] a.faixa-addpacote .item-addpacote .img-space .btn-simples-plus {
+  pointer-events: none;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-plus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active:hover,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active:focus,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active.focus,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.active,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-plus {
+  background-image: none;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.disabled:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus[disabled]:hover,
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-plus:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.disabled:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus[disabled]:focus,
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-plus:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.disabled.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus[disabled].focus,
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-plus.focus {
+  background-color: transparent;
+  border-color: transparent;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus .badge {
+  color: transparent;
+  background-color: white;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus img {
+  width: 21.8px;
+  height: 21.8px;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+  bottom: -5px;
+  right: 35px;
+  font-size: 20px;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.focus {
+  color: #333;
+  text-decoration: none;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.disabled,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa[disabled],
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-lupa {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.disabled,
+fieldset[disabled] a.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa {
+  pointer-events: none;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active:hover,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active:focus,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active.focus,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.active,
+.open > .dropdown-toggle.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa {
+  background-image: none;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.disabled:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa[disabled]:hover,
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:hover,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.disabled:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa[disabled]:focus,
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.disabled.focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa[disabled].focus,
+fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.focus {
+  background-color: transparent;
+  border-color: transparent;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa .badge {
+  color: transparent;
+  background-color: white;
+}
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa img {
+  width: 21.8px;
+  height: 21.8px;
+}
+/*--------------------------------------------------------------
+# faixa-carrinho
+--------------------------------------------------------------*/
+.faixa-carrinho {
+  padding-bottom: 100px;
+}
+.faixa-carrinho h2 {
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3f2658;
+  text-transform: uppercase;
+  padding-bottom: 100px;
+}
+.faixa-carrinho .shop_table {
+  border: 0 !important;
+}
+.faixa-carrinho .shop_table th {
+  border-bottom: 1px solid #e6e6e6 !important;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3f2658;
+}
+.faixa-carrinho .shop_table td {
+  border-top: 0 !important;
+}
+.faixa-carrinho .shop_table td.actions {
+  border-top: 1px solid #e6e6e6 !important;
+  padding-top: 24px !important;
+}
+.faixa-carrinho .shop_table td.actions #coupon_code {
+  margin-top: 10px !important;
+  padding: 14px !important;
+}
+.faixa-carrinho .shop_table td.actions .button {
+  display: inline-block !important;
+  margin-bottom: 0 !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  touch-action: manipulation !important;
+  cursor: pointer !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  white-space: nowrap !important;
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border-radius: 4px !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+  color: #3f2658 !important;
+  background-color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 2px 0 #3F2A56 !important;
+  box-shadow: 0 3px 0 0 #d2d2d2 !important !important;
+  font-family: "Knockout 29 A", "Knockout 29 B" !important;
+  margin-top: 9px !important;
+  padding: 11px 48px !important;
+  font-size: 16px !important;
+  letter-spacing: 2.2px !important;
+}
+.faixa-carrinho .shop_table td.actions .button:focus,
+.faixa-carrinho .shop_table td.actions .button:active:focus,
+.faixa-carrinho .shop_table td.actions .button.active:focus,
+.faixa-carrinho .shop_table td.actions .button.focus,
+.faixa-carrinho .shop_table td.actions .button:active.focus,
+.faixa-carrinho .shop_table td.actions .button.active.focus {
+  outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: -2px !important;
+}
+.faixa-carrinho .shop_table td.actions .button:hover,
+.faixa-carrinho .shop_table td.actions .button:focus,
+.faixa-carrinho .shop_table td.actions .button.focus {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+.faixa-carrinho .shop_table td.actions .button:active,
+.faixa-carrinho .shop_table td.actions .button.active {
+  outline: 0 !important;
+  background-image: none !important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+}
+.faixa-carrinho .shop_table td.actions .button.disabled,
+.faixa-carrinho .shop_table td.actions .button[disabled],
+fieldset[disabled] .faixa-carrinho .shop_table td.actions .button {
+  cursor: not-allowed !important;
+  opacity: 0.65 !important;
+  filter: alpha(opacity=65) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+a.faixa-carrinho .shop_table td.actions .button.disabled,
+fieldset[disabled] a.faixa-carrinho .shop_table td.actions .button {
+  pointer-events: none !important;
+}
+.faixa-carrinho .shop_table td.actions .button:hover {
+  -webkit-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+}
+.faixa-carrinho .shop_table td.actions .button:focus,
+.faixa-carrinho .shop_table td.actions .button.focus {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #b2b2b2 !important;
+}
+.faixa-carrinho .shop_table td.actions .button:hover {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d3d3d3 !important;
+}
+.faixa-carrinho .shop_table td.actions .button:active,
+.faixa-carrinho .shop_table td.actions .button.active,
+.open > .dropdown-toggle.faixa-carrinho .shop_table td.actions .button {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d3d3d3 !important;
+}
+.faixa-carrinho .shop_table td.actions .button:active:hover,
+.faixa-carrinho .shop_table td.actions .button.active:hover,
+.open > .dropdown-toggle.faixa-carrinho .shop_table td.actions .button:hover,
+.faixa-carrinho .shop_table td.actions .button:active:focus,
+.faixa-carrinho .shop_table td.actions .button.active:focus,
+.open > .dropdown-toggle.faixa-carrinho .shop_table td.actions .button:focus,
+.faixa-carrinho .shop_table td.actions .button:active.focus,
+.faixa-carrinho .shop_table td.actions .button.active.focus,
+.open > .dropdown-toggle.faixa-carrinho .shop_table td.actions .button.focus {
+  color: #3f2658 !important;
+  background-color: #c7c7c7 !important;
+  border-color: #b2b2b2 !important;
+}
+.faixa-carrinho .shop_table td.actions .button:active,
+.faixa-carrinho .shop_table td.actions .button.active,
+.open > .dropdown-toggle.faixa-carrinho .shop_table td.actions .button {
+  background-image: none !important;
+}
+.faixa-carrinho .shop_table td.actions .button.disabled:hover,
+.faixa-carrinho .shop_table td.actions .button[disabled]:hover,
+fieldset[disabled] .faixa-carrinho .shop_table td.actions .button:hover,
+.faixa-carrinho .shop_table td.actions .button.disabled:focus,
+.faixa-carrinho .shop_table td.actions .button[disabled]:focus,
+fieldset[disabled] .faixa-carrinho .shop_table td.actions .button:focus,
+.faixa-carrinho .shop_table td.actions .button.disabled.focus,
+.faixa-carrinho .shop_table td.actions .button[disabled].focus,
+fieldset[disabled] .faixa-carrinho .shop_table td.actions .button.focus {
+  background-color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
+}
+.faixa-carrinho .shop_table td.actions .button .badge {
+  color: #f2f2f2 !important;
+  background-color: #3f2658 !important;
+}
+.faixa-carrinho .shop_table .cart-subtotal th,
+.faixa-carrinho .shop_table .order-total th {
+  border: 0 !important;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3f2658;
+}
+.faixa-carrinho .shop_table .cart-subtotal td,
+.faixa-carrinho .shop_table .order-total td {
+  text-align: right !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: right;
+  color: #696969;
+}
+.faixa-carrinho .product-name a {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #696969;
+}
+.faixa-carrinho .btn-continuar-comprando {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #3f2658 !important;
+  background-color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 3px 0 0 #d2d2d2 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px;
+  font-size: 16px;
+  letter-spacing: 2.2px;
+  width: 100%;
+}
+.faixa-carrinho .btn-continuar-comprando:focus,
+.faixa-carrinho .btn-continuar-comprando:active:focus,
+.faixa-carrinho .btn-continuar-comprando.active:focus,
+.faixa-carrinho .btn-continuar-comprando.focus,
+.faixa-carrinho .btn-continuar-comprando:active.focus,
+.faixa-carrinho .btn-continuar-comprando.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.faixa-carrinho .btn-continuar-comprando:hover,
+.faixa-carrinho .btn-continuar-comprando:focus,
+.faixa-carrinho .btn-continuar-comprando.focus {
+  color: #333;
+  text-decoration: none;
+}
+.faixa-carrinho .btn-continuar-comprando:active,
+.faixa-carrinho .btn-continuar-comprando.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.faixa-carrinho .btn-continuar-comprando.disabled,
+.faixa-carrinho .btn-continuar-comprando[disabled],
+fieldset[disabled] .faixa-carrinho .btn-continuar-comprando {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.faixa-carrinho .btn-continuar-comprando.disabled,
+fieldset[disabled] a.faixa-carrinho .btn-continuar-comprando {
+  pointer-events: none;
+}
+.faixa-carrinho .btn-continuar-comprando:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.faixa-carrinho .btn-continuar-comprando:focus,
+.faixa-carrinho .btn-continuar-comprando.focus {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #b2b2b2 !important;
+}
+.faixa-carrinho .btn-continuar-comprando:hover {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d3d3d3 !important;
+}
+.faixa-carrinho .btn-continuar-comprando:active,
+.faixa-carrinho .btn-continuar-comprando.active,
+.open > .dropdown-toggle.faixa-carrinho .btn-continuar-comprando {
+  color: #3f2658 !important;
+  background-color: #d9d9d9 !important;
+  border-color: #d3d3d3 !important;
+}
+.faixa-carrinho .btn-continuar-comprando:active:hover,
+.faixa-carrinho .btn-continuar-comprando.active:hover,
+.open > .dropdown-toggle.faixa-carrinho .btn-continuar-comprando:hover,
+.faixa-carrinho .btn-continuar-comprando:active:focus,
+.faixa-carrinho .btn-continuar-comprando.active:focus,
+.open > .dropdown-toggle.faixa-carrinho .btn-continuar-comprando:focus,
+.faixa-carrinho .btn-continuar-comprando:active.focus,
+.faixa-carrinho .btn-continuar-comprando.active.focus,
+.open > .dropdown-toggle.faixa-carrinho .btn-continuar-comprando.focus {
+  color: #3f2658 !important;
+  background-color: #c7c7c7 !important;
+  border-color: #b2b2b2 !important;
+}
+.faixa-carrinho .btn-continuar-comprando:active,
+.faixa-carrinho .btn-continuar-comprando.active,
+.open > .dropdown-toggle.faixa-carrinho .btn-continuar-comprando {
+  background-image: none !important;
+}
+.faixa-carrinho .btn-continuar-comprando.disabled:hover,
+.faixa-carrinho .btn-continuar-comprando[disabled]:hover,
+fieldset[disabled] .faixa-carrinho .btn-continuar-comprando:hover,
+.faixa-carrinho .btn-continuar-comprando.disabled:focus,
+.faixa-carrinho .btn-continuar-comprando[disabled]:focus,
+fieldset[disabled] .faixa-carrinho .btn-continuar-comprando:focus,
+.faixa-carrinho .btn-continuar-comprando.disabled.focus,
+.faixa-carrinho .btn-continuar-comprando[disabled].focus,
+fieldset[disabled] .faixa-carrinho .btn-continuar-comprando.focus {
+  background-color: #f2f2f2 !important;
+  border-color: #f2f2f2 !important;
+}
+.faixa-carrinho .btn-continuar-comprando .badge {
+  color: #f2f2f2 !important;
+  background-color: #3f2658 !important;
+}
+.faixa-carrinho a.remove {
+  color: #b8b8b8 !important;
+}
+.faixa-carrinho a.remove:hover {
+  color: #fff!important;
+  background: #b8b8b8;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button {
+  display: inline-block !important;
+  margin-bottom: 0 !important;
+  font-weight: normal !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  touch-action: manipulation !important;
+  cursor: pointer !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+  white-space: nowrap !important;
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+  line-height: 1.42857143 !important;
+  border-radius: 4px !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+  color: white !important;
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 2px 0 #3F2A56 !important;
+  box-shadow: 0 2px 0 0 #008672 !important !important;
+  font-family: "Knockout 29 A", "Knockout 29 B" !important;
+  margin-top: 9px !important;
+  padding: 11px 48px !important;
+  font-size: 18px !important;
+  letter-spacing: 2.2px !important;
+  margin-right: 10px !important;
+  padding: 11px 48px !important !important;
+  width: 100%;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active.focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active.focus {
+  outline: 5px auto -webkit-focus-ring-color !important;
+  outline-offset: -2px !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:hover,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active {
+  outline: 0 !important;
+  background-image: none !important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.disabled,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button[disabled],
+fieldset[disabled] .faixa-carrinho .wc-proceed-to-checkout .checkout-button {
+  cursor: not-allowed !important;
+  opacity: 0.65 !important;
+  filter: alpha(opacity=65) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+a.faixa-carrinho .wc-proceed-to-checkout .checkout-button.disabled,
+fieldset[disabled] a.faixa-carrinho .wc-proceed-to-checkout .checkout-button {
+  pointer-events: none !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:hover {
+  -webkit-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #005144 !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:hover {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active,
+.open > .dropdown-toggle.faixa-carrinho .wc-proceed-to-checkout .checkout-button {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active:hover,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active:hover,
+.open > .dropdown-toggle.faixa-carrinho .wc-proceed-to-checkout .checkout-button:hover,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active:focus,
+.open > .dropdown-toggle.faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active.focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active.focus,
+.open > .dropdown-toggle.faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus {
+  color: white !important;
+  background-color: #007967 !important;
+  border-color: #005144 !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.active,
+.open > .dropdown-toggle.faixa-carrinho .wc-proceed-to-checkout .checkout-button {
+  background-image: none !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.disabled:hover,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button[disabled]:hover,
+fieldset[disabled] .faixa-carrinho .wc-proceed-to-checkout .checkout-button:hover,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.disabled:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button[disabled]:focus,
+fieldset[disabled] .faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button.disabled.focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button[disabled].focus,
+fieldset[disabled] .faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus {
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button .badge {
+  color: #00d0b0 !important;
+  background-color: white !important;
+}
+.faixa-carrinho .cart_totals {
+  border-top: 1px solid #e6e6e6 !important;
+  float: none !important;
+  width: 100% !important;
+}
+.faixa-carrinho .cart_totals h2 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #3f2658;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  text-transform: initial;
+  text-align: left;
+}
+/*--------------------------------------------------------------
+# checkout-lush
+--------------------------------------------------------------*/
+.checkout-lush {
+  padding-top: 64px;
+  padding-bottom: 160px;
+  font-family: 'FairfieldLTW01-56Medium';
+}
+.checkout-lush h1 {
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3f2658;
+  padding-top: 98px;
+  padding-bottom: 95px;
+}
+.checkout-lush .woocommerce-info {
+  display: none;
+}
+.checkout-lush .login {
+  display: block !important;
+}
+.checkout-lush .btn-login {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white !important;
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 2px 0 0 #008672 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px;
+  font-size: 18px;
+  letter-spacing: 2.2px;
+  margin-right: 10px;
+  padding: 11px 48px !important;
+}
+.checkout-lush .btn-login:focus,
+.checkout-lush .btn-login:active:focus,
+.checkout-lush .btn-login.active:focus,
+.checkout-lush .btn-login.focus,
+.checkout-lush .btn-login:active.focus,
+.checkout-lush .btn-login.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.checkout-lush .btn-login:hover,
+.checkout-lush .btn-login:focus,
+.checkout-lush .btn-login.focus {
+  color: #333;
+  text-decoration: none;
+}
+.checkout-lush .btn-login:active,
+.checkout-lush .btn-login.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.checkout-lush .btn-login.disabled,
+.checkout-lush .btn-login[disabled],
+fieldset[disabled] .checkout-lush .btn-login {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.checkout-lush .btn-login.disabled,
+fieldset[disabled] a.checkout-lush .btn-login {
+  pointer-events: none;
+}
+.checkout-lush .btn-login:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.checkout-lush .btn-login:focus,
+.checkout-lush .btn-login.focus {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #005144 !important;
+}
+.checkout-lush .btn-login:hover {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.checkout-lush .btn-login:active,
+.checkout-lush .btn-login.active,
+.open > .dropdown-toggle.checkout-lush .btn-login {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.checkout-lush .btn-login:active:hover,
+.checkout-lush .btn-login.active:hover,
+.open > .dropdown-toggle.checkout-lush .btn-login:hover,
+.checkout-lush .btn-login:active:focus,
+.checkout-lush .btn-login.active:focus,
+.open > .dropdown-toggle.checkout-lush .btn-login:focus,
+.checkout-lush .btn-login:active.focus,
+.checkout-lush .btn-login.active.focus,
+.open > .dropdown-toggle.checkout-lush .btn-login.focus {
+  color: white !important;
+  background-color: #007967 !important;
+  border-color: #005144 !important;
+}
+.checkout-lush .btn-login:active,
+.checkout-lush .btn-login.active,
+.open > .dropdown-toggle.checkout-lush .btn-login {
+  background-image: none !important;
+}
+.checkout-lush .btn-login.disabled:hover,
+.checkout-lush .btn-login[disabled]:hover,
+fieldset[disabled] .checkout-lush .btn-login:hover,
+.checkout-lush .btn-login.disabled:focus,
+.checkout-lush .btn-login[disabled]:focus,
+fieldset[disabled] .checkout-lush .btn-login:focus,
+.checkout-lush .btn-login.disabled.focus,
+.checkout-lush .btn-login[disabled].focus,
+fieldset[disabled] .checkout-lush .btn-login.focus {
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+}
+.checkout-lush .btn-login .badge {
+  color: #00d0b0 !important;
+  background-color: white !important;
+}
+.checkout-lush .input-text {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.checkout-lush .input-text:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.checkout-lush .input-text::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.checkout-lush .input-text:-ms-input-placeholder {
+  color: #999;
+}
+.checkout-lush .input-text::-webkit-input-placeholder {
+  color: #999;
+}
+.checkout-lush .input-text::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.checkout-lush .input-text[disabled],
+.checkout-lush .input-text[readonly],
+fieldset[disabled] .checkout-lush .input-text {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.checkout-lush .input-text[disabled],
+fieldset[disabled] .checkout-lush .input-text {
+  cursor: not-allowed;
+}
+textarea.checkout-lush .input-text {
+  height: auto;
+}
+.checkout-lush form.login {
+  border: 0;
+  padding: 0px;
+  margin: 0;
+}
+.checkout-lush form.login p {
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #696969;
+  padding-bottom: 33px;
+}
+.checkout-lush form.login .area-btn {
+  padding-top: 30px;
+  text-align: center;
+}
+.checkout-lush form.login .area-btn .lembrar {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #696969;
+  padding-top: 25px;
+}
+.checkout-lush form.login .area-btn .perdeu-senha {
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+.checkout-lush form.login .area-btn .perdeu-senha a {
+  color: #00d0b0 ;
+}
+.checkout-lush .woocommerce-checkout h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #696969;
+}
+.checkout-lush .woocommerce-checkout #order_review_heading {
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3f2658;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .form-row,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .form-row,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .form-row {
+  padding: 3px;
+  padding-bottom: 5px;
+  margin: 0 0 10px;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order {
+  background-color: #fff;
+  padding: 0px !important;
+  /*padding-left: 1em !important;*/
+  margin: 0px;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white !important;
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 2px 0 0 #008672 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px;
+  font-size: 18px;
+  letter-spacing: 2.2px;
+  margin-right: 10px;
+  padding: 11px 48px !important;
+  float: none !important;
+  width: 100%;
+  margin-top: 50px !important;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.focus {
+  color: #333;
+  text-decoration: none;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.disabled,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.disabled,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.disabled,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order[disabled],
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order[disabled],
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order[disabled],
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.disabled,
+a.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.disabled,
+a.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.disabled,
+fieldset[disabled] a.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order,
+fieldset[disabled] a.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order,
+fieldset[disabled] a.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order {
+  pointer-events: none;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.focus {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #005144 !important;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:hover {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active:hover,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:hover,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:hover,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active:focus,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:focus,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:focus,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active.focus,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.focus,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.focus,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.focus {
+  color: white !important;
+  background-color: #007967 !important;
+  border-color: #005144 !important;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.active,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.active,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.active,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order,
+.open > .dropdown-toggle.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order {
+  background-image: none !important;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.disabled:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.disabled:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.disabled:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order[disabled]:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order[disabled]:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order[disabled]:hover,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:hover,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:hover,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:hover,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.disabled:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.disabled:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.disabled:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order[disabled]:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order[disabled]:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order[disabled]:focus,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:focus,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:focus,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.disabled.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.disabled.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.disabled.focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order[disabled].focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order[disabled].focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order[disabled].focus,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order.focus,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order.focus,
+fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order.focus {
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order .badge,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order .badge,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order .badge {
+  color: #00d0b0 !important;
+  background-color: white !important;
+}
+/*--------------------------------------------------------------
+# .compra-finalizada
+--------------------------------------------------------------*/
+.compra-finalizada {
+  padding-top: 64px;
+  padding-bottom: 160px;
+}
+.compra-finalizada .woocommerce-message {
+  display: none;
+}
+.compra-finalizada h1 {
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3f2658;
+  padding-top: 98px;
+  padding-bottom: 77px;
+  text-transform: uppercase;
+}
+.compra-finalizada .aviso {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  color: #848484;
+}
+.compra-finalizada .aviso-varicao {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  color: #848484;
+  color: #301a46;
+  padding-top: 30px;
 }
 /*--------------------------------------------------------------
 # footer
