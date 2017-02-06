@@ -55,7 +55,7 @@ if ( ! $product->is_purchasable() ) {
 
 	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
 
-	 	<button type="submit" class="btn-simples-plus"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                <button type="submit" class="btn-simples-plus"><img src="<?php uri() ?>/img/plus@2x.png"></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>

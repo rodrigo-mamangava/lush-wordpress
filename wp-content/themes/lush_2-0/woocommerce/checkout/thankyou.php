@@ -52,7 +52,7 @@ if (!defined('ABSPATH')) {
 
                         <div class="row">
                             <div class="col-sm-3 col-sm-offset-1">
-                                <img src="">
+                                <img src="<?php uri() ?>/img/maca.png">
                             </div>
                             <div class="col-sm-6 col-sm-offset-1">
                                 <p class="aviso">

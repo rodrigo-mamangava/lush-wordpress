@@ -181,5 +181,7 @@ require get_template_directory() . '/functions-mmgv/functions-woocommerce.php';
 require get_template_directory() . '/functions-mmgv/functions-layout.php';
 require get_template_directory() . '/functions-mmgv/functions-admin.php';
 require get_template_directory() . '/functions-mmgv/functions-custom-post-type.php';
+require get_template_directory() . '/functions-mmgv/cpt-concierge.php';
+require get_template_directory() . '/functions-mmgv/cpt-menu.php';
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');

@@ -24,6 +24,7 @@ add_image_size('carousel-suite', 814, 593, true);
 add_image_size('loop-simples', 442, 281, true);
 add_image_size('faixa-destaque', 500, 474, true);
 add_image_size('add-pacote', 240, 92, true);
+add_image_size('icones-concierge', 50, 50, false);
 
 /**
  * Verificar se produto tem determinada categoria
@@ -74,4 +75,11 @@ function post_on() {
     echo $time_string;
 }
 
-
+function get_link_page_by_slug($page_slug) {
+    $page = get_page_by_path($page_slug);
+    if ($page) {
+        return get_page_link($page->ID);
+    } else {
+        return null;
+    }
+}

@@ -80,6 +80,9 @@ input{
     border: 0;
 }
 
+
+
+
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-menu-right, .carousel-control .glyphicon-menu-left {
     position: absolute;
     top: 50%;
@@ -94,6 +97,115 @@ a{
     }
 }
 
+
+/*--------------------------------------------------------------
+# WordPress Core
+--------------------------------------------------------------*/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
 
 /*--------------------------------------------------------------
 # Typography
@@ -164,6 +276,46 @@ body{
 # Elementos
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Make the row think it's a table
+https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all-the-same-height
+--------------------------------------------------------------*/
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/*--------------------------------------------------------------
 ## Texto
 --------------------------------------------------------------*/
 .subtitulo-h2{
@@ -191,6 +343,12 @@ body{
 --------------------------------------------------------------*/
 
 .btn{
+
+    &:focus,&:active {
+        outline: none !important;
+        outline-offset: 0!important;
+    }
+
     .transition(all .5s);
 
     &:hover{
@@ -529,6 +687,8 @@ body{
     color: #3f2658;
     background-color: initial;
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -1421,6 +1581,7 @@ body{
         letter-spacing: 1.6px;
         text-align: center;
         color: #ffffff;
+        .text-uppercase;
     }
     h2{
         color: @branco;
@@ -1662,12 +1823,22 @@ body{
             ul{
                 padding-top: 5px;
                 list-style-type: none;
+
+                width:100%;
+                margin-bottom:20px;
+                overflow:hidden;
+                padding-left: 20px;
+
                 li{
+                    float:left;
+                    display:inline;
+
+                    width:33.333%;
 
                     &:before {    
-                        font-family: 'FontAwesome';
+                        font-family: 'FontAwesome'; 
                         content: '\f0da';
-                        margin:0 5px 0 -15px;
+                        margin:0 10px 0 -15px;
                         //color: #f00;
                     }
 
@@ -1892,6 +2063,7 @@ body{
     .picker {
         width: 100%;
         position: relative;
+        z-index: 1;
     }
 
     .wc-bookings-booking-form {
@@ -1922,16 +2094,33 @@ body{
         background-color: #fff !important;
     }
 
+    .wc-bookings-date-picker .ui-widget-content {
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,.19);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.19);
+        box-shadow: 0 1px 3px rgba(0,0,0,.19);
+        .box-shadow(none) !important;
+    }
+
     /* Previous/Next month arrows if not allowed, and calendar dates that are not available */
     .ui-state-disabled, 
     .ui-widget-content .ui-state-disabled, 
     .ui-widget-header .ui-state-disabled {
         opacity: 0.35;
+        box-shadow: none !important;
     }
 
     /* Days of the week header background color */
     .ui-datepicker-calendar thead {
         background-color: transparent;
+
+        tr{
+            &:first-of-type{
+                th{
+                    padding-bottom: 16px;
+                }
+            }
+        }
+
     }
 
     /* Days of the week header font color */
@@ -1945,7 +2134,8 @@ body{
     }
 
     /* Available calendar days background color */
-    #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a {
+    #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a,
+    #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable span{
         background-color: transparent !important;
         font-family: @knockout29;
         font-size: 21px;
@@ -1964,10 +2154,24 @@ body{
     }
 
     /* Fully booked calendar days */
+    .wc-bookings-date-picker .ui-datepicker td.fully_booked{
+        background-color: #000000 !important;
+    }
+
     .wc-bookings-date-picker .ui-datepicker td.fully_booked a, 
     .wc-bookings-date-picker .ui-datepicker td.fully_booked span {
-        background-color: #000000 !important;
+        background-color: transparent !important;
         color: #d2d2d2 !important;
+
+        font-family: @knockout29;
+        font-size: 21px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #3f2658 !important;
     }
 
     /* Days not bookable based on the availability rules */
@@ -2076,15 +2280,36 @@ body{
 
 }
 
+.wc-bookings-date-picker .ui-datepicker th {
+    border: none !important;
+}
+
 .woocommerce button.button{
     font-size: 22px !important;
     letter-spacing: 2.6px !important;
+    border-radius: 0 !important;
 }
 
 .wc-bookings-date-picker .ui-icon-circle-triangle-e {
-    background-image: url(img/instagram@3x.jpg) !important;
+    background-image: url(img/seta-direita.png) !important;
     background-position: 0;
+    background-size: 10px;
 }
+.wc-bookings-date-picker .ui-icon-circle-triangle-w {
+    background-image: url(img/seta-esquerda.png) !important;
+    background-position: 0;
+    background-size: 10px;
+}
+
+.wc-bookings-date-picker .ui-datepicker .ui-datepicker-next {
+    right: -12px;
+}
+
+.wc-bookings-date-picker .ui-datepicker .ui-datepicker-prev {
+    left: -5px;
+}
+
+
 
 .ui-icon {
     width: 100%;
@@ -2856,7 +3081,7 @@ body{
 
         margin-bottom: 69px;
 
-        p{
+        p, a{
             font-family: @knockout29;
             font-size: 14px;
             font-weight: normal;
@@ -2895,6 +3120,8 @@ body{
             letter-spacing: 0.5px;
             text-align: center;
 
+            margin-top: -9px;
+
             .text-center;
         }
 
@@ -2919,12 +3146,15 @@ body{
 
         .item-cat{
 
+            padding-top: 118px;
             .text-center;
             .center-block;
 
             .icone{
-                padding-top: 118px;
-                margin: 5px;
+                //padding-top: 118px;
+                margin: 10px;
+                width: auto;
+                height: 50px;
             }
 
             h3{
@@ -2934,6 +3164,7 @@ body{
                 letter-spacing: 0.3px;
                 text-align: center;
                 color: #3f2658;
+
 
             }
 
@@ -2950,6 +3181,34 @@ body{
             }
 
         }//.item-cat
+
+        .governanca, .regras{
+
+            padding-bottom: 60px;
+
+            h3{
+                text-align: left;
+                font-size: 32px;
+                font-weight: 500;                
+                line-height: 1.19;
+                letter-spacing: 0.3px;
+                color: #3f2658;
+                padding-bottom: 10px;
+            }
+
+            p{
+                text-align: left;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 1.67;
+                letter-spacing: 0.2px;
+                color: #696969;
+                font-family: @FairfieldRegular;
+                color: #969696;
+            }
+
+        }
+
         .item-cat-simples{
 
             padding-bottom: 40px;
@@ -2999,6 +3258,93 @@ body{
 
 
 /*--------------------------------------------------------------
+# single-concierge
+--------------------------------------------------------------*/
+.single-concierge{
+    background-color: #f2f2f2;
+
+    padding-top: 140px;
+    padding-bottom:  100px;
+
+    .voltar{
+        margin-top: -100px;
+        text-align: right;
+    }
+
+    .seta-dir, .seta-esq{
+        margin-top: 100px;
+
+        img{
+            height: 25px;
+            width: auto;
+        }
+    }
+
+    h1{
+        font-family: @knockout26;
+        font-size: 60px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.63;
+        letter-spacing: 1px;
+        color: #3f2658;
+        .text-uppercase;
+        padding-bottom: 10px;
+
+    }
+
+    .obs, .descricao{
+        font-family: @FairfieldRegular;
+        font-size: 18px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: 0.2px;
+        color: #3f2658;
+    }
+
+    .obs{
+        padding-bottom: 60px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+# .menu-cardapio
+--------------------------------------------------------------*/
+.menu-cardapio{
+    padding-top: 64px;
+    padding-bottom:  100px;
+
+    ul{
+        padding-top: 61px;
+
+        .list-inline;       
+        .text-center;
+
+        li, a{
+            font-family: @knockout29;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.43;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: #969696;
+            
+            .text-uppercase;
+        }
+
+    }
+
+
+
+}
+
+/*--------------------------------------------------------------
 # woocommerce-cart
 --------------------------------------------------------------*/
 .woocommerce-cart{
@@ -3041,10 +3387,10 @@ body{
     }
 
     .item-addpacote{
-        
+
         height: 180px;
-        
-        
+
+
 
         h3{
             float: left;
@@ -3059,13 +3405,13 @@ body{
             letter-spacing: normal;
             color: #6e5e8b;
             padding-top: 10px;
-            
+
         }
 
         .woocommerce-Price-amount{
-            
+
             padding-top: 4px !important;
-            
+
             float: right;
             width: 40%;
 
@@ -3078,7 +3424,7 @@ body{
             letter-spacing: 0.5px;
             text-align: right;
             color: #301a46;
-           
+
         }
 
 
@@ -3170,7 +3516,7 @@ body{
                 }
 
                 .button{
-                    .btn-cinza-roxo !important;
+                    .btn-cinza-roxo;
                 }
 
             }
@@ -3238,7 +3584,7 @@ body{
 
     .wc-proceed-to-checkout{
         .checkout-button{
-            .btn-reserva-v2 !important;
+            .btn-reserva-v2;
             width: 100%;
         }
     }
@@ -3483,6 +3829,8 @@ body{
     }
 
 }
+
+
 
 /*--------------------------------------------------------------
 # footer

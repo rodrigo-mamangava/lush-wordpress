@@ -43,10 +43,7 @@ if (post_password_required()) {
         <div class="row">
 
             <div class="col-sm-4 col-sm-offset-1">
-
                 <?php woocommerce_template_single_add_to_cart(); ?>
-
-
             </div><!-- descricao --> 
 
             <div class="col-sm-6 col-sm-offset-1 info-preco">
@@ -59,8 +56,6 @@ if (post_password_required()) {
                     <p><?php _e('Additional time', 'lush_2-0'); ?> <span>R$ <?php echo get_field('hora_add'); ?></span></p>
                 </div>
 
-
-                <?php echo get_field('preço_e_reserva'); ?>
 
                 <p class="info-checkin">
                     <?php _e('Check-in 3pm and check-out at 1pm the next day.', 'lush_2-0'); ?>
@@ -89,24 +84,12 @@ if (post_password_required()) {
     </div><!-- faixa-fotos-produto -->
 
 
-    <?php
-    /**
-     * woocommerce_single_product_summary hook.
-     *
-     * @hooked woocommerce_template_single_title - 5
-     * @hooked woocommerce_template_single_rating - 10
-     * @hooked woocommerce_template_single_price - 10
-     * @hooked woocommerce_template_single_excerpt - 20
-     * @hooked woocommerce_template_single_add_to_cart - 30
-     * @hooked woocommerce_template_single_meta - 40
-     * @hooked woocommerce_template_single_sharing - 50
-     */
-    //do_action('woocommerce_single_product_summary');
-    ?>
-
 
 
     <?php wc_get_template_part('content', 'suites-simple-loop'); ?>
+    
+    
+    <?php get_template_part( 'template-parts/faixa/concierge'); ?>
 
 
 </div><!-- suite-single -->

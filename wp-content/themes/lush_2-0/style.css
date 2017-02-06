@@ -6818,6 +6818,101 @@ a:hover {
   text-decoration: none;
 }
 /*--------------------------------------------------------------
+# WordPress Core
+--------------------------------------------------------------*/
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body {
@@ -6835,6 +6930,43 @@ body {
 /*--------------------------------------------------------------
 # Elementos
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Make the row think it's a table
+https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all-the-same-height
+--------------------------------------------------------------*/
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 /*--------------------------------------------------------------
 ## Texto
 --------------------------------------------------------------*/
@@ -6864,6 +6996,11 @@ body {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn:hover {
   -webkit-transition: all 0.5s;
@@ -6930,6 +7067,11 @@ fieldset[disabled] .btn-lupa {
 a.btn-lupa.disabled,
 fieldset[disabled] a.btn-lupa {
   pointer-events: none;
+}
+.btn-lupa:focus,
+.btn-lupa:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn-lupa:hover {
   -webkit-transition: all 0.5s;
@@ -7060,6 +7202,11 @@ a.btn-reservar.disabled,
 fieldset[disabled] a.btn-reservar {
   pointer-events: none;
 }
+.btn-reservar:focus,
+.btn-reservar:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-reservar:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -7186,6 +7333,11 @@ a.btn-reservar-lilas.disabled,
 fieldset[disabled] a.btn-reservar-lilas {
   pointer-events: none;
 }
+.btn-reservar-lilas:focus,
+.btn-reservar-lilas:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-reservar-lilas:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -7308,6 +7460,11 @@ fieldset[disabled] .btn-padrao-roxo {
 a.btn-padrao-roxo.disabled,
 fieldset[disabled] a.btn-padrao-roxo {
   pointer-events: none;
+}
+.btn-padrao-roxo:focus,
+.btn-padrao-roxo:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn-padrao-roxo:hover {
   -webkit-transition: all 0.5s;
@@ -7432,6 +7589,11 @@ a.btn-enviar.disabled,
 fieldset[disabled] a.btn-enviar {
   pointer-events: none;
 }
+.btn-enviar:focus,
+.btn-enviar:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-enviar:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -7553,6 +7715,11 @@ fieldset[disabled] .btn-lilas {
 a.btn-lilas.disabled,
 fieldset[disabled] a.btn-lilas {
   pointer-events: none;
+}
+.btn-lilas:focus,
+.btn-lilas:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn-lilas:hover {
   -webkit-transition: all 0.5s;
@@ -7680,6 +7847,11 @@ a.btn-branco-v2.disabled,
 fieldset[disabled] a.btn-branco-v2 {
   pointer-events: none;
 }
+.btn-branco-v2:focus,
+.btn-branco-v2:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-branco-v2:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -7803,6 +7975,11 @@ fieldset[disabled] .btn-participar-v2 {
 a.btn-participar-v2.disabled,
 fieldset[disabled] a.btn-participar-v2 {
   pointer-events: none;
+}
+.btn-participar-v2:focus,
+.btn-participar-v2:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn-participar-v2:hover {
   -webkit-transition: all 0.5s;
@@ -7931,6 +8108,11 @@ a.btn-roxo-v02.disabled,
 fieldset[disabled] a.btn-roxo-v02 {
   pointer-events: none;
 }
+.btn-roxo-v02:focus,
+.btn-roxo-v02:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-roxo-v02:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -8058,6 +8240,11 @@ a.btn-verde-v02.disabled,
 fieldset[disabled] a.btn-verde-v02 {
   pointer-events: none;
 }
+.btn-verde-v02:focus,
+.btn-verde-v02:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-verde-v02:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -8184,6 +8371,11 @@ fieldset[disabled] .btn-cinza-roxo {
 a.btn-cinza-roxo.disabled,
 fieldset[disabled] a.btn-cinza-roxo {
   pointer-events: none;
+}
+.btn-cinza-roxo:focus,
+.btn-cinza-roxo:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn-cinza-roxo:hover {
   -webkit-transition: all 0.5s;
@@ -8313,6 +8505,11 @@ fieldset[disabled] .btn-reserva-v2 {
 a.btn-reserva-v2.disabled,
 fieldset[disabled] a.btn-reserva-v2 {
   pointer-events: none;
+}
+.btn-reserva-v2:focus,
+.btn-reserva-v2:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn-reserva-v2:hover {
   -webkit-transition: all 0.5s;
@@ -8449,6 +8646,11 @@ a.btn-transparente.disabled,
 fieldset[disabled] a.btn-transparente {
   pointer-events: none;
 }
+.btn-transparente:focus,
+.btn-transparente:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-transparente:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -8574,6 +8776,11 @@ a.btn-servico-concierge.disabled,
 fieldset[disabled] a.btn-servico-concierge {
   pointer-events: none;
 }
+.btn-servico-concierge:focus,
+.btn-servico-concierge:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .btn-servico-concierge:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -8698,6 +8905,11 @@ fieldset[disabled] .btn-explore-cardapio {
 a.btn-explore-cardapio.disabled,
 fieldset[disabled] a.btn-explore-cardapio {
   pointer-events: none;
+}
+.btn-explore-cardapio:focus,
+.btn-explore-cardapio:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .btn-explore-cardapio:hover {
   -webkit-transition: all 0.5s;
@@ -9529,6 +9741,11 @@ a.faixa-explore .btn-reservar-v2.disabled,
 fieldset[disabled] a.faixa-explore .btn-reservar-v2 {
   pointer-events: none;
 }
+.faixa-explore .btn-reservar-v2:focus,
+.faixa-explore .btn-reservar-v2:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .faixa-explore .btn-reservar-v2:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -9895,6 +10112,11 @@ a.faixa-concierge .btn-reservar-v2.disabled,
 fieldset[disabled] a.faixa-concierge .btn-reservar-v2 {
   pointer-events: none;
 }
+.faixa-concierge .btn-reservar-v2:focus,
+.faixa-concierge .btn-reservar-v2:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .faixa-concierge .btn-reservar-v2:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -9962,6 +10184,7 @@ fieldset[disabled] .faixa-concierge .btn-reservar-v2.focus {
   letter-spacing: 1.6px;
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .faixa-concierge h2 {
   color: white;
@@ -10056,6 +10279,11 @@ fieldset[disabled] .brn-reserve-suite {
 a.brn-reserve-suite.disabled,
 fieldset[disabled] a.brn-reserve-suite {
   pointer-events: none;
+}
+.brn-reserve-suite:focus,
+.brn-reserve-suite:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .brn-reserve-suite:hover {
   -webkit-transition: all 0.5s;
@@ -10184,6 +10412,11 @@ fieldset[disabled] .faixa-btn .btn-concierge {
 a.faixa-btn .btn-concierge.disabled,
 fieldset[disabled] a.faixa-btn .btn-concierge {
   pointer-events: none;
+}
+.faixa-btn .btn-concierge:focus,
+.faixa-btn .btn-concierge:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .faixa-btn .btn-concierge:hover {
   -webkit-transition: all 0.5s;
@@ -10411,11 +10644,20 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .suite-single .faixa-detalhes .atributos ul {
   padding-top: 5px;
   list-style-type: none;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.suite-single .faixa-detalhes .atributos ul li {
+  float: left;
+  display: inline;
+  width: 33.333%;
 }
 .suite-single .faixa-detalhes .atributos ul li:before {
   font-family: 'FontAwesome';
   content: '\f0da';
-  margin: 0 5px 0 -15px;
+  margin: 0 10px 0 -15px;
 }
 .suite-single .faixa-detalhes .info-preco .descricao {
   font-family: 'FairfieldLTW01-55Medium 706181';
@@ -10572,6 +10814,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .suite-single .picker {
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 .suite-single .wc-bookings-booking-form {
   border: 0;
@@ -10589,18 +10832,30 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker .ui-datepicker-prev {
   background-color: #fff !important;
 }
+.suite-single .wc-bookings-date-picker .ui-widget-content {
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
 .suite-single .ui-state-disabled,
 .suite-single .ui-widget-content .ui-state-disabled,
 .suite-single .ui-widget-header .ui-state-disabled {
   opacity: 0.35;
+  box-shadow: none !important;
 }
 .suite-single .ui-datepicker-calendar thead {
   background-color: transparent;
 }
+.suite-single .ui-datepicker-calendar thead tr:first-of-type th {
+  padding-bottom: 16px;
+}
 .suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker th {
   color: #acacac;
 }
-.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a {
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a,
+.suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable span {
   background-color: transparent !important;
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 21px;
@@ -10615,10 +10870,22 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a:hover {
   background-color: #e4d5ff !important;
 }
+.suite-single .wc-bookings-date-picker .ui-datepicker td.fully_booked {
+  background-color: #000000 !important;
+}
 .suite-single .wc-bookings-date-picker .ui-datepicker td.fully_booked a,
 .suite-single .wc-bookings-date-picker .ui-datepicker td.fully_booked span {
-  background-color: #000000 !important;
+  background-color: transparent !important;
   color: #d2d2d2 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #3f2658 !important;
 }
 .suite-single .wc-bookings-date-picker .ui-datepicker td.not_bookable {
   background-color: #FFFFFF !important;
@@ -10700,13 +10967,29 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   text-align: center;
   color: #6e5e8b;
 }
+.wc-bookings-date-picker .ui-datepicker th {
+  border: none !important;
+}
 .woocommerce button.button {
   font-size: 22px !important;
   letter-spacing: 2.6px !important;
+  border-radius: 0 !important;
 }
 .wc-bookings-date-picker .ui-icon-circle-triangle-e {
-  background-image: url(img/instagram@3x.jpg) !important;
+  background-image: url(img/seta-direita.png) !important;
   background-position: 0;
+  background-size: 10px;
+}
+.wc-bookings-date-picker .ui-icon-circle-triangle-w {
+  background-image: url(img/seta-esquerda.png) !important;
+  background-position: 0;
+  background-size: 10px;
+}
+.wc-bookings-date-picker .ui-datepicker .ui-datepicker-next {
+  right: -12px;
+}
+.wc-bookings-date-picker .ui-datepicker .ui-datepicker-prev {
+  left: -5px;
 }
 .ui-icon {
   width: 100%;
@@ -11511,7 +11794,8 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .concierge .lista-cat-concierge {
   margin-bottom: 69px;
 }
-.concierge .lista-cat-concierge p {
+.concierge .lista-cat-concierge p,
+.concierge .lista-cat-concierge a {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 14px;
   font-weight: normal;
@@ -11541,6 +11825,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   font-stretch: normal;
   line-height: 0.76;
   letter-spacing: 0.5px;
+  margin-top: -9px;
   text-align: center;
 }
 .concierge .cat-lista .descricao-cat {
@@ -11559,14 +11844,16 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: #969696;
 }
 .concierge .cat-lista .item-cat {
+  padding-top: 118px;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .concierge .cat-lista .item-cat .icone {
-  padding-top: 118px;
-  margin: 5px;
+  margin: 10px;
+  width: auto;
+  height: 50px;
 }
 .concierge .cat-lista .item-cat h3 {
   font-size: 32px;
@@ -11577,6 +11864,31 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: #3f2658;
 }
 .concierge .cat-lista .item-cat p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  color: #696969;
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  color: #969696;
+}
+.concierge .cat-lista .governanca,
+.concierge .cat-lista .regras {
+  padding-bottom: 60px;
+}
+.concierge .cat-lista .governanca h3,
+.concierge .cat-lista .regras h3 {
+  text-align: left;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.3px;
+  color: #3f2658;
+  padding-bottom: 10px;
+}
+.concierge .cat-lista .governanca p,
+.concierge .cat-lista .regras p {
+  text-align: left;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.67;
@@ -11614,6 +11926,85 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   line-height: 1.67;
   letter-spacing: 0.2px;
   color: #696969;
+}
+/*--------------------------------------------------------------
+# single-concierge
+--------------------------------------------------------------*/
+.single-concierge {
+  background-color: #f2f2f2;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+.single-concierge .voltar {
+  margin-top: -100px;
+  text-align: right;
+}
+.single-concierge .seta-dir,
+.single-concierge .seta-esq {
+  margin-top: 100px;
+}
+.single-concierge .seta-dir img,
+.single-concierge .seta-esq img {
+  height: 25px;
+  width: auto;
+}
+.single-concierge h1 {
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 60px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.63;
+  letter-spacing: 1px;
+  color: #3f2658;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.single-concierge .obs,
+.single-concierge .descricao {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  color: #3f2658;
+}
+.single-concierge .obs {
+  padding-bottom: 60px;
+}
+/*--------------------------------------------------------------
+# .menu-cardapio
+--------------------------------------------------------------*/
+.menu-cardapio {
+  padding-top: 64px;
+  padding-bottom: 100px;
+}
+.menu-cardapio ul {
+  padding-top: 61px;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  text-align: center;
+}
+.menu-cardapio ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.menu-cardapio ul li,
+.menu-cardapio ul a {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.43;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #969696;
+  text-transform: uppercase;
 }
 /*--------------------------------------------------------------
 # woocommerce-cart
@@ -11754,6 +12145,11 @@ a.faixa-addpacote .item-addpacote .img-space .btn-simples-plus.disabled,
 fieldset[disabled] a.faixa-addpacote .item-addpacote .img-space .btn-simples-plus {
   pointer-events: none;
 }
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-plus:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .faixa-addpacote .item-addpacote .img-space .btn-simples-plus:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -11880,6 +12276,11 @@ a.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa.disabled,
 fieldset[disabled] a.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa {
   pointer-events: none;
 }
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:focus,
+.faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .faixa-addpacote .item-addpacote .img-space .btn-simples-lupa:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -11985,39 +12386,39 @@ fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-lupa
   padding: 14px !important;
 }
 .faixa-carrinho .shop_table td.actions .button {
-  display: inline-block !important;
-  margin-bottom: 0 !important;
-  font-weight: normal !important;
-  text-align: center !important;
-  vertical-align: middle !important;
-  touch-action: manipulation !important;
-  cursor: pointer !important;
-  background-image: none !important;
-  border: 1px solid transparent !important;
-  white-space: nowrap !important;
-  padding: 6px 12px !important;
-  font-size: 14px !important;
-  line-height: 1.42857143 !important;
-  border-radius: 4px !important;
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-  -webkit-transition: all 0.5s !important;
-  -o-transition: all 0.5s !important;
-  transition: all 0.5s !important;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #3f2658 !important;
   background-color: #f2f2f2 !important;
   border-color: #f2f2f2 !important;
-  border-radius: 0 !important;
-  text-transform: uppercase !important;
-  box-shadow: 0 2px 0 #3F2A56 !important;
-  box-shadow: 0 3px 0 0 #d2d2d2 !important !important;
-  font-family: "Knockout 29 A", "Knockout 29 B" !important;
-  margin-top: 9px !important;
-  padding: 11px 48px !important;
-  font-size: 16px !important;
-  letter-spacing: 2.2px !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 3px 0 0 #d2d2d2 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px;
+  font-size: 16px;
+  letter-spacing: 2.2px;
 }
 .faixa-carrinho .shop_table td.actions .button:focus,
 .faixa-carrinho .shop_table td.actions .button:active:focus,
@@ -12025,39 +12426,44 @@ fieldset[disabled] .faixa-addpacote .item-addpacote .img-space .btn-simples-lupa
 .faixa-carrinho .shop_table td.actions .button.focus,
 .faixa-carrinho .shop_table td.actions .button:active.focus,
 .faixa-carrinho .shop_table td.actions .button.active.focus {
-  outline: 5px auto -webkit-focus-ring-color !important;
-  outline-offset: -2px !important;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 .faixa-carrinho .shop_table td.actions .button:hover,
 .faixa-carrinho .shop_table td.actions .button:focus,
 .faixa-carrinho .shop_table td.actions .button.focus {
-  color: #333 !important;
-  text-decoration: none !important;
+  color: #333;
+  text-decoration: none;
 }
 .faixa-carrinho .shop_table td.actions .button:active,
 .faixa-carrinho .shop_table td.actions .button.active {
-  outline: 0 !important;
-  background-image: none !important;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .faixa-carrinho .shop_table td.actions .button.disabled,
 .faixa-carrinho .shop_table td.actions .button[disabled],
 fieldset[disabled] .faixa-carrinho .shop_table td.actions .button {
-  cursor: not-allowed !important;
-  opacity: 0.65 !important;
-  filter: alpha(opacity=65) !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 a.faixa-carrinho .shop_table td.actions .button.disabled,
 fieldset[disabled] a.faixa-carrinho .shop_table td.actions .button {
-  pointer-events: none !important;
+  pointer-events: none;
+}
+.faixa-carrinho .shop_table td.actions .button:focus,
+.faixa-carrinho .shop_table td.actions .button:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .faixa-carrinho .shop_table td.actions .button:hover {
-  -webkit-transition: all 0.5s !important;
-  -o-transition: all 0.5s !important;
-  transition: all 0.5s !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .faixa-carrinho .shop_table td.actions .button:focus,
 .faixa-carrinho .shop_table td.actions .button.focus {
@@ -12215,6 +12621,11 @@ a.faixa-carrinho .btn-continuar-comprando.disabled,
 fieldset[disabled] a.faixa-carrinho .btn-continuar-comprando {
   pointer-events: none;
 }
+.faixa-carrinho .btn-continuar-comprando:focus,
+.faixa-carrinho .btn-continuar-comprando:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
 .faixa-carrinho .btn-continuar-comprando:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -12280,41 +12691,41 @@ fieldset[disabled] .faixa-carrinho .btn-continuar-comprando.focus {
   background: #b8b8b8;
 }
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button {
-  display: inline-block !important;
-  margin-bottom: 0 !important;
-  font-weight: normal !important;
-  text-align: center !important;
-  vertical-align: middle !important;
-  touch-action: manipulation !important;
-  cursor: pointer !important;
-  background-image: none !important;
-  border: 1px solid transparent !important;
-  white-space: nowrap !important;
-  padding: 6px 12px !important;
-  font-size: 14px !important;
-  line-height: 1.42857143 !important;
-  border-radius: 4px !important;
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-  -webkit-transition: all 0.5s !important;
-  -o-transition: all 0.5s !important;
-  transition: all 0.5s !important;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white !important;
   background-color: #00d0b0 !important;
   border-color: #00d0b0 !important;
-  border-radius: 0 !important;
-  text-transform: uppercase !important;
-  box-shadow: 0 2px 0 #3F2A56 !important;
-  box-shadow: 0 2px 0 0 #008672 !important !important;
-  font-family: "Knockout 29 A", "Knockout 29 B" !important;
-  margin-top: 9px !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 2px 0 0 #008672 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px;
+  font-size: 18px;
+  letter-spacing: 2.2px;
+  margin-right: 10px;
   padding: 11px 48px !important;
-  font-size: 18px !important;
-  letter-spacing: 2.2px !important;
-  margin-right: 10px !important;
-  padding: 11px 48px !important !important;
   width: 100%;
 }
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
@@ -12323,39 +12734,44 @@ fieldset[disabled] .faixa-carrinho .btn-continuar-comprando.focus {
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus,
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button:active.focus,
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button.active.focus {
-  outline: 5px auto -webkit-focus-ring-color !important;
-  outline-offset: -2px !important;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button:hover,
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus {
-  color: #333 !important;
-  text-decoration: none !important;
+  color: #333;
+  text-decoration: none;
 }
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button:active,
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button.active {
-  outline: 0 !important;
-  background-image: none !important;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button.disabled,
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button[disabled],
 fieldset[disabled] .faixa-carrinho .wc-proceed-to-checkout .checkout-button {
-  cursor: not-allowed !important;
-  opacity: 0.65 !important;
-  filter: alpha(opacity=65) !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 a.faixa-carrinho .wc-proceed-to-checkout .checkout-button.disabled,
 fieldset[disabled] a.faixa-carrinho .wc-proceed-to-checkout .checkout-button {
-  pointer-events: none !important;
+  pointer-events: none;
+}
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
+.faixa-carrinho .wc-proceed-to-checkout .checkout-button:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button:hover {
-  -webkit-transition: all 0.5s !important;
-  -o-transition: all 0.5s !important;
-  transition: all 0.5s !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button:focus,
 .faixa-carrinho .wc-proceed-to-checkout .checkout-button.focus {
@@ -12525,6 +12941,11 @@ fieldset[disabled] .checkout-lush .btn-login {
 a.checkout-lush .btn-login.disabled,
 fieldset[disabled] a.checkout-lush .btn-login {
   pointer-events: none;
+}
+.checkout-lush .btn-login:focus,
+.checkout-lush .btn-login:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .checkout-lush .btn-login:hover {
   -webkit-transition: all 0.5s;
@@ -12819,6 +13240,15 @@ fieldset[disabled] a.checkout-lush .woocommerce-checkout .woocommerce-billing-fi
 fieldset[disabled] a.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order,
 fieldset[disabled] a.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order {
   pointer-events: none;
+}
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:focus,
+.checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:active,
+.checkout-lush .woocommerce-checkout .woocommerce-checkout-review-order .place-order #place_order:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .checkout-lush .woocommerce-checkout .woocommerce-billing-fields .place-order #place_order:hover,
 .checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .place-order #place_order:hover,
