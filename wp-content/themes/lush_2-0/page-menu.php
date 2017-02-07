@@ -14,9 +14,9 @@ get_template_part('template-parts/menu/geral');
 
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1"> 
+                <div class="col-xs-12 col-sm-12 "> 
 
-                    <div class="row">
+                    <div class="row is-flex">
 
                         <?php get_template_part('template-parts/menu/lista', 'cat'); ?>
 

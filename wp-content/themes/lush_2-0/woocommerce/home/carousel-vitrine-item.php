@@ -1,5 +1,5 @@
 <div class="suite">
-    <?php the_post_thumbnail('full'); ?>
+    <?php the_post_thumbnail('vitrine-suite'); ?>
     <div class="suite-card">
         <p class="escolha"><?php _e( 'Escolha sua suite', 'lush_2-0' ); ?> </p>
         <?php the_title('<h2>', '</h2>')?>
