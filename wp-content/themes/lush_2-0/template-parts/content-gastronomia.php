@@ -25,19 +25,19 @@ get_faixa_simples($class, $texto, $class_btn, $link_btn, $texto_btn);
             <?php
             
             faixa_destaque_par(
-                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_field('link_01'), get_field('texto_do_botão_01')
+                    get_field('faixa_destaque_01_foto'), false, get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_link_page_by_slug('menu'), get_field('texto_do_botão_01')
             );
             
             faixa_destaque_impar(
-                    get_field('faixa_destaque_02_foto'), false, get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_02_texto'), get_field('link_02'), get_field('texto_do_botão_02')
+                    get_field('faixa_destaque_02_foto'), false, get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_02_texto'), get_link_page_by_slug('menu'), get_field('texto_do_botão_02')
             );
             
             faixa_destaque_par(
-                    get_field('faixa_destaque_03_foto'), false, get_field('faixa_destaque_03_titulo'), get_field('faixa_destaque_03_texto'), get_field('link_03'), get_field('texto_do_botão_03')
+                    get_field('faixa_destaque_03_foto'), false, get_field('faixa_destaque_03_titulo'), get_field('faixa_destaque_03_texto'), get_link_page_by_slug('menu'), get_field('texto_do_botão_03')
             );
             
             faixa_destaque_impar(
-                    get_field('faixa_destaque_04_foto'), false, get_field('faixa_destaque_04_titulo'), get_field('faixa_destaque_04_texto'), get_field('link_04'), get_field('texto_do_botão_04')
+                    get_field('faixa_destaque_04_foto'), false, get_field('faixa_destaque_04_titulo'), get_field('faixa_destaque_04_texto'), get_link_page_by_slug('menu'), get_field('texto_do_botão_04')
             );
             
             ?>

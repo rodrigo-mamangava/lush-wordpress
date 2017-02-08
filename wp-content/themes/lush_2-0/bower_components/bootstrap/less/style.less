@@ -576,6 +576,41 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     }
 }
 
+
+
+.pagination{
+    margin: 70px 0 130px;
+    width: 100%;
+
+    .nav-links{
+
+        a, span{
+            font-family: @knockout29;
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #d2d2d2;
+            padding: 0 12px;
+
+            &.current{
+                color: #6e5e8b;
+            }
+
+            &.prev{
+                .pull-left;
+                .text-uppercase;
+            }
+            &.next{
+                .pull-right;
+                .text-uppercase;
+            }
+        }
+    }
+}//pagination
+
 /*--------------------------------------------------------------
 # listas
 --------------------------------------------------------------*/
@@ -615,7 +650,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 }
 
 /*--------------------------------------------------------------
-# MENU
+# MENU PRINCIPAL
 --------------------------------------------------------------*/
 
 .menu-header{
@@ -623,6 +658,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     padding-top: 106px;
 
     .logo{
+
+        .hidden-xs;
+
         img{
             height: 20px;
             width: auto;
@@ -631,9 +669,10 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     .menu-itens{
         .text-right;
+    }
 
-
-
+    .list-social, .list-language{
+        .hidden-xs;
     }
 
 }
@@ -661,6 +700,11 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 height: 64px;
                 width: 64px;
 
+                @media (max-width: @screen-xs-max) { 
+                    .text-center;
+                    .center-block;
+                }
+
                 img.logo{
                     width: 27px;
                     height: auto;
@@ -678,8 +722,12 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             letter-spacing: 1.4px;
             color: #969696;
             text-transform: uppercase;
-
         }
+
+        .navbar-nav > li.active > a {
+            color: #6e5e8b;
+        }
+
     }
 }
 
@@ -694,6 +742,16 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 /*--------------------------------------------------------------
 # HOME
 --------------------------------------------------------------*/
+
+.home{
+    .menu-principal-home{
+        .hidden-xs;
+    }
+
+    .menu-principal-geral{
+        .visible-xs;
+    }
+}
 
 .faixa-vitrine {
     position: relative;
@@ -734,6 +792,8 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         .menu-header{
             height: 100%;
+
+
         }
 
     }//.vitrine
@@ -741,11 +801,15 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .vitrine-chamada {
 
         padding-top: 126px;
-
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: @screen-xs-max){
+            padding-top: 65px;
+            width: 65%;
+        }
 
 
         h1 {
@@ -757,12 +821,18 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             line-height: 0.8;
             letter-spacing: 2px;
             color: #ffffff;
-
             .text-uppercase;
 
-            span{
-                padding-top: 32px;
+            @media (max-width: @screen-xs-max){
+                font-size: 54px;
+                line-height: 0.87;
+                letter-spacing: 1.1px;
+            }
 
+
+
+            span{
+                padding-top: 32px;               
                 font-family: @FairfieldLTW01-46LightI;
                 font-size: 26px;
                 font-weight: 500;
@@ -771,8 +841,13 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 letter-spacing: 0.3px;
                 text-align: center;
                 color: #ffffff;
-
                 text-transform: initial;
+
+                @media (max-width: @screen-xs-max){
+                    padding-top: 5px;
+                    line-height: 1.56;
+                    font-size: 18px;
+                }
             }
 
 
@@ -809,13 +884,30 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     margin-bottom: 123px;
     padding-top: 125px;
 
+    @media (max-width: @screen-xs-max){
+        padding-top: 60px;  
+        margin-bottom: 50px;
+    }
+
 
     .carousel-slick{
         background-color: @branco;
 
+        .slick-list{
+            @media (max-width: @screen-xs-max) {
+                padding: 0px 15px !important;                
+            }
+
+        }
+
         .suite{
             position: relative;
             height: 800px;
+            @media (max-width: @screen-xs-max){
+                width: 350px !important;
+                width: 11.2% !important;
+                height: 300px;
+            }
 
             img{
                 width: 95%;
@@ -831,6 +923,13 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 box-shadow: 0 -4px 0 0 #3f2658;
                 padding: 30px 32px;
 
+                @media (max-width: @screen-xs-max) { 
+                    left: 0;
+                    bottom: initial;
+                    width: 99%;
+                    padding: 20px 23px;
+                }
+
                 .escolha{
                     font-family: @knockout29;
                     font-size: 16px;
@@ -838,7 +937,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                     color: #969696;
                     margin-bottom: 12px;
                     text-transform: uppercase;
-                    color: #969696;
+                    color: #969696;                    
                 }
 
 
@@ -850,8 +949,18 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                     line-height: 1.43;
                     letter-spacing: 0.4px;
                     color: #3f2658;
-
                     margin-bottom: 9px;
+
+                    @media (max-width: @screen-xs-max) {
+                        font-size: 28px;
+                        letter-spacing: 0.3px;
+                    }
+                }
+
+                .descricao{
+                    @media (max-width: @screen-xs-max) {
+                        margin-bottom: 8px;
+                    }
                 }
 
                 p{
@@ -862,12 +971,24 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                     letter-spacing: 0.2px;
                     color: #969696;
                     margin-bottom: 48px;
+
+                    @media (max-width: @screen-xs-max) {
+                        font-size: 16px;
+                        margin-bottom: 30px;
+
+                    }
+
                 }
 
                 .btn-verde-v02{
                     font-size: 18px;
                     letter-spacing: 2.2px;
                     font-family: @knockout29;
+
+                    @media (max-width: @screen-xs-max) {
+                        width: 100%;
+                    }
+
                 }
 
                 .explorar{
@@ -884,7 +1005,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         }
     }
 
+    .slick-track{
 
+    }
 
     .slick-slide{
         opacity: 0.5;
@@ -1177,6 +1300,11 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         padding-left: 31px;
         padding-bottom: 27px;
 
+        @media (max-width: @screen-xs-max) { 
+            .text-center;
+            .center-block;
+        }
+
         h2{
             font-family: @knockout29;
             font-size: 16px;
@@ -1240,7 +1368,11 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             margin-top: -55px;
 
             width: 100%;
+        }
 
+        .gift-cards-mobile{
+            width: 100%;
+            height: auto;
         }
 
     }
@@ -1819,6 +1951,8 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             color: #848484;
 
             .text-uppercase;
+            margin-top: 74px;
+
 
             ul{
                 padding-top: 5px;
@@ -1944,7 +2078,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             padding-top: 0;
 
             .compartilhar{
-                padding-top: 54px;
+                padding-top: 80px;
 
                 ul{
                     li{
@@ -2220,6 +2354,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         line-height: normal;
         letter-spacing: 1px;
         color: #848484;
+        .text-uppercase;
 
         .woocommerce-Price-amount{
             position: absolute;
@@ -2234,7 +2369,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             text-align: right;
             color: #301a46;
             padding-right: 17px;
-            margin-top: -10px;
+            margin-top: -15px;
         }
     }
 
@@ -2309,6 +2444,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     left: -5px;
 }
 
+.woocommerce div.product form.cart, .woocommerce div.product p.cart {
+    margin-bottom: 0;
+}
 
 
 .ui-icon {
@@ -2764,6 +2902,12 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         }
 
+        img{
+            width: 100%;
+            height: auto;
+            padding-top: 32px;
+        }
+
 
 
         h2{
@@ -2792,31 +2936,38 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     }
 
-    .passador{
-
-        font-family: @knockout29;
-        font-size: 20px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-
-        .text-uppercase;
-
-        padding-top: 90px;
-        padding-bottom: 146px;
 
 
-        ul{
-            .list-inline;
 
-            li{
+    .nav-links{
 
-                a{
-                    color: #d2d2d2;
+        .passador{
 
-                    &:hover, &:active{
-                        text-decoration: none;
-                        color: #6e5e8b;
+            font-family: @knockout29;
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+
+            .text-uppercase;
+
+            padding-top: 90px;
+            padding-bottom: 146px;
+
+
+            ul{
+                .list-inline;
+
+                li{
+
+                    a{
+                        color: #d2d2d2;
+
+                        &:hover, &:active{
+                            text-decoration: none;
+                            color: #6e5e8b;
+                        }
+
                     }
 
                 }
@@ -2825,7 +2976,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         }
 
+
     }
+
 }//faixa-bastidores
 
 /*--------------------------------------------------------------
@@ -3320,6 +3473,8 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     ul{
         padding-top: 61px;
+        margin-bottom: 60px;
+
 
         .list-inline;       
         .text-center;
@@ -3341,15 +3496,15 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     }
 
     .item-cat-menu{
-        
+
         padding-bottom: 60px;
-        
+
         img{
             width: 100%;
             height: auto;
             padding-bottom: 30px;
         }
-        
+
         h2{
             font-family: @knockout26;
             font-size: 38px;
@@ -3359,9 +3514,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             line-height: 0.74;
             letter-spacing: 1px;
             color: #3f2658;
-            
+
             padding-bottom: 30px;
-            
+
         }
 
         h3{
@@ -3373,6 +3528,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             line-height: 1.67;
             letter-spacing: 0.2px;
             color: #969696;
+            font-style: italic;
+            font-weight: 900;
+
         }
 
         p{
@@ -3783,6 +3941,8 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
             padding-top: 50px;
             padding-bottom: 50px;
+
+            .text-uppercase;
         }
 
 
@@ -3893,7 +4053,6 @@ footer{
     .logo{
         width: 72px;
         height: auto;
-
         margin-bottom: 68.4px;
     }
 

@@ -5,6 +5,8 @@
 get_header('home');
 ?>
 
+
+
 <div class=" faixa-vitrine container-fluid">
 
     <div id="video-container">
@@ -68,6 +70,7 @@ get_header('home');
 
 <?php
 get_template_part('template-parts/menu/home');
+get_template_part('template-parts/menu/geral');
 ?>
 
 <?php wc_get_template('home/content-loop-suite-home.php'); ?>
@@ -156,6 +159,9 @@ get_template_part('template-parts/menu/home');
 
                     <h2><?php _e('To gift', 'lush_2-0') ?></h2>
                     <h3><?php _e('Lush Gift Card', 'lush_2-0') ?></h3>
+                    
+                    <img class="gift-cards-mobile visible-xs" src="<?php uri() ?>/img/bitmap@3x.png" >
+                    
                     <div class="row">
                         <div class="col-sm-8 ">
                             <?php echo get_field('frase_presentei_com_estilo') ?>
@@ -164,7 +170,7 @@ get_template_part('template-parts/menu/home');
 
                     <a class="btn-verde-v02" href="<?php echo get_term_link('gift-card', 'product_cat') ?>" ><?php _e('Buy now', 'lush_2-0') ?></a>
 
-                    <img class="gift-cards" src="<?php uri() ?>/img/bitmap@3x.png" >
+                    <img class="gift-cards hidden-xs" src="<?php uri() ?>/img/bitmap@3x.png" >
 
 
                 </div><!-- para-presentear -->

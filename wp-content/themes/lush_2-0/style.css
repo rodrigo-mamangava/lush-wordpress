@@ -8994,6 +8994,36 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   margin-bottom: 0px;
   padding: 11px 42px;
 }
+.pagination {
+  margin: 70px 0 130px;
+  width: 100%;
+}
+.pagination .nav-links a,
+.pagination .nav-links span {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #d2d2d2;
+  padding: 0 12px;
+}
+.pagination .nav-links a.current,
+.pagination .nav-links span.current {
+  color: #6e5e8b;
+}
+.pagination .nav-links a.prev,
+.pagination .nav-links span.prev {
+  float: left !important;
+  text-transform: uppercase;
+}
+.pagination .nav-links a.next,
+.pagination .nav-links span.next {
+  float: right !important;
+  text-transform: uppercase;
+}
 /*--------------------------------------------------------------
 # listas
 --------------------------------------------------------------*/
@@ -9035,10 +9065,15 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding-right: 32px;
 }
 /*--------------------------------------------------------------
-# MENU
+# MENU PRINCIPAL
 --------------------------------------------------------------*/
 .menu-header {
   padding-top: 106px;
+}
+@media (max-width: 767px) {
+  .menu-header .logo {
+    display: none !important;
+  }
 }
 .menu-header .logo img {
   height: 20px;
@@ -9046,6 +9081,12 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 }
 .menu-header .menu-itens {
   text-align: right;
+}
+@media (max-width: 767px) {
+  .menu-header .list-social,
+  .menu-header .list-language {
+    display: none !important;
+  }
 }
 .menu-principal .navbar {
   left: 0;
@@ -9062,6 +9103,14 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   height: 64px;
   width: 64px;
 }
+@media (max-width: 767px) {
+  .menu-principal .navbar .navbar-header .navbar-brand {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .menu-principal .navbar .navbar-header .navbar-brand img.logo {
   width: 27px;
   height: auto;
@@ -9077,6 +9126,9 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #969696;
   text-transform: uppercase;
 }
+.menu-principal .navbar .navbar-nav > li.active > a {
+  color: #6e5e8b;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -9086,6 +9138,29 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 /*--------------------------------------------------------------
 # HOME
 --------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .home .menu-principal-home {
+    display: none !important;
+  }
+}
+.home .menu-principal-geral {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .home .menu-principal-geral {
+    display: block !important;
+  }
+  table.home .menu-principal-geral {
+    display: table !important;
+  }
+  tr.home .menu-principal-geral {
+    display: table-row !important;
+  }
+  th.home .menu-principal-geral,
+  td.home .menu-principal-geral {
+    display: table-cell !important;
+  }
+}
 .faixa-vitrine {
   position: relative;
   padding-bottom: 0;
@@ -9126,6 +9201,12 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .faixa-vitrine .vitrine-chamada {
+    padding-top: 65px;
+    width: 65%;
+  }
+}
 .faixa-vitrine .vitrine-chamada h1 {
   font-family: "Knockout 26 A", "Knockout 26 B";
   font-size: 98px;
@@ -9136,6 +9217,13 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   letter-spacing: 2px;
   color: #ffffff;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .faixa-vitrine .vitrine-chamada h1 {
+    font-size: 54px;
+    line-height: 0.87;
+    letter-spacing: 1.1px;
+  }
 }
 .faixa-vitrine .vitrine-chamada h1 span {
   padding-top: 32px;
@@ -9148,6 +9236,13 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   text-align: center;
   color: #ffffff;
   text-transform: initial;
+}
+@media (max-width: 767px) {
+  .faixa-vitrine .vitrine-chamada h1 span {
+    padding-top: 5px;
+    line-height: 1.56;
+    font-size: 18px;
+  }
 }
 .faixa-vitrine .seta-baixo {
   position: absolute;
@@ -9164,12 +9259,30 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   margin-bottom: 123px;
   padding-top: 125px;
 }
+@media (max-width: 767px) {
+  .faixa-carousel-suites {
+    padding-top: 60px;
+    margin-bottom: 50px;
+  }
+}
 .faixa-carousel-suites .carousel-slick {
   background-color: white;
+}
+@media (max-width: 767px) {
+  .faixa-carousel-suites .carousel-slick .slick-list {
+    padding: 0px 15px !important;
+  }
 }
 .faixa-carousel-suites .carousel-slick .suite {
   position: relative;
   height: 800px;
+}
+@media (max-width: 767px) {
+  .faixa-carousel-suites .carousel-slick .suite {
+    width: 350px !important;
+    width: 11.2% !important;
+    height: 300px;
+  }
 }
 .faixa-carousel-suites .carousel-slick .suite img {
   width: 95%;
@@ -9183,6 +9296,14 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   background-color: #ffffff;
   box-shadow: 0 -4px 0 0 #3f2658;
   padding: 30px 32px;
+}
+@media (max-width: 767px) {
+  .faixa-carousel-suites .carousel-slick .suite .suite-card {
+    left: 0;
+    bottom: initial;
+    width: 99%;
+    padding: 20px 23px;
+  }
 }
 .faixa-carousel-suites .carousel-slick .suite .suite-card .escolha {
   font-family: "Knockout 29 A", "Knockout 29 B";
@@ -9202,6 +9323,17 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #3f2658;
   margin-bottom: 9px;
 }
+@media (max-width: 767px) {
+  .faixa-carousel-suites .carousel-slick .suite .suite-card h2 {
+    font-size: 28px;
+    letter-spacing: 0.3px;
+  }
+}
+@media (max-width: 767px) {
+  .faixa-carousel-suites .carousel-slick .suite .suite-card .descricao {
+    margin-bottom: 8px;
+  }
+}
 .faixa-carousel-suites .carousel-slick .suite .suite-card p {
   font-family: 'FairfieldLTW01-55Medium 706181';
   font-size: 18px;
@@ -9211,10 +9343,21 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #969696;
   margin-bottom: 48px;
 }
+@media (max-width: 767px) {
+  .faixa-carousel-suites .carousel-slick .suite .suite-card p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
 .faixa-carousel-suites .carousel-slick .suite .suite-card .btn-verde-v02 {
   font-size: 18px;
   letter-spacing: 2.2px;
   font-family: "Knockout 29 A", "Knockout 29 B";
+}
+@media (max-width: 767px) {
+  .faixa-carousel-suites .carousel-slick .suite .suite-card .btn-verde-v02 {
+    width: 100%;
+  }
 }
 .faixa-carousel-suites .carousel-slick .suite .suite-card .explorar {
   font-family: "Knockout 29 A", "Knockout 29 B";
@@ -9531,6 +9674,14 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding-left: 31px;
   padding-bottom: 27px;
 }
+@media (max-width: 767px) {
+  .faixa-destaque .para-presentear {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .faixa-destaque .para-presentear h2 {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 16px;
@@ -9584,6 +9735,10 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   margin-top: -55px;
   width: 100%;
 }
+.faixa-destaque .para-presentear .gift-cards-mobile {
+  width: 100%;
+  height: auto;
+}
 .faixa-destaque-home {
   background-color: #2a1a3c;
   padding-top: 64px;
@@ -9596,6 +9751,14 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   margin-bottom: 146px;
   padding-left: 31px;
   padding-bottom: 27px;
+}
+@media (max-width: 767px) {
+  .faixa-destaque-home .para-presentear {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .faixa-destaque-home .para-presentear h2 {
   font-family: "Knockout 29 A", "Knockout 29 B";
@@ -9649,6 +9812,10 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   margin-right: -300px;
   margin-top: -55px;
   width: 100%;
+}
+.faixa-destaque-home .para-presentear .gift-cards-mobile {
+  width: 100%;
+  height: auto;
 }
 .faixa-explore {
   background-color: #00d0b0;
@@ -10640,6 +10807,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 0.3px;
   color: #848484;
   text-transform: uppercase;
+  margin-top: 74px;
 }
 .suite-single .faixa-detalhes .atributos ul {
   padding-top: 5px;
@@ -10732,7 +10900,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   padding-top: 0;
 }
 .suite-single .faixa-detalhes .info-compartilhe .compartilhar {
-  padding-top: 54px;
+  padding-top: 80px;
 }
 .suite-single .faixa-detalhes .info-compartilhe .compartilhar ul li {
   margin-right: 25px;
@@ -10919,6 +11087,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   line-height: normal;
   letter-spacing: 1px;
   color: #848484;
+  text-transform: uppercase;
 }
 .suite-single .wc-bookings-booking-cost .woocommerce-Price-amount {
   position: absolute;
@@ -10933,7 +11102,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   text-align: right;
   color: #301a46;
   padding-right: 17px;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 .suite-single .wc-bookings-booking-form .wc-bookings-booking-cost {
   background: transparent;
@@ -10990,6 +11159,10 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .wc-bookings-date-picker .ui-datepicker .ui-datepicker-prev {
   left: -5px;
+}
+.woocommerce div.product form.cart,
+.woocommerce div.product p.cart {
+  margin-bottom: 0;
 }
 .ui-icon {
   width: 100%;
@@ -11552,6 +11725,11 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: #b8b8b8;
   padding-top: 17px;
 }
+.faixa-bastidores .bastidores-item img {
+  width: 100%;
+  height: auto;
+  padding-top: 32px;
+}
 .faixa-bastidores .bastidores-item h2 {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 30px;
@@ -11573,7 +11751,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 0.2px;
   color: #b8b8b8;
 }
-.faixa-bastidores .passador {
+.faixa-bastidores .nav-links .passador {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 20px;
   font-weight: normal;
@@ -11583,21 +11761,21 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   padding-top: 90px;
   padding-bottom: 146px;
 }
-.faixa-bastidores .passador ul {
+.faixa-bastidores .nav-links .passador ul {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-.faixa-bastidores .passador ul > li {
+.faixa-bastidores .nav-links .passador ul > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-.faixa-bastidores .passador ul li a {
+.faixa-bastidores .nav-links .passador ul li a {
   color: #d2d2d2;
 }
-.faixa-bastidores .passador ul li a:hover,
-.faixa-bastidores .passador ul li a:active {
+.faixa-bastidores .nav-links .passador ul li a:hover,
+.faixa-bastidores .nav-links .passador ul li a:active {
   text-decoration: none;
   color: #6e5e8b;
 }
@@ -11983,6 +12161,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .menu-cardapio ul {
   padding-top: 61px;
+  margin-bottom: 60px;
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
@@ -12034,6 +12213,8 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   line-height: 1.67;
   letter-spacing: 0.2px;
   color: #969696;
+  font-style: italic;
+  font-weight: 900;
 }
 .menu-cardapio .item-cat-menu p {
   font-family: 'FairfieldLTW01-55Medium 706181';
@@ -13155,6 +13336,7 @@ textarea.checkout-lush .input-text {
   color: #3f2658;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-transform: uppercase;
 }
 .checkout-lush .woocommerce-checkout .woocommerce-billing-fields .form-row,
 .checkout-lush .woocommerce-checkout .woocommerce-shipping-fields .form-row,

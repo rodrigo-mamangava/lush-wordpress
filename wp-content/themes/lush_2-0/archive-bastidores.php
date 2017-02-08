@@ -21,6 +21,12 @@ get_template_part('template-parts/menu/geral');
     <div class="faixa-bastidores container">
 
         <?php
+        //the_archive_title('<h1 class="page-title">', '</h1>');
+        ?>
+
+
+
+        <?php
         while (have_posts()) : the_post();
 
             get_template_part('template-parts/bastidores/loop', 'item');
@@ -29,38 +35,11 @@ get_template_part('template-parts/menu/geral');
         ?>
 
 
-
         <div class="row">
             <div class="passador">
                 <div class="col-sm-8 col-sm-offset-2 text-center">
 
-                    <ul>
-                        <!--                        <li class="pull-left">;
-                                                    <a class="" href="#">
-                                                        Anterior
-                                                    </a>
-                                                </li>-->
-                        <li>
-                            <a href="#">
-                                1
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                2
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                3
-                            </a>
-                        </li>
-                        <li class="pull-right">
-                            <a class="" href="#">
-                                Próximo
-                            </a>
-                        </li>
-                    </ul>
+                    <?php echo get_the_posts_pagination(); ?>
 
                 </div>
             </div><!-- passador -->

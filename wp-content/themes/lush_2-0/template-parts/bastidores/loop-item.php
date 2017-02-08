@@ -12,6 +12,7 @@
             <div class="meta-dados">
                 <p><?php post_on(); ?></p>
             </div>
+            <?php the_post_thumbnail('thumbnail');?>
         </div>
         <div class="col-xs-8 col-sm-6 ">
             <?php get_bastibores_item_cat(); ?>

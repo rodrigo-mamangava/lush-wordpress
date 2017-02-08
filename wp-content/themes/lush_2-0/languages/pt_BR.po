@@ -1,18 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LUSH 2.0\n"
-"POT-Creation-Date: 2017-01-27 13:38-0200\n"
-"PO-Revision-Date: 2017-01-27 13:46-0200\n"
+"POT-Creation-Date: 2017-02-08 14:57-0200\n"
+"PO-Revision-Date: 2017-02-08 14:58-0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
@@ -45,7 +45,7 @@ msgstr "Tente procurar no arquivo mensal. %1$s"
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Um comentário em &ldquo;%s&rdquo;"
+msgstr[0] ""
 msgstr[1] ""
 
 #: comments.php:40 comments.php:61
@@ -54,54 +54,100 @@ msgstr "Navegação por comentários"
 
 #: comments.php:43 comments.php:64
 msgid "Older Comments"
-msgstr ""
+msgstr "Comentários Anteriores"
 
 #: comments.php:44 comments.php:65
 msgid "Newer Comments"
-msgstr ""
+msgstr "Comentários Recentes"
 
 #: comments.php:78
 msgid "Comments are closed."
-msgstr ""
+msgstr "Comentários encerrados"
 
+#: functions-mmgv/cpt-concierge.php:34 functions-mmgv/cpt-menu.php:34
 #: functions-mmgv/functions-custom-post-type.php:38
 msgid "Description."
 msgstr "Descrição de"
 
+#: functions-mmgv/cpt-concierge.php:65 functions-mmgv/cpt-menu.php:65
 #: functions-mmgv/functions-custom-post-type.php:69
 msgid "Parent"
-msgstr ""
+msgstr "Pai"
 
+#: functions-mmgv/cpt-concierge.php:66 functions-mmgv/cpt-menu.php:66
 #: functions-mmgv/functions-custom-post-type.php:70
 msgid "Parent:"
+msgstr "Pais:"
+
+#: functions-mmgv/cpt-concierge.php:71
+msgid "Categoria Concierge"
+msgstr ""
+
+#: functions-mmgv/cpt-menu.php:71
+msgid "Categoria Menu"
 msgstr ""
 
 #: functions-mmgv/functions-custom-post-type.php:75
 msgid "Tipo de bastidores"
+msgstr "Tipo de bastidores"
+
+#: functions-mmgv/functions-layout.php:321
+#: template-parts/page/como-chegar.php:39
+msgid "Book"
+msgstr "Reservar"
+
+#: functions-mmgv/functions-mmgv.php:219
+msgid "< Anterior"
+msgstr ""
+
+#: functions-mmgv/functions-mmgv.php:220
+msgid "Próximo >"
 msgstr ""
 
 #: functions-mmgv/functions-woocommerce.php:30
 msgid "Default sorting"
-msgstr ""
+msgstr "Ordem de classificação padrão"
 
 #: functions-mmgv/functions-woocommerce.php:31
 msgid "Sort by popularity"
-msgstr ""
+msgstr "Classificar por popularidade"
 
 #: functions-mmgv/functions-woocommerce.php:32
 msgid "Sort by average rating"
-msgstr ""
+msgstr "Classificar por classificação média"
 
 #: functions-mmgv/functions-woocommerce.php:33
 msgid "Sort by newness"
-msgstr ""
+msgstr "Ordenar por novidade"
 
 #: functions-mmgv/functions-woocommerce.php:34
 msgid "Sort by price: low to high"
-msgstr ""
+msgstr "Ordenar por preço: baixo para alto"
 
 #: functions-mmgv/functions-woocommerce.php:35
 msgid "Sort by price: high to low"
+msgstr "Ordenar por preço: alto para baixo"
+
+#: functions-mmgv/functions-woocommerce.php:92
+msgid "required"
+msgstr ""
+
+#: functions-mmgv/functions-woocommerce.php:141
+#: woocommerce/cart/shipping-calculator.php:39
+msgid "Select a country&hellip;"
+msgstr "Selecione um país &hellip;"
+
+#: functions-mmgv/functions-woocommerce.php:149
+msgid "Update country"
+msgstr ""
+
+#: functions-mmgv/functions-woocommerce.php:168
+#: woocommerce/cart/shipping-calculator.php:63
+msgid "Select a state&hellip;"
+msgstr "Selecione um estado&hellip;"
+
+#: functions-mmgv/functions-woocommerce.php:212
+msgid "Choose an option"
 msgstr ""
 
 #: functions.php:48
@@ -110,19 +156,19 @@ msgstr ""
 
 #: functions.php:49
 msgid "Menu footer"
-msgstr ""
+msgstr "Menu de Rodapé"
 
 #: functions.php:50
 msgid "Menu Social"
-msgstr ""
+msgstr "Menu Social"
 
 #: functions.php:51
 msgid "Menu Idioma"
-msgstr ""
+msgstr "Idioma"
 
 #: functions.php:95
 msgid "Sidebar"
-msgstr ""
+msgstr "Barra Lateral"
 
 #: functions.php:97
 msgid "Add widgets here."
@@ -138,7 +184,7 @@ msgstr "Postado em %s"
 #, php-format
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "%s em estoque [ by author ]"
 
 #: inc/template-tags.php:50 inc/template-tags.php:56
 msgid ", "
@@ -147,7 +193,7 @@ msgstr ""
 #: inc/template-tags.php:52
 #, php-format
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Postado em %1$s"
 
 #: inc/template-tags.php:58
 #, php-format
@@ -159,14 +205,20 @@ msgstr ""
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-tags.php:72 template-parts/content-page.php:34
+#: inc/template-tags.php:72
 #, php-format
 msgid "Edit %s"
-msgstr ""
+msgstr "Editar %s"
 
 #: search.php:19
 #, php-format
 msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/compartilhar-lush.php:3
+msgid ""
+"Invite anyone to experience an unforgettable experience with you in this "
+"suite"
 msgstr ""
 
 #: template-parts/compartilhar-pacote.php:3
@@ -198,7 +250,7 @@ msgstr "Pacotes especiais"
 
 #: template-parts/content-frontpage.php:86
 msgid "Know more"
-msgstr "Mais"
+msgstr "Saiba mais"
 
 #: template-parts/content-frontpage.php:133
 msgid "Lush Member"
@@ -226,39 +278,51 @@ msgstr "Nada encontrado"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Pronto para publicar o seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
 
 #: template-parts/content-none.php:25
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Desculpe, mas nada combina com seus termos de pesquisa. Por favor, tente "
+"novamente com algumas palavras-chave diferentes."
 
 #: template-parts/content-none.php:31
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Parece que não foi possível encontrar o que você está procurando. Talvez a "
+"pesquisa pode ajudar."
 
 #: template-parts/content-page.php:22 template-parts/content.php:38
 msgid "Pages:"
-msgstr ""
+msgstr "Páginas:"
 
 #: template-parts/content.php:33
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
+#: template-parts/faixa/concierge-single.php:4
 #: template-parts/faixa/concierge.php:4
 msgid "Concierge"
-msgstr "Concierge"
+msgstr "Serviço de Concierge"
 
+#: template-parts/faixa/concierge-single.php:5
 #: template-parts/faixa/concierge.php:5
 msgid "Make your evening even more special"
 msgstr "Faça sua noite ainda mais especial"
 
+#: template-parts/faixa/concierge-single.php:7
 #: template-parts/faixa/concierge.php:7
 msgid "Concierge service"
-msgstr "-Serviço de Concierge"
+msgstr "Serviço de Concierge"
+
+#: template-parts/modal/pacote.php:14
+msgid "Close"
+msgstr "Fechar"
 
 #: template-parts/page/como-chegar.php:18
 msgid "From one point"
@@ -288,17 +352,13 @@ msgstr "Faça sua Reserva"
 msgid "Explore all your senses"
 msgstr "Explore todos os seus sentidos"
 
-#: template-parts/page/como-chegar.php:39
-msgid "Book"
-msgstr "Livro"
-
 #: template-parts/page/contato.php:23
 msgid "Subject"
-msgstr ""
+msgstr "Assunto"
 
 #: template-parts/page/contato.php:24
 msgid "Message"
-msgstr ""
+msgstr "Mensagem"
 
 #: template-parts/page/contato.php:25
 msgid "Send"
@@ -328,7 +388,7 @@ msgstr "Escolher..."
 
 #: woocommerce-bookings/booking-form/date-picker.php:16
 msgid "Start"
-msgstr ""
+msgstr "Inicio"
 
 #: woocommerce-bookings/booking-form/date-picker.php:23
 #: woocommerce-bookings/booking-form/date-picker.php:34
@@ -346,7 +406,7 @@ msgstr ""
 #: woocommerce-bookings/booking-form/datetime-picker.php:19
 #: woocommerce-bookings/booking-form/datetime-picker.php:30
 msgid "Month"
-msgstr ""
+msgstr "Mês"
 
 #: woocommerce-bookings/booking-form/date-picker.php:26
 #: woocommerce-bookings/booking-form/date-picker.php:31
@@ -364,7 +424,7 @@ msgstr ""
 #: woocommerce-bookings/booking-form/datetime-picker.php:22
 #: woocommerce-bookings/booking-form/datetime-picker.php:27
 msgid "Day"
-msgstr ""
+msgstr "Dia"
 
 #: woocommerce-bookings/booking-form/date-picker.php:38
 #: woocommerce-bookings/booking-form/date-picker.php:63
@@ -376,19 +436,19 @@ msgstr ""
 #: woocommerce-bookings/booking-form/date-picker.php:64
 #: woocommerce-bookings/booking-form/datetime-picker.php:35
 msgid "Year"
-msgstr ""
+msgstr "Ano"
 
 #: woocommerce-bookings/booking-form/date-picker.php:45
 msgid "End"
-msgstr ""
+msgstr "Final"
 
 #: woocommerce-bookings/booking-form/datetime-picker.php:40
 msgid "Time"
-msgstr ""
+msgstr "Tempo"
 
 #: woocommerce-bookings/booking-form/datetime-picker.php:42
 msgid "Choose a date above to see available times."
-msgstr ""
+msgstr "Escolha uma data acima para ver os horários disponíveis."
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:12
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:9
@@ -415,7 +475,7 @@ msgstr "Produto reservado"
 #: woocommerce-bookings/emails/customer-booking-notification.php:18
 #: woocommerce-bookings/emails/customer-booking-reminder.php:22
 msgid "Booking ID"
-msgstr "ID de reserva"
+msgstr ""
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:28
 #: woocommerce-bookings/emails/admin-new-booking.php:34
@@ -424,7 +484,7 @@ msgstr "ID de reserva"
 #: woocommerce-bookings/emails/customer-booking-notification.php:23
 #: woocommerce-bookings/emails/customer-booking-reminder.php:27
 msgid "Booking Type"
-msgstr "Tipo de reserva"
+msgstr ""
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:33
 #: woocommerce-bookings/emails/admin-new-booking.php:39
@@ -433,7 +493,7 @@ msgstr "Tipo de reserva"
 #: woocommerce-bookings/emails/customer-booking-notification.php:28
 #: woocommerce-bookings/emails/customer-booking-reminder.php:32
 msgid "Booking Start Date"
-msgstr "Data de Início da Reserva"
+msgstr ""
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:37
 #: woocommerce-bookings/emails/admin-new-booking.php:43
@@ -442,7 +502,7 @@ msgstr "Data de Início da Reserva"
 #: woocommerce-bookings/emails/customer-booking-notification.php:32
 #: woocommerce-bookings/emails/customer-booking-reminder.php:36
 msgid "Booking End Date"
-msgstr "Data de Término da Reserva: %s"
+msgstr ""
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:47
 #: woocommerce-bookings/emails/admin-new-booking.php:53
@@ -457,14 +517,14 @@ msgstr "Data de Término da Reserva: %s"
 #: woocommerce-bookings/emails/plain/customer-booking-notification.php:31
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:33
 msgid "Person(s)"
-msgstr "Pessoa (s)"
+msgstr ""
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:58
 #: woocommerce-bookings/emails/admin-new-booking.php:68
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:36
 #, php-format
 msgid "You can view and edit this booking in the dashboard here: %s"
-msgstr "Você pode visualizar esta reserva no dashboard aqui: %s"
+msgstr ""
 
 #: woocommerce-bookings/emails/admin-new-booking.php:10
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:12
@@ -542,7 +602,7 @@ msgid "Order"
 msgstr "Ordem"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:73
-#: woocommerce/cart/cart.php:36 woocommerce/cart/cart.php:79
+#: woocommerce/cart/cart.php:51 woocommerce/cart/cart.php:85
 #: woocommerce/checkout/form-pay.php:29
 #: woocommerce/checkout/review-order.php:26
 #: woocommerce/emails/email-order-details.php:34
@@ -551,13 +611,13 @@ msgid "Product"
 msgstr "Produto"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:74
-#: woocommerce/cart/cart.php:38 woocommerce/cart/cart.php:103
+#: woocommerce/cart/cart.php:54 woocommerce/cart/cart.php:117
 #: woocommerce/emails/email-order-details.php:35
 msgid "Quantity"
 msgstr "Quantidade"
 
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:75
-#: woocommerce/cart/cart.php:37 woocommerce/cart/cart.php:97
+#: woocommerce/cart/cart.php:53 woocommerce/cart/cart.php:111
 #: woocommerce/emails/email-order-details.php:36
 msgid "Price"
 msgstr "Preço"
@@ -695,43 +755,43 @@ msgstr "Ir à Loja"
 
 #: woocommerce-bookings/myaccount/bookings.php:80
 msgid "No bookings available yet."
-msgstr ""
+msgstr "Sem reservas disponíveis"
 
 #: woocommerce-bookings/myaccount/my-bookings.php:23
 msgid "My Bookings"
-msgstr "Pedidos de Reservas"
+msgstr "Minhas reservas"
 
 #: woocommerce-bookings/single-product/add-to-cart/booking.php:17
 msgid "Your browser must support JavaScript in order to make a booking."
-msgstr ""
+msgstr "Seu navegador deve suportar JavaScript para fazer uma reserva."
 
 #: woocommerce/auth/form-grant-access.php:25 woocommerce/auth/form-login.php:27
 #, php-format
 msgid "%s would like to connect to your store"
-msgstr ""
+msgstr "%s gostaria de se conectar para a sua loja"
 
 #: woocommerce/auth/form-grant-access.php:29
 #, php-format
 msgid ""
 "This will give \"%s\" <strong>%s</strong> access which will allow it to:"
-msgstr ""
+msgstr "Isto vai dar \"%s\" <strong>%s</strong>de acesso que lhe permitirá:"
 
 #: woocommerce/auth/form-grant-access.php:39
 #, php-format
 msgid "Logged in as %s"
-msgstr ""
+msgstr "Logado como %s"
 
 #: woocommerce/auth/form-grant-access.php:39
 msgid "Logout"
-msgstr ""
+msgstr "Sair"
 
 #: woocommerce/auth/form-grant-access.php:43
 msgid "Approve"
-msgstr ""
+msgstr "Aprovar"
 
 #: woocommerce/auth/form-grant-access.php:44
 msgid "Deny"
-msgstr ""
+msgstr "Negar"
 
 #: woocommerce/auth/form-login.php:31
 #, php-format
@@ -739,18 +799,19 @@ msgid ""
 "To connect to %1$s you need to be logged in. Log in to your store below, or "
 "%2$scancel and return to %1$s%3$s"
 msgstr ""
+"Para se conectar a %1$s você precisa estar logado. Faça login, ou "
+"%2$scancele e retorne para %1$s%3$s"
 
 #: woocommerce/auth/form-login.php:35 woocommerce/myaccount/form-login.php:44
 msgid "Username or email address"
 msgstr "Nome de Usuário ou Endereço de Email"
 
-#: woocommerce/auth/form-login.php:39 woocommerce/global/form-login.php:39
-#: woocommerce/myaccount/form-login.php:48
+#: woocommerce/auth/form-login.php:39 woocommerce/myaccount/form-login.php:48
 #: woocommerce/myaccount/form-login.php:98
 msgid "Password"
 msgstr "Senha"
 
-#: woocommerce/auth/form-login.php:44 woocommerce/global/form-login.php:48
+#: woocommerce/auth/form-login.php:44 woocommerce/global/form-login.php:47
 #: woocommerce/myaccount/form-login.php:37
 #: woocommerce/myaccount/form-login.php:56
 msgid "Login"
@@ -783,171 +844,170 @@ msgstr ""
 
 #: woocommerce/cart/cart-totals.php:28
 msgid "Cart Totals"
-msgstr ""
+msgstr "Total do Carrinho"
 
 #: woocommerce/cart/cart-totals.php:33 woocommerce/cart/cart-totals.php:34
 #: woocommerce/cart/mini-cart.php:80 woocommerce/checkout/review-order.php:59
 msgid "Subtotal"
-msgstr ""
+msgstr "Subtotal"
 
 #: woocommerce/cart/cart-totals.php:55 woocommerce/cart/cart-totals.php:56
 msgid "Shipping"
-msgstr ""
+msgstr "Entrega"
 
 #: woocommerce/cart/cart-totals.php:71
 #, php-format
 msgid "estimated for %s"
-msgstr ""
+msgstr "estimado para %s"
 
 #: woocommerce/cart/cart-totals.php:92 woocommerce/cart/cart-totals.php:93
-#: woocommerce/cart/cart.php:39 woocommerce/cart/cart.php:120
+#: woocommerce/cart/cart.php:55 woocommerce/cart/cart.php:134
 #: woocommerce/checkout/review-order.php:27
 #: woocommerce/checkout/review-order.php:106
 #: woocommerce/myaccount/my-orders.php:16
 #: woocommerce/order/order-details.php:33
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
-#: woocommerce/cart/cart.php:60 woocommerce/cart/mini-cart.php:49
-msgid "Remove this item"
-msgstr ""
+#: woocommerce/cart/cart.php:34
+msgid "Shopping Cart"
+msgstr "Carrinho de Compras"
 
-#: woocommerce/cart/cart.php:92
+#: woocommerce/cart/cart.php:98
 msgid "Available on backorder"
-msgstr ""
+msgstr "Disponível em ordem pendente"
 
-#: woocommerce/cart/cart.php:138
+#: woocommerce/cart/cart.php:106 woocommerce/cart/mini-cart.php:49
+msgid "Remove this item"
+msgstr "Remover este item"
+
+#: woocommerce/cart/cart.php:152
 msgid "Coupon:"
 msgstr "Cupom:"
 
-#: woocommerce/cart/cart.php:138 woocommerce/checkout/form-coupon.php:36
+#: woocommerce/cart/cart.php:152 woocommerce/checkout/form-coupon.php:36
 msgid "Coupon code"
 msgstr "Código de Cupom"
 
-#: woocommerce/cart/cart.php:138 woocommerce/checkout/form-coupon.php:40
+#: woocommerce/cart/cart.php:152 woocommerce/checkout/form-coupon.php:40
 msgid "Apply Coupon"
 msgstr "Aplicar Cupom"
 
-#: woocommerce/cart/cart.php:144
+#: woocommerce/cart/cart.php:158
 msgid "Update Cart"
+msgstr "Atualizar carrinho"
+
+#: woocommerce/cart/cart.php:189
+msgid "Continuar comprando"
 msgstr ""
 
 #: woocommerce/cart/cross-sells.php:47
 msgid "You may be interested in&hellip;"
-msgstr ""
+msgstr "Você talvez esteja interessado in&hellip;"
 
 #: woocommerce/cart/mini-cart.php:72
 msgid "No products in the cart."
-msgstr ""
+msgstr "Nenhum produto no carrinho."
 
 #: woocommerce/cart/mini-cart.php:85
 msgid "View Cart"
-msgstr ""
+msgstr "Ver carrinho"
 
 #: woocommerce/cart/mini-cart.php:86
 msgid "Checkout"
-msgstr ""
+msgstr "Checkout"
 
 #: woocommerce/cart/proceed-to-checkout-button.php:27
 msgid "Proceed to Checkout"
-msgstr ""
+msgstr "Finalizar Compra"
 
 #: woocommerce/cart/shipping-calculator.php:33
 msgid "Calculate Shipping"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:39
-msgid "Select a country&hellip;"
-msgstr ""
+msgstr "Calcular portes"
 
 #: woocommerce/cart/shipping-calculator.php:56
 #: woocommerce/cart/shipping-calculator.php:62
 #: woocommerce/cart/shipping-calculator.php:74
 msgid "State / county"
-msgstr ""
-
-#: woocommerce/cart/shipping-calculator.php:63
-msgid "Select a state&hellip;"
-msgstr ""
+msgstr "Localidade / País"
 
 #: woocommerce/cart/shipping-calculator.php:83
 msgid "City"
 msgstr ""
+"O nome de um lugar, cidade, ou mesmo um país. Pode ser um endereço exato "
+"também."
 
 #: woocommerce/cart/shipping-calculator.php:91
 msgid "Postcode / ZIP"
-msgstr ""
+msgstr "CEP"
 
 #: woocommerce/cart/shipping-calculator.php:96
 msgid "Update Totals"
-msgstr ""
+msgstr "Atualizar Valor"
 
 #: woocommerce/checkout/cart-errors.php:27
 msgid ""
 "There are some issues with the items in your cart (shown above). Please go "
 "back to the cart page and resolve these issues before checking out."
 msgstr ""
+"Ocorreu um problema com algum produto em seu carrinho. Por favor, volte para "
+"a página do carrinho e tente novamente."
 
 #: woocommerce/checkout/cart-errors.php:31
 msgid "Return To Cart"
-msgstr ""
+msgstr "Voltar ao Carrinho"
 
-#: woocommerce/checkout/form-billing.php:29
+#: woocommerce/checkout/form-billing.php:27
 msgid "Billing &amp; Shipping"
-msgstr ""
+msgstr "Faturamento &amp; Entrega"
 
-#: woocommerce/checkout/form-billing.php:33
-msgid "Billing Details"
-msgstr ""
+#: woocommerce/checkout/form-billing.php:31
+msgid "I am not registered"
+msgstr "Não sou cadastrado"
 
-#: woocommerce/checkout/form-billing.php:52
+#: woocommerce/checkout/form-billing.php:49
 msgid "Create an account?"
-msgstr ""
+msgstr "Criar uma Conta?"
 
-#: woocommerce/checkout/form-billing.php:63
+#: woocommerce/checkout/form-billing.php:60
 msgid ""
 "Create an account by entering the information below. If you are a returning "
 "customer please login at the top of the page."
 msgstr ""
+"Crie uma conta inserindo as informações abaixo. Se você for um cliente, por "
+"favor, inicie-se no topo da página."
 
-#: woocommerce/checkout/form-checkout.php:29
+#: woocommerce/checkout/form-checkout.php:25
+msgid "FINISH BUY"
+msgstr "Finalizar compra"
+
+#: woocommerce/checkout/form-checkout.php:45
 msgid "You must be logged in to checkout."
-msgstr ""
+msgstr "Precisa de estar logado para concluir a compra."
 
-#: woocommerce/checkout/form-checkout.php:55
+#: woocommerce/checkout/form-checkout.php:77
 msgid "Your order"
-msgstr ""
+msgstr "Seu pedido"
 
 #: woocommerce/checkout/form-coupon.php:28
 msgid "Have a coupon?"
-msgstr ""
+msgstr "Você possui um Cupom de Descontos?"
 
 #: woocommerce/checkout/form-coupon.php:28
 msgid "Click here to enter your code"
-msgstr ""
+msgstr "Digite aqui seu código"
 
-#: woocommerce/checkout/form-login.php:27
-msgid "Returning customer?"
-msgstr ""
-
-#: woocommerce/checkout/form-login.php:28
-msgid "Click here to login"
-msgstr ""
-
-#: woocommerce/checkout/form-login.php:35
-msgid ""
-"If you have shopped with us before, please enter your details in the boxes "
-"below. If you are a new customer, please proceed to the Billing &amp; "
-"Shipping section."
-msgstr ""
+#: woocommerce/checkout/form-login.php:24
+msgid "I'm already registered"
+msgstr "Já sou cadastrado"
 
 #: woocommerce/checkout/form-pay.php:30
 msgid "Qty"
-msgstr ""
+msgstr "Qde"
 
 #: woocommerce/checkout/form-pay.php:31
 msgid "Totals"
-msgstr ""
+msgstr "Total"
 
 #: woocommerce/checkout/form-pay.php:79
 msgid ""
@@ -955,15 +1015,18 @@ msgid ""
 "location. Please contact us if you require assistance or wish to make "
 "alternate arrangements."
 msgstr ""
+"Desculpe, parece que não existem métodos de pagamento disponíveis para a sua "
+"região. Entre em contato connosco se necessitar de ajuda ou caso pretenda "
+"negociar outra forma de pagamento."
 
 #: woocommerce/checkout/form-shipping.php:28
 msgid "Ship to a different address?"
-msgstr ""
+msgstr "Deseja enviar  para um endereço diferente?"
 
 #: woocommerce/checkout/form-shipping.php:54
 #: woocommerce/single-product/tabs/additional-information.php:25
 msgid "Additional Information"
-msgstr ""
+msgstr "Informação Adicional"
 
 #: woocommerce/checkout/payment.php:35
 msgid ""
@@ -971,10 +1034,14 @@ msgid ""
 "Please contact us if you require assistance or wish to make alternate "
 "arrangements."
 msgstr ""
+"Desculpe, parece que não existem métodos de pagamento disponíveis para o seu "
+"estado. Entre em contato conosco se precisar de ajuda ou quiser fazer "
+"arranjos alternativos."
 
 #: woocommerce/checkout/payment.php:35
 msgid "Please fill in your details above to see available payment methods."
 msgstr ""
+"Preencha os seus dados acima para ver os métodos de pagamento disponíveis."
 
 #: woocommerce/checkout/payment.php:42
 msgid ""
@@ -983,10 +1050,14 @@ msgid ""
 "order. You may be charged more than the amount stated above if you fail to "
 "do so."
 msgstr ""
+"Desde que seu navegador não suporta JavaScript, ou ele está desativado, "
+"certifique-se de clicar no botão <em> Atualizar totais </em> antes de "
+"colocar a sua encomenda. Você pode ser cobrado mais do que o valor indicado "
+"acima, se você deixar de fazê-lo."
 
 #: woocommerce/checkout/payment.php:43
 msgid "Update totals"
-msgstr ""
+msgstr "Atualizar valores"
 
 #: woocommerce/checkout/terms.php:17
 #, php-format
@@ -994,41 +1065,49 @@ msgid ""
 "I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; "
 "conditions</a>"
 msgstr ""
+"Li e aceito os <a href=\"%s\" target=\"_blank\">termos &amp; condições</a>"
 
-#: woocommerce/checkout/thankyou.php:27
+#: woocommerce/checkout/thankyou.php:31
 msgid ""
 "Unfortunately your order cannot be processed as the originating bank/"
 "merchant has declined your transaction. Please attempt your purchase again."
 msgstr ""
+"Infelizmente, seu pedido não pode ser processado com o banco/operadora. A "
+"instituição recusou sua transação. Tente comprar novamente. Obrigado."
 
-#: woocommerce/checkout/thankyou.php:30 woocommerce/myaccount/my-orders.php:72
+#: woocommerce/checkout/thankyou.php:34 woocommerce/myaccount/my-orders.php:72
 #: woocommerce/myaccount/orders.php:68
 msgid "Pay"
-msgstr ""
+msgstr "Pagar"
 
-#: woocommerce/checkout/thankyou.php:32
+#: woocommerce/checkout/thankyou.php:36
 msgid "My Account"
-msgstr ""
+msgstr "Minha Conta:"
 
-#: woocommerce/checkout/thankyou.php:38 woocommerce/checkout/thankyou.php:69
+#: woocommerce/checkout/thankyou.php:45
+msgid "Success!"
+msgstr "Sucesso!"
+
+#: woocommerce/checkout/thankyou.php:59
+msgid "Your purchase has been successfully completed."
+msgstr "Sua compra foi concluída com sucesso."
+
+#: woocommerce/checkout/thankyou.php:62
+msgid ""
+"We will send to your e-mail to register all the data of your reservation.."
+msgstr ""
+"Iremos enviar para seu e-mail para registrar todos os dados de sua reserva..."
+
+#: woocommerce/checkout/thankyou.php:65
+msgid ""
+"Enjoy your stay with us and discover the advantages of a LUSH experience."
+msgstr ""
+"Aproveite sua estadia conosco e descubra as vantagens de uma experiência "
+"exuberante."
+
+#: woocommerce/checkout/thankyou.php:88
 msgid "Thank you. Your order has been received."
-msgstr ""
-
-#: woocommerce/checkout/thankyou.php:42
-msgid "Order Number:"
-msgstr ""
-
-#: woocommerce/checkout/thankyou.php:46
-msgid "Date:"
-msgstr ""
-
-#: woocommerce/checkout/thankyou.php:50
-msgid "Total:"
-msgstr ""
-
-#: woocommerce/checkout/thankyou.php:55
-msgid "Payment Method:"
-msgstr ""
+msgstr "Obrigado. Seu pedido foi recebido."
 
 #: woocommerce/content-single-product-suite.php:52
 msgid "Period"
@@ -1050,7 +1129,7 @@ msgstr "Período (3h)"
 msgid "Additional time"
 msgstr "Hora adicional"
 
-#: woocommerce/content-single-product-suite.php:63
+#: woocommerce/content-single-product-suite.php:61
 msgid "Check-in 3pm and check-out at 1pm the next day."
 msgstr "Check-in  às 15:00 e check-out às 13:00 no dia seguinte."
 
@@ -1064,12 +1143,12 @@ msgstr "O pedido #%d de %s foi cancelado. A ordem foi a seguinte:"
 #: woocommerce/emails/plain/admin-failed-order.php:25
 #, php-format
 msgid "Payment for order #%d from %s has failed. The order was as follows:"
-msgstr ""
+msgstr "O pedido #%d de %s foi cancelado. A ordem foi a seguinte:"
 
 #: woocommerce/emails/admin-new-order.php:28
 #, php-format
 msgid "You have received an order from %s. The order is as follows:"
-msgstr ""
+msgstr "Você recebeu um pedido de %s. O pedido está a seguir:"
 
 #: woocommerce/emails/customer-completed-order.php:28
 #: woocommerce/emails/plain/customer-completed-order.php:25
@@ -1078,6 +1157,8 @@ msgid ""
 "Hi there. Your recent order on %s has been completed. Your order details are "
 "shown below for your reference:"
 msgstr ""
+"Olá! Seu pedido recente em %s foi processado. Os detalhes do seu pedido "
+"serão exibidos a seguir para o seu controle:"
 
 #: woocommerce/emails/customer-invoice.php:29
 #: woocommerce/emails/plain/customer-invoice.php:26
@@ -1086,6 +1167,8 @@ msgid ""
 "An order has been created for you on %s. To pay for this order please use "
 "the following link: %s"
 msgstr ""
+"Um pedido foi criado para você no %s. Para pagar esse pedido, por gentileza, "
+"utilize o seguinte link: %s"
 
 #: woocommerce/emails/customer-invoice.php:29
 msgid "pay"
@@ -1242,15 +1325,18 @@ msgid "Download"
 msgstr ""
 
 #: woocommerce/global/form-login.php:35
-#: woocommerce/myaccount/form-lost-password.php:30
-msgid "Username or email"
+msgid "Type your e-mail"
 msgstr ""
 
-#: woocommerce/global/form-login.php:51 woocommerce/myaccount/form-login.php:58
+#: woocommerce/global/form-login.php:38
+msgid "Type your password"
+msgstr ""
+
+#: woocommerce/global/form-login.php:54 woocommerce/myaccount/form-login.php:58
 msgid "Remember me"
 msgstr ""
 
-#: woocommerce/global/form-login.php:55 woocommerce/myaccount/form-login.php:62
+#: woocommerce/global/form-login.php:58 woocommerce/myaccount/form-login.php:62
 msgid "Lost your password?"
 msgstr ""
 
@@ -1259,16 +1345,12 @@ msgctxt "Product quantity input tooltip"
 msgid "Qty"
 msgstr ""
 
-#: woocommerce/home/carousel-vitrine-item.php:4
+#: woocommerce/home/carousel-vitrine-item.php:5
 msgid "Escolha sua suite"
 msgstr ""
 
-#: woocommerce/home/carousel-vitrine-item.php:12
+#: woocommerce/home/carousel-vitrine-item.php:13
 msgid "Quero reservar"
-msgstr ""
-
-#: woocommerce/home/carousel-vitrine-item.php:17
-msgid "Explorar a suite"
 msgstr ""
 
 #: woocommerce/loop/no-products-found.php:24
@@ -1297,11 +1379,11 @@ msgstr ""
 
 #: woocommerce/loop/suite-detalhes.php:2
 msgid "from"
-msgstr ""
+msgstr "a partir  de"
 
 #: woocommerce/loop/suite-detalhes.php:6
 msgid "I want to book"
-msgstr ""
+msgstr "Quero reservar"
 
 #: woocommerce/myaccount/dashboard.php:28
 #, php-format
@@ -1342,20 +1424,20 @@ msgstr ""
 
 #: woocommerce/myaccount/form-edit-account.php:30
 msgid "First name"
-msgstr ""
+msgstr "Nome"
 
 #: woocommerce/myaccount/form-edit-account.php:34
 msgid "Last name"
-msgstr ""
+msgstr "Nome"
 
 #: woocommerce/myaccount/form-edit-account.php:40
 #: woocommerce/myaccount/form-login.php:91
 msgid "Email address"
-msgstr ""
+msgstr "Endereço de Email"
 
 #: woocommerce/myaccount/form-edit-account.php:45
 msgid "Password Change"
-msgstr ""
+msgstr "Mudança de senha"
 
 #: woocommerce/myaccount/form-edit-account.php:48
 msgid "Current Password (leave blank to leave unchanged)"
@@ -1397,7 +1479,7 @@ msgstr ""
 
 #: woocommerce/myaccount/form-login.php:84
 msgid "Username"
-msgstr ""
+msgstr "Nome de usuário"
 
 #: woocommerce/myaccount/form-login.php:105
 msgid "Anti-spam"
@@ -1409,17 +1491,21 @@ msgid ""
 "receive a link to create a new password via email."
 msgstr ""
 
+#: woocommerce/myaccount/form-lost-password.php:30
+msgid "Username or email"
+msgstr "Nome de usuário ou email"
+
 #: woocommerce/myaccount/form-lost-password.php:40
 msgid "Reset Password"
-msgstr ""
+msgstr "Trocar a senha"
 
 #: woocommerce/myaccount/form-reset-password.php:27
 msgid "Enter a new password below."
-msgstr ""
+msgstr "Digite uma nova senha abaixo."
 
 #: woocommerce/myaccount/form-reset-password.php:30
 msgid "New password"
-msgstr ""
+msgstr "Nova senha"
 
 #: woocommerce/myaccount/form-reset-password.php:34
 msgid "Re-enter new password"
@@ -1427,7 +1513,7 @@ msgstr ""
 
 #: woocommerce/myaccount/form-reset-password.php:47
 msgid "Save"
-msgstr ""
+msgstr "Salvar"
 
 #: woocommerce/myaccount/lost-password-confirmation.php:24
 msgid "Password reset email has been sent."
@@ -1465,7 +1551,7 @@ msgstr[1] ""
 
 #: woocommerce/myaccount/my-orders.php:14
 msgid "Date"
-msgstr ""
+msgstr "Data:"
 
 #: woocommerce/myaccount/my-orders.php:30
 msgid "Recent Orders"
@@ -1474,7 +1560,7 @@ msgstr ""
 #: woocommerce/myaccount/my-orders.php:55 woocommerce/myaccount/orders.php:51
 msgctxt "hash before order number"
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: woocommerce/myaccount/my-orders.php:65 woocommerce/myaccount/orders.php:61
 #, php-format
@@ -1485,28 +1571,28 @@ msgstr[1] ""
 
 #: woocommerce/myaccount/my-orders.php:76 woocommerce/myaccount/orders.php:72
 msgid "View"
-msgstr ""
+msgstr "Ver"
 
 #: woocommerce/myaccount/orders.php:107
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: woocommerce/myaccount/orders.php:111
 msgid "Next"
-msgstr ""
+msgstr "próximo"
 
 #: woocommerce/myaccount/orders.php:121
 msgid "No order has been made yet."
-msgstr ""
+msgstr "Nenhuma pedido foi feita ainda."
 
 #: woocommerce/myaccount/payment-methods.php:51
 #, php-format
 msgid "%s ending in %s"
-msgstr ""
+msgstr "%s termina em%s"
 
 #: woocommerce/myaccount/payment-methods.php:72
 msgid "No saved methods found."
-msgstr ""
+msgstr "Não foram encontrados métodos guardados."
 
 #: woocommerce/myaccount/view-order.php:28 woocommerce/order/tracking.php:26
 #, php-format
@@ -1550,7 +1636,7 @@ msgstr ""
 
 #: woocommerce/order/order-again.php:25
 msgid "Order Again"
-msgstr ""
+msgstr "Encomende outra vez"
 
 #: woocommerce/order/order-details-customer.php:23
 msgid "Customer Details"
@@ -1558,44 +1644,44 @@ msgstr ""
 
 #: woocommerce/order/order-details-customer.php:28
 msgid "Note:"
-msgstr ""
+msgstr "Nota:"
 
 #: woocommerce/order/order-details-customer.php:35
 msgid "Email:"
-msgstr ""
+msgstr "E-mail:"
 
 #: woocommerce/order/order-details-customer.php:42
 msgid "Telephone:"
-msgstr ""
+msgstr "Telefone:"
 
 #: woocommerce/order/order-details-customer.php:61
 #: woocommerce/order/order-details-customer.php:72
 #: woocommerce/single-product/meta.php:35
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: woocommerce/order/order-details.php:28
 msgid "Order Details"
-msgstr ""
+msgstr "Detalhes do Pedido"
 
 #: woocommerce/product-searchform.php:27
 msgid "Search for:"
-msgstr ""
+msgstr "Procurar por:"
 
 #: woocommerce/product-searchform.php:28
 msgctxt "placeholder"
 msgid "Search Products&hellip;"
-msgstr ""
+msgstr "Pesquisar Produtos&hellip; [ placeholder ]"
 
 #: woocommerce/product-searchform.php:28
 msgctxt "label"
 msgid "Search for:"
-msgstr ""
+msgstr "Procurar por:"
 
 #: woocommerce/product-searchform.php:29
 msgctxt "submit button"
 msgid "Search"
-msgstr ""
+msgstr "Pesquisar"
 
 #: woocommerce/single-product-reviews.php:33
 #, php-format
@@ -1606,7 +1692,7 @@ msgstr[1] ""
 
 #: woocommerce/single-product-reviews.php:35
 msgid "Reviews"
-msgstr ""
+msgstr "Avaliações"
 
 #: woocommerce/single-product-reviews.php:56
 msgid "There are no reviews yet."
@@ -1628,11 +1714,11 @@ msgstr ""
 
 #: woocommerce/single-product-reviews.php:75
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: woocommerce/single-product-reviews.php:78
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: woocommerce/single-product-reviews.php:84
 #, php-format
@@ -1649,27 +1735,27 @@ msgstr ""
 
 #: woocommerce/single-product-reviews.php:90
 msgid "Perfect"
-msgstr ""
+msgstr "Perfeito"
 
 #: woocommerce/single-product-reviews.php:91
 msgid "Good"
-msgstr ""
+msgstr "Bom"
 
 #: woocommerce/single-product-reviews.php:92
 msgid "Average"
-msgstr ""
+msgstr "Média"
 
 #: woocommerce/single-product-reviews.php:93
 msgid "Not that bad"
-msgstr ""
+msgstr "Mau"
 
 #: woocommerce/single-product-reviews.php:94
 msgid "Very Poor"
-msgstr ""
+msgstr "Muito pobre"
 
 #: woocommerce/single-product-reviews.php:98
 msgid "Your Review"
-msgstr ""
+msgstr "Sua revisão"
 
 #: woocommerce/single-product-reviews.php:107
 msgid ""
@@ -1682,7 +1768,7 @@ msgstr ""
 
 #: woocommerce/single-product/add-to-cart/variable.php:43
 msgid "Clear"
-msgstr ""
+msgstr "Limpar"
 
 #: woocommerce/single-product/add-to-cart/variation.php:31
 msgid ""
@@ -1781,3 +1867,41 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Plau & Mamangava"
 msgstr ""
+
+#~ msgid "Saiba mais"
+#~ msgstr "Saiba mais"
+
+#~ msgid "frase cardapio"
+#~ msgstr "Cardápio"
+
+#~ msgid "para presentear"
+#~ msgstr "para presentear"
+
+#~ msgid "Billing Details"
+#~ msgstr "Detalhes de Cobrança"
+
+#~ msgid "Returning customer?"
+#~ msgstr "Já é cliente?"
+
+#~ msgid "Click here to login"
+#~ msgstr "Clique aqui para efetuar login"
+
+#~ msgid ""
+#~ "If you have shopped with us before, please enter your details in the "
+#~ "boxes below. If you are a new customer, please proceed to the Billing "
+#~ "&amp; Shipping section."
+#~ msgstr ""
+#~ "Se já efectuou compras anteriormente na nossa loja, indique os seus dados "
+#~ "abaixo. Se é um cliente novo, faça clique no botão Não tenho conta"
+
+#~ msgid "Order Number:"
+#~ msgstr "Número do pedido:"
+
+#~ msgid "Date:"
+#~ msgstr "Data:"
+
+#~ msgid "Total:"
+#~ msgstr "Total:"
+
+#~ msgid "Payment Method:"
+#~ msgstr "Método de pagamento:"

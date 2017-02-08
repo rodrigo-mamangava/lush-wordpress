@@ -49,11 +49,11 @@ if (post_password_required()) {
             <div class="col-sm-6 col-sm-offset-1 info-preco">
 
                 <div class="tabela-preco">
-                    <p><?php _e('Period', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo'); ?></span></p>
-                    <p><?php _e('Period (Sunday to Thursday)', 'lush_2-0'); ?> <span>R$ <?php echo get_field('periodo_dom_qui'); ?></span></p>
-                    <p><?php _e('Period (Saturday and Sunday)', 'lush_2-0'); ?><span>R$ <?php echo get_field('periodo_sab_dom'); ?></span></p>
-                    <p><?php _e('Period (3h)', 'lush_2-0'); ?>Período (3h)<span>R$ <?php echo get_field('periodo_3hr'); ?></span></p>
-                    <p><?php _e('Additional time', 'lush_2-0'); ?> <span>R$ <?php echo get_field('hora_add'); ?></span></p>
+                    <p><?php _e('Daily (Sun Thu)', 'lush_2-0'); ?> <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria'); ?></span></p>
+                    <p><?php _e('Daily (Fri, Sat and Holidays)', 'lush_2-0'); ?> <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo'); ?></span></p>
+                    <p><?php _e('Period 12h', 'lush_2-0'); ?> <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_dom_qui'); ?></span></p>
+                    <p><?php _e('Overnight stay', 'lush_2-0'); ?><span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_sab_dom'); ?></span></p>
+                    <p><?php _e('Promotional Period', 'lush_2-0'); ?><span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span></p>
                 </div>
 
 

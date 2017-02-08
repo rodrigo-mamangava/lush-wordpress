@@ -23,10 +23,11 @@ add_image_size('vitrine-suite', 1008, 672, true);
 add_image_size('destaque-home', 1280, 540, true);
 add_image_size('faixa-intercalada', 384, 364, true);
 add_image_size('carousel-suite', 814, 593, true);
-add_image_size('loop-simples', 442, 281, true);
+add_image_size('loop-simples', 384, 250, true);
 add_image_size('faixa-destaque', 500, 474, true);
 add_image_size('add-pacote', 240, 92, true);
 add_image_size('icones-concierge', 50, 50, false);
+add_image_size('thumb-bastidores', 100, 90, false);
 
 /**
  * Verificar se produto tem determinada categoria
@@ -172,3 +173,75 @@ function getCustomImage($field_name, $size = 'full') {
     return $image["sizes"][$size];
 
 }
+
+
+
+function custom_pagination($numpages = '', $pagerange = '', $paged = '') {
+
+    if (empty($pagerange)) {
+        $pagerange = 2;
+    }
+
+    /**
+     * This first part of our function is a fallback
+     * for custom pagination inside a regular loop that
+     * uses the global $paged and global $wp_query variables.
+     * 
+     * It's good because we can now override default pagination
+     * in our theme, and use this function in default quries
+     * and custom queries.
+     */
+    global $paged;
+    if (empty($paged)) {
+        $paged = 1;
+    }
+    if ($numpages == '') {
+        global $wp_query;
+        $numpages = $wp_query->max_num_pages;
+        if (!$numpages) {
+            $numpages = 1;
+        }
+    }
+
+    /**
+     * We construct the pagination arguments to enter into our paginate_links
+     * function. 
+     */
+    $pagination_args = array(
+        'base' => get_pagenum_link(1) . '%_%',
+        'format' => 'page/%#%',
+        'total' => $numpages,
+        'current' => $paged,
+        'show_all' => False,
+        'end_size' => 1,
+        'mid_size' => $pagerange,
+        'prev_next' => True,
+        'prev_text' => __('< Anterior'),
+        'next_text' => __('Próximo >'),
+        'type' => 'plain',
+        'add_args' => false,
+        'add_fragment' => ''
+    );
+
+    $paginate_links = paginate_links($pagination_args);
+
+    if ($paginate_links) {
+        echo "<nav class='custom-pagination'>";
+        //echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+        echo $paginate_links;
+        echo "</nav>";
+    }
+}
+
+
+function limit_posts_per_archive_page() {
+
+    if (is_post_type_archive('bastidores') &&  !is_admin())
+        $limit = 5;
+    else
+        $limit = get_option('posts_per_page');
+
+    set_query_var('posts_per_archive_page', $limit);
+}
+
+add_filter('pre_get_posts', 'limit_posts_per_archive_page');

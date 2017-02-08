@@ -186,7 +186,7 @@ wc_get_template_part('cart/faixa', 'addpacotes');
 
                     </div>
                     
-                    <a class="btn-continuar-comprando ">Continuar comprando</a>
+                    <a class="btn-continuar-comprando " href="<?php echo get_term_link('suite', 'product_cat') ?>" ><?php _e('Continuar comprando', 'lush_2-0');?></a>
 
                     <?php do_action('woocommerce_after_cart'); ?>
                 </div>
