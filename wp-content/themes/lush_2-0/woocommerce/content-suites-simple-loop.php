@@ -19,11 +19,11 @@ $the_query = new WP_Query($args);
     <div class="row">
 
         <div class="col-xs-12 titulo">
-            <h2><?php _e('Other suites', 'lush_2-0');?><</h2>
+            <h2><?php _e('Other suites', 'lush_2-0');?></h2>
         </div>                       
     </div>
 
-    <div class="row">
+    <div class="row is-flex">
 
         <?php
         if ($the_query->have_posts()) :

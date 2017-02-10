@@ -29,6 +29,9 @@ add_image_size('add-pacote', 240, 92, true);
 add_image_size('icones-concierge', 50, 50, false);
 add_image_size('thumb-bastidores', 100, 90, false);
 
+//mobile
+add_image_size('vitrine-suite', 1008, 672, true);
+
 /**
  * Verificar se produto tem determinada categoria
  * @global type $post
@@ -238,6 +241,8 @@ function limit_posts_per_archive_page() {
 
     if (is_post_type_archive('bastidores') &&  !is_admin())
         $limit = 5;
+//    if (is_post_type_archive('produto') &&  !is_admin())
+//        $limit = 999;
     else
         $limit = get_option('posts_per_page');
 

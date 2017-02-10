@@ -560,11 +560,14 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         &:focus{
             border-bottom: solid 1px #3f2658;
-
             outline: none;
             outline-color: none;
             outline-style: none;
             outline-width: 0;
+        }
+
+        @media (max-width: @screen-xs-max) { 
+            width: 100%;
         }
 
     }
@@ -573,6 +576,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .btn-participar-v2{
         margin-bottom: 0px;
         padding: 11px 42px;
+        @media (max-width: @screen-xs-max) { 
+            width: 100%;
+        }
     }
 }
 
@@ -624,9 +630,17 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     .pull-right;
 
-    a{
+    @media (max-width: @screen-xs-max) { 
+        .pull-left;;
+    }
 
+
+    a{
         color: #ffffff;
+
+        @media (max-width: @screen-xs-max) { 
+            font-size: 20px;
+        }
 
         &:active, &.active, &:hover{
             color: @cinza-escuro;
@@ -642,6 +656,19 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
 .list-language{
     margin-right: 42px;
+
+    @media (max-width: @screen-xs-max) { 
+        margin-right: 10px;
+    }
+
+    li{
+
+        @media (max-width: @screen-xs-max) { 
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
 }
 .list-social{
     li{
@@ -675,6 +702,13 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         .hidden-xs;
     }
 
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+
+    @media (max-width: @screen-xs-max) { 
+        max-height: 100vh;
+    }
 }
 
 
@@ -754,6 +788,11 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 }
 
 .faixa-vitrine {
+
+    @media (max-width: @screen-xs-max) { 
+        //display: none;
+    }
+
     position: relative;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -779,6 +818,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             z-index: -100;
             transform: translate(-50%, -50%);
             overflow: hidden;
+
 
         }
 
@@ -1076,6 +1116,10 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     background-repeat: no-repeat;
     position: relative;
 
+    @media (max-width: @screen-xs-max) { 
+        height: 203px;   
+    }
+
     &:hover{
         .img-filter{
             background-color: rgba(0, 0, 0, 0.1);
@@ -1101,7 +1145,6 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     h2{
         .subtitulo-h2;
-
         font-family: @knockout29;
         font-size: 18px;
         font-weight: normal;
@@ -1110,6 +1153,11 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         letter-spacing: 1.6px;
         text-align: center;
         color: #b8b8b8;
+
+        @media (max-width: @screen-xs-max) { 
+            margin-top: 71px;
+            margin-bottom: 15px;
+        }
 
     }
 
@@ -1120,12 +1168,38 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         margin-bottom: 10px;
         border: 2px solid @cinza-v2-fundo;
 
+        @media (max-width: @screen-xs-max) { 
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-bottom: 42px;
+        }
+
         .destaque-img{
             height: 100%;
+
+            @media (max-width: @screen-xs-max) { 
+                position: relative;
+                width: 100%;
+                height: 184px;
+                overflow: hidden;
+            } 
+
             img{
                 width: 100%;
                 height: auto;
                 object-fit: cover;
+
+                @media (max-width: @screen-xs-max) { 
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    height: 160%;
+                    width: auto;
+                    -webkit-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                }
+
             }
 
         }
@@ -1134,11 +1208,19 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             padding: 8em 5em 5em;
             .text-center;
 
+            @media (max-width: @screen-xs-max) { 
+                padding: 36px 16px 63px;
+            }
 
             .icon-destaque{
                 width: 25.8px;
                 height: auto;
                 margin-bottom: 2em;
+
+                @media (max-width: @screen-xs-max) { 
+                    margin-bottom: 6px;
+                    width: 32px;
+                }
             }
 
             h3{
@@ -1149,6 +1231,11 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 letter-spacing: 0.4px;
                 color: @roxo-v2-titulo;
 
+                @media (max-width: @screen-xs-max) { 
+                    font-size: 28px;
+                    line-height: 1.07;
+                }
+
             }
 
             p{
@@ -1157,6 +1244,14 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 .texto-padrao-cinza;
                 font-family: @FairfieldRegular;
                 padding: 0 4em;
+
+                @media (max-width: @screen-xs-max) { 
+                    padding: initial;
+                }
+
+                &:first-of-type{
+                    //display: none;
+                }
 
             }
 
@@ -1172,6 +1267,10 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                     width: 12px;
                     height: auto;
                     padding-left: 7.5px;
+
+                    @media (max-width: @screen-xs-max) {
+                        padding-left: initial;
+                    }
                 }
             }
 
@@ -1187,7 +1286,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 .faixa-saiba-mais{
     .faixa-intercalada;
 
-
+    @media (max-width: @screen-xs-max) { 
+        padding-bottom: 0;
+    }
 
 
 
@@ -1197,12 +1298,26 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     h2{
         .subtitulo-h2;
+
+        @media (max-width: @screen-xs-max) { 
+            margin-top: 70px-42px;
+            margin-bottom: 25px;
+        }
+
     }
 
     .mapa-wrap{
 
         position: relative;
         z-index: 50;
+
+        @media (max-width: @screen-xs-max) { 
+            position: relative;
+            width: 100%;
+            height: 317px;
+            overflow: hidden;
+        }
+
 
         h3{
             font-family: @FairfieldItalic;
@@ -1220,11 +1335,28 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             margin-left: -75px;
             top: 60%;
 
+            @media (max-width: @screen-xs-max) {
+                top: 50%;
+            }
+
+
         }
         img{
             .img-responsive;
             position: relative;
             z-index: 50;
+
+            @media (max-width: @screen-xs-max) { 
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                height: 100%;
+                width: auto;
+                -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+            }
+
         }
     }
 
@@ -1233,6 +1365,12 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         margin-bottom: 127px;
 
         .texto-padrao-cinza;
+
+        @media (max-width: @screen-xs-max) {
+            margin-top: 36px;
+            margin-bottom: 40px;
+        }
+
     }
 
 }
@@ -1251,9 +1389,8 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         font-size: 18px;
         letter-spacing: 1.6px;
         color: #969696;
-
-        margin-bottom: 32px;
-
+        margin-bottom: 32px;        
+        .text-uppercase;
 
     }
 
@@ -1264,8 +1401,13 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         line-height: 0.74;
         letter-spacing: 0.4px;
         color: #696969;
-
         margin-bottom: 15px;
+
+        @media (max-width: @screen-xs-max) { 
+            font-size: 26px;
+            line-height: 1.15;
+            letter-spacing: 0.5px;
+        }
     }
 
     p{
@@ -1291,18 +1433,26 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     background-color: #2a1a3c;
     padding-top: 64px;
 
+    @media (max-width: @screen-xs-max) { 
+        padding-top: 60px;
+    }
+
     .para-presentear{
 
         position: relative;
         background-color: #ffffff;
-        margin-top: 127px;
-        margin-bottom: 146px;
+        margin-top: 127px;        
         padding-left: 31px;
+        margin-bottom: 146px;
         padding-bottom: 27px;
 
         @media (max-width: @screen-xs-max) { 
             .text-center;
             .center-block;
+            margin-top: 0px;
+            padding-left: 16px;
+            margin-bottom: 80px;
+            padding-bottom: 0px;
         }
 
         h2{
@@ -1332,7 +1482,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             padding-top: 6px;
         }
 
-        p{
+        .texto{
             font-family: @FairfieldRegular;
             font-size: 18px;
             font-weight: 500;
@@ -1353,8 +1503,11 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             font-style: normal;
             font-stretch: normal;
             letter-spacing: 2.2px;
-
             padding: 11px 22.5px;
+
+            @media (max-width: @screen-xs-max) { 
+                width: 100%;
+            }
 
         }
 
@@ -1619,6 +1772,10 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 .transition(all 1s);
             }
 
+        }
+        
+        .carousel-control{
+            display: none !important;
         }
 
 
@@ -1966,6 +2123,10 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 li{
                     float:left;
                     display:inline;
+
+                    @media (max-width: @screen-xs-max) { 
+                        width: 100%;
+                    }
 
                     width:33.333%;
 
@@ -2510,9 +2671,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             border: solid 2px #f2f2f2;
 
             .item-subfaixa{
-
                 .destaque-img{
-
                 }
 
                 .destaque-texto{
@@ -2556,6 +2715,8 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
                         cursor: pointer;
 
+                        margin-top: 47px;
+
                         &:hover{
                             text-decoration: none;
                         }
@@ -2591,8 +2752,6 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         .subfaixa-destaque{
             border: solid 2px #f2f2f2;
 
-
-
             .item-subfaixa{
 
                 .destaque-img{
@@ -2623,6 +2782,10 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                         letter-spacing: 0.4px;
                         text-align: center;
                         color: #3f2658;
+
+                        @media (max-width: @screen-xs-max) { 
+                            font-size: 28px;
+                        }
 
                     }
 
@@ -4046,7 +4209,6 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 footer{
 
     background-color: #2a1a3c;
-
     padding-top: 90px;
     padding-bottom: 103px;
 
@@ -4054,6 +4216,11 @@ footer{
         width: 72px;
         height: auto;
         margin-bottom: 68.4px;
+
+        @media (max-width: @screen-xs-max) { 
+            width: 75px;
+            margin-bottom: 43px;
+        }
     }
 
     p{
@@ -4065,8 +4232,11 @@ footer{
         color: #6e5e8b;
     }
 
+
+
     .menu-footer, .list-social, .list-language{
         list-style-type: none;
+
         li{
             a{
                 .text-uppercase;
@@ -4080,10 +4250,13 @@ footer{
                     color: white;
                     text-decoration: none;
                 }
-
             }
 
         }
+    }
+
+    .mobile{
+
     }
 
 }

@@ -118,7 +118,8 @@ get_template_part('template-parts/menu/geral');
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
             <div class="mapa-wrap">
                 <h3><?php echo get_field('hashtag'); ?></h3>
-                <img src="<?php uri() ?>/img/mapa@2x.png">
+                <img class="hidden-xs" src="<?php uri() ?>/img/mapa@2x.png" >
+                <img class="visible-xs" src="<?php uri() ?>/img/mapa@mobile.jpg">
             </div>
         </div>
 
@@ -163,7 +164,7 @@ get_template_part('template-parts/menu/geral');
                     <img class="gift-cards-mobile visible-xs" src="<?php uri() ?>/img/bitmap@3x.png" >
                     
                     <div class="row">
-                        <div class="col-sm-8 ">
+                        <div class="col-sm-8 texto">
                             <?php echo get_field('frase_presentei_com_estilo') ?>
                         </div>
                     </div>

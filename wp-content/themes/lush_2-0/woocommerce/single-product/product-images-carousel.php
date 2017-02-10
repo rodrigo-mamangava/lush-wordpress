@@ -30,7 +30,7 @@ $attachment_ids = $product->get_gallery_attachment_ids();
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <?php foreach ($attachment_ids as $key => $foto) : ?>
-            <li data-target="#carousel-example-generic" data-slide-to="<?php echo $key ?>" <?php echo ($key == 0) ? 'class="active"' : '' ?> ></li>
+            <li data-target="#carousel-suite-<?php echo $post->ID; ?>" data-slide-to="<?php echo $key ?>" <?php echo ($key == 0) ? 'class="active"' : '' ?> ></li>
         <?php endforeach; ?>
     </ol>
 
@@ -45,6 +45,17 @@ $attachment_ids = $product->get_gallery_attachment_ids();
             </div>
         <?php endforeach; ?>
     </div>
+
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-suite-<?php echo $post->ID; ?>" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-suite-<?php echo $post->ID; ?>" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 
 
 

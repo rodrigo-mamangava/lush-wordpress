@@ -14,10 +14,27 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-xs-12">
+            <div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
                 <img class="logo" src="<?php uri() ?>/img/logo_lush_branco@2x.png">
             </div>
-            <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-12">
+
+            <div class="col-lg-3 col-sm-3 col-xs-10 col-xs-offset-1 visible-xs mobile">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'social',
+                    'menu_class' => 'list-language',
+                ));
+                wp_nav_menu(
+                        array(
+                            'theme_location' => 'idioma',
+                            'menu_class' => 'list-language',
+                        )
+                );
+                ?>
+
+            </div>
+
+            <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-10 col-xs-offset-1">
 
 
                 <p>
@@ -29,19 +46,19 @@
                 <p>contato@lushmotel.com.br</p>
 
             </div>
-            <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-12">
+            <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-10 col-xs-offset-1 hidden-xs">
 
-                <?php
-                wp_nav_menu(
-                        array(
-                            'theme_location' => 'footer',
-                            'menu_class' => 'menu-footer',
-                        )
-                );
-                ?>
+<?php
+wp_nav_menu(
+        array(
+            'theme_location' => 'footer',
+            'menu_class' => 'menu-footer',
+        )
+);
+?>
 
             </div>
-            <div class="col-lg-3 col-sm-3">
+            <div class="col-lg-3 col-sm-3 hidden-xs">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'social',
@@ -54,13 +71,12 @@
                             'menu_class' => 'list-language',
                         )
                 );
-                
                 ?>
 
             </div>
         </div>
     </div>
 </footer>
-<?php wp_footer(); ?>
+                <?php wp_footer(); ?>
 </body>
 </html>

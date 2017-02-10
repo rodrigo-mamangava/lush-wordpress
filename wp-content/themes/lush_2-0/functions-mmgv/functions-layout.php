@@ -371,6 +371,9 @@ function faixa_destaque_impar($url_img, $icone, $titulo, $texto, $link, $frase_l
     <div class="subfaixa-destaque col-xs-12">
         <div class="row">
             <div class="item-subfaixa">
+                <div class="col-sm-5 destaque-img visible-xs">
+                    <img src="<?php echo $url_img; ?>" class="img-destaque">
+                </div>
                 <div class=" col-sm-7 destaque-texto">
                     <?php if($icone):?>
                     <img class="icon-destaque" src="<?php echo $icone; ?>">
@@ -381,7 +384,7 @@ function faixa_destaque_impar($url_img, $icone, $titulo, $texto, $link, $frase_l
                     </p>
                     <a href="<?php echo $link; ?>"><?php _e($frase_link, 'lush_2-0') ?></a>
                 </div>
-                <div class="col-sm-5 destaque-img">
+                <div class="col-sm-5 destaque-img hidden-xs">
                     <img src="<?php echo $url_img; ?>" class="img-destaque">
                 </div>
             </div>
