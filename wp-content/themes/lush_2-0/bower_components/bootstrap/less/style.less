@@ -1773,7 +1773,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             }
 
         }
-        
+
         .carousel-control{
             display: none !important;
         }
@@ -3578,21 +3578,38 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 --------------------------------------------------------------*/
 .single-concierge{
     background-color: #f2f2f2;
-
     padding-top: 140px;
     padding-bottom:  100px;
+    
+    .container{
+        padding-bottom: 143px;
+    }
 
     .voltar{
         margin-top: -100px;
         text-align: right;
+        
+        
     }
 
     .seta-dir, .seta-esq{
         margin-top: 100px;
-
         img{
             height: 25px;
             width: auto;
+            position: fixed;
+            top: 354px;
+        }
+    }
+    
+    .seta-dir{
+        img{
+            right: 95px;
+        }
+    }
+    .seta-esq{
+        img{
+            left: 95px;
         }
     }
 

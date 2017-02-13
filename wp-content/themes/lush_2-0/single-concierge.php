@@ -14,20 +14,28 @@ get_header('home');
         <div class="row">
 
             <div class="col-xs-12 voltar ">
-                <?php echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>"; ?>
+                <a href="<?php echo get_link_page_by_slug('concierge'); ?>">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
             </div>
 
         </div>
         <div class="row">
 
-
             <div class="col-xs-1">
-                <a href="#" class="seta-esq">
-                    <img src="<?php uri() ?>/img/seta-esquerda.png">
-                </a>
+
+                <?php
+                $prev_post  = get_previous_post();
+                if (!empty($prev_post)):
+                    ?>
+                    <a class="seta-esq" href="<?php echo get_permalink($next_post->ID); ?>">
+                        <img src="<?php uri() ?>/img/seta-esquerda.png">
+                    </a>
+                <?php endif; ?>
+
             </div>
 
-            <div class="col-xs-10">
+            <div class="col-xs-10 col-sm-6 col-sm-offset-2">
 
                 <?php the_title('<h1>', '</h1>'); ?>
                 <div class="obs">
@@ -40,13 +48,16 @@ get_header('home');
 
             </div>
             <div class="col-xs-1">
-                <a href="#" class="seta-dir">
-                    <img src="<?php uri() ?>/img/seta-direita.png">
-                </a>
+                <?php
+                $next_post = get_next_post();
+                if (!empty($next_post)):
+                    ?>
+                    <a class="seta-dir" href="<?php echo get_permalink($next_post->ID); ?>">
+                        <img src="<?php uri() ?>/img/seta-direita.png">
+                    </a>
+                <?php endif; ?>
             </div>
         </div>
-
-        <?php the_post_navigation(); ?>
 
     <?php endwhile; ?>
 

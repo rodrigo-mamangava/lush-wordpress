@@ -12559,6 +12559,9 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   padding-top: 140px;
   padding-bottom: 100px;
 }
+.single-concierge .container {
+  padding-bottom: 143px;
+}
 .single-concierge .voltar {
   margin-top: -100px;
   text-align: right;
@@ -12571,6 +12574,14 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .single-concierge .seta-esq img {
   height: 25px;
   width: auto;
+  position: fixed;
+  top: 354px;
+}
+.single-concierge .seta-dir img {
+  right: 95px;
+}
+.single-concierge .seta-esq img {
+  left: 95px;
 }
 .single-concierge h1 {
   font-family: "Knockout 26 A", "Knockout 26 B";
