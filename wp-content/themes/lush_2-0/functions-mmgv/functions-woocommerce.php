@@ -278,3 +278,16 @@ function custom_override_checkout_fields($fields) {
     $fields['order']['order_comments']['label'] = 'My new label';
     return $fields;
 }
+
+function add_cart_notice() {
+    ?>
+    <?php wc_print_notices(); ?>
+
+    <?php
+
+}
+
+function get_term_img($term_id) {
+    $thumbnail_id = get_woocommerce_term_meta($term_id, 'thumbnail_id', true);
+    return wp_get_attachment_url($thumbnail_id);
+}

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WooThemes//WooCommerce Bookings 1.9.15//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Lush
+X-ORIGINAL-URL:http://127.0.0.1/lush-wordpress/
+X-WR-CALDESC:Reservas de Lush
+X-WR-TIMEZONE:America/Sao_Paulo
+BEGIN:VEVENT
+DTEND:20170221
+UID:wc_bookings_278
+DTSTAMP:20170302T190035
+LOCATION:
+DESCRIPTION:Descrição da reserva:\nUma suite exuberante e única\, completa com piscina aquecida privativa dentro da suite\, 75 m2 com muito conforto\, entretenimento e privacidade.
+URL;VALUE=URI:http://127.0.0.1/lush-wordpress/?page_id=225&view-order=279
+SUMMARY:#278 - Lush Cine
+DTSTART:20170221
+END:VEVENT
+END:VCALENDAR

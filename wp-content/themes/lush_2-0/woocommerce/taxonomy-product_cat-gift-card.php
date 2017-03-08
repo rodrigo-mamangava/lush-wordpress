@@ -22,6 +22,8 @@ get_template_part('template-parts/menu/geral');
     $titulo = 'Gift Card';
     get_new_vitrine_tradutor($img, $titulo);
     ?>
+    
+    <?php add_cart_notice(); ?>
 
     <?php
     woocommerce_output_content_wrapper();
