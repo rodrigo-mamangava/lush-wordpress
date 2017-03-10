@@ -6,6 +6,12 @@
  */
 ?>
 
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 linha-div">
+        <hr/>
+    </div>
+</div>
+
 <div class="bastidores-item">
     <div class="row">
         <div class="col-xs-4 col-sm-2 col-sm-offset-2">

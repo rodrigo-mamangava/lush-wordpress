@@ -9957,9 +9957,9 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   position: absolute;
   right: 0;
   top: 0;
-  max-width: 592px;
+  max-width: 392px;
   height: auto;
-  margin-right: -300px;
+  margin-right: -8px;
   margin-top: -55px;
   width: 100%;
 }
@@ -10049,9 +10049,9 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   position: absolute;
   right: 0;
   top: 0;
-  max-width: 592px;
+  max-width: 392px;
   height: auto;
-  margin-right: -300px;
+  margin-right: -8px;
   margin-top: -55px;
   width: 100%;
 }
@@ -12104,7 +12104,6 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   width: 110px;
   height: 23px;
   position: relative;
-  margin-top: -23px;
   display: block;
   margin-bottom: 10px;
   padding-top: 1px;
@@ -12125,7 +12124,6 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   width: 110px;
   height: 23px;
   position: relative;
-  margin-top: -23px;
   display: block;
   margin-bottom: 10px;
   padding-top: 1px;
@@ -12165,7 +12163,6 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   width: 110px;
   height: 23px;
   position: relative;
-  margin-top: -23px;
   display: block;
   margin-bottom: 10px;
   padding-top: 1px;
@@ -12188,10 +12185,28 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 # bastidores
 --------------------------------------------------------------*/
 .faixa-bastidores {
-  margin-top: 50px;
+  margin-top: 73px;
+}
+.faixa-bastidores .bastidores-tags {
+  text-align: center;
+}
+.faixa-bastidores .bastidores-tags ul {
+  margin-bottom: 83px;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.faixa-bastidores .bastidores-tags ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.faixa-bastidores .bastidores-tags ul li {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .faixa-bastidores .bastidores-item {
-  padding-top: 65px;
+  padding-top: 40px;
   padding-bottom: 45px;
 }
 .faixa-bastidores .bastidores-item .meta-dados {
@@ -12202,7 +12217,6 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   font-stretch: normal;
   letter-spacing: 1.8px;
   color: #b8b8b8;
-  padding-top: 17px;
 }
 .faixa-bastidores .bastidores-item img {
   width: 100%;
@@ -12218,6 +12232,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   line-height: 1.4;
   letter-spacing: 0.2px;
   color: #3f2658;
+  padding-top: 18px;
   padding-bottom: 12px;
 }
 .faixa-bastidores .bastidores-item .intro {

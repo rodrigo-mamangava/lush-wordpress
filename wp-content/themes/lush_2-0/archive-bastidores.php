@@ -10,6 +10,9 @@ get_header('home');
 get_template_part('template-parts/menu/geral');
 ?>
 
+
+
+
 <div class="bastidores">
 
     <?php
@@ -20,14 +23,40 @@ get_template_part('template-parts/menu/geral');
 
     <div class="faixa-bastidores container">
 
-        <?php
-        //the_archive_title('<h1 class="page-title">', '</h1>');
-        ?>
+
+        <div class="bastidores-tags">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <?php
+                    $terms_tipo_bastidores = get_terms('tipo-bastidores');
+                    ?>
+
+                    <ul>                        
+                        <?php foreach ($terms_tipo_bastidores as $item_bast) : ?>
+                            <li>
+                                <a  href="<?php echo get_tag_link($item_bast->term_id); ?>" id="<?php echo ($item_bast->slug == 'essencia-lush' ) ? 'flag-essencia' : 'flag-midia'; ?>" class="">
+                                    <?php echo $item_bast->name; ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>                        
+                    </ul>
+
+                </div>
+            </div>
+        </div>
 
 
 
         <?php
-        while (have_posts()) : the_post();
+        global $wp_query;
+        $args = array_merge($wp_query->query_vars, array(
+            'posts_per_archive_page' => 1,
+            'posts_per_page' => 1,
+        ));
+        query_posts($args);
+
+        while ($wp_query->have_posts()) : $wp_query->the_post();
 
             get_template_part('template-parts/bastidores/loop', 'item');
 
@@ -35,15 +64,7 @@ get_template_part('template-parts/menu/geral');
         ?>
 
 
-        <div class="row">
-            <div class="passador">
-                <div class="col-sm-8 col-sm-offset-2 text-center">
-
-                    <?php echo get_the_posts_pagination(); ?>
-
-                </div>
-            </div><!-- passador -->
-        </div>
+        <?php get_template_part('template-parts/bastidores/passador'); ?>
 
     </div>
 

@@ -17,12 +17,37 @@ get_template_part('template-parts/menu/geral');
 <div class="experiencia-single">
 
 
-    <?php
-    $img = get_template_directory_uri() . '/img/img-centro@2x_1.jpg';
-    $titulo = 'Gift Card';
-    get_new_vitrine_tradutor($img, $titulo);
-    ?>
-    
+    <div class="faixa-destaque">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="para-presentear col-sm-8 col-sm-offset-2">
+
+                    <h2><?php _e('To gift', 'lush_2-0') ?></h2>
+                    <h3><?php _e('Lush Gift Card', 'lush_2-0') ?></h3>
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            <p>
+                                <?php 
+                                $text = 'Presenteie com muito estilo e personalidade com nossos vales-presente disponíveis em diversos valores e válidos para qualquer categoria de suítes, em qualquer dia da semana e também no consumo do bar ou restaurante.';
+                                _e($text, 'lush_2-0')?>
+                            </p>
+                        </div>
+                    </div>
+
+                    <a class="btn-verde-v02" href="<?php echo get_term_link('gift-card', 'product_cat') ?>" ><?php _e('Buy now', 'lush_2-0') ?></a>
+
+                    <img class="gift-cards" src="<?php uri() ?>/img/gift-card.png" >
+
+
+                </div><!-- para-presentear -->
+            </div>
+
+        </div>
+    </div><!-- faixa-destaque-->
+
+
+
+
     <?php add_cart_notice(); ?>
 
     <?php

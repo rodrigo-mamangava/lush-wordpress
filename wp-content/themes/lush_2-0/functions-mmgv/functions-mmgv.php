@@ -237,16 +237,3 @@ function custom_pagination($numpages = '', $pagerange = '', $paged = '') {
 }
 
 
-function limit_posts_per_archive_page() {
-
-    if (is_post_type_archive('bastidores') &&  !is_admin())
-        $limit = 5;
-//    if (is_post_type_archive('produto') &&  !is_admin())
-//        $limit = 999;
-    else
-        $limit = get_option('posts_per_page');
-
-    set_query_var('posts_per_archive_page', $limit);
-}
-
-add_filter('pre_get_posts', 'limit_posts_per_archive_page');
