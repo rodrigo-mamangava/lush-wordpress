@@ -49,17 +49,67 @@ if (post_password_required()) {
             <div class="col-sm-6 col-sm-offset-1 info-preco">
 
                 <div class="tabela-preco">
-                    <p><?php _e('Daily (Sun Thu)', 'lush_2-0'); ?> <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria'); ?></span></p>
-                    <p><?php _e('Daily (Fri, Sat and Holidays)', 'lush_2-0'); ?> <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo'); ?></span></p>
-                    <p><?php _e('Period 12h', 'lush_2-0'); ?> <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_dom_qui'); ?></span></p>
-                    <p><?php _e('Overnight stay', 'lush_2-0'); ?><span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_sab_dom'); ?></span></p>
-                    <p><?php _e('Promotional Period', 'lush_2-0'); ?><span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span></p>
+                    <div>
+                        <p>
+                            <?php _e('Daily', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria'); ?></span>
+                        </p>
+                        <p class="descricao">
+                            <?php _e('Check-in 3pm and check-out at 1pm the next day.', 'lush_2-0'); ?> 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <?php _e('Period', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo'); ?></span>
+                        </p>
+                        <p class="descricao">
+                            <?php _e('12 hours', 'lush_2-0'); ?> 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <?php _e('Overnight stay', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_dom_qui'); ?></span>
+                        </p>
+                        <p class="descricao">
+                            <?php _e('(Monday to Thursday and Sunday)', 'lush_2-0'); ?> 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <?php _e('Overnight stay', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_sab_dom'); ?></span>
+                        </p>
+                        <p class="descricao">
+                            <?php _e('(Friday and Saturday)', 'lush_2-0'); ?> 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <?php _e('Promotional period of 3h', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span>
+                        </p>
+                        <p class="descricao">
+                            <?php _e('(Monday to Thursday)', 'lush_2-0'); ?> 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <?php _e('Additional hour', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span>
+                        </p>
+                        <p class="descricao">
+                           
+                        </p>
+                    </div>
+                    
                 </div>
 
 
-                <p class="info-checkin">
-                    <?php _e('Check-in 3pm and check-out at 1pm the next day.', 'lush_2-0'); ?>
-                </p>
+                <a href="#faq" class="info-checkin">
+                    <?php _e('Doubts? Click here to access our FAQ', 'lush_2-0'); ?>
+                </a>
 
 
 
@@ -87,9 +137,9 @@ if (post_password_required()) {
 
 
     <?php wc_get_template_part('content', 'suites-simple-loop'); ?>
-    
-    
-    <?php get_template_part( 'template-parts/faixa/concierge'); ?>
+
+
+    <?php get_template_part('template-parts/faixa/concierge'); ?>
 
 
 </div><!-- suite-single -->

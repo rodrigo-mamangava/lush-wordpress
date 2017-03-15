@@ -8968,6 +8968,138 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #6e5e8b;
   background-color: white;
 }
+.btn-perido {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #6e5e8b;
+  background-color: white;
+  border-color: #b8b8b8;
+  border-radius: 0;
+  text-transform: uppercase;
+  width: 99%;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.btn-perido:focus,
+.btn-perido:active:focus,
+.btn-perido.active:focus,
+.btn-perido.focus,
+.btn-perido:active.focus,
+.btn-perido.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-perido:hover,
+.btn-perido:focus,
+.btn-perido.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn-perido:active,
+.btn-perido.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-perido.disabled,
+.btn-perido[disabled],
+fieldset[disabled] .btn-perido {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-perido.disabled,
+fieldset[disabled] a.btn-perido {
+  pointer-events: none;
+}
+.btn-perido:focus,
+.btn-perido:active {
+  outline: none !important;
+  outline-offset: 0!important;
+}
+.btn-perido:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.btn-perido:focus,
+.btn-perido.focus {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #787878;
+}
+.btn-perido:hover {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #999999;
+}
+.btn-perido:active,
+.btn-perido.active,
+.open > .dropdown-toggle.btn-perido {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #999999;
+}
+.btn-perido:active:hover,
+.btn-perido.active:hover,
+.open > .dropdown-toggle.btn-perido:hover,
+.btn-perido:active:focus,
+.btn-perido.active:focus,
+.open > .dropdown-toggle.btn-perido:focus,
+.btn-perido:active.focus,
+.btn-perido.active.focus,
+.open > .dropdown-toggle.btn-perido.focus {
+  color: #6e5e8b;
+  background-color: #d4d4d4;
+  border-color: #787878;
+}
+.btn-perido:active,
+.btn-perido.active,
+.open > .dropdown-toggle.btn-perido {
+  background-image: none;
+}
+.btn-perido.disabled:hover,
+.btn-perido[disabled]:hover,
+fieldset[disabled] .btn-perido:hover,
+.btn-perido.disabled:focus,
+.btn-perido[disabled]:focus,
+fieldset[disabled] .btn-perido:focus,
+.btn-perido.disabled.focus,
+.btn-perido[disabled].focus,
+fieldset[disabled] .btn-perido.focus {
+  background-color: white;
+  border-color: #b8b8b8;
+}
+.btn-perido .badge {
+  color: white;
+  background-color: #6e5e8b;
+}
 /*--------------------------------------------------------------
 # forms
 --------------------------------------------------------------*/
@@ -11090,18 +11222,20 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .suite-single .faixa-detalhes .info-preco .tabela-preco {
   margin-top: -19px;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco p {
+.suite-single .faixa-detalhes .info-preco .tabela-preco div {
+  padding-top: 19px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco div p {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
   color: #6e5e8b;
-  padding-top: 19px;
-  padding-bottom: 16px;
   position: relative;
-  border-bottom: 1px solid #e6e6e6;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco p span {
+.suite-single .faixa-detalhes .info-preco .tabela-preco div p span {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 24px;
   font-weight: normal;
@@ -11111,9 +11245,18 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: #6e5e8b;
   position: absolute;
   right: 0;
-  top: 18px;
+  top: 0px;
 }
-.suite-single .faixa-detalhes .info-preco .info-checkin {
+.suite-single .faixa-detalhes .info-preco .tabela-preco div p.descricao {
+  font-family: 'FairfieldLTW01-46LightI';
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #b8b8b8;
+}
+.suite-single .faixa-detalhes .info-preco a.info-checkin {
   padding-top: 46px;
   padding-bottom: 46px;
   font-family: 'FairfieldLTW01-46LightI';
@@ -11122,6 +11265,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   font-stretch: normal;
   color: #b8b8b8;
   text-align: center;
+  display: block;
 }
 .suite-single .faixa-detalhes .info-preco .wc-bookings-booking-form .label {
   font-family: 'FairfieldLTW01-46LightI';
@@ -11317,10 +11461,141 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   /* This style removes the red triangle */
 }
 .suite-single #wc-bookings-booking-form .block-picker li a {
-  background-color: #FFFFFF !important;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #6e5e8b;
+  background-color: white;
+  border-color: #b8b8b8;
+  border-radius: 0;
+  text-transform: uppercase;
+  width: 99%;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a:active:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.active:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.focus,
+.suite-single #wc-bookings-booking-form .block-picker li a:active.focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:hover,
+.suite-single #wc-bookings-booking-form .block-picker li a:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.focus {
+  color: #333;
+  text-decoration: none;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:active,
+.suite-single #wc-bookings-booking-form .block-picker li a.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.suite-single #wc-bookings-booking-form .block-picker li a.disabled,
+.suite-single #wc-bookings-booking-form .block-picker li a[disabled],
+fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.suite-single #wc-bookings-booking-form .block-picker li a.disabled,
+fieldset[disabled] a.suite-single #wc-bookings-booking-form .block-picker li a {
+  pointer-events: none;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a:active {
+  outline: none !important;
+  outline-offset: 0!important;
 }
 .suite-single #wc-bookings-booking-form .block-picker li a:hover {
-  background-color: #000000 !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.focus {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #787878;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:hover {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #999999;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:active,
+.suite-single #wc-bookings-booking-form .block-picker li a.active,
+.open > .dropdown-toggle.suite-single #wc-bookings-booking-form .block-picker li a {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #999999;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:active:hover,
+.suite-single #wc-bookings-booking-form .block-picker li a.active:hover,
+.open > .dropdown-toggle.suite-single #wc-bookings-booking-form .block-picker li a:hover,
+.suite-single #wc-bookings-booking-form .block-picker li a:active:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.active:focus,
+.open > .dropdown-toggle.suite-single #wc-bookings-booking-form .block-picker li a:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a:active.focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.active.focus,
+.open > .dropdown-toggle.suite-single #wc-bookings-booking-form .block-picker li a.focus {
+  color: #6e5e8b;
+  background-color: #d4d4d4;
+  border-color: #787878;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a:active,
+.suite-single #wc-bookings-booking-form .block-picker li a.active,
+.open > .dropdown-toggle.suite-single #wc-bookings-booking-form .block-picker li a {
+  background-image: none;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a.disabled:hover,
+.suite-single #wc-bookings-booking-form .block-picker li a[disabled]:hover,
+fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a:hover,
+.suite-single #wc-bookings-booking-form .block-picker li a.disabled:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a[disabled]:focus,
+fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a:focus,
+.suite-single #wc-bookings-booking-form .block-picker li a.disabled.focus,
+.suite-single #wc-bookings-booking-form .block-picker li a[disabled].focus,
+fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.focus {
+  background-color: white;
+  border-color: #b8b8b8;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a .badge {
+  color: white;
+  background-color: #6e5e8b;
+}
+.suite-single #wc-bookings-booking-form .block-picker li a.selected {
+  background: #e4d5ff !important;
+  color: #3f2658 !important;
+  border: solid 1px #e6e6e6;
 }
 .suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-current-day a {
   background-color: #e4d5ff !important;

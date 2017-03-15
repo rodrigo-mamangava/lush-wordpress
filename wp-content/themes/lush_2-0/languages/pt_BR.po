@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LUSH 2.0\n"
-"POT-Creation-Date: 2017-02-08 14:57-0200\n"
-"PO-Revision-Date: 2017-02-08 14:58-0200\n"
+"POT-Creation-Date: 2017-03-15 19:13-0300\n"
+"PO-Revision-Date: 2017-03-15 19:15-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -45,7 +45,7 @@ msgstr "Tente procurar no arquivo mensal. %1$s"
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
+msgstr[0] "Um comentário em &ldquo;%2$s&rdquo;"
 msgstr[1] ""
 
 #: comments.php:40 comments.php:61
@@ -96,11 +96,11 @@ msgstr "Tipo de bastidores"
 msgid "Book"
 msgstr "Reservar"
 
-#: functions-mmgv/functions-mmgv.php:219
+#: functions-mmgv/functions-mmgv.php:222
 msgid "< Anterior"
 msgstr ""
 
-#: functions-mmgv/functions-mmgv.php:220
+#: functions-mmgv/functions-mmgv.php:223
 msgid "Próximo >"
 msgstr ""
 
@@ -130,7 +130,7 @@ msgstr "Ordenar por preço: alto para baixo"
 
 #: functions-mmgv/functions-woocommerce.php:92
 msgid "required"
-msgstr ""
+msgstr "obrigatório"
 
 #: functions-mmgv/functions-woocommerce.php:141
 #: woocommerce/cart/shipping-calculator.php:39
@@ -139,7 +139,7 @@ msgstr "Selecione um país &hellip;"
 
 #: functions-mmgv/functions-woocommerce.php:149
 msgid "Update country"
-msgstr ""
+msgstr "Atualizar"
 
 #: functions-mmgv/functions-woocommerce.php:168
 #: woocommerce/cart/shipping-calculator.php:63
@@ -148,7 +148,7 @@ msgstr "Selecione um estado&hellip;"
 
 #: functions-mmgv/functions-woocommerce.php:212
 msgid "Choose an option"
-msgstr ""
+msgstr "Escolha uma opção"
 
 #: functions.php:48
 msgid "Menu principal"
@@ -230,17 +230,20 @@ msgid "INVITE YOUR PARTNER TO SHARE THIS SUITE:"
 msgstr "CONVIDE SEU PARCEIRO PARA COMPARTILHAR ESTA SUITE:"
 
 #: template-parts/content-experiencia.php:15
-#: template-parts/content-frontpage.php:157
+#: template-parts/content-frontpage.php:161
+#: woocommerce/taxonomy-product_cat-pacote.php:25
 msgid "To gift"
 msgstr "Para presentear"
 
 #: template-parts/content-experiencia.php:16
-#: template-parts/content-frontpage.php:158
+#: template-parts/content-frontpage.php:162
+#: woocommerce/taxonomy-product_cat-pacote.php:26
 msgid "Lush Gift Card"
 msgstr "Lush Gift Card"
 
 #: template-parts/content-experiencia.php:23
-#: template-parts/content-frontpage.php:165
+#: template-parts/content-frontpage.php:172
+#: woocommerce/taxonomy-product_cat-pacote.php:37
 msgid "Buy now"
 msgstr "Comprar agora"
 
@@ -248,24 +251,26 @@ msgstr "Comprar agora"
 msgid "Special packages"
 msgstr "Pacotes especiais"
 
-#: template-parts/content-frontpage.php:86
+#: template-parts/content-frontpage.php:89
+#: woocommerce/home/carousel-vitrine-item.php:13
+#: woocommerce/loop/suite-detalhes.php:6
 msgid "Know more"
 msgstr "Saiba mais"
 
-#: template-parts/content-frontpage.php:133
+#: template-parts/content-frontpage.php:137
 msgid "Lush Member"
 msgstr "Lush Member"
 
-#: template-parts/content-frontpage.php:141 template-parts/page/contato.php:21
+#: template-parts/content-frontpage.php:145 template-parts/page/contato.php:21
 #: woocommerce/single-product-reviews.php:73
 msgid "Name"
 msgstr "Nome"
 
-#: template-parts/content-frontpage.php:142 template-parts/page/contato.php:22
+#: template-parts/content-frontpage.php:146 template-parts/page/contato.php:22
 msgid "E-mail"
 msgstr "E-mail"
 
-#: template-parts/content-frontpage.php:143
+#: template-parts/content-frontpage.php:147
 msgid "Subscribe"
 msgstr "Assinar"
 
@@ -905,6 +910,18 @@ msgstr ""
 msgid "You may be interested in&hellip;"
 msgstr "Você talvez esteja interessado in&hellip;"
 
+#: woocommerce/cart/faixa-addpacotes.php:33
+msgid "ENRICH YOUR EXPERIENCE"
+msgstr "ENRIQUECER A SUA EXPERIÊNCIA"
+
+#: woocommerce/cart/faixa-addpacotes.php:36
+msgid ""
+"Check out the special services we offer <br/> and add as many as you want to "
+"your cart."
+msgstr ""
+"Confira os serviços especiais que oferecemos<br>e adicionar como muitos como "
+"você deseja seu carrinho."
+
 #: woocommerce/cart/mini-cart.php:72
 msgid "No products in the cart."
 msgstr "Nenhum produto no carrinho."
@@ -1109,29 +1126,54 @@ msgstr ""
 msgid "Thank you. Your order has been received."
 msgstr "Obrigado. Seu pedido foi recebido."
 
-#: woocommerce/content-single-product-suite.php:52
+#: woocommerce/content-single-product-suite.php:54
+msgid "Daily"
+msgstr "Diária"
+
+#: woocommerce/content-single-product-suite.php:58
+msgid "Check-in 3pm and check-out at 1pm the next day."
+msgstr "Check-in  às 15:00 e check-out às 13:00 no dia seguinte."
+
+#: woocommerce/content-single-product-suite.php:63
 msgid "Period"
 msgstr "Período"
 
-#: woocommerce/content-single-product-suite.php:53
-msgid "Period (Sunday to Thursday)"
-msgstr "Período (domingo a quinta-feira)"
+#: woocommerce/content-single-product-suite.php:67
+msgid "12 hours"
+msgstr "12 horas"
 
-#: woocommerce/content-single-product-suite.php:54
-msgid "Period (Saturday and Sunday)"
-msgstr "Período (sábado e domingo)"
+#: woocommerce/content-single-product-suite.php:72
+#: woocommerce/content-single-product-suite.php:81
+msgid "Overnight stay"
+msgstr "Pernoite"
 
-#: woocommerce/content-single-product-suite.php:55
-msgid "Period (3h)"
-msgstr "Período (3h)"
+#: woocommerce/content-single-product-suite.php:76
+msgid "(Monday to Thursday and Sunday)"
+msgstr "(De segunda a quinta-feira e domingo)"
 
-#: woocommerce/content-single-product-suite.php:56
-msgid "Additional time"
+#: woocommerce/content-single-product-suite.php:85
+msgid "(Friday and Saturday)"
+msgstr "(Sexta e sábado)"
+
+#: woocommerce/content-single-product-suite.php:90
+msgid "Promotional period of 3h"
+msgstr "Período promocional de 3h"
+
+#: woocommerce/content-single-product-suite.php:94
+msgid "(Monday to Thursday)"
+msgstr "(De segunda a quinta-feira)"
+
+#: woocommerce/content-single-product-suite.php:99
+msgid "Additional hour"
 msgstr "Hora adicional"
 
-#: woocommerce/content-single-product-suite.php:61
-msgid "Check-in 3pm and check-out at 1pm the next day."
-msgstr "Check-in  às 15:00 e check-out às 13:00 no dia seguinte."
+#: woocommerce/content-single-product-suite.php:111
+msgid "Doubts? Click here to access our FAQ"
+msgstr ""
+
+#: woocommerce/content-suites-simple-loop.php:22
+msgid "Other suites"
+msgstr "Outras suites"
 
 #: woocommerce/emails/admin-cancelled-order.php:28
 #: woocommerce/emails/plain/admin-cancelled-order.php:25
@@ -1346,11 +1388,7 @@ msgid "Qty"
 msgstr ""
 
 #: woocommerce/home/carousel-vitrine-item.php:5
-msgid "Escolha sua suite"
-msgstr ""
-
-#: woocommerce/home/carousel-vitrine-item.php:13
-msgid "Quero reservar"
+msgid "Choose your suite"
 msgstr ""
 
 #: woocommerce/loop/no-products-found.php:24
@@ -1380,10 +1418,6 @@ msgstr ""
 #: woocommerce/loop/suite-detalhes.php:2
 msgid "from"
 msgstr "a partir  de"
-
-#: woocommerce/loop/suite-detalhes.php:6
-msgid "I want to book"
-msgstr "Quero reservar"
 
 #: woocommerce/myaccount/dashboard.php:28
 #, php-format
@@ -1856,6 +1890,10 @@ msgstr ""
 msgid "You may also like&hellip;"
 msgstr ""
 
+#: woocommerce/taxonomy-product_cat-pacote.php:75
+msgid "SPECIAL PACKAGES"
+msgstr ""
+
 #. Theme Name of the plugin/theme
 msgid "LUSH 2.0"
 msgstr ""
@@ -1867,6 +1905,21 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Plau & Mamangava"
 msgstr ""
+
+#~ msgid "Period (Sunday to Thursday)"
+#~ msgstr "Período (domingo a quinta-feira)"
+
+#~ msgid "Period (Saturday and Sunday)"
+#~ msgstr "Período (sábado e domingo)"
+
+#~ msgid "Period (3h)"
+#~ msgstr "Período (3h)"
+
+#~ msgid "Additional time"
+#~ msgstr "Hora adicional"
+
+#~ msgid "I want to book"
+#~ msgstr "Quero reservar"
 
 #~ msgid "Saiba mais"
 #~ msgstr "Saiba mais"

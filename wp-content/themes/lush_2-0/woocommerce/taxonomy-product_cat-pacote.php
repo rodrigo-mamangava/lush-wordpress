@@ -28,7 +28,7 @@ get_template_part('template-parts/menu/geral');
                         <div class="col-sm-6 ">
                             <p>
                                 <?php 
-                                $text = 'Presenteie com muito estilo e personalidade com nossos vales-presente disponíveis em diversos valores e válidos para qualquer categoria de suítes, em qualquer dia da semana e também no consumo do bar ou restaurante.';
+                                $text = 'Present with style and personality with our gift certificates available in various values and valid for any category of suites, any day of the week and also in the consumption of the bar or restaurant.';
                                 _e($text, 'lush_2-0')?>
                             </p>
                         </div>
@@ -72,7 +72,7 @@ get_template_part('template-parts/menu/geral');
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
 
                         <h2>
-                            PACOTES ESPECIAIS
+                            <?php _e('SPECIAL PACKAGES', 'lush_2-0')?>
                         </h2>
                     </div>
                 </div>

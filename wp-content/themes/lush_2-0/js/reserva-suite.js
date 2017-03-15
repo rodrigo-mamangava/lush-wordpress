@@ -2,12 +2,13 @@
 jQuery(document).ready(function ($) {
 
     console.log('suite');
+    
+    $('.form-field').find('label').hide();
 
     $('body').on('change', $('.block-picker'), function () {
 
         $(document).ajaxComplete(function () {
             $('.block-picker').find('li').each(function (index) {
-
                 if ($(this).data('block') == '1200') {
                     $(this).find('a').text('Diária');
                 }
@@ -17,12 +18,8 @@ jQuery(document).ready(function ($) {
                 if ($(this).data('block') == '2000') {
                     $(this).find('a').text('Pernoite');
                 }
-
             });
         });
-
-
-
 
     });
 

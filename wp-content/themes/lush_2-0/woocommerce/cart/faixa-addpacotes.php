@@ -29,9 +29,12 @@ $products = new WP_Query($args);
 
         <div class="col-xs-12">
 
-            <h2>ENRIQUEÇA SUA EXPERIÊNCIA</h2>
+            <h2>
+                <?php _e('ENRICH YOUR EXPERIENCE', 'lush_2-0')?>
+                </h2>
             <p>
-                Confira abaixo os serviços especiais que oferecemos<br/> e adicione quantos quiser ao seu carrinho.
+                <?php _e('Check out the special services we offer <br/> and add as many as you want to your cart.', 'lush_2-0')?>
+                
             </p>
         </div>
 
