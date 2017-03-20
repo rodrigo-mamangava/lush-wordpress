@@ -34,11 +34,11 @@ $terms = get_terms(array(
                 <?php foreach ($terms as $item): ?>
 
                     <div class="col-xs-4">
-                        <p>
+                        <h3>
                             <a href="#<?php echo $item->slug; ?>">
                                 <?php echo $item->name; ?>
                             </a>
-                        </p>
+                        </h3>
                     </div>
 
                 <?php endforeach; ?>

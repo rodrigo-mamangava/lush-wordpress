@@ -51,11 +51,20 @@ if (post_password_required()) {
                 <div class="tabela-preco">
                     <div>
                         <p>
-                            <?php _e('Daily', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria'); ?></span>
+                            <?php _e('Daily (Sunday to Thursday)', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_d_q'); ?></span>
                         </p>
                         <p class="descricao">
-                            <?php _e('Check-in 3pm and check-out at 1pm the next day.', 'lush_2-0'); ?> 
+                            <?php _e('Check in 3pm and Check out 1pm', 'lush_2-0'); ?> 
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <?php _e('Daily (Friday, Saturday and Holidays)', 'lush_2-0'); ?> 
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_s_s_f'); ?></span>
+                        </p>
+                        <p class="descricao">
+                            <?php _e('Check in 3pm and Check out 1pm', 'lush_2-0'); ?> 
                         </p>
                     </div>
                     <div>
@@ -64,50 +73,45 @@ if (post_password_required()) {
                             <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo'); ?></span>
                         </p>
                         <p class="descricao">
-                            <?php _e('12 hours', 'lush_2-0'); ?> 
+                            <?php _e('(12 hours from Monday to Thursday)', 'lush_2-0'); ?> 
+                        </p>
+                        <p class="descricao">
+                            <?php _e('(4 hours Friday, Saturday, Sunday and holiday eve)', 'lush_2-0'); ?> 
                         </p>
                     </div>
                     <div>
                         <p>
                             <?php _e('Overnight stay', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_dom_qui'); ?></span>
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('pernoite'); ?></span>
                         </p>
                         <p class="descricao">
-                            <?php _e('(Monday to Thursday and Sunday)', 'lush_2-0'); ?> 
+                            <?php _e('(Check-in 8pm and Check-Out 1pm)', 'lush_2-0'); ?> 
                         </p>
                     </div>
                     <div>
                         <p>
-                            <?php _e('Overnight stay', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_sab_dom'); ?></span>
-                        </p>
-                        <p class="descricao">
-                            <?php _e('(Friday and Saturday)', 'lush_2-0'); ?> 
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <?php _e('Promotional period of 3h', 'lush_2-0'); ?> 
+                            <?php _e('Promotional period', 'lush_2-0'); ?> 
                             <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span>
                         </p>
                         <p class="descricao">
-                            <?php _e('(Monday to Thursday)', 'lush_2-0'); ?> 
+                            <?php _e('03 hours (Monday to Thursday)', 'lush_2-0'); ?> 
                         </p>
+
                     </div>
                     <div>
                         <p>
                             <?php _e('Additional hour', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span>
+                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('hr_adicional'); ?></span>
                         </p>
-                        <p class="descricao">
-                           
-                        </p>
+
                     </div>
-                    
+
                 </div>
 
-
-                <a href="#faq" class="info-checkin">
+                <?php
+                $faq = get_page_by_slug('faq');
+                ?>
+                <a href="<?php echo esc_url(get_page_link($faq->ID)); ?>" class="info-checkin">
                     <?php _e('Doubts? Click here to access our FAQ', 'lush_2-0'); ?>
                 </a>
 

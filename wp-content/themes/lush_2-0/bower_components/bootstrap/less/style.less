@@ -231,8 +231,8 @@ a img.aligncenter {
 @FairfieldLTW01-45LightC:'FairfieldLTW01-45LightC 706178';
 @fairfield: 'FairfieldLTW01-45Light';
 
-@knockout29: "Knockout 29 A", "Knockout 29 B";
-@knockout34: "Knockout 34 A", "Knockout 34 B";
+@knockout29: "Knockout 29 A", "Knockout 29 B"; 
+@knockout34: "Knockout 34 A", "Knockout 34 B"; 
 @knockout26: "Knockout 26 A", "Knockout 26 B";
 
 body{
@@ -282,6 +282,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 .row.is-flex {
     display: flex;
     flex-wrap: wrap;
+
 }
 .row.is-flex > [class*='col-'] {
     display: flex;
@@ -403,6 +404,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .btn;
     .button-variant(@branco, @lilas, @lilas);
     font-family: @knockout34;
+    text-transform: uppercase;
     width: 100%;
     border-radius: 0;
     box-shadow: 0 2px 0 @lilas;
@@ -422,6 +424,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .sombra-padrao;
     box-shadow: 0 2px 0 0 #008672;
     font-family: @knockout34;
+    text-transform: uppercase;
 }
 
 .btn-participar-v2{
@@ -492,12 +495,14 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
 .btn-tipo-knockout34{
     font-family: @knockout34;
+    text-transform: uppercase;
     margin-top: 9px;
     padding: 11px 48px;
 }
 
 .btn-tipo-knockout29{
     font-family: @knockout29;
+    text-transform: uppercase;
     margin-top: 9px;
     padding: 11px 48px;
 }
@@ -607,6 +612,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         a, span{
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 20px;
             font-weight: normal;
             font-style: normal;
@@ -639,6 +645,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .list-inline;
     color: @branco;
     font-family: @knockout29;
+    text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -856,10 +863,10 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .vitrine-chamada {
 
         padding-top: 126px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        /*        height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;*/
 
         @media (max-width: @screen-xs-max){
             padding-top: 65px;
@@ -869,6 +876,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         h1 {
             font-family: @knockout26;
+            text-transform: uppercase;
             font-size: 98px;
             font-weight: normal;
             font-style: normal;
@@ -878,38 +886,44 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             color: #ffffff;
             .text-uppercase;
 
+            padding-bottom: 10px;
+
             @media (max-width: @screen-xs-max){
                 font-size: 54px;
                 line-height: 0.87;
                 letter-spacing: 1.1px;
             }
 
-
-
-            span{
-                padding-top: 32px;               
-                font-family: @FairfieldLTW01-46LightI;
-                font-size: 26px;
-                font-weight: 500;
-                font-stretch: normal;
-                line-height: 1.08;
-                letter-spacing: 0.3px;
-                text-align: center;
-                color: #ffffff;
-                text-transform: initial;
-
-                @media (max-width: @screen-xs-max){
-                    padding-top: 5px;
-                    line-height: 1.56;
-                    font-size: 18px;
-                }
-            }
-
-
         }//h1
+
+        h2{
+            font-family: @FairfieldItalic;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 1.35;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+
+        }
 
         p{
 
+            /*padding-top: 139px;*/  
+            padding-top: 18%;
+            font-family: @FairfieldLTW01-46LightI;
+            font-size: 26px;
+            font-weight: 500;
+            font-stretch: normal;
+            line-height: 1.08;
+            letter-spacing: 0.3px;
+            color: #ffffff;
+            text-transform: initial;
+
+            @media (max-width: @screen-xs-max){
+                padding-top: 5px;
+                line-height: 1.56;
+                font-size: 18px;
+            }
 
         }
 
@@ -987,6 +1001,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
                 .escolha{
                     font-family: @knockout29;
+                    text-transform: uppercase;
                     font-size: 16px;
                     letter-spacing: 1.6px;
                     color: #969696;
@@ -1039,6 +1054,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                     font-size: 18px;
                     letter-spacing: 2.2px;
                     font-family: @knockout29;
+                    text-transform: uppercase;
 
                     @media (max-width: @screen-xs-max) {
                         width: 100%;
@@ -1048,6 +1064,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
                 .explorar{
                     font-family: @knockout29;
+                    text-transform: uppercase;
                     font-size: 18px;
                     letter-spacing: 1.8px;
                     color: #b8b8b8;
@@ -1161,6 +1178,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     h2{
         .subtitulo-h2;
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 18px;
         font-weight: normal;
         font-style: normal;
@@ -1272,6 +1290,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
             a{
                 font-family: @knockout29;
+                text-transform: uppercase;
                 font-size: 18px;
                 letter-spacing: 1.8px;
                 text-align: center;
@@ -1401,6 +1420,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     h2{
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 18px;
         letter-spacing: 1.6px;
         color: #969696;
@@ -1472,6 +1492,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         h2{
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 16px;
             font-weight: normal;
             font-style: normal;
@@ -1513,6 +1534,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         .btn-verde-v02{
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -1562,6 +1584,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
     p{
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 18px;
         letter-spacing: 1.6px;
         text-align: center;
@@ -1656,6 +1679,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         .btn-reservar-v2{
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -1757,6 +1781,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                 padding-bottom: 106px;
 
                 font-family: @knockout26;
+                text-transform: uppercase;
                 font-size: 98px;
                 font-weight: normal;
                 font-style: normal;
@@ -1772,6 +1797,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         a{
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -1828,6 +1854,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             .text-uppercase;
 
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -1878,6 +1905,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     p{
         color: @branco;
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 18px;
         font-weight: normal;
         font-style: normal;
@@ -1962,6 +1990,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         p{
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -2041,8 +2070,9 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             right: 0;
             margin: 0 auto;
 
-            h2{
+            h1, h2{
                 font-family: @knockout26;
+                text-transform: uppercase;
                 font-size: 98px;
                 font-weight: normal;
                 font-style: normal;
@@ -2117,6 +2147,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         .atributos{
 
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -2192,6 +2223,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
                         span{
                             font-family: @knockout29;
+                            text-transform: uppercase;
                             font-size: 24px;
                             font-weight: normal;
                             font-style: normal;
@@ -2212,6 +2244,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
                             line-height: normal;
                             letter-spacing: normal;
                             color: #b8b8b8;
+                            line-height: 1.28;
                         }
                     }
                 }
@@ -2307,6 +2340,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
             h2{
                 font-family: @knockout29;
+                text-transform: uppercase;
                 font-size: 18px;
                 font-weight: normal;
                 font-style: normal;
@@ -2364,6 +2398,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
                 span{
                     font-family: @knockout26;
+                    text-transform: uppercase;
                     font-size: 34px;
                     font-weight: normal;
                     font-style: normal;
@@ -2461,6 +2496,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable span{
         background-color: transparent !important;
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 21px;
         font-weight: normal;
         font-style: normal;
@@ -2487,6 +2523,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         color: #d2d2d2 !important;
 
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 21px;
         font-weight: normal;
         font-style: normal;
@@ -2545,6 +2582,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .wc-bookings-booking-cost{
 
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 18px;
         font-weight: normal;
         font-style: normal;
@@ -2558,6 +2596,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
             position: absolute;
             right: 0;
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 42px;
             font-weight: normal;
             font-style: normal;
@@ -2585,6 +2624,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
         float: left;
 
         font-family: @knockout29 !important;
+        text-transform: uppercase;
         font-size: 22px !important;
         font-weight: normal;
         font-style: normal;
@@ -2599,6 +2639,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
     .wc-bookings-date-picker .ui-datepicker .ui-datepicker-title{
         background-color: #fff;
         font-family: @knockout29;
+        text-transform: uppercase;
         font-size: 24px;
         font-weight: normal;
         font-style: normal;
@@ -2686,6 +2727,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         .btn-explore-cardapio{
             font-family: @knockout29;
+            text-transform: uppercase;
             font-size: 22px;
             font-weight: normal;
             font-style: normal;
@@ -2742,6 +2784,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
                     a{
                         font-family: @knockout29;
+                        text-transform: uppercase;
                         font-size: 18px;
                         font-weight: normal;
                         font-style: normal;
@@ -2913,6 +2956,19 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
                 text-align: center;
             }
+
+            .subcat-desc-extra{
+                padding-top: 50px;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.56;
+                letter-spacing: 0.2px;
+                color: #969696;
+                text-align: left;
+            }
+
         }
 
         .pacote-item{
@@ -3482,7 +3538,7 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
         margin-bottom: 69px;
 
-        p, a{
+        h3, p, a{
             font-family: @knockout29;
             font-size: 14px;
             font-weight: normal;
@@ -4306,6 +4362,60 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
 
 
 /*--------------------------------------------------------------
+# page padrao
+--------------------------------------------------------------*/
+article.padrao{
+    margin-top: 64px;
+    margin-bottom: 100px;
+    padding-top: 98px;
+
+    h1{
+        font-family: @knockout26;
+        text-transform: uppercase;
+        font-size: 98px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.8;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #3f2658;
+        padding-bottom: 81px;
+    }
+
+    h2{
+        font-family: @FairfieldLTW01-76BoldIt;
+        font-size: 24px;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        color: #3f2658;
+        padding-bottom: 10px;
+        .make-sm-column(10);
+        .make-sm-column-offset(1);
+    }
+
+    p{
+        font-family: @FairfieldRegular;
+        font-size: 18px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: 0.2px;
+        color: #696969;
+        padding-bottom: 40px;
+        .make-sm-column(8);
+        .make-sm-column-offset(1);
+    }
+
+
+
+
+}
+
+
+/*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
 footer{
@@ -4343,6 +4453,7 @@ footer{
             a{
                 .text-uppercase;
                 font-family: @knockout29;
+                text-transform: uppercase;
                 font-size: 16px;
                 line-height: 2.2;
                 letter-spacing: 1.4px;

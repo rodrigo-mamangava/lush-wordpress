@@ -12,11 +12,14 @@ $category = get_term_by('slug', 'pacote', 'product_cat');
 
 $term_id = $category->term_id;
 $taxonomy_name = 'product_cat';
-$term_children = get_term_children($term_id, $taxonomy_name);
+//$term_children = get_term_children($term_id, $taxonomy_name);
+$term_children = get_terms( $taxonomy_name, array( 'child_of' => $term_id,'hide_empty' => false, ) );
 
-foreach ($term_children as $pacote_cat_id) {
 
-    $sub_pacote = get_term_by('id', $pacote_cat_id, 'product_cat');
+
+foreach ($term_children as $pacote_cat) {
+
+    $sub_pacote = get_term_by('id', $pacote_cat->term_id, 'product_cat');
     $term_img_src = get_term_img($sub_pacote->term_id);
     ?>
     <div class="row">
@@ -42,7 +45,7 @@ foreach ($term_children as $pacote_cat_id) {
                         array(
                             'taxonomy' => 'product_cat',
                             'field' => 'term_id',
-                            'terms' => $pacote_cat_id,
+                            'terms' => $pacote_cat->term_id,
                             'operator' => 'IN'
                         )
                     )
@@ -53,14 +56,25 @@ foreach ($term_children as $pacote_cat_id) {
 
                 if ($the_query->have_posts()) :
                     ?><div class="row"> <?php
-                        while ($the_query->have_posts()) : $the_query->the_post();
+                    while ($the_query->have_posts()) : $the_query->the_post();
 
-                            get_template_part('template-parts/experiencia/pacote/item');
-                        endwhile;
-                        ?></div> <?php
+                        get_template_part('template-parts/experiencia/pacote/item');
+                    endwhile;
+                    ?></div> <?php
                 endif;
                 wp_reset_postdata();
                 ?>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+                        <p class="subcat-desc-extra">
+                            <?php echo get_field('desc_extra', $sub_pacote); ?>
+                        </p>                        
+                    </div>
+                </div>
+
+
 
             </div><!-- .sessao-subcat -->         
         </div>

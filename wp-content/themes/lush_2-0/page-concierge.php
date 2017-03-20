@@ -11,7 +11,7 @@ get_template_part('template-parts/menu/geral');
     <?php while (have_posts()) : the_post(); ?>
 
 
-        <?php get_template_part('template-parts/content-concierge', 'loop') ?>
+        <?php //get_template_part('template-parts/content-concierge', 'loop') ?>
 
 
     <?php endwhile; ?>

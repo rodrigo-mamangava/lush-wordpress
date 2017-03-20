@@ -16,7 +16,7 @@ $args = array(
 $the_query = new WP_Query($args);
 ?>
 
-<div class="container-fluid faixa-carousel-suites">
+<div class="container-fluid faixa-carousel-suites hidden-xs">
 
 
     <div id="rooms-slider" class="row">

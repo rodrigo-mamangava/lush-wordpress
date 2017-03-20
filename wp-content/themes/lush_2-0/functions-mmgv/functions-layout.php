@@ -89,7 +89,7 @@ function get_new_vitrine_completo() {
         <div class = "row">
             <div class="vitrine-content" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID); ?>)">
                 <div class = " sub-titulo">
-                    <h2><?php echo get_the_title(); ?></h2>                    
+                    <h1><?php echo get_the_title(); ?></h1>                    
                 </div>
                 <div class="img-filter"></div>
             </div>

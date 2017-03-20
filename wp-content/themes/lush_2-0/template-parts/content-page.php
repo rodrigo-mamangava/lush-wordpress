@@ -9,21 +9,19 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<!--	<header class="entry-header">
-		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header> .entry-header -->
+<article id="post-<?php the_ID(); ?>" <?php post_class('padrao'); ?>>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            </div>
+            
+            <?php the_content(); ?>
+            
+        </div>
 
-	<div class="entry-content">
-		<?php
-			the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lush_2-0' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+    </div>
 
 
 </article><!-- #post-## -->

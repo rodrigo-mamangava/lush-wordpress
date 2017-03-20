@@ -7677,6 +7677,7 @@ fieldset[disabled] .btn-enviar.focus {
   background-color: #A44FC7;
   border-color: #A44FC7;
   font-family: "Knockout 34 A", "Knockout 34 B";
+  text-transform: uppercase;
   width: 100%;
   border-radius: 0;
   box-shadow: 0 2px 0 #A44FC7;
@@ -7807,10 +7808,10 @@ fieldset[disabled] .btn-lilas.focus {
   background-color: white;
   border-color: white;
   border-radius: 0;
-  text-transform: uppercase;
   box-shadow: 0 2px 0 #3F2A56;
   box-shadow: 0 2px 0 0 #008672;
   font-family: "Knockout 34 A", "Knockout 34 B";
+  text-transform: uppercase;
 }
 .btn-branco-v2:focus,
 .btn-branco-v2:active:focus,
@@ -8570,11 +8571,13 @@ fieldset[disabled] .btn-reserva-v2.focus {
 }
 .btn-tipo-knockout34 {
   font-family: "Knockout 34 A", "Knockout 34 B";
+  text-transform: uppercase;
   margin-top: 9px;
   padding: 11px 48px;
 }
 .btn-tipo-knockout29 {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   margin-top: 9px;
   padding: 11px 48px;
 }
@@ -8604,8 +8607,8 @@ fieldset[disabled] .btn-reserva-v2.focus {
   background-color: transparent !important;
   border-color: transparent !important;
   border-radius: 0;
-  text-transform: uppercase;
   font-family: "Knockout 34 A", "Knockout 34 B";
+  text-transform: uppercase;
   margin-top: 9px;
   padding: 11px 48px;
   font-size: 18px;
@@ -8734,10 +8737,10 @@ fieldset[disabled] .btn-transparente.focus {
   background-color: white;
   border-color: white;
   border-radius: 0;
-  text-transform: uppercase;
   box-shadow: 0 2px 0 #3F2A56;
   box-shadow: 0 2px 0 0 #3f2658 !important;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   margin-top: 9px;
   padding: 11px 48px;
 }
@@ -8864,10 +8867,10 @@ fieldset[disabled] .btn-servico-concierge.focus {
   background-color: #6e5e8b;
   border-color: #6e5e8b;
   border-radius: 0;
-  text-transform: uppercase;
   box-shadow: 0 2px 0 #3F2A56;
   box-shadow: 0 2px 0 0 #3f2658 !important;
   font-family: "Knockout 34 A", "Knockout 34 B";
+  text-transform: uppercase;
   margin-top: 9px;
   padding: 11px 48px;
 }
@@ -9143,6 +9146,7 @@ fieldset[disabled] .btn-perido.focus {
 .pagination .nav-links a,
 .pagination .nav-links span {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
@@ -9367,10 +9371,10 @@ fieldset[disabled] .btn-perido.focus {
 }
 .faixa-vitrine .vitrine-chamada {
   padding-top: 126px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /*        height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;*/
 }
 @media (max-width: 767px) {
   .faixa-vitrine .vitrine-chamada {
@@ -9388,6 +9392,7 @@ fieldset[disabled] .btn-perido.focus {
   letter-spacing: 2px;
   color: #ffffff;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 @media (max-width: 767px) {
   .faixa-vitrine .vitrine-chamada h1 {
@@ -9396,20 +9401,28 @@ fieldset[disabled] .btn-perido.focus {
     letter-spacing: 1.1px;
   }
 }
-.faixa-vitrine .vitrine-chamada h1 span {
-  padding-top: 32px;
+.faixa-vitrine .vitrine-chamada h2 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.faixa-vitrine .vitrine-chamada p {
+  /*padding-top: 139px;*/
+  padding-top: 18%;
   font-family: 'FairfieldLTW01-46LightI';
   font-size: 26px;
   font-weight: 500;
   font-stretch: normal;
   line-height: 1.08;
   letter-spacing: 0.3px;
-  text-align: center;
   color: #ffffff;
   text-transform: initial;
 }
 @media (max-width: 767px) {
-  .faixa-vitrine .vitrine-chamada h1 span {
+  .faixa-vitrine .vitrine-chamada p {
     padding-top: 5px;
     line-height: 1.56;
     font-size: 18px;
@@ -9524,6 +9537,7 @@ fieldset[disabled] .btn-perido.focus {
   font-size: 18px;
   letter-spacing: 2.2px;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .faixa-carousel-suites .carousel-slick .suite .suite-card .btn-verde-v02 {
@@ -9532,6 +9546,7 @@ fieldset[disabled] .btn-perido.focus {
 }
 .faixa-carousel-suites .carousel-slick .suite .suite-card .explorar {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 1.8px;
   color: #b8b8b8;
@@ -9616,8 +9631,8 @@ fieldset[disabled] .btn-perido.focus {
 .faixa-intercalada h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -9751,8 +9766,8 @@ fieldset[disabled] .btn-perido.focus {
 .faixa-saiba-mais h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -10073,6 +10088,7 @@ fieldset[disabled] .btn-perido.focus {
 }
 .faixa-destaque .para-presentear .btn-verde-v02 {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -10165,6 +10181,7 @@ fieldset[disabled] .btn-perido.focus {
 }
 .faixa-destaque-home .para-presentear .btn-verde-v02 {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -10198,6 +10215,7 @@ fieldset[disabled] .btn-perido.focus {
 }
 .faixa-explore p {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 1.6px;
   text-align: center;
@@ -10240,10 +10258,10 @@ fieldset[disabled] .btn-perido.focus {
   background-color: white;
   border-color: white;
   border-radius: 0;
-  text-transform: uppercase;
   box-shadow: 0 2px 0 #3F2A56;
   box-shadow: 0 2px 0 0 #008672;
   font-family: "Knockout 34 A", "Knockout 34 B";
+  text-transform: uppercase;
   margin-top: 62px;
   margin-bottom: 100px;
 }
@@ -10400,6 +10418,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
 }
 .page-chegar .faixa-explore .btn-reservar-v2 {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -10468,6 +10487,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   padding-top: 15px;
   padding-bottom: 106px;
   font-family: "Knockout 26 A", "Knockout 26 B";
+  text-transform: uppercase;
   font-size: 98px;
   font-weight: normal;
   font-style: normal;
@@ -10529,8 +10549,8 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   margin-left: -100px;
   z-index: 1000;
   display: none;
-  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -10572,6 +10592,7 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
 }
 .faixa-concierge p {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 1.6px;
   text-align: center;
@@ -10614,10 +10635,10 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   background-color: white;
   border-color: white;
   border-radius: 0;
-  text-transform: uppercase;
   box-shadow: 0 2px 0 #3F2A56;
   box-shadow: 0 2px 0 0 #008672;
   font-family: "Knockout 34 A", "Knockout 34 B";
+  text-transform: uppercase;
   margin-top: 62px;
   margin-bottom: 100px;
 }
@@ -11103,6 +11124,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   right: 0;
   margin: 0 auto;
 }
+.vitrine-interna .vitrine-content .sub-titulo h1,
 .vitrine-interna .vitrine-content .sub-titulo h2 {
   font-family: "Knockout 26 A", "Knockout 26 B";
   font-size: 98px;
@@ -11237,6 +11259,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-detalhes .info-preco .tabela-preco div p span {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
@@ -11255,6 +11278,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   line-height: normal;
   letter-spacing: normal;
   color: #b8b8b8;
+  line-height: 1.28;
 }
 .suite-single .faixa-detalhes .info-preco a.info-checkin {
   padding-top: 46px;
@@ -11320,6 +11344,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-outras-suites-list .titulo h2 {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -11365,6 +11390,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-outras-suites-list .suite-item p span {
   font-family: "Knockout 26 A", "Knockout 26 B";
+  text-transform: uppercase;
   font-size: 34px;
   font-weight: normal;
   font-style: normal;
@@ -11420,6 +11446,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .suite-single #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable span {
   background-color: transparent !important;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
@@ -11440,6 +11467,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   background-color: transparent !important;
   color: #d2d2d2 !important;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 21px;
   font-weight: normal;
   font-style: normal;
@@ -11618,6 +11646,7 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
   position: absolute;
   right: 0;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 42px;
   font-weight: normal;
   font-style: normal;
@@ -11640,6 +11669,7 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
   vertical-align: middle;
   float: left;
   font-family: "Knockout 29 A", "Knockout 29 B" !important;
+  text-transform: uppercase;
   font-size: 22px !important;
   font-weight: normal;
   font-style: normal;
@@ -11652,6 +11682,7 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
 .suite-single .wc-bookings-date-picker .ui-datepicker .ui-datepicker-title {
   background-color: #fff;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 24px;
   font-weight: normal;
   font-style: normal;
@@ -11710,8 +11741,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
 .gastronomia .faixa-explore-cardapio h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -11853,6 +11884,7 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
 }
 .gastronomia .faixa-explore-cardapio .btn-explore-cardapio {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 22px;
   font-weight: normal;
   font-style: normal;
@@ -11869,8 +11901,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
 .gastronomia .faixa-gastronomia-cats h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -12033,6 +12065,7 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
 }
 .gastronomia .faixa-gastronomia-cats .subfaixa-destaque .item-subfaixa .destaque-texto a {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -12060,8 +12093,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
 .experiencia .faixa-pacotes-exp h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
@@ -12287,6 +12320,17 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
   letter-spacing: 0.2px;
   color: #969696;
   text-align: center;
+}
+.experiencia-single .pacote-loop .sessao-subcat .subcat-desc-extra {
+  padding-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.2px;
+  color: #969696;
+  text-align: left;
 }
 .experiencia-single .pacote-loop .pacote-item {
   padding-top: 72px;
@@ -12741,6 +12785,7 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
 .concierge .lista-cat-concierge {
   margin-bottom: 69px;
 }
+.concierge .lista-cat-concierge h3,
 .concierge .lista-cat-concierge p,
 .concierge .lista-cat-concierge a {
   font-family: "Knockout 29 A", "Knockout 29 B";
@@ -14411,6 +14456,77 @@ fieldset[disabled] .checkout-lush .woocommerce-checkout .woocommerce-checkout-re
   padding-top: 30px;
 }
 /*--------------------------------------------------------------
+# page padrao
+--------------------------------------------------------------*/
+article.padrao {
+  margin-top: 64px;
+  margin-bottom: 100px;
+  padding-top: 98px;
+}
+article.padrao h1 {
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  text-transform: uppercase;
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3f2658;
+  padding-bottom: 81px;
+}
+article.padrao h2 {
+  font-family: 'FairfieldLTW01-76BoldIt';
+  font-size: 24px;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  color: #3f2658;
+  padding-bottom: 10px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  article.padrao h2 {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  article.padrao h2 {
+    margin-left: 8.33333333%;
+  }
+}
+article.padrao p {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  color: #696969;
+  padding-bottom: 40px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  article.padrao p {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  article.padrao p {
+    margin-left: 8.33333333%;
+  }
+}
+/*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
 footer {
@@ -14445,8 +14561,8 @@ footer .list-language {
 footer .menu-footer li a,
 footer .list-social li a,
 footer .list-language li a {
-  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 2.2;
   letter-spacing: 1.4px;
