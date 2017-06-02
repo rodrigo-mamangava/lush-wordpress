@@ -20,6 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+redirect_to_suites();
+
 get_header( 'shop' ); ?>
 
 	<?php

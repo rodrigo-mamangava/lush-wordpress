@@ -24,7 +24,7 @@ foreach ($term_children as $pacote_cat) {
     ?>
     <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
-            <div class="sessao-subcat" >  
+            <div id="<?php echo $pacote_cat->slug; ?>" class="sessao-subcat" >  
 
                 <?php wp_get_attachment_image($sub_pacote->id, 'thumbnail') ?>
                 <img src="<?php echo $term_img_src; ?>">

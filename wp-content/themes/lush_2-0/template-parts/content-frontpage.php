@@ -11,9 +11,10 @@ get_header('home');
 
         <div id="video-container">
 
-            <video autoplay loop poster="" class="bg-video">
+            <video autoplay loop poster="<?php uri() ?>/img/mobile/lush-mobile.jpg" class="bg-video hidden-xs hidden-sm">
                 <source  src="<?php uri() ?>/video/lush-vitrine-video.mp4"  type="video/webm">
             </video>
+            <img src="<?php uri() ?>/img/mobile/lush-mobile.jpg" class="bg-video visible-xs visible-sm ">
 
         </div><!-- #video-container -->
 
@@ -64,8 +65,10 @@ get_header('home');
         </div>
 
         <div class="row">
-            <div class="col-xs-12 seta-baixo">
-                <img src="<?php uri() ?>/img/scroll-down@3x.png">
+            <div class="col-xs-12 seta-baixo hidden-xs">
+                <a href="#suites">
+                    <img src="<?php uri() ?>/img/scroll-down@3x.png">
+                </a>
             </div>
 
         </div>
@@ -77,7 +80,9 @@ get_header('home');
     get_template_part('template-parts/menu/geral');
     ?>
 
-    <?php wc_get_template('home/content-loop-suite-home.php'); ?>
+    <div id="suites">
+        <?php wc_get_template('home/content-loop-suite-home.php'); ?>
+    </div>
 
 </section>
 
@@ -102,11 +107,11 @@ get_header('home');
                 <section>
                     <?php
                     faixa_destaque_par(
-                            getCustomImage('faixa_destaque_01_foto', 'faixa-intercalada'), get_field('faixa_destaque_01_icone'), get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_link_page_by_slug('experiencia'), 'View Experiences'
+                            getCustomImage('faixa_destaque_01_foto', 'faixa-intercalada'), get_field('faixa_destaque_01_icone'), get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_link_page_by_slug('experiencia'), __('[:pb]VER EXPERIÊNCIAS[:en]VIEW EXPERIENCES[:]')
                     );
 
                     faixa_destaque_impar(
-                            getCustomImage('faixa_destaque_02_foto', 'faixa-intercalada'), get_field('faixa_destaque_02_icone'), get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_02_texto'), get_link_page_by_slug('menu'), 'Explore menu'
+                            getCustomImage('faixa_destaque_02_foto', 'faixa-intercalada'), get_field('faixa_destaque_02_icone'), get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_02_texto'), get_link_page_by_slug('menu'), __('[:pb]EXPLORAR CARDÁPIO[:en]EXPLORE CARDIO[:]')
                     );
                     ?>
                 </section>
@@ -121,39 +126,104 @@ get_header('home');
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-12">
                 <h2 class=""><?php echo get_field('como_chegar'); ?></h2>
+                <!--<a href="" id="waze"><img src="<?php // uri() ?>/img/waze.png"><a/>-->
+               
             </div>
             <div class="col-lg-10 col-lg-offset-1 col-md-12">
                 <div class="mapa-wrap">
                     <h3><?php echo get_field('hashtag'); ?></h3>
-                    <img class="hidden-xs" src="<?php uri() ?>/img/mapa@2x.png" >
-                    <img class="visible-xs" src="<?php uri() ?>/img/mapa@mobile.jpg">
+                    <a target="_blank" href="https://www.google.com.br/maps/place/Lush+Motel/@-23.5655499,-46.6131636,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59424e287ae3:0xee932227e8352a7b!8m2!3d-23.5655499!4d-46.6109749">
+                        <img class="hidden-xs" src="<?php uri() ?>/img/Lush_mapa.jpg" >
+                        <img class="visible-xs" src="<?php uri() ?>/img/mapa@mobile.jpg">
+                    </a>
                 </div>
             </div>
 
-            <div class="col-lg-6 col-lg-offset-3 col-md-12">            
-                <p><?php echo get_field('endereco'); ?></p>
+            <div class="col-lg-6 col-lg-offset-3 col-md-12">   
+                <a target="_blank" href="https://www.google.com.br/maps/place/Lush+Motel/@-23.5655499,-46.6131636,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce59424e287ae3:0xee932227e8352a7b!8m2!3d-23.5655499!4d-46.6109749">
+                    <p><?php echo get_field('endereco'); ?></p>
+                </a>
+                <a class="waze" 
+                   href="waze://?ll=-23.5655499,-46.6131636,17" 
+                   target="_blank" >
+                    <p>Abrir no Waze</p>
+                </a>
             </div>
 
 
         </div>
     </div><!-- faixa-mapa -->
 
+
+
     <div class="container-fluid faixa-lush-member">
         <div class="row">
             <div class="col-xs-12">
-                <h2><?php _e("Lush Member", 'lush_2-0'); ?></h2>
+                <h2><?php _e("LUSH PREMIUM GUEST", 'lush_2-0'); ?></h2>
                 <h3>
                     <?php echo get_field('frase_form'); ?>
                 </h3>
                 <p>
                     <?php echo get_field('frase_novidades'); ?>
                 </p>
-                <form class="form-lush">
-                    <input type="text" id="nome" name="nome" placeholder="<?php _e('Name', 'lush_2-0') ?>" class="campo"><br/>
-                    <input type="email" id="email" name="email" placeholder="<?php _e('E-mail', 'lush_2-0') ?>" class="campo"><br/>
-                    <input type="submit" value="<?php _e('Subscribe', 'lush_2-0') ?>" class="btn-participar-v2"><br/>
+                <div class="mailchimp-footer">
 
-                </form>
+                    <form type="post" action="" id="newCustomerForm2" class="form-lush">
+
+                        <input name="email"  required="" id="emailmmgv2" type="email" class="campo" placeholder="<?php _e('E-mail', 'lush_2-0') ?>" ><br/>
+                        <input  type="hidden" name="action" value="addCustomer"/>
+                        <input class="btn-participar-v2" type="submit"   value="<?php _e('Subscribe', 'lush_2-0') ?>"><br/>
+
+                    </form>
+
+
+
+                </div><!-- .mailchimp-footer -->
+
+                <div id="feedback2" >
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Obrigado</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Por favor, confirme sua assinatura no e-mail que receberá.</p>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                </div>
+                <br/>
+
+
+
+                <script type="text/javascript">
+                    jQuery('#newCustomerForm2').submit(ajaxSubmit2);
+                    function ajaxSubmit2() {
+
+                        var newCustomerForm2 = jQuery(this).serialize();
+
+                        jQuery.ajax({
+                            type: "POST",
+                            url: "<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php",
+                            data: newCustomerForm2,
+                            success: function (data) {
+                                jQuery("#myModal").modal('show');
+
+                                setTimeout(function () {
+                                    jQuery("#myModal").modal('hide');
+                                }, 5000);
+
+                                jQuery("#emailmmgv2").val('');
+
+                            }
+                        });
+
+                        return false;
+                    }
+                </script>
             </div>
         </div>
     </div><!-- faixa-lush-member -->

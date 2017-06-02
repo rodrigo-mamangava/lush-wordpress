@@ -45,9 +45,11 @@ get_template_part('template-parts/menu/geral');
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                         <h2>
-                            O LUSH te ajuda a transformar sua comemoração em uma 
-                            experiência sensorial completa. Acrescente na reserva da 
-                            suíte um dos pacotes abaixo.
+                            <?php
+                            $pb = 'O Gift Card é um presente inovador que vai proporcionar uma experiência surpreendente para um Casal no LUSH. O valor pode ser utilizado na locação de nossas suítes e todo consumo de bebidas e comidas do nosso restaurante.';
+                            $en = 'The Gift Card is an innovative gift that will provide an amazing experience for a couple in LUSH. The amount can be used in the rental of our suites and all consumption of drinks and food in our restaurant.';
+                            _traduz($pb, $en);
+                            ?>
                         </h2>
                     </div>
                 </div>
@@ -63,22 +65,14 @@ get_template_part('template-parts/menu/geral');
 
                         <?php global $product; ?>
 
-                        <div class="pacote-item col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="pacote-item gift-item  col-xs-12 col-sm-10 col-sm-offset-1">
                             <div class="row">
-                                <div class="col-sm-6 item-texto">                      
-                                    <?php the_title('<h3>', '</h3>'); ?>
-                                    <?php the_content(); ?>
+                                <div class="col-sm-6 item-texto-gift">                      
+                                    <h3><?php echo get_the_title(); ?> <span><?php echo get_the_content();?></span></h3>
+                                    
                                 </div><!-- item-texto -->
                                 <div class="col-sm-6 item-reserve">
-                                    <div class="preco">
-                                        <p>
-                                            <?php
-//                                            $price = get_post_meta( get_the_ID(), '_regular_price', true);;
-//                                            echo $price;
-                                            echo $product->get_price_html();
-                                            ?>
-                                        </p>
-                                    </div>
+                                    
                                     <?php wc_get_template_part('single-product/add-to-cart/simple', 'lush'); ?>
 
                                 </div><!-- item-reserve -->

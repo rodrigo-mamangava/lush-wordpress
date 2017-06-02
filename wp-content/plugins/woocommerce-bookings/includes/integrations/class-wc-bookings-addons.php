@@ -41,7 +41,7 @@ class WC_Bookings_Addons {
 		if ( is_object( $post ) ) {
 			$product = wc_get_product( $post->ID );
 			$css_classes .= 'show_if_booking';
-			if ( 'booking' !== $product->product_type ) {
+			if ( ! $product->is_type( 'booking' ) ) {
 				$css_classes .= ' hide_initial_booking_addon_options';
 			}
 		}
@@ -86,20 +86,6 @@ class WC_Bookings_Addons {
 			}
 		}
 
-		/*// Adjust booking products in cart
-		if ( $product->is_type( 'booking' ) ) {
-			$booking_form = new WC_Booking_Form( $product );
-			$booking_data = $booking_form->get_posted_data( $post_data );
-
-			foreach ( $cart_item_data as $key => $data ) {
-				if ( ! empty( $addon['wc_booking_person_qty_multiplier'] ) && ! empty( $booking_data['_persons'] ) && array_sum( $booking_data['_persons'] ) ) {
-					$cart_item_data[ $key ]['price'] = $data['price'] * array_sum( $booking_data['_persons'] );
-				}
-				if ( ! empty( $addon['wc_booking_block_qty_multiplier'] ) && ! empty( $booking_data['_duration'] ) ) {
-					$cart_item_data[ $key ]['price'] = $data['price'] * $booking_data['_duration'];
-				}
-			}
-		}*/
 		return $cart_item_data;
 	}
 
@@ -119,7 +105,7 @@ class WC_Bookings_Addons {
 	 */
 	public function adjust_booking_cost( $booking_cost, $booking_form, $posted ) {
 		// Product add-ons
-		$addons       = $GLOBALS['Product_Addon_Cart']->add_cart_item_data( array(), $booking_form->product->id, $posted, true );
+		$addons       = $GLOBALS['Product_Addon_Cart']->add_cart_item_data( array(), $booking_form->product->get_id(), $posted, true );
 		$addon_costs  = 0;
 		$booking_data = $booking_form->get_posted_data( $posted );
 
@@ -132,7 +118,7 @@ class WC_Bookings_Addons {
 					$person_multiplier = array_sum( $booking_data['_persons'] );
 				}
 				if ( ! empty( $addon['wc_booking_block_qty_multiplier'] ) && ! empty( $booking_data['_duration'] ) ) {
-					$duration_multipler = $booking_data['_duration'];
+					$duration_multipler = (int) $booking_data['_duration'];
 				}
 				$addon_costs += $addon['price'] * $person_multiplier * $duration_multipler;
 			}

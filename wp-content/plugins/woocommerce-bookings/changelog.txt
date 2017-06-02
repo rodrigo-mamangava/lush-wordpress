@@ -1,5 +1,50 @@
 *** WooCommerce Bookings Changelog ***
 
+2017-05-11 - version 1.10.2
+* Fix   - Booked shared resource blocks off availability for other products.
+* Fix   - Issue where persons number disappears during booking process.
+* Fix   - UI issue with the CSS classes for partial/fully booked in the case of automatic resource assignment.
+* Fix   - Trashing a booking will no longer trash its order if order has other items.
+* Fix   - Compatibility issue with Product Add-Ons integrations.
+* Fix   - Update compatibility with Deposits when the status of the order is 'Partially Paid'.
+* Fix   - Blank description on Google Calendar.
+* Fix   - Booking with persons and resources availability incorrect.
+* Fix   - Issue with availability spanning midnight.
+* Fix   - Issue with Booking with multiple resources showing booked days as available.
+
+2017-04-20 - version 1.10.1
+* Fix   - Error when deleting product on admin.
+* Fix   - Persons not showing up in the Edit Booking page.
+* Fix   - Negative values of available quantity.
+* Fix   - Reset email data for each trigger to not send previously calculated data.
+* Fix   - Make buffers apply in front by shifting times accordingly.
+* Fix   - Logic for available times where some times were blocked while they shouldn't have been.
+
+2017-04-03 - version 1.10.0
+* New   - 3.0 + full CRUD support.
+* New   - Dropped < 2.3 support.
+* Tweak - Guest name displaying incorrectly in admin.
+* Fix   - Priority no longer overrides global availability rules. Priority should have override order and rule level (Global, Product, Resource ).
+* Fix   - Blocking a time slot on a certain day of the week blocks it for the whole week.
+* Fix   - Display of clients' names (for "guests") in All Bookings dashboard. Client name only showed as guest with no other information.
+* Fix   - Rules set on resources do not return the correct hour slots on a specific day.
+* Fix   - Error when you create a booking in admin without order.
+* Fix   - Persons count as booking no longer worked.
+* Fix   - Error notices upon saving with WPML
+* Fix   - Fully/Partially booked days not showing up as expected.
+* Fix   - Time on specific dates were applied to all dates.
+* Fix   - Buffer periods are ignored in certain cases.
+* Fix   - Google calendar also showing no booking items on the order.
+* Fix   - PHP 7.1 warnings when implicitly doing calculations
+* Fix   - Partially booked days not showing up on the calendar when resources are customer selected.
+* Fix   - Check rules against first slot only setting is being ignored.
+* Fix   - Order address blank when creating a booking with order in admin.
+* Fix   - Buffer periods rendered following slots as not bookable.
+* Fix   - Partial refund of an order with multiple bookeable orders should cancel booking that matches refunded order item.
+* Fix   - Days that have no available blocks should show as fully booked on the calendar.
+* Fix   - Update the save_post action to properly hook only on supported post types used in meta box.
+* Tweak - Display product ID in create booking admin screen.
+
 2016-12-15 - version 1.9.15
 * Fix   - Minute blocks shows not available when paired with time range with date rule type.
 * Fix   - Blogname not shown when cancelling bookings via bulk order.

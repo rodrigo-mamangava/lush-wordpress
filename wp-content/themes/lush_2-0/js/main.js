@@ -6,15 +6,15 @@
 
 
 jQuery(document).ready(function ($) {
-    
+
     console.log('ok');
-    
-    
-    $(".navbar").affix({offset: {top: $(".faixa-vitrine").outerHeight(true)} });
-    
+
+
+    $(".navbar").affix({offset: {top: $(".faixa-vitrine").outerHeight(true)}});
+
     //$("#menu-geral").data('spy', 'affix');
-    
-    
+
+
     $('.carousel-slick').slick({
         centerMode: true,
         centerPadding: '110px',
@@ -42,6 +42,20 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
+
+    $('.carousel-slick-suite').slick({
+
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+
+    });
+
+
+
+
 });
 
 

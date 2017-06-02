@@ -5,6 +5,8 @@ $args = array(
     'ignore_sticky_posts' => true,
     'posts_per_page' => '9999',
     'product_cat' => 'suite',
+    'order' => 'asc',
+     'orderby' => 'menu_order',  
     'meta_query' => array(
         array(
             'key' => '_visibility',

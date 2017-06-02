@@ -28,7 +28,7 @@ if (empty($product) || !$product->is_visible()) {
 ?>
 
 <div class="row item-suite">            
-    <div id="foto-suite" class="col-sm-7 foto-produto">                
+    <div id="foto-suite" class="col-sm-7 foto-produto hidden-xs">                
         <?php woocommerce_show_product_images_carousel(); ?>
     </div>
     <div class="col-sm-5 detalhes">
@@ -38,4 +38,7 @@ if (empty($product) || !$product->is_visible()) {
             </div>
         </div>
     </div>
+    <div id="foto-suite" class="col-sm-7 foto-produto visible-xs">                
+        <?php woocommerce_show_product_images_carousel(); ?>
+    </div> 
 </div><!--item-suite-->

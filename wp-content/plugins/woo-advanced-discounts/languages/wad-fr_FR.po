@@ -1,0 +1,3144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WAD\n"
+"POT-Creation-Date: 2017-01-26 20:33+0100\n"
+"PO-Revision-Date: 2017-01-26 20:33+0100\n"
+"Last-Translator: ORION TEAM <support@orionorigin.com>\n"
+"Language-Team: ORION TEAM <support@orionorigin.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../admin/class-wad-admin.php:111
+msgid "Products Lists"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:112
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:117
+msgid "Settings"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:114
+msgid "Pro features"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:125
+msgid "Woocommerce All Discounts Settings"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:137
+msgid "Cache discounts"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:141
+msgid ""
+"Wether or not to store the discounts in the cache to increase the pages load "
+"speed. Cache is valid for 12hours"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:154
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2390
+msgid "Save"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:179
+msgid "Welcome to WooCommerce All Discounts"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:180
+#, php-format
+msgid ""
+"Thanks for installing! WooCommerce All Discounts %s is more powerful, stable "
+"and secure than ever before. We hope you enjoy using it."
+msgstr ""
+
+#: ../admin/class-wad-admin.php:188
+msgid "User Manual"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:193
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:343
+msgid "Getting Started"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:194
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:344
+msgid "Changelog"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:195
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:345
+msgid "Follow Us"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:205
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:355
+msgid "How to install the demo package?"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:213
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:363
+msgid "How to set the basic settings?"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:221
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:371
+msgid "How to create a customizable product?"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:229
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:379
+msgid "How to manage your designs templates?"
+msgstr ""
+
+#: ../admin/class-wad-admin.php:240
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:390
+msgid "Unable to open file!"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:44 ../includes/class-wad-discount.php:45
+#: ../includes/class-wad-discount.php:1070
+msgid "Discount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:46 ../includes/class-wad-discount.php:47
+#: ../includes/class-wad-discount.php:49
+msgid "New discount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:48
+msgid "Edit discount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:50
+msgid "View discount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:52
+msgid "No discount found"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:53
+msgid "No discount in the trash"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:54
+msgid "Discounts"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:87
+msgid "Discount settings"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:109
+msgid "Start date"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:114
+msgid ""
+"Date from which the discount is applied.<br>Format: <strong>YYYY-MM-DD</"
+"strong>."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:119
+msgid "End date"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:124
+msgid "Date when the discount ends.<br>Format: <strong>YYYY-MM-DD</strong>."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:130
+msgid "Action"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:134
+msgid "Type of of discount to apply."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:142
+msgid "Products list"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:148
+msgid "List of products the selected action applies on"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:154
+msgid "Percentage / Fixed amount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:160
+msgid "Percentage or fixed amount to apply."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:165
+msgid "Cumulable ?"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:169
+msgid ""
+"Wether or not the discount can be applied if the condition is fullfilled "
+"more than once."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:177
+msgid "Rules groups relationship"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:180
+msgid ""
+"AND: All groups rules must be verified to have the discount action applied."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:180
+msgid ""
+"OR: AT least one group rules must be verified to have the discount action "
+"applied."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:189
+msgid "Rules"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:190
+msgid ""
+"Allows you to define which rules should be checked in order to apply the "
+"discount. Not mandatory."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:248
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:264
+msgid "and"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:327
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:202
+msgid "is less than"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:328
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:203
+msgid "is less or equal to"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:329
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:204
+msgid "equals"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:330
+msgid "is more than"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:331
+msgid "is more or equal to"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:332
+msgid "is a multiple of"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:403
+msgid "Add rules group"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:575
+msgid "Total cart discount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:798
+msgid "If Customer role"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:799
+msgid "If Customer"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:800
+msgid "If Order subtotal"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:801
+msgid "If Order items count"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:802
+msgid "If Order products"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:808
+msgid "Percentage off product price"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:809
+msgid "Fixed amount off product price"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:810
+msgid "Percentage off order subtotal"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:811
+msgid "Fixed amount off order subtotal"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:955
+msgid "Start Date"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:956
+msgid "End Date"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:957
+msgid "Active"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1002
+#: ../includes/class-wad-discount.php:1011
+msgid "Quantity Based Pricing"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1023
+msgid "Enabled"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1026
+msgid "Enable/Disable this feature"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1032
+msgid "Discount type"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1036
+msgid "Percentage"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1037
+msgid "Fixed amount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1040
+msgid "Apply a percentage or a fixed amount discount"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1044
+msgid "Rules type"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1048
+msgid "Intervals"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1049
+msgid "Steps"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1052
+msgid ""
+"If Intervals, the intervals rules will be used.<br>If Steps, the steps rules "
+"will be used."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1056
+#: ../includes/class-wad-discount.php:1206
+msgid "Min"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1063
+#: ../includes/class-wad-discount.php:1207
+msgid "Max"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1078
+msgid "Intervals rules"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1079
+msgid ""
+"If quantity ordered between Min and Max, then the discount specified will be "
+"applied. <br>Leave Min or Max empty for any value (joker)."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1087
+msgid "Every X items"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1094
+msgid "Steps Rules"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1095
+msgid ""
+"If quantity ordered is a multiple of the step, then the discount specified "
+"will be applied."
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1135
+msgid "Quantity based pricing table"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1173
+msgid "Every multiple of"
+msgstr ""
+
+#: ../includes/class-wad-discount.php:1174
+#: ../includes/class-wad-discount.php:1208
+msgid "Unit Price"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:33
+#: ../includes/class-wad-products-list.php:34
+msgid "List"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:35
+#: ../includes/class-wad-products-list.php:36
+#: ../includes/class-wad-products-list.php:38
+msgid "New list"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:37
+msgid "Edit list"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:39
+msgid "View list"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:41
+msgid "No list found"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:42
+msgid "No list in the trash"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:43
+msgid "Lists"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:76
+msgid "List settings"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:95
+msgid "Extraction type"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:100
+msgid ""
+"How would you like to specify which products you want to include in the list?"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:119
+msgid "Products IDs"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:120
+msgid "Values separated by commas"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:129
+msgid "Author"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:130
+msgid "Retrieves only the elements created by the specified authors"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:140
+msgid "Exclude"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:141
+msgid ""
+"Excludes the following elements IDs from the results (values separated by "
+"commas)"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:150
+msgid "Metas relationship"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:163
+msgid "Key"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:170
+#: ../includes/class-wad-products-list.php:258
+msgid "Operator"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:171
+msgid ""
+"If the operator  is 'IN', 'NOT IN', 'BETWEEN', or 'NOT BETWEEN', make sure "
+"the different values are separated by a comma"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:195
+#: ../includes/class-wad-products-list.php:269
+msgid "Value"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:202
+msgid "Type"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:227
+msgid "Metas"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:228
+msgid "Filter by metas"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:237
+msgid "Taxonomies relationship"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:250
+msgid "Taxonomy"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:277
+msgid "Taxonomies"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:278
+msgid "Filter by taxonomies (Categories, Tags, Attributes)"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:304
+msgid "Evaluate"
+msgstr ""
+
+#: ../includes/class-wad-products-list.php:403
+msgid " result(s) found"
+msgstr ""
+
+#: ../includes/utils.php:482
+#: ../woocommerce-product-designer/includes/utils.php:505
+msgid "Add"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:112
+msgid "Parts"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:113
+msgid "Fonts"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:114
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2300
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:27
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:28
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:37
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:67
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:105
+#: ../woocommerce-product-designer/includes/functions.php:151
+msgid "Cliparts"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:115
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:30
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:40
+msgid "Templates"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:116
+msgid "Templates categories"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:118
+msgid "Bulk definition"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:119
+msgid "Get Started"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:197
+msgid "Bulk parameters definition"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:206
+msgid ""
+"This page will allows you to extract the defined parameters from on a "
+"product and apply them on others."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:241
+msgid "What do you want to extract?"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:245
+msgid "Design buttons parameters"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:248
+msgid "Bounding box parameters"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:251
+msgid "Products parts parameters"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:254
+msgid "Pricing rules parameters"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:257
+msgid "Output settings parameters"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:261
+msgid "On which products do you want to apply the parameters?"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:308
+msgid "save"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:329
+msgid "Welcome to WooCommerce Products Designer"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:330
+#, php-format
+msgid ""
+"Thanks for installing! WooCommerce Products Designer %s is more powerful, "
+"stable and secure than ever before. We hope you enjoy using it."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:571
+msgid "Editor colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:590
+msgid "Default Text Colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:595
+msgid "Default Shape Colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:613
+msgid "Toolbar colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:635
+msgid "Toolbar Colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:650
+msgid "Features icons"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:674
+msgid "Features Icons"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:687
+msgid "Features colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:694
+msgid "Column Bg Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:702
+msgid "Feature Title Bg Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:710
+msgid "Feature Title Bg Color on hover"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:718
+msgid "Feature Interior Bg"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:726
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:777
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:828
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1780
+msgid "Text Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:741
+msgid "Features Column Colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:754
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:805
+msgid "Separators colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:761
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:812
+msgid "Bg Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:769
+msgid "Left Border Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:792
+msgid "Separators Colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:820
+msgid "Bg Color on hover"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:843
+msgid "Buttons Colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:856
+msgid "Toolbar icons"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:859
+msgid "Grid"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:860
+msgid "Clear"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:861
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1930
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:423
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1201
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:425
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1207
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:205
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:146
+msgid "Delete"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:862
+#: ../woocommerce-product-designer/admin/class-wpd-duplicate.php:49
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:424
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:426
+msgid "Duplicate"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:863
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:425
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:427
+msgid "Send to back"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:864
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:426
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:428
+msgid "Bring to front"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:865
+msgid "Vertical flip"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:866
+msgid "Horizontal flip"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:867
+msgid "Horizontal center"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:868
+msgid "Vertical center"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:869
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:431
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:433
+msgid "Undo"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:870
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:432
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:434
+msgid "Redo"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:889
+msgid "Toolbar Icons"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:904
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:62
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:388
+msgid "Default"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:905
+msgid "Jonquet"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:910
+msgid "Skin"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:916
+msgid "Editor look and feel."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:945
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:89
+msgid "Icon"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:953
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:537
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:543
+msgid "Text color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:954
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:542
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:568
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:692
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:548
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:574
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:698
+msgid "Background color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:955
+msgid "Background color on hover"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:974
+msgid "General Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:983
+msgid "Design Page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:984
+msgid ""
+"This setting allows the plugin to locate the page where customizations are "
+"made. Please note that this page can only be accessed by our plugin and "
+"should not appear in any menu."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:993
+msgid "Templates Page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:994
+msgid ""
+"This setting allows the plugin to locate the page where the products "
+"templates will be displayed. This setting can be overwritten per product."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:995
+msgid ""
+"Use the shortcode [wpd-templates] where you want the templates to show up in "
+"the templates page."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1004
+msgid "Automatically append canvas to the customizer page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1008
+msgid ""
+"This option allows you to define whether or not you want to use a shortcode "
+"to display the the customizer in the selected page."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1010
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1053
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1065
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1077
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1090
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1103
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1115
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1129
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1142
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1155
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1167
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1190
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1541
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1564
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:189
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:345
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:697
+msgid "Yes"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1011
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1054
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1066
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1078
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1091
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1104
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1116
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1128
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1141
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1156
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1168
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1191
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1540
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1563
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:191
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:344
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:696
+msgid "No"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1018
+msgid "Canvas max width (px)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1019
+msgid "This option allows you to define canvas's width"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1025
+msgid "Canvas max height (px)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1026
+msgid "This option allows you to define canvas's height"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1033
+msgid "Parts position in cart"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1037
+msgid ""
+"This option allows you to set where to show your customized products parts "
+"on the cart page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1039
+msgid "Thumbnail column"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1040
+msgid "Name column"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1047
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:509
+msgid "Download design"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1051
+msgid ""
+"This option allows you to show/hide the download button on the customization "
+"page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1059
+msgid "Download design from user account page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1063
+msgid ""
+"This option allows you to show/hide the download button on user account page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1071
+msgid "Send the design as an attachment"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1075
+msgid "This option allows you to send or not the design by mail after checkout"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1084
+msgid "Preview design"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1088
+msgid ""
+"This option allows you to show/hide the preview button on the customization "
+"page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1097
+msgid "Add to cart"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1101
+msgid ""
+"This option allows you to show/hide the cart button on the customization page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1109
+msgid "Redirect after adding a custom design to the cart?"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1113
+msgid ""
+"This option allows you to define what to do after adding a design to the cart"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1122
+msgid "Responsive behaviour"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1126
+msgid ""
+"This option allows you to define whether or not you want to enable the "
+"canvas responsive behaviour."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1135
+msgid "Hide requirements notices"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1139
+msgid ""
+"This option allows you to define whether or not you want to hide the "
+"requirement notice."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1149
+msgid "Save for later"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1153
+msgid ""
+"This option allows you to show/hide the save for later button on the "
+"customization page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1161
+msgid "Hide Add to cart button for custom products"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1165
+msgid ""
+"This option allows you to define whether or not you want to hide the add to "
+"cart button for custom products on the products page."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1179
+msgid "Scripts management"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1184
+msgid "Load bootsrap modal"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1188
+msgid ""
+"This option allows you to enable/disable twitter's bootstrap modal script"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1233
+msgid "File upload script"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1237
+msgid ""
+"This option allows you to set which file upload script you would like to use"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1239
+msgid "Custom with graphical enhancements"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1240
+msgid "Normal"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1245
+msgid "Uploads min width (px)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1246
+msgid "Uploaded images minimum width"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1252
+msgid "Uploads min height (px)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1253
+msgid "Uploaded images minimum height"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1259
+msgid "Allowed uploads extensions"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1263
+msgid "Allowed extensions for uploads"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1265
+msgid "jpg"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1266
+msgid "jpeg"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1267
+msgid "png"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1268
+msgid "gif"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1269
+msgid "bmp"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1270
+msgid "svg"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1271
+msgid "psd"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1272
+msgid "eps"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1273
+msgid "pdf"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1278
+msgid "Custom designs allowed extensions (separated by commas)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1279
+msgid ""
+"Allowed extensions for custom designs. If not set, all extensions will be "
+"accepted."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1285
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1745
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1934
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2067
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2190
+msgid "Active controls"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1286
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1746
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1935
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2068
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2191
+msgid "Show this tab"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1287
+msgid "Whether or not to display this tab on the designer."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1295
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2075
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:852
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:858
+msgid "Grayscale"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1297
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1306
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1315
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1324
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1333
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1342
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1351
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1360
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1494
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1503
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1512
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1755
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1764
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1773
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1782
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1791
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1800
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1809
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1818
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1827
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1836
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1845
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1854
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1863
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1872
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1889
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1898
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1944
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1953
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1962
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1971
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1980
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1989
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1998
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2007
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2016
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2025
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2034
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2077
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2086
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2095
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2104
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2113
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2122
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2131
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2140
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2149
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2200
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2209
+msgid "Enable"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1298
+msgid "Enable/Disable the Grayscale filter button in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1304
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2084
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:858
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:864
+msgid "Invert"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1305
+msgid "Enable/Disable the Invert filter button in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1313
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2093
+msgid "Sepia1"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1314
+msgid "Enable/Disable the Sepia 1 filter button in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1322
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2102
+msgid "Sepia2"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1323
+msgid "Enable/Disable the Sepia 2 filter button in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1331
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2111
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:876
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:882
+msgid "Blur"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1332
+msgid "Enable/Disable the Blur filter button in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1340
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2120
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:882
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:888
+msgid "Sharpen"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1341
+msgid "Enable/Disable the Sharpen filter button in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1349
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1843
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2032
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2138
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:279
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:612
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:722
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:831
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:975
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:282
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:618
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:728
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:837
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:981
+msgid "Opacity"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1350
+msgid "Enable/Disable the opacity control field in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1358
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2129
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:888
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:894
+msgid "Emboss"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1359
+msgid "Enable/Disable the emboss filter button in the uploads section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1370
+msgid "Uploads Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1405
+msgid "Social Networks Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1414
+msgid "Facebook APP ID"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1415
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1422
+msgid "This setting is mandatory so the user can use facebook connect"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1421
+msgid "Facebook APP secret"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1429
+msgid "Instagram APP ID"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1430
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1438
+msgid "This setting is mandatory so the user can use instagram connect"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1437
+msgid "Instagram APP secret"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1462
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:675
+msgid "Output width (px)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1463
+msgid ""
+"Output files minimum width. If not set, the design area dimensions will be "
+"used for the generated designs."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1469
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:681
+msgid "Output loop delay (milliseconds)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1470
+msgid ""
+"Delay to go through each part. Should be increased when the plugin tries to "
+"handle high resolution files."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1478
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1479
+msgid "Generated files"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1492
+msgid "PDF"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1495
+msgid ""
+"Enable/Disable the PDF output generation feature. If both PDF and SVG "
+"outputs are enabled, then the SVG will be included in the PDF file."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1501
+msgid "SVG"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1504
+msgid ""
+"Enable/Disable the SVG output generation feature. If both PDF and SVG "
+"outputs are enabled, then the SVG will be included in the PDF file."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1510
+msgid "Zip output folder"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1513
+msgid "Allows you to  get all the output files in a zip file."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1520
+msgid "Zip output name"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1521
+msgid "Zip output name."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1533
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:692
+msgid "CMYK conversion (Requires ImageMagick)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1537
+msgid ""
+"This option allows you to set whether or not you need the output to be CMYK "
+"valid."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1538
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1551
+msgid "Disabled if the Imagemagick extension is not installed and active."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1547
+msgid "CMYK profile (when CMYK mode is enabled)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1550
+msgid ""
+"This option allows you to set your own CMYK profile to use during the output "
+"conversion."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1553
+msgid "Set profil"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1554
+msgid "Remove profil"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1557
+msgid "Design Composition"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1561
+msgid ""
+"This option allows you to display or not design composition in the order "
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1570
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:704
+msgid "PDF Format"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1572
+msgid "Output PDF format/size."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1579
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:296
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:714
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:559
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:703
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:565
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:709
+msgid "Width"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1585
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:302
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:721
+msgid "Height"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1591
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:728
+msgid "Unit"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1595
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:732
+msgid "Point"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1596
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:733
+msgid "Millimeter"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1597
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:734
+msgid "Centimeter"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1598
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:735
+msgid "Inch"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1604
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:741
+msgid "These dimensions will only be used if the PDF format is set to Custom."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1611
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:747
+msgid "PDF Margin Top & Bottom"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1613
+msgid "Vertical margins in the output PDF."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1620
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:754
+msgid "PDF Margin Left & Right"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1622
+msgid "Horizontal margins in the output PDF."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1629
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:761
+msgid "PDF Orientation"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1631
+msgid "Portrait or Landscape"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1635
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:766
+msgid "Portrait"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1636
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:767
+msgid "Landscape"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1644
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:774
+msgid "Output Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1678
+msgid "SVG colorization"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1682
+msgid ""
+"This option allows you to set how you would like the SVG files to be "
+"colorized"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1684
+msgid "Path by path"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1685
+msgid "Color by color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1686
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:561
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:666
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:567
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:672
+msgid "None"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1691
+msgid "Colors palette"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1695
+msgid "This option allows you would like your clients to use in their designs"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1697
+msgid "Unlimited"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1698
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:175
+#: ../woocommerce-product-designer/includes/functions.php:747
+msgid "Custom"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1703
+msgid "Line Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1711
+msgid "Colors Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1738
+msgid "Text Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1753
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:649
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:655
+msgid "Underline"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1756
+msgid "Enable/Disable the Underline setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1762
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:526
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:532
+msgid "Bold"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1765
+msgid "Enable/Disable the Bold setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1771
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:532
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:538
+msgid "Italic"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1774
+msgid "Enable/Disable the Italic setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1783
+msgid "Enable/Disable the Text Color setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1789
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2014
+msgid "Background Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1792
+msgid "Enable/Disable the Background Color setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1798
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2005
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:553
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:700
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:559
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:706
+msgid "Outline"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1801
+msgid "Enable/Disable the Outline setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1807
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:581
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:587
+msgid "Curved"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1810
+msgid "Enable/Disable the Curved Text setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1816
+msgid "Font Family"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1819
+msgid "Enable/Disable the Font Family setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1825
+msgid "Font Size"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1828
+msgid "Enable/Disable the Font Size setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1834
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2023
+msgid "Outline Width"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1837
+msgid "Enable/Disable the Outline Width setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1846
+msgid "Enable/Disable the Opacity setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1852
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:624
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:630
+msgid "Alignment"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1855
+msgid "Enable/Disable the Text Alignment setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1861
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:655
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:661
+msgid "Strikethrough"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1864
+msgid "Enable/Disable the Strikethrough setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1870
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:661
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:667
+msgid "Overline"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1873
+msgid "Enable/Disable the Overline setting in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1879
+msgid "Minimum font size"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1881
+msgid "Minimum font size in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1887
+msgid "Maximum font size"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1890
+msgid "Maximum font size in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1896
+msgid "Default font size"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1899
+msgid "Default font size in the text section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1926
+msgid "Shapes Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1942
+msgid "Square"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1945
+msgid "Enable/Disable the Square shape in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1951
+msgid "Rounded square"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1954
+msgid "Enable/Disable the Rounded Square shape in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1960
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:327
+msgid "Circle"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1963
+msgid "Enable/Disable the Circle shape in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1969
+msgid "Triangle"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1972
+msgid "Enable/Disable the Triangle shape in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1978
+msgid "Polygon"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1981
+msgid "Enable/Disable the Polygon shape in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1987
+msgid "Star"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1990
+msgid "Enable/Disable the Star shape in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1996
+msgid "Heart"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:1999
+msgid "Enable/Disable the Heart shape in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2008
+msgid "Enable/Disable the Outline setting in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2017
+msgid "Enable/Disable the Background Color setting in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2026
+msgid "Enable/Disable the Outline Width setting in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2035
+msgid "Enable/Disable the Opacity setting in the shapes section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2060
+msgid "Image Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2078
+msgid "Enable/Disable the Grayscale filter button in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2087
+msgid "Enable/Disable the Invert filter button in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2096
+msgid "Enable/Disable the Sepia 1 filter button in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2105
+msgid "Enable/Disable the Sepia 2 filter button in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2114
+msgid "Enable/Disable the Blur filter button in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2123
+msgid "Enable/Disable the Sharpen filter button in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2132
+msgid "Enable/Disable the Emboss filter button in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2141
+msgid "Enable/Disable the Opacity setting in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2147
+msgid "Enable lazyload for cliparts galleries"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2150
+msgid "Enable/Disable the lazyload behavior in the cliparts section."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2174
+msgid "Title section text color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2175
+msgid "Title section background color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2176
+msgid "Title section background color on hover"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2181
+msgid "Designs Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2198
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1852
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1107
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1113
+msgid "Saved Designs"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2201
+msgid "Enable/Disable the Saved Designs feature."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2207
+msgid "Orders Designs"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2210
+msgid "Enable/Disable access to the previous Orders Designs feature."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2233
+msgid "Licence Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2242
+msgid "Envato Username"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2243
+msgid "Your Envato username"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2249
+msgid "Secret API Key"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2250
+msgid ""
+"You can find API key by visiting your Envato Account page, then clicking the "
+"My Settings tab. At the bottom of the page you'll find your account's API "
+"key."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2256
+msgid "Purchase Code"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2257
+msgid ""
+" You can find your purchase code by following the instructions <a href="
+"\"https://help.market.envato.com/hc/en-us/articles/202822600-Where-can-I-"
+"find-my-Purchase-Code-\" target=\"blank\">here</a>."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2288
+msgid "Woocommerce Products Designer Settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2292
+msgid "General"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2293
+#: ../woocommerce-product-designer/includes/functions.php:145
+msgid "Uploads"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2294
+msgid "Social Networks"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2295
+msgid "Output"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2296
+msgid "Colors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2298
+#: ../woocommerce-product-designer/includes/functions.php:132
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:461
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:462
+msgid "Text"
+msgstr "Textes"
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2299
+#: ../woocommerce-product-designer/includes/functions.php:139
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:735
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:741
+msgid "Shapes"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2301
+msgid "Designs"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2302
+msgid "User Interface"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2303
+msgid "Licence"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2424
+msgid "Settings successfully saved."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2515
+msgid ""
+"How to fix this: You can edit your php.ini file to increase the specified "
+"variables to the recommanded values or you can ask your hosting company to "
+"make the changes for you."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2540
+msgid "Woocommerce Product Designer database update required"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2542
+msgid ""
+"Hi! This version of the Woocommerce Product Designer made some changes in "
+"the way it's data are stored. So in order to work properly, we just need you "
+"to click on the \"Run Updater\" button to move your old settings to the new "
+"structure. "
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2543
+msgid "Run the updater"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2636
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2638
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2640
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2642
+msgid "Something went wrong..."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:2645
+msgid "Your database has been successfully updated."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-admin.php:3081
+msgid "Done."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-duplicate.php:48
+msgid "Make a duplicate from this wpc-template"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-duplicate.php:85
+msgid "No wpc-template to duplicate has been supplied!"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-duplicate.php:106
+msgid "Template creation failed, could not find original template:"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-duplicate.php:133
+msgid "(Copy)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:38
+msgid "Customizable Product"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:84
+msgid "Customized product options form"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:87
+msgid "No option form needed"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:128
+msgid ""
+"Error: empty product parts list. At least one part is required to create a "
+"customizable product."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:136
+#: ../woocommerce-product-designer/includes/class-wpd-editor.php:46
+msgid ""
+"Error: No active part defined for this product. A customizable product "
+"should have at least one part defined."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:160
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1038
+msgid "Canvas"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:161
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1039
+msgid "Bounding box"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:162
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1040
+msgid "Product parts"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:163
+msgid "Pricing rules"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:164
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1041
+msgid "Output settings"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:165
+msgid "Related Products / Quantities"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:205
+msgid "more than"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:206
+msgid "more or equal to"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:208
+msgid "Per item"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:209
+msgid "Per additional item"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:210
+msgid "On whole design"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:284
+msgid "X"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:287
+msgid "in pixels. Box X coordinate on the canvas."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:290
+msgid "Y"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:293
+msgid "in pixels. Box Y coordinate on the canvas."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:299
+msgid "Box width on the canvas."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:305
+msgid "Box height on the canvas."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:308
+msgid "Radius (Rounded rect)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:312
+msgid "Box radius (used to create rounded rectangles box)."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:315
+msgid "Radius (Circle)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:319
+msgid "Box radius. Used if the box shape is a circle"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:322
+msgid "Box shape"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:326
+msgid "Rectangle"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:329
+msgid "Shape of the bounding box"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:332
+msgid "Border color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:335
+msgid "Box border color"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:338
+msgid "Include bounding box in the output files"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:342
+msgid ""
+"This option allows you include or not the bounding box in the output files"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:384
+msgid "Templates page"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:393
+msgid "Canvas max width"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:396
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:403
+msgid ""
+"in pixels. Canvas max width. Leave this field empty to use the value defined "
+"in the global settings."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:400
+msgid "Canvas max height"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:407
+msgid "Watermark"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:447
+msgid "Background (included)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:450
+msgid "Canvas background image included in the output."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:453
+msgid "Background (not included)"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:456
+msgid "Canvas background image not included in the output."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:459
+msgid "Image"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:464
+msgid "Included in the output"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:471
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1786
+msgid "Overlay"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:474
+msgid "Image which will be on top of everything  on the canvas."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:535
+msgid "NB chars in text"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:536
+msgid "NB lines in text"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:537
+msgid "NB images"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:538
+msgid "NB vectors"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:618
+msgid "Which attributes should be used for the related products box?"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:619
+msgid "Which attributes should be used for the related quantities box?"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:687
+msgid "Zip output folder name"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1027
+msgid "Requires a minimum purchase of "
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1027
+msgid " item(s)."
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1221
+#: ../woocommerce-product-designer/public/class-wpd-public.php:284
+#: ../woocommerce-product-designer/public/class-wpd-public.php:291
+msgid "Design from blank"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1233
+msgid "Customize"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1236
+#: ../woocommerce-product-designer/public/class-wpd-public.php:288
+#: ../woocommerce-product-designer/public/class-wpd-public.php:296
+msgid "Browse our templates"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1247
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1266
+#: ../woocommerce-product-designer/public/class-wpd-public.php:302
+msgid "Upload my own design"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1253
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:568
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:790
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:796
+msgid "Pick a file"
+msgstr ""
+
+#: ../woocommerce-product-designer/admin/class-wpd-product.php:1284
+msgid ""
+"The variable product custom data for the product designer are shown by "
+"variation. In order to setup the product parts, canvas, bounding box and "
+"other properties, please access the variations parameters tab."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:29
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:30
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:32
+msgid "New cliparts group"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:31
+msgid "Edit cliparts group"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:33
+msgid "View group"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:35
+msgid "No cliparts group found"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:36
+msgid "No cliparts group in the trash"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:83
+msgid "Price"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:95
+msgid "Component icon"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:100
+msgid "Components"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-clipart.php:108
+msgid "Add clipart"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:30
+msgid "Design successfully deleted."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:31
+msgid "An error occured. Please try again later"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:91
+msgid "Item successfully updated."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:91
+msgid "View Cart"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:114
+msgid "Product successfully added to basket."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:116
+msgid ""
+"A problem occured while adding the product to the cart. Please try again."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:120
+msgid ""
+"A problem occured while generating the output files... Please try again."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:178
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:242
+msgid ""
+"An error has occured. Please try again later or contact the administrator."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:233
+msgid "The design has successfully been saved to your account."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:322
+msgid "The generation has been successfully completed. Please click "
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:322
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:330
+msgid "here"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:322
+msgid "to download your design"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:330
+msgid ": please click "
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:330
+msgid "to download"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:341
+msgid "An error occured in the generation process. Please try again later."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:347
+msgid "Can't create a generation directory..."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:526
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:530
+msgid "Download custom design"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:591
+#: ../woocommerce-product-designer/public/class-wpd-public.php:539
+msgid "Cheating huh?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:642
+#: ../woocommerce-product-designer/public/class-wpd-public.php:614
+msgid "An error occured during the upload. Please try again later"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:646
+msgid "Incorrect file extension. Allowed extensions: "
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1668
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1766
+msgid "Design composition: "
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1776
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:690
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:696
+msgid "Background"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1781
+msgid "Background (inc)"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1837
+msgid "Reload Design: "
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1848
+msgid "No saved design."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1857
+msgid "Date"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1858
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1911
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1183
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1189
+#: ../woocommerce-product-designer/public/class-wpd-public.php:681
+msgid "Preview"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1927
+#: ../woocommerce-product-designer/includes/class-wpd-design.php:1929
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1198
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1200
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1204
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1206
+msgid "Load"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-editor.php:34
+msgid "Error: Invalid product: "
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-editor.php:36
+msgid "1- Is your customization page defined as homepage?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-editor.php:38
+msgid "2- Is your customization page defined as one of woocommerce pages?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-editor.php:40
+msgid ""
+"3- Does the product you are trying to customize exists and is published in "
+"your shop?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-editor.php:42
+msgid ""
+"4- Are you accessing this page from one of the product designer buttons?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:31
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:128
+msgid "Template"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:32
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:33
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:35
+msgid "New template"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:34
+msgid "Edit template"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:36
+msgid "View"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:37
+msgid "Search templates"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:38
+msgid "No template found"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:39
+msgid "No template in the trash"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:68
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:70
+msgid "Categories"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:69
+msgid "Category"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:71
+msgid "All templates categories"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:92
+msgid "Base product"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:125
+msgid "Base Products"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:170
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:206
+msgid "No base product found."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:216
+msgid "Main Base Product :"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:218
+msgid ""
+"Product from which the template parameters such as parts are extracted from."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:250
+msgid "Alternate Base products :"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:252
+msgid "Products that can use this template."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:253
+msgid ""
+"<strong>Note</strong>: If the parts don't match the main base product's, the "
+"missing parts data won't be loaded when the customer will be using this "
+"template on the product."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:266
+msgid "Base price :"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:268
+msgid "Additional price where the customer is using this template."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:362
+msgid "Which product would you like to use as base ?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:394
+msgid ""
+"No customizable product found. You have to create at least one customizable "
+"product before creating a template."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:411
+msgid "Select"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/class-wpd-template.php:438
+msgid "Locking options"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:157
+msgid "Facebook"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:163
+msgid "Facebook Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:167
+msgid "Instagram"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:171
+msgid "Instagram Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:175
+msgid "My Designs"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:181
+msgid "Related Products"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:187
+msgid "Preview Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:194
+msgid "Download Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:201
+msgid "Save Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:208
+msgid "Add to Cart Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:215
+msgid "Actions Box Title"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:218
+msgid "Cart Box Title"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:221
+msgid "Plus Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:224
+msgid "Minus Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:227
+msgid "Design From Blank Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:230
+msgid "Browse Our templates Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:233
+msgid "Upload My Own Design Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:236
+msgid "Use this template Button"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:595
+msgid "The deletion of this object is not allowed"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:596
+msgid "Just a moment"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:597
+msgid "The edition area is empty."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:598
+msgid "Do you really want to delete all items in the design area ?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:599
+msgid "Do you really want to delete the selected items ?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:600
+msgid "Please enter the text to add."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:601
+msgid ""
+"You're editing a cart item. If you switch to another product and update the "
+"cart, the previous item will be removed from the cart. Do you really want to "
+"continue?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:602
+msgid "Background color (SVG files only)"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/functions.php:603
+msgid "There are no results that match your search."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:99
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:103
+msgid "PICK A PRODUCT"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:191
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:194
+msgid "TEXT"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:201
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:204
+msgid "SHAPES"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:213
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:216
+msgid "UPLOADS"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:224
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:227
+msgid "CLIPARTS"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:229
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:232
+msgid "Browse"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:235
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:238
+msgid "Browse cliparts"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:260
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:815
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:959
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:263
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:821
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:965
+msgid "Filters"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:295
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:298
+msgid "FACEBOOK"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:305
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:308
+msgid "INSTAGRAM"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:317
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:320
+msgid "MY DESIGNS"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:421
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:423
+msgid "grid"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:422
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:424
+msgid "Clear all"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:427
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:429
+msgid "Flip horizontally"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:428
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:430
+msgid "Flip vertically"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:429
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:431
+msgid "Center horizontally"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:430
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:432
+msgid "Center vertically"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:464
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:470
+msgid "ADD"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:471
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:477
+msgid "Font"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:492
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:498
+msgid "Size"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:519
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:525
+msgid "Style"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:567
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:711
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:573
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:717
+msgid "Color"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:586
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:592
+msgid "Radius"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:595
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:601
+msgid "Spacing"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:643
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:649
+msgid "Decoration"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:712
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:718
+msgid "Outline color"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:803
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:809
+msgid "Add image"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:864
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:870
+msgid "Sepia 1"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:870
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:876
+msgid "Sepia 2"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1058
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1077
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1064
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1083
+msgid "Extract my pictures"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1118
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1124
+msgid "Past Orders"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1129
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1135
+msgid "You need to be logged in before loading your designs."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1299
+msgid "ACTIONS"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1303
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1326
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1304
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1327
+msgid "PREVIEW"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1309
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1310
+msgid "DOWNLOAD"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1314
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1315
+msgid "SAVE"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1365
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1366
+msgid "ADD TO CART"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1367
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1368
+msgid "UPDATE CART ITEM"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/default/class-wpd-skin-default.php:1370
+msgid "CART"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:57
+msgid "MENU"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:97
+msgid "Tools Box"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/skins/jonquet/class-wpd-skin-jonquet.php:1370
+msgid "Cart"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/updaters/class-wpd-updater.php:53
+msgid "Downloading package from envato market..."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/updaters/class-wpd-updater.php:58
+msgid "Error! Can't connect to filesystem"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/updaters/class-wpd-updater.php:65
+msgid ""
+"To receive automatic updates license activation is required. Please visit <a "
+"href=\""
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/updaters/class-wpd-updater.php:70
+msgid "Error! Envato API error"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/updaters/class-wpd-updater.php:93
+msgid "Error on unzipping package"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/updaters/class-wpd-updating-manager.php:198
+msgid "Download new version from CodeCanyon."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/updaters/class-wpd-updating-manager.php:200
+msgid "Update Woocommerce Products Customizer now."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:103
+msgid "Edit Font"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:110
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:186
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:254
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:105
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:134
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:164
+msgid "Name"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:114
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:109
+msgid "Name for the attribute (shown on the front-end)."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:128
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:259
+msgid "URL"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:132
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:261
+msgid ""
+"Google font URL. Leave this field empty if the font is already loaded by the "
+"theme."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:137
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:189
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:267
+msgid "TTF font file"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:144
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:270
+msgid "Add font file"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:145
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:271
+msgid "Make sure you select at least one style per file."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:161
+msgid ""
+"TrueType font file (can be used if the url is not provided and while "
+"generating the output vector."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:166
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:114
+msgid "Update"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:178
+msgid "Add Fonts"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:187
+msgid "Url"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:188
+msgid "Style name"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:205
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:146
+#: ../woocommerce-product-designer/public/class-wpd-public.php:704
+msgid "Edit"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:240
+msgid "No fonts currently exist."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:250
+msgid "Add New Font"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:256
+msgid "Name for the font (shown on the front-end)."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:285
+msgid ""
+"TrueType font (can be used if the url is not provided and while generating "
+"the output vector."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:287
+msgid "Add Font"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:296
+msgid "Are you sure you want to delete this font?"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:352
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:376
+msgid "Remove font"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:411
+msgid "Pick a google font"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-fonts.php:422
+msgid "Choose a google font"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:99
+msgid "Edit Part"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:126
+msgid "Add Parts"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:151
+msgid "No parts currently exist."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:161
+msgid "Add New Part"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:166
+msgid "Name for the part (shown on the front-end)."
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:168
+msgid "Add Part"
+msgstr ""
+
+#: ../woocommerce-product-designer/includes/wpd-add-parts.php:177
+msgid "Are you sure you want to delete this part?"
+msgstr ""
+
+#: ../woocommerce-product-designer/public/class-wpd-public.php:128
+msgid ""
+"You're trying to access the customization page whitout a product to "
+"customize. This page should only be accessed using one of the customization "
+"buttons."
+msgstr ""
+
+#: ../woocommerce-product-designer/public/class-wpd-public.php:219
+msgid "Use this template"
+msgstr ""
+
+#: ../woocommerce-product-designer/public/class-wpd-public.php:376
+msgid "No template available for this product."
+msgstr ""
+
+#: ../woocommerce-product-designer/public/class-wpd-public.php:590
+#, php-format
+msgid "Uploaded file dimensions: %1$spx x %2$spx, minimum required "
+msgstr ""
+
+#: ../woocommerce-product-designer/public/class-wpd-public.php:592
+msgid "dimensions:"
+msgstr ""
+
+#: ../woocommerce-product-designer/public/class-wpd-public.php:618
+msgid "Incorrect file extension: "
+msgstr ""
+
+#: ../woocommerce-product-designer/public/class-wpd-public.php:708
+msgid "Custom design"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Text Tab"
+#~ msgstr "Textes"

@@ -52,17 +52,29 @@ if (!defined('ABSPATH')) {
 
                         <div class="row">
                             <div class="col-sm-3 col-sm-offset-1">
-                                <img src="<?php uri() ?>/img/maca.png">
+        <!--                                <img src="<?php //uri()   ?>/img/maca.png">-->
                             </div>
                             <div class="col-sm-6 col-sm-offset-1">
                                 <p class="aviso">
-                                    <?php _e('Your purchase has been successfully completed.', 'lush_2-0'); ?>
+                                    <?php
+                                    _traduz(
+                                            'Sua compra foi concluída com sucesso.', 'Your purchase has completed successfully.'
+                                    );
+                                    ?>
                                 </p>
                                 <p class="aviso">
-                                    <?php _e('We will send to your e-mail to register all the data of your reservation..', 'lush_2-0'); ?>
+                                    <?php
+                                    _traduz(
+                                            'Em breve você receberá um e-mail confirmando todos os dados de sua reserva, ou do seu Gift Card.', 'Soon you will receive an email confirming all the details of your reservation, or your Gift Card.'
+                                    );
+                                    ?>
                                 </p>
                                 <p class="aviso-varicao">
-                                    <?php _e('Enjoy your stay with us and discover the advantages of a LUSH experience.', 'lush_2-0'); ?>
+        <?php
+        _traduz(
+                'Obrigado por escolher o Lush, aproveite sua hospedagem conosco e descubra as vantagens de uma experiência em um Private Urban Resort.', 'Thank you for choosing Lush, enjoy your stay with us and discover the benefits of an experience at a Private Urban Resort.'
+        );
+        ?>
                                 </p>
 
                             </div>
@@ -72,21 +84,31 @@ if (!defined('ABSPATH')) {
                     </div><!-- col-xs-12 col-sm-8 col-sm-offset-2 -->
 
 
-                    <?php get_template_part('template-parts/compartilhar', 'lush'); ?>
+        <?php get_template_part('template-parts/compartilhar', 'lush'); ?>
+
+
+        <?php
+        $class = 'faixa-explore-cardapio';
+        $texto = get_field('frase_exclusivo_cardapio');
+        $class_btn = 'btn-explore-cardapio';
+        $link_btn = get_link_page_by_slug('cardapio');
+        $texto_btn = print_traduzido('Conheça nossa Cozinha 24 Horas', 'Know our Menu');
+        get_faixa_simples_sem_container($class, $texto, $class_btn, $link_btn, $texto_btn);
+        ?>
 
                 </div>
 
 
 
-            <?php endif; ?>
+    <?php endif; ?>
 
             <?php //do_action('woocommerce_thankyou_' . $order->payment_method, $order->id); ?>
-            <?php //do_action('woocommerce_thankyou', $order->id); ?>
+            <?php //do_action('woocommerce_thankyou', $order->id);  ?>
 
         <?php else : ?>
 
             <p class="woocommerce-thankyou-order-received"><?php echo apply_filters('woocommerce_thankyou_order_received_text', __('Thank you. Your order has been received.', 'woocommerce'), null); ?></p>
 
-        <?php endif; ?>
+<?php endif; ?>
     </div>
 </div>

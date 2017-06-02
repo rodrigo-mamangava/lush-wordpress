@@ -19,6 +19,18 @@ class WC_Accommodation_Booking {
 		add_filter( 'get_booking_products_args', array( $this, 'add_accommodation_to_booking_products_args' ) );
 
 		add_action( 'woocommerce_new_booking', array( $this, 'update_start_end_time' ) );
+		add_filter( 'woocommerce_data_stores', array( $this, 'register_data_stores' ), 10 );
+	}
+
+	/**
+	 * Register data stores for bookings.
+	 *
+	 * @param  array  $data_stores
+	 * @return array
+	 */
+	public function register_data_stores( $data_stores = array() ) {
+		$data_stores['product-accommodation-booking'] = $data_stores['product-booking'];
+		return $data_stores;
 	}
 
 	/**
@@ -32,7 +44,7 @@ class WC_Accommodation_Booking {
 
 	public function add_checkin_time_to_booking_start_time( $date, $booking ) {
 		$product = wc_get_product( $booking->product_id );
-		if ( empty( $product ) || 'accommodation-booking' !== $product->product_type ) {
+		if ( empty( $product ) || 'accommodation-booking' !== $product->get_type() ) {
 			return $date;
 		}
 
@@ -45,7 +57,7 @@ class WC_Accommodation_Booking {
 
 	public function add_checkout_time_to_booking_end_time( $date, $booking ) {
 		$product = wc_get_product( $booking->product_id );
-		if ( empty( $product ) || 'accommodation-booking' !== $product->product_type ) {
+		if ( empty( $product ) || 'accommodation-booking' !== $product->get_type() ) {
 			return $date;
 		}
 

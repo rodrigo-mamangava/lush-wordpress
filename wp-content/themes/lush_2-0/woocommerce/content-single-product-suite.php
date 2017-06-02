@@ -43,77 +43,162 @@ if (post_password_required()) {
         <div class="row">
 
             <div class="col-sm-4 col-sm-offset-1">
-                <?php woocommerce_template_single_add_to_cart(); ?>
+                <?php
+                //liberar     
+                woocommerce_template_single_add_to_cart();
+                ?>
             </div><!-- descricao --> 
 
             <div class="col-sm-6 col-sm-offset-1 info-preco">
 
                 <div class="tabela-preco">
-                    <div>
-                        <p>
-                            <?php _e('Daily (Sunday to Thursday)', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_d_q'); ?></span>
-                        </p>
-                        <p class="descricao">
-                            <?php _e('Check in 3pm and Check out 1pm', 'lush_2-0'); ?> 
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <?php _e('Daily (Friday, Saturday and Holidays)', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_s_s_f'); ?></span>
-                        </p>
-                        <p class="descricao">
-                            <?php _e('Check in 3pm and Check out 1pm', 'lush_2-0'); ?> 
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <?php _e('Period', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo'); ?></span>
-                        </p>
-                        <p class="descricao">
-                            <?php _e('(12 hours from Monday to Thursday)', 'lush_2-0'); ?> 
-                        </p>
-                        <p class="descricao">
-                            <?php _e('(4 hours Friday, Saturday, Sunday and holiday eve)', 'lush_2-0'); ?> 
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <?php _e('Overnight stay', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('pernoite'); ?></span>
-                        </p>
-                        <p class="descricao">
-                            <?php _e('(Check-in 8pm and Check-Out 1pm)', 'lush_2-0'); ?> 
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            <?php _e('Promotional period', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span>
-                        </p>
-                        <p class="descricao">
-                            <?php _e('03 hours (Monday to Thursday)', 'lush_2-0'); ?> 
-                        </p>
 
-                    </div>
-                    <div>
-                        <p>
-                            <?php _e('Additional hour', 'lush_2-0'); ?> 
-                            <span><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('hr_adicional'); ?></span>
-                        </p>
+                    <?php if (get_field('periodo_3hr') != ''): ?>
 
-                    </div>
+                        <div><!-- Período promocional -->                       
+                            <p>
+                                <?php _traduz('Período promocional', 'Promotional period'); ?>
+                                <span class="hidden-xs hidden-sm" ><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?></span>
+                            </p>
+                            <p class="descricao">
+                                <?php _traduz('03 horas (de segunda a quinta-feira)', '03 hours (Monday to Thursday)'); ?>
+                            </p>
+                            <p class="visible-xs visible-sm preco-mobile">
+                                <?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo_3hr'); ?>
+                            </p>
+                        </div><!-- /Período promocional -->
+
+                    <?php endif; ?>
+                    <?php if (get_field('periodo') != ''): ?>
+
+                        <div><!-- Período -->
+                            <p>
+                                <?php
+                                _traduz('Período', 'Period');
+                                ?> 
+                                <span class="hidden-xs hidden-sm" ><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo'); ?></span>
+                            </p>
+                            <p class="descricao">
+                                <?php _traduz('(4 horas sexta-feira, sábado, domingo e véspera de feriado)', '(4 hours Friday, Saturday, Sunday and holiday eve)'); ?>
+                            </p>
+                            <p class="descricao">
+                                <?php _traduz('(12 horas de segunda a quinta-feira)', '(12 hours from Monday to Thursday)'); ?>
+                            </p>
+
+                            <p class="visible-xs visible-sm preco-mobile">
+                                <?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('periodo'); ?>
+                            </p>
+                        </div><!-- /Período -->
+
+                    <?php endif; ?>
+                    <?php if (get_field('pernoite') != ''): ?>
+
+
+                        <div><!-- Pernoite (de domingo a quinta-feira) -->
+                            <p> 
+                                <?php _traduz('Pernoite (de domingo a quinta-feira)', 'Overnight (from Sunday to Thursday)'); ?>
+                                <span class="hidden-xs hidden-sm" ><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('pernoite'); ?></span>
+                            </p>
+                            <p class="descricao">
+                                <?php _traduz('Check-in 20hr e Check-Out 13hr', 'Check-in 8pm and Check-Out 1pm'); ?>
+                            </p>
+                            <p class="visible-xs visible-sm preco-mobile">
+                                <?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('pernoite'); ?>
+                            </p>
+                        </div><!-- /Pernoite (de domingo a quinta-feira) -->
+
+                    <?php endif; ?>
+                    <?php if (get_field('pernoite_2') != ''): ?>
+
+                        <div><!-- Pernoite (sexta, sábado e véspera de feriado) -->
+                            <p> 
+                                <?php _traduz('Pernoite (sexta, sábado e véspera de feriado)', 'Overnight (Friday, Saturday and holiday night)'); ?>
+                                <span class="hidden-xs hidden-sm" ><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('pernoite_2'); ?></span>
+                            </p>
+                            <p class="descricao">
+                                <?php _traduz('Check-in 02hr e Check-Out 13hr', 'Check-in 02am and Check-Out 1pm'); ?>
+                            </p>
+                            <p class="visible-xs visible-sm preco-mobile">
+                                <?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('pernoite_2'); ?>
+                            </p>
+                        </div><!-- /Pernoite (sexta, sábado e véspera de feriado) -->
+
+                    <?php endif; ?>
+                    <?php if (get_field('diaria_d_q') != ''): ?>
+
+                        <div><!-- Diária (de domingo a quinta-feira) -->
+                            <p>
+                                <?php
+                                _traduz('Diária (de domingo a quinta-feira)', 'Daily (Sunday to Thursday)');
+                                ?> 
+                                <span class="hidden-xs hidden-sm" ><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_d_q'); ?></span>
+                            </p>
+                            <p class="descricao">
+                                <?php
+                                _traduz('Check-in 15h e Check-out 13h', 'Check-in 3pm and Check-out 1pm')
+                                ?>
+                            </p>
+                            <p class="visible-xs visible-sm preco-mobile">
+                                <?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_d_q'); ?></span>
+                            </p>
+                        </div><!-- /Diária (de domingo a quinta-feira) -->
+
+                    <?php endif; ?>
+                    <?php if (get_field('diaria_s_s_f') != ''): ?>
+
+                        <div><!-- Diária (sexta-feira, sábado e véspera de feriado) -->
+                            <p>
+                                <?php
+                                _traduz('Diária (sexta-feira, sábado e véspera de feriado)', 'Daily (Friday, Saturday and holiday eve)')
+                                ?>
+
+                                <span class="hidden-xs hidden-sm" ><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_s_s_f'); ?></span>
+                            </p>
+                            <p class="descricao">
+                                <?php
+                                _traduz('Check-in 15h e Check-out 13h', 'Check-in 3pm and Check-out 1pm');
+                                ?> 
+                            </p>
+                            <p class="visible-xs visible-sm preco-mobile">
+                                <?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('diaria_s_s_f'); ?>
+                            </p>
+                        </div><!-- /Diária (sexta-feira, sábado e véspera de feriado) -->
+
+                    <?php endif; ?>
+                    <?php if (get_field('hr_adicional') != ''): ?>
+
+                        <div><!-- Hora adicional -->
+                            <p>
+                                <?php _traduz('Hora adicional', 'Additional hour'); ?>
+                                <span class="hidden-xs hidden-sm" ><?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('hr_adicional'); ?></span>
+                            </p>
+                            <p class="visible-xs visible-sm preco-mobile">
+                                <?php echo get_woocommerce_currency_symbol(); ?> <?php echo get_field('hr_adicional'); ?>
+                            </p>
+
+                        </div><!-- /Hora adicional -->
+
+                    <?php endif; ?>
 
                 </div>
+
+
+                <?php if (get_field('extra_01') != ''): ?>
+                    <div class="aviso">
+                        <p>
+                            <?php echo get_field('extra_01'); ?>
+                        </p>
+                    </div>
+                <?php endif; ?>
 
                 <?php
                 $faq = get_page_by_slug('faq');
                 ?>
+
                 <a href="<?php echo esc_url(get_page_link($faq->ID)); ?>" class="info-checkin">
-                    <?php _e('Doubts? Click here to access our FAQ', 'lush_2-0'); ?>
+                    <?php _traduz('Dúvidas? Clique aqui - FAQ', 'Doubts? Click here to access our FAQ'); ?>
                 </a>
+
 
 
 
@@ -131,11 +216,36 @@ if (post_password_required()) {
 
     </div><!-- faixa-detalhes -->
 
-    <div class="container-fluid faixa-fotos-produto">
-        <div class="row">
-            <?php woocommerce_show_product_images_carousel(); ?>            
+    <!--    <div class="container-fluid faixa-fotos-produto">
+            <div class="row">
+    <?php //woocommerce_show_product_images_carousel(); ?>            
+            </div>
+        </div> faixa-fotos-produto -->
+
+
+    <?php
+    global $post, $product;
+    $attachment_ids = $product->get_gallery_attachment_ids();
+    ?>
+
+    <div class="container-fluid faixa-fotos-produto-mobile">
+
+        <div id="rooms-slider" class="row">
+            <div class="carousel-slick-suite center">
+                <?php foreach ($attachment_ids as $attachment_id) : $image = wc_get_product_attachment_props($attachment_id, $post); ?>
+                    <div class="suite">
+                        <?php echo wp_get_attachment_image($attachment_id, 'carousel-suite', 0, $image) ?>    
+                    </div><!-- suite -->
+                <?php endforeach; ?>
+            </div>
         </div>
-    </div><!-- faixa-fotos-produto -->
+
+    </div><!-- faixa-carousel-suites -->
+
+
+
+
+
 
 
 

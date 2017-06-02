@@ -85,6 +85,8 @@ $table_prefix  = 'mmgv_';
  */
 define('WP_DEBUG', false);
 
+ define('WPLANG', 'pt_BR');
+
 /* Isto é tudo, pode parar de editar! :) */
 
 /** Caminho absoluto para o diretório WordPress. */

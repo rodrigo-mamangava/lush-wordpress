@@ -66,6 +66,7 @@ function get_new_vitrine($img, $titulo) {
     </div>
     <?php
 }
+
 function get_new_vitrine_tradutor($img, $titulo) {
     ?>
     <div class = "container-fluid vitrine-interna">
@@ -311,14 +312,14 @@ function woocommerce_show_product_images_carousel() {
 add_filter('wp_nav_menu_items', 'add_reserva_in_menu', 10, 2);
 
 function add_reserva_in_menu($items, $args) {
-    
 
-    
+
+
     if ($args->theme_location == 'principal') {
 
         $items .= '</ul>';
         $items .= '<ul class="nav navbar-nav navbar-right">';
-        $items .= '<li><a class="btn-reserva-v2" href="'. get_term_link('suite', 'product_cat') .'">'.__('Book', 'lush_2-0').'</a></li>';
+        $items .= '<li><a class="btn-reserva-v2" href="' . get_term_link('suite', 'product_cat') . '">' . __('Book', 'lush_2-0') . '</a></li>';
         $items .= '</ul>';
     }
     return $items;
@@ -342,14 +343,14 @@ function faixa_destaque_par($url_img, $icone, $titulo, $texto, $link, $frase_lin
                     <img src="<?php echo $url_img; ?>" class="img-destaque">
                 </div>
                 <div class=" col-sm-7 destaque-texto">
-                    <?php if($icone):?>
-                    <img class="icon-destaque" src="<?php echo $icone; ?>">
-                    <?php endif;?>
+                    <?php if ($icone): ?>
+                        <img class="icon-destaque" src="<?php echo $icone; ?>">
+                    <?php endif; ?>
                     <h3><?php echo $titulo; ?></h3>
                     <p>
                         <?php echo $texto; ?>
                     </p>
-                    <a href="<?php echo $link; ?>"><?php echo $frase_link; ?></a>
+                    <a href="<?php echo $link; ?>"><?php _e($frase_link, 'lush_20'); ?></a>
                 </div>
             </div>
         </div>
@@ -375,14 +376,14 @@ function faixa_destaque_impar($url_img, $icone, $titulo, $texto, $link, $frase_l
                     <img src="<?php echo $url_img; ?>" class="img-destaque">
                 </div>
                 <div class=" col-sm-7 destaque-texto">
-                    <?php if($icone):?>
-                    <img class="icon-destaque" src="<?php echo $icone; ?>">
-                    <?php endif;?>
+                    <?php if ($icone): ?>
+                        <img class="icon-destaque" src="<?php echo $icone; ?>">
+                    <?php endif; ?>
                     <h3><?php echo $titulo; ?></h3>
                     <p>
                         <?php echo $texto; ?>
                     </p>
-                    <a href="<?php echo $link; ?>"><?php _e($frase_link, 'lush_2-0') ?></a>
+                    <a href="<?php echo $link; ?>"><?php echo $frase_link; ?></a>
                 </div>
                 <div class="col-sm-5 destaque-img hidden-xs">
                     <img src="<?php echo $url_img; ?>" class="img-destaque">
@@ -410,16 +411,23 @@ function get_faixa_simples($class, $texto, $class_btn, $link_btn, $texto_btn) {
     <?php
 }
 
+function get_faixa_simples_sem_container($class, $texto, $class_btn, $link_btn, $texto_btn) {
+    ?>
+    <div class="col-xs-12 text-center">
 
+        <a class="<?php echo $class_btn; ?>" href="<?php echo $link_btn; ?>">
+            <?php _e($texto_btn, 'lush_2-0') ?>
+        </a>
+    </div>
+    <?php
+}
 
-function get_suite_price(){
-    
+function get_suite_price() {
+
     global $product;
     $price = get_post_meta(get_the_ID(), 'booking', true);
     echo $price;
 }
-
-
 
 /**
  * Plugin Name: WooCommerce Remove Variation "From: $XX" Price
@@ -445,16 +453,137 @@ function get_suite_price(){
  * @author    	Patrick Rauland
  * @since		1.0
  */
-function patricks_custom_variation_price( $price, $product ) {
-	$target_product_types = array( 
-		'variable' 
-	);
-	if ( in_array ( $product->product_type, $target_product_types ) ) {
-		// if variable product return and empty string
-		return '';
-	}
-	// return normal price
-	return $price;
+function patricks_custom_variation_price($price, $product) {
+    $target_product_types = array(
+        'variable'
+    );
+    if (in_array($product->product_type, $target_product_types)) {
+        // if variable product return and empty string
+        return '';
+    }
+    // return normal price
+    return $price;
 }
+
 add_filter('woocommerce_get_price_html', 'patricks_custom_variation_price', 10, 2);
 
+function lp_header_01($palavra01, $palavra02) {
+    global $post;
+
+    if (!$palavra01 | !$palavra02) {
+        return false;
+    }
+    ?>
+
+    <div class = "container-fluid vitrine-interna">
+        <div class = "row">
+            <div class="vitrine-content" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID); ?>)">
+                <div class = "sub-titulo">
+                    <div class="col-xs-12">
+                        <p>
+                            <span id="palavra01"                      
+                                  data-p01='<?php echo json_encode($palavra01); ?>'
+                                  >
+                                      <?php echo $palavra01[0]; ?>
+                            </span>
+                            <img class="logo" src="<?php uri() ?>/img/landingpages/&.png"> 
+                            <span id="palavra02"                        
+                                  data-p02='<?php echo json_encode($palavra02); ?>'
+                                  >
+                                      <?php echo $palavra02[0]; ?>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12">
+
+                        <h1><?php echo get_field('descricao') ?></h1>
+
+                        <a class="btn-reserva-v2" href="<?php echo get_term_link('suite', 'product_cat'); ?>"><?php echo get_field('btn_reservar') ?></a>
+
+                    </div>
+
+                </div>
+                <div class="img-filter"></div>
+            </div>
+        </div>
+    </div>
+
+    <?php
+}
+
+function lp_item_01($img, $titulo, $descricao) {
+    global $post;
+    if (!$img) {
+        return false;
+    }
+    ?>
+    <article class="row item">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1 foto">            
+            <?php echo wp_get_attachment_image($img, 'img-lp-item-01'); ?>
+        </div>
+        <div class="col-xs-12 col-sm-4 titulo">
+            <h2>
+                <?php echo $titulo; ?>
+            </h2>
+            <hr/>
+        </div>
+        <div class="col-xs-12 col-sm-4 texto">
+            <p>
+                <?php echo $descricao; ?>
+            </p>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-2 col-sm-offset-5 linha">
+            <hr/>
+        </div>
+
+    </article>
+
+    <?php
+}
+
+function lp_item_suite($titulo, $descricao, $detalhe1, $preco1, $detalhe2, $preco2) {
+    global $post;
+
+    if (!$titulo) {
+        return false;
+    }
+    ?>
+
+    <article class="row item-suite">
+        <div class="col-xs-10 col-xs-offset-1 ">
+            <div>
+                <div class="col-sm-12 ">
+                    <h1><?php echo $titulo; ?></h1>    
+                </div>
+                <div class="col-sm-6  descricao">
+                    <p class=""><?php echo $descricao; ?></p>    
+                </div>
+                <div class="col-sm-12 tab-preco" >
+                    <div class="row">
+                        <div class="col-xs-8 oque">
+                            <p><?php echo $detalhe1; ?></p> 
+                        </div>
+                        <div class="col-xs-4 valor">
+                            <p><?php echo $preco1; ?></p> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 oque">
+                            <p><?php echo $detalhe2; ?></p> 
+                        </div>
+                        <div class="col-xs-4 valor">
+                            <p><?php echo $preco2; ?></p> 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </article><!-- item-suite -->
+
+    <?php
+}

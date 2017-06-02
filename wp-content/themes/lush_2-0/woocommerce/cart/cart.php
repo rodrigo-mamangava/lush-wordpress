@@ -23,8 +23,7 @@ wc_print_notices();
 
 do_action('woocommerce_before_cart');
 
-
-wc_get_template_part('cart/faixa', 'addpacotes');
+wc_get_template_part('cart/add', 'cross-sells');
 ?>
 
 <div class="container faixa-carrinho">
@@ -111,6 +110,7 @@ wc_get_template_part('cart/faixa', 'addpacotes');
                                     <td class="product-price" data-title="<?php _e('Price', 'woocommerce'); ?>">
                                         <?php
                                         echo apply_filters('woocommerce_cart_item_price', WC()->cart->get_product_price($_product), $cart_item, $cart_item_key);
+                                        //echo WC()->cart->get_product_price($_product);
                                         ?>
                                     </td>
 
@@ -143,6 +143,9 @@ wc_get_template_part('cart/faixa', 'addpacotes');
 
                         do_action('woocommerce_cart_contents');
                         ?>
+
+                        <?php wc_get_template('cart/alerta-taxa-reserva.php'); ?>
+
                         <tr>
                             <td colspan="6" class="actions">
 
@@ -185,8 +188,8 @@ wc_get_template_part('cart/faixa', 'addpacotes');
                         <?php do_action('woocommerce_cart_collaterals'); ?>
 
                     </div>
-                    
-                    <a class="btn-continuar-comprando " href="<?php echo get_term_link('suite', 'product_cat') ?>" ><?php _e('Continuar comprando', 'lush_2-0');?></a>
+
+                    <a class="btn-continuar-comprando " href="<?php echo get_term_link('suite', 'product_cat') ?>" ><?php _e('Continuar comprando', 'lush_2-0'); ?></a>
 
                     <?php do_action('woocommerce_after_cart'); ?>
                 </div>

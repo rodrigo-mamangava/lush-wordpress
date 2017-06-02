@@ -16,7 +16,12 @@ class WC_Accommodation_Booking_Admin_Panels {
 		add_filter( 'product_type_selector' , array( $this, 'product_type_selector' ) );
 		add_filter( 'product_type_options', array( $this, 'product_type_options' ), 15 );
 
-		add_action( 'woocommerce_product_write_panels', array( $this, 'panels' ) );
+		if ( version_compare( WC_VERSION, '3.0', '<' ) ) {
+			add_action( 'woocommerce_product_write_panels', array( $this, 'panels' ) );
+		} else {
+			add_action( 'woocommerce_product_data_panels', array( $this, 'panels' ) );
+		}
+
 		add_action( 'woocommerce_product_options_general_product_data', array( $this, 'general_product_data' ) );
 
 		add_filter( 'woocommerce_product_data_tabs', array( $this, 'hide_shipping_tab' ) );

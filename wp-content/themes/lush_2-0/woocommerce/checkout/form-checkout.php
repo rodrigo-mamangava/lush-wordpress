@@ -57,13 +57,19 @@
                         <?php do_action('woocommerce_checkout_before_customer_details'); ?>
 
                         <div class="" id="customer_details">
-                            <div class="">
-                                <?php do_action('woocommerce_checkout_billing'); ?>
+                            
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <?php do_action('woocommerce_checkout_billing'); ?>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <?php do_action('woocommerce_checkout_shipping'); ?>
+                                </div>
                             </div>
 
-                            <div class="">
-                                <?php do_action('woocommerce_checkout_shipping'); ?>
-                            </div>
                         </div><!-- customer_details -->
 
                         <?php do_action('woocommerce_checkout_after_customer_details'); ?>

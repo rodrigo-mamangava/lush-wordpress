@@ -15,7 +15,7 @@ get_header('home');
 
             <div class="col-xs-12 voltar ">
                 <a href="<?php echo get_link_page_by_slug('concierge'); ?>">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <img src="<?php uri();?>/img/x-close.png">
                 </a>
             </div>
 

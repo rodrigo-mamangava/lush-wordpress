@@ -75,6 +75,8 @@ jQuery(document).ready(function($) {
 						$form.find('.single_add_to_cart_button').addClass('disabled');
 						console.log( code );
 					}
+
+					$( document.body ).trigger( 'wc_booking_form_changed' );
 				},
 				error: function() {
 					$form.find('.wc-bookings-booking-cost').hide();

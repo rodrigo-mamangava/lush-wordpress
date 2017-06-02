@@ -26,8 +26,10 @@ add_image_size('carousel-suite', 814, 593, true);
 add_image_size('loop-simples', 384, 250, true);
 add_image_size('faixa-destaque', 500, 474, true);
 add_image_size('add-pacote', 240, 92, true);
+add_image_size('add-pacote-2', 488, 115, true);
 add_image_size('icones-concierge', 50, 50, false);
 add_image_size('thumb-bastidores', 100, 90, false);
+add_image_size('img-lp-item-01', 592, 592, TRUE);
 
 //mobile
 add_image_size('vitrine-suite', 1008, 672, true);
@@ -174,10 +176,7 @@ function printMenuFilho($slug) {
 function getCustomImage($field_name, $size = 'full') {
     $image = get_field($field_name);
     return $image["sizes"][$size];
-
 }
-
-
 
 function custom_pagination($numpages = '', $pagerange = '', $paged = '') {
 
@@ -236,11 +235,53 @@ function custom_pagination($numpages = '', $pagerange = '', $paged = '') {
     }
 }
 
+function get_page_by_slug($page_slug, $output = OBJECT, $post_type = 'page') {
+    global $wpdb;
+    $page = $wpdb->get_var($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type= %s AND post_status = 'publish'", $page_slug, $post_type));
+    if ($page)
+        return get_post($page, $output);
+    return null;
+}
 
-function get_page_by_slug($page_slug, $output = OBJECT, $post_type = 'page' ) { 
-  global $wpdb; 
-   $page = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type= %s AND post_status = 'publish'", $page_slug, $post_type ) ); 
-     if ( $page ) 
-        return get_post($page, $output); 
-    return null; 
-  }
+function _traduz($pb, $en) {
+    $traducao = '[:pb]';
+    $traducao .= $pb;
+    $traducao .= '[:en]';
+    $traducao .= $en;
+    $traducao .= '[:]';
+    echo __($traducao);
+}
+
+function print_traduzido($pb, $en) {
+    $traducao = '[:pb]';
+    $traducao .= $pb;
+    $traducao .= '[:en]';
+    $traducao .= $en;
+    $traducao .= '[:]';
+    return $traducao;
+}
+
+// colar o código abaixo no seu arquivo functions.php
+add_action('plugins_loaded', 'load_custom_plugin_translation_file');
+
+function load_custom_plugin_translation_file() {
+    $locale = apply_filters('plugin_locale', get_locale(), 'woocommerce');
+    load_textdomain('woocommerce', WP_LANG_DIR . 'wp-content/languages/woocommerce/woocommerce-pt_BR.mo' . $locale . '.mo');
+}
+
+
+
+
+function my_wc_billing_fields( $fields ) {
+	if ( isset( $fields['billing_phone'] ) ) {
+		$fields['billing_phone']['required'] = false;
+	}
+	
+        if ( isset( $fields['billing_cellphone'] ) ) {
+		$fields['billing_cellphone']['required'] = true;
+	}
+
+	return $fields;
+}
+
+add_filter( 'woocommerce_billing_fields', 'my_wc_billing_fields', 100 );

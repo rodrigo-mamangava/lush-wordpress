@@ -274,8 +274,8 @@ add_filter('woocommerce_checkout_fields', 'custom_override_checkout_fields');
 
 // Our hooked in function - $fields is passed via the filter!
 function custom_override_checkout_fields($fields) {
-    $fields['order']['order_comments']['placeholder'] = 'My new placeholder';
-    $fields['order']['order_comments']['label'] = 'My new label';
+//    $fields['order']['order_comments']['placeholder'] = 'My new placeholder';
+//    $fields['order']['order_comments']['label'] = 'My new label';
     return $fields;
 }
 
@@ -291,3 +291,172 @@ function get_term_img($term_id) {
     $thumbnail_id = get_woocommerce_term_meta($term_id, 'thumbnail_id', true);
     return wp_get_attachment_url($thumbnail_id);
 }
+
+//remover o cross sell do cart collaterals
+remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
+
+// Display 24 products per page.
+add_filter('loop_shop_per_page', create_function('$cols', 'return 999;'), 20);
+
+function cw_change_product_price_display($price) {
+    //$price .= ' At Each Item Product';
+    return $price;
+}
+
+add_filter('woocommerce_get_price_html', 'cw_change_product_price_display');
+add_filter('woocommerce_cart_item_price', 'cw_change_product_price_display');
+
+
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+
+/**
+ * Changes the redirect URL for the Return To Shop button in the cart.
+ *
+ * @return string
+ */
+function wc_empty_cart_redirect_url() {
+    return get_term_link('suite', 'product_cat');
+}
+
+add_filter('woocommerce_return_to_shop_redirect', 'wc_empty_cart_redirect_url');
+
+function redirect_to_suites() {
+    wp_redirect(home_url());
+    exit;
+}
+
+function df_add_ticket_surcharge($cart_object) {
+
+    global $woocommerce;
+    $specialfeecat = 10; // category id for the special fee
+    $spfee = 0.00; // initialize special fee
+    $spfeeperprod = 220; //special fee per product
+
+    foreach ($cart_object->cart_contents as $key => $value) {
+
+        $proid = $value['product_id']; //get the product id from cart
+        $quantiy = $value['quantity']; //get quantity from cart
+        $itmprice = $value['data']->price; //get product price
+
+        $terms = get_the_terms($proid, 'product_cat'); //get taxonamy of the prducts
+        if ($terms && !is_wp_error($terms)) :
+            foreach ($terms as $term) {
+                $catid = $term->term_id;
+                if ($specialfeecat == $catid) {
+                    $spfee = $spfeeperprod;
+                }
+            }
+        endif;
+    }
+
+    if ($spfee > 0) {
+
+        $woocommerce->cart->add_fee('Taxa de conveniência', $spfee, true, 'standard');
+    }
+}
+
+add_action('woocommerce_cart_calculate_fees', 'df_add_ticket_surcharge');
+
+
+
+function ajuste_info_horario_suite($output) {
+
+	debug($output);
+
+    if (preg_match('/12:00/', $output)) {
+        $frase = "";
+        $frase .= "\nDiária"
+                . "\nCheck in 15:00 PM / Check out 13:00 PM";
+
+        $output = str_replace("12:00", $frase, $output);
+    } elseif (preg_match('/15:00/', $output)) {
+
+        $frase = "";
+        $frase .= "\nPeríodo"
+                . "\n(4 horas sexta-feira, sábado, domingo e véspera de feriado)"
+                . "\n(12 horas de segunda a quinta-feira)";
+
+        $output = str_replace("15:00", $frase, $output);
+    } elseif (preg_match('/20:00/', $output)) {
+
+        $frase = "";
+        $frase .= "\nPernoite (de domingo a quinta-feira) "
+                . "\nCheck-in 20:00 PM / Check-out 13:00 PM "
+                . "\nPernoite (sexta, sábado e véspera de feriado) "
+                . "\nCheck-in 02:00 AM / Check-Out 13:00 PM";
+
+        $output = str_replace("20:00", $frase, $output);
+    }
+
+    return $output;
+}
+
+
+// define the woocommerce_order_items_meta_display callback 
+function filter_woocommerce_order_items_meta_display($output, $instance) {
+    // make filter magic happen here... 
+    //$output = ajuste_info_horario_suite($output);
+
+	print_r($output);
+
+    return $output;
+}
+
+// add the filter 
+add_filter('woocommerce_order_items_meta_display', 'filter_woocommerce_order_items_meta_display', 10, 2);
+
+
+
+function custom_woocommerce_hidden_order_itemmeta($arr) {
+
+    $arr[] = '_xchange_code';
+    return $arr;
+}
+
+add_filter('woocommerce_hidden_order_itemmeta', 'custom_woocommerce_hidden_order_itemmeta', 10, 1);
+
+
+
+
+add_action( 'woocommerce_email_before_order_table', 'add_order_email_instructions', 10, 2 );
+ 
+function add_order_email_instructions( $order, $sent_to_admin ) {
+  
+  //if ( ! $sent_to_admin ) {
+ 
+  //  if ( 'cod' == $order->payment_method ) {
+      // cash on delivery method
+  //    echo '<p><strong>Instructions:</strong> Full payment is due immediately upon delivery: <em>cash only, no exceptions</em>.</p>';
+  //  } else {
+      // other methods (ie credit card)
+  //    echo '<p><strong>Instructions:</strong> Please look for "Madrigal Electromotive GmbH" on your next credit card statement.</p>';
+  //  }
+  //}
+}
+
+
+add_action( 'woocommerce_email_after_order_table', 'wdm_add_shipping_method_to_order_email', 10, 2 );
+
+function wdm_add_shipping_method_to_order_email( $order, $is_admin_email ) {
+    
+	//debug($order);
+
+	//debug($order);
+
+    //echo '<p><h4>Shipping:</h4> ' . $order->get_shipping_method() . '</p>';
+}
+
+
+// define the woocommerce_order_item_meta_end callback 
+function action_woocommerce_order_item_meta_end( $item_id, $item, $order ) { 
+    // make action magic happen here... 
+
+   //Em breve todas as informações sobre sua reserva estarão disponíveis.</p>';
+
+}; 
+         
+// add the action 
+add_action( 'woocommerce_order_item_meta_end', 'action_woocommerce_order_item_meta_end', 10, 3 ); 

@@ -24,19 +24,24 @@ get_template_part('template-parts/menu/geral');
 
                     <h2><?php _e('To gift', 'lush_2-0') ?></h2>
                     <h3><?php _e('Lush Gift Card', 'lush_2-0') ?></h3>
+
+                    <img class="gift-cards-mobile visible-xs center-block" src="<?php uri() ?>/img/gift-v2.png" >
+
                     <div class="row">
-                        <div class="col-sm-6 ">
+                        <div class="col-sm-6 texto">
                             <p>
-                                <?php 
-                                $text = 'Present with style and personality with our gift certificates available in various values and valid for any category of suites, any day of the week and also in the consumption of the bar or restaurant.';
-                                _e($text, 'lush_2-0')?>
+                                <?php
+                                _traduz(
+                                        'Presente com estilo e personalidade com nossos certificados de presente disponíveis em vários valores e válido para qualquer categoria de suítes, qualquer dia da semana e também no consumo do bar ou restaurante.', 'Present with style and personality with our gift certificates available in various values and valid for any category of suites, any day of the week and also in the consumption of the bar or restaurant.'
+                                );
+                                ?>
                             </p>
                         </div>
                     </div>
 
                     <a class="btn-verde-v02" href="<?php echo get_term_link('gift-card', 'product_cat') ?>" ><?php _e('Buy now', 'lush_2-0') ?></a>
 
-                    <img class="gift-cards" src="<?php uri() ?>/img/gift-card.png" >
+                    <img class="gift-cards hidden-xs " src="<?php uri() ?>/img/gift-v2.png" >
 
 
                 </div><!-- para-presentear -->
@@ -72,12 +77,21 @@ get_template_part('template-parts/menu/geral');
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
 
                         <h2>
-                            <?php _e('SPECIAL PACKAGES', 'lush_2-0')?>
+                            <?php
+                            _traduz('PACOTES ESPECIAIS', 'SPECIAL PACKAGES');
+                            ?>
                         </h2>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <?php
+        get_template_part('template-parts/experiencia/pacote/menu', 'simples');
+        ?>
+
+
         <div class="pacote-loop">
 
 

@@ -1648,3 +1648,9 @@ msgstr ""
 msgid "Special packages"
 msgstr ""
 
+msgid "VIEW EXPERIENCES"
+msgstr ""
+
+msgid "EXPLORE MENU"
+msgstr ""
+

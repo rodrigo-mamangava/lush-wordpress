@@ -15,13 +15,36 @@
  * @package 	WooCommerce/Templates
  * @version 	2.4.0
  */
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if (!defined('ABSPATH')) {
+    exit;
 }
 ?>
 <dl class="variation">
-	<?php foreach ( $item_data as $data ) : ?>
-		<dt class="variation-<?php echo sanitize_html_class( $data['key'] ); ?>"><?php echo wp_kses_post( $data['key'] ); ?>:</dt>
-		<dd class="variation-<?php echo sanitize_html_class( $data['key'] ); ?>"><?php echo wp_kses_post( wpautop( $data['display'] ) ); ?></dd>
-	<?php endforeach; ?>
+
+
+    <?php foreach ($item_data as $data) : ?>
+
+
+
+        <?php if ($data['key'] == 'Horário da reserva' || $data['key'] == 'Booking Time') : ?>
+            <dt class="variation-<?php echo sanitize_html_class($data['key']); ?>">                
+                <?php _e('Type of reservation', 'lush_2-0'); ?> 
+            </dt>
+        <?php else: ?>
+            <dt class="variation-<?php echo sanitize_html_class($data['key']); ?>"><?php echo wp_kses_post($data['key']); ?>:</dt>
+        <?php endif;
+        ?>
+
+        <?php if ($data['display'] == '12:00' || $data['display'] == '12:00 PM') : ?>
+            <?php wc_get_template_part('cart/tipo', 'diaria'); ?>
+        <?php elseif ($data['display'] == '15:00' || $data['display'] == '3:00 PM' ) : ?>
+            <?php wc_get_template_part('cart/tipo', 'periodo'); ?>
+        <?php elseif ($data['display'] == '20:00' || $data['display'] == '8:00 PM') : ?>
+            <?php wc_get_template_part('cart/tipo', 'pernoite'); ?>
+        <?php else: ?>
+            <dd class="variation-<?php echo sanitize_html_class($data['key']); ?>"><?php echo wp_kses_post(wpautop($data['display'])); ?></dd>
+        <?php endif; ?>
+
+
+    <?php endforeach; ?>
 </dl>

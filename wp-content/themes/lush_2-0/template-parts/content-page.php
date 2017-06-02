@@ -9,12 +9,9 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('padrao'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 text-center">
-                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            </div>
             
             <?php the_content(); ?>
             

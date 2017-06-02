@@ -50,10 +50,16 @@ get_template_part('template-parts/menu/geral');
 
         <?php
         global $wp_query;
+        
+        
+        
         $args = array_merge($wp_query->query_vars, array(
-            'posts_per_archive_page' => 1,
-            'posts_per_page' => 1,
+//            'posts_per_archive_page' => 3,
+//            'posts_per_page' => 3,
         ));
+        
+        $args['paged'] = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+        
         query_posts($args);
 
         while ($wp_query->have_posts()) : $wp_query->the_post();

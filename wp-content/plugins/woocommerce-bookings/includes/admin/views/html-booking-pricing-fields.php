@@ -1,51 +1,55 @@
 <?php
-	$intervals = array();
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-	$intervals['months'] = array(
-		'1' => __( 'January', 'woocommerce-bookings' ),
-		'2' => __( 'February', 'woocommerce-bookings' ),
-		'3' => __( 'March', 'woocommerce-bookings' ),
-		'4' => __( 'April', 'woocommerce-bookings' ),
-		'5' => __( 'May', 'woocommerce-bookings' ),
-		'6' => __( 'June', 'woocommerce-bookings' ),
-		'7' => __( 'July', 'woocommerce-bookings' ),
-		'8' => __( 'August', 'woocommerce-bookings' ),
-		'9' => __( 'September', 'woocommerce-bookings' ),
-		'10' => __( 'October', 'woocommerce-bookings' ),
-		'11' => __( 'November', 'woocommerce-bookings' ),
-		'12' => __( 'December', 'woocommerce-bookings' ),
-	);
+$intervals = array();
 
-	$intervals['days'] = array(
-		'1' => __( 'Monday', 'woocommerce-bookings' ),
-		'2' => __( 'Tuesday', 'woocommerce-bookings' ),
-		'3' => __( 'Wednesday', 'woocommerce-bookings' ),
-		'4' => __( 'Thursday', 'woocommerce-bookings' ),
-		'5' => __( 'Friday', 'woocommerce-bookings' ),
-		'6' => __( 'Saturday', 'woocommerce-bookings' ),
-		'7' => __( 'Sunday', 'woocommerce-bookings' ),
-	);
+$intervals['months'] = array(
+	'1' => __( 'January', 'woocommerce-bookings' ),
+	'2' => __( 'February', 'woocommerce-bookings' ),
+	'3' => __( 'March', 'woocommerce-bookings' ),
+	'4' => __( 'April', 'woocommerce-bookings' ),
+	'5' => __( 'May', 'woocommerce-bookings' ),
+	'6' => __( 'June', 'woocommerce-bookings' ),
+	'7' => __( 'July', 'woocommerce-bookings' ),
+	'8' => __( 'August', 'woocommerce-bookings' ),
+	'9' => __( 'September', 'woocommerce-bookings' ),
+	'10' => __( 'October', 'woocommerce-bookings' ),
+	'11' => __( 'November', 'woocommerce-bookings' ),
+	'12' => __( 'December', 'woocommerce-bookings' ),
+);
 
-	for ( $i = 1; $i <= 52; $i ++ ) {
-		$intervals['weeks'][ $i ] = sprintf( __( 'Week %s', 'woocommerce-bookings' ), $i );
-	}
+$intervals['days'] = array(
+	'1' => __( 'Monday', 'woocommerce-bookings' ),
+	'2' => __( 'Tuesday', 'woocommerce-bookings' ),
+	'3' => __( 'Wednesday', 'woocommerce-bookings' ),
+	'4' => __( 'Thursday', 'woocommerce-bookings' ),
+	'5' => __( 'Friday', 'woocommerce-bookings' ),
+	'6' => __( 'Saturday', 'woocommerce-bookings' ),
+	'7' => __( 'Sunday', 'woocommerce-bookings' ),
+);
 
-	if ( ! isset( $pricing['type'] ) ) {
-		$pricing['type'] = 'custom';
-	}
-	if ( ! isset( $pricing['modifier'] ) ) {
-		$pricing['modifier'] = '';
-	}
-	if ( ! isset( $pricing['base_modifier'] ) ) {
-		$pricing['base_modifier'] = '';
-	}
-	if ( ! isset( $pricing['base_cost'] ) ) {
-		$pricing['base_cost'] = '';
-	}
+for ( $i = 1; $i <= 52; $i ++ ) {
+	$intervals['weeks'][ $i ] = sprintf( __( 'Week %s', 'woocommerce-bookings' ), $i );
+}
 
-	// In the loop of saved items an index is supplied, but we need one for the
-	// add new cost range button so we can replace it when adding and index on the front end.
-	$index = isset( $index ) ? $index : 'bookings_cost_js_index_replace';
+if ( ! isset( $pricing['type'] ) ) {
+	$pricing['type'] = 'custom';
+}
+if ( ! isset( $pricing['modifier'] ) ) {
+	$pricing['modifier'] = '';
+}
+if ( ! isset( $pricing['base_modifier'] ) ) {
+	$pricing['base_modifier'] = '';
+}
+if ( ! isset( $pricing['base_cost'] ) ) {
+	$pricing['base_cost'] = '';
+}
+
+// In the loop of saved items an index is supplied, but we need one for the
+// add new cost range button so we can replace it when adding and index on the front end.
+$index = isset( $index ) ? $index : 'bookings_cost_js_index_replace';
 ?>
 <tr>
 	<td class="sort">&nbsp;</td>
@@ -171,7 +175,7 @@
 			</select>
 		</div>
 		<input type="number" step="0.01" name="wc_booking_pricing_base_cost[<?php echo esc_attr( $index ); ?>]" value="<?php if ( ! empty( $pricing['base_cost'] ) ) echo $pricing['base_cost']; ?>" placeholder="0" />
-        <?php do_action( 'woocommerce_bookings_after_booking_pricing_base_cost', $pricing, $post_id ); ?>
+        <?php do_action( 'woocommerce_bookings_after_booking_pricing_base_cost', $pricing, $post->ID ); ?>
 	</td>
 	<td>
 		<div class="select">
@@ -183,7 +187,7 @@
 			</select>
 		</div>
 		<input type="number" step="0.01" name="wc_booking_pricing_cost[<?php echo esc_attr( $index ); ?>]" value="<?php if ( ! empty( $pricing['cost'] ) ) echo $pricing['cost']; ?>" placeholder="0" />
-        <?php do_action( 'woocommerce_bookings_after_booking_pricing_cost', $pricing, $post_id ); ?>
+        <?php do_action( 'woocommerce_bookings_after_booking_pricing_cost', $pricing, $post->ID ); ?>
 	</td>
 	<td class="remove">&nbsp;</td>
 </tr>

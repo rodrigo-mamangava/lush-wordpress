@@ -22,6 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
+redirect_to_suites();
+
 // Ensure visibility
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;

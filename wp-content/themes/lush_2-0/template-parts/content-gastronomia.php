@@ -13,7 +13,7 @@ $class = 'faixa-explore-cardapio';
 $texto = get_field('frase_exclusivo_cardapio');
 $class_btn = 'btn-explore-cardapio';
 $link_btn = get_link_page_by_slug('menu');
-$texto_btn = 'Explore menu';
+$texto_btn = print_traduzido('Conheça nosso Cardápio', 'Know our Menu');
 get_faixa_simples($class, $texto, $class_btn, $link_btn, $texto_btn);
 ?>
 

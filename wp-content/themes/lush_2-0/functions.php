@@ -126,6 +126,8 @@ function lush_2_0_scripts() {
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '', true);
     wp_enqueue_script('fatNav-js', get_template_directory_uri() . '/bower_components/jquery-fatNav/dist/jquery.fatNav.min.js', array('jquery'), '', true);
     wp_enqueue_script('slick-carousel', get_template_directory_uri() . '/bower_components/slick-carousel/slick/slick.min.js', array('jquery'), '', true);
+    
+    wp_enqueue_script('itemslide', get_template_directory_uri() . '/js/itemslide.min.js', array('jquery'), '', true);
 //    wp_enqueue_script('picker', get_template_directory_uri() . '/bower_components/pickadate/lib/picker.js', array('jquery'), '', true);
 //    wp_enqueue_script('picker-date', get_template_directory_uri() . '/bower_components/pickadate/lib/picker.date.js', array('jquery'), '', true);
 
@@ -133,7 +135,7 @@ function lush_2_0_scripts() {
     wp_enqueue_script('lush_2-0-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '', true);
 
 //    wp_enqueue_script('fatNav-main', get_template_directory_uri() . '/js/fatNav.js', array('jquery', 'fatNav-js'), '', true);
-    //wp_enqueue_script('scroll', get_template_directory_uri() . '/js/scroll.js', array('jquery'), '', true);
+    wp_enqueue_script('scroll', get_template_directory_uri() . '/js/scroll.js', array('jquery'), '', true);
 
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true);
 
@@ -144,6 +146,10 @@ function lush_2_0_scripts() {
     }
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
+    }
+    
+    if (is_page_template('page-landing-01.php')) {
+        wp_enqueue_script('wordsAnimation', get_template_directory_uri() . '/js/wordsAnimation.js', array('jquery'), '', true);
     }
 }
 
@@ -178,7 +184,6 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load functions MMGV
  */
 require get_template_directory() . '/functions-mmgv/functions-mmgv.php';
-require get_template_directory() . '/functions-mmgv/functions-woocommerce.php';
 require get_template_directory() . '/functions-mmgv/functions-layout.php';
 require get_template_directory() . '/functions-mmgv/functions-admin.php';
 require get_template_directory() . '/functions-mmgv/functions-custom-post-type.php';
@@ -186,3 +191,43 @@ require get_template_directory() . '/functions-mmgv/cpt-concierge.php';
 require get_template_directory() . '/functions-mmgv/cpt-menu.php';
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
+require get_template_directory() . '/functions-mmgv/functions-woocommerce.php';
+
+
+
+/**
+* Preview WooCommerce Emails.
+* @author WordImpress.com
+* @url https://github.com/WordImpress/woocommerce-preview-emails
+* If you are using a child-theme, then use get_stylesheet_directory() instead
+*/
+
+$preview = get_stylesheet_directory() . '/woocommerce/emails/woo-preview-emails.php';
+
+if(file_exists($preview)) {
+    require $preview;
+}
+
+/**
+ * Add "pin" field to the checkout.
+ */
+function pin_field( $checkout ) {
+    echo '<div id="pin_field">';
+
+    woocommerce_form_field( 'pin', array(
+        'type'          => 'text',
+        ), $checkout->get_value( 'pin' ));
+
+    echo '</div>';
+}
+add_action( 'woocommerce_after_order_notes', 'pin_field' );
+
+/**
+ * Update the order meta with pin_field value
+ */
+function pin_field_update_order_meta( $order_id ) {
+    if ( ! empty( $_POST['pin'] ) ) {
+        update_post_meta( $order_id, '_pin', sanitize_text_field( $_POST['pin'] ) );
+    }
+}
+add_action( 'woocommerce_checkout_update_order_meta', 'pin_field_update_order_meta' );
