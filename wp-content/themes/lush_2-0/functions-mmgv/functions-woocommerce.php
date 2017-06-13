@@ -360,11 +360,9 @@ function df_add_ticket_surcharge($cart_object) {
 
 add_action('woocommerce_cart_calculate_fees', 'df_add_ticket_surcharge');
 
-
-
 function ajuste_info_horario_suite($output) {
 
-	debug($output);
+    //debug($output);
 
     if (preg_match('/12:00/', $output)) {
         $frase = "";
@@ -394,21 +392,18 @@ function ajuste_info_horario_suite($output) {
     return $output;
 }
 
-
 // define the woocommerce_order_items_meta_display callback 
 function filter_woocommerce_order_items_meta_display($output, $instance) {
     // make filter magic happen here... 
     //$output = ajuste_info_horario_suite($output);
 
-	print_r($output);
+    print_r($output);
 
     return $output;
 }
 
 // add the filter 
 add_filter('woocommerce_order_items_meta_display', 'filter_woocommerce_order_items_meta_display', 10, 2);
-
-
 
 function custom_woocommerce_hidden_order_itemmeta($arr) {
 
@@ -421,42 +416,63 @@ add_filter('woocommerce_hidden_order_itemmeta', 'custom_woocommerce_hidden_order
 
 
 
-add_action( 'woocommerce_email_before_order_table', 'add_order_email_instructions', 10, 2 );
- 
-function add_order_email_instructions( $order, $sent_to_admin ) {
-  
-  //if ( ! $sent_to_admin ) {
- 
-  //  if ( 'cod' == $order->payment_method ) {
-      // cash on delivery method
-  //    echo '<p><strong>Instructions:</strong> Full payment is due immediately upon delivery: <em>cash only, no exceptions</em>.</p>';
-  //  } else {
-      // other methods (ie credit card)
-  //    echo '<p><strong>Instructions:</strong> Please look for "Madrigal Electromotive GmbH" on your next credit card statement.</p>';
-  //  }
-  //}
+add_action('woocommerce_email_before_order_table', 'add_order_email_instructions', 10, 2);
+
+function add_order_email_instructions($order, $sent_to_admin) {
+
+    //if ( ! $sent_to_admin ) {
+    //  if ( 'cod' == $order->payment_method ) {
+    // cash on delivery method
+    //    echo '<p><strong>Instructions:</strong> Full payment is due immediately upon delivery: <em>cash only, no exceptions</em>.</p>';
+    //  } else {
+    // other methods (ie credit card)
+    //    echo '<p><strong>Instructions:</strong> Please look for "Madrigal Electromotive GmbH" on your next credit card statement.</p>';
+    //  }
+    //}
 }
 
+add_action('woocommerce_email_after_order_table', 'wdm_add_shipping_method_to_order_email', 10, 2);
 
-add_action( 'woocommerce_email_after_order_table', 'wdm_add_shipping_method_to_order_email', 10, 2 );
+function wdm_add_shipping_method_to_order_email($order, $is_admin_email) {
 
-function wdm_add_shipping_method_to_order_email( $order, $is_admin_email ) {
-    
-	//debug($order);
-
-	//debug($order);
-
+    //debug($order);
+    //debug($order);
     //echo '<p><h4>Shipping:</h4> ' . $order->get_shipping_method() . '</p>';
 }
 
-
 // define the woocommerce_order_item_meta_end callback 
-function action_woocommerce_order_item_meta_end( $item_id, $item, $order ) { 
+function action_woocommerce_order_item_meta_end($item_id, $item, $order) {
     // make action magic happen here... 
+    //Em breve todas as informações sobre sua reserva estarão disponíveis.</p>';
+}
 
-   //Em breve todas as informações sobre sua reserva estarão disponíveis.</p>';
+;
 
-}; 
-         
 // add the action 
-add_action( 'woocommerce_order_item_meta_end', 'action_woocommerce_order_item_meta_end', 10, 3 ); 
+add_action('woocommerce_order_item_meta_end', 'action_woocommerce_order_item_meta_end', 10, 3);
+
+function woocommerce_template_loop_product_title_mmgv() {
+    
+    $acessivel = wheelchair_access(); 
+    echo '<h2 class="woocommerce-loop-product__title">' . get_the_title() . ' ' . $acessivel . '</h2>';
+}
+
+function wheelchair_access(){
+    return  check_tag('acessivel') ? '<i class="fa fa-wheelchair" aria-hidden="true"></i>' : '';
+}
+
+function check_tag($tag_name){
+    global $product;
+    $terms = get_the_terms($post->ID, 'product_tag');
+    $existe = false;
+    if ($terms) {
+        foreach ($terms as $this_tag) {
+            if ($this_tag->slug == $tag_name) {                
+                //debug($this_tag->slug);                
+                $existe = true;
+            }
+        }
+    }
+    
+    return $existe;
+}

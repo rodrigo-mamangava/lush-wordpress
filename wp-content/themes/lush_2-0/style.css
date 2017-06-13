@@ -9273,9 +9273,9 @@ fieldset[disabled] .btn-perido.focus {
   z-index: 1000;
   background-color: rgba(242, 242, 242, 0.9);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .menu-principal .navbar {
-    background-color: rgba(242, 242, 242, 0.8);
+    background-color: #f2f2f2;
   }
 }
 .menu-principal .navbar .navbar-header .navbar-brand {

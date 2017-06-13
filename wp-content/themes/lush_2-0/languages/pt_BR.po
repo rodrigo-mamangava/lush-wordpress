@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LUSH 2.0\n"
 "POT-Creation-Date: 2017-05-24 15:29-0300\n"
-"PO-Revision-Date: 2017-05-24 15:32-0300\n"
+"PO-Revision-Date: 2017-06-13 13:53-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -218,11 +218,10 @@ msgid "Search Results for: %s"
 msgstr "Buscar resultados para: %s"
 
 #: template-parts/compartilhar-lush.php:3
-#, fuzzy
 msgid ""
 "Invite anyone to experience an unforgettable experience with you in this "
 "suite"
-msgstr "CONVIDAR QUEM VIVERÁ UMA EXPERIÊNCIA INESQUECÍVEL COM VOCÊ.:"
+msgstr "Convidar alguém para uma experiência inesquecível com você nesta suíte"
 
 #: template-parts/compartilhar-pacote.php:3
 msgid "INVITE WHO WILL LIVE AN UNFORGETTABLE EXPERIENCE WITH YOU.:"
@@ -501,9 +500,8 @@ msgstr "Produto reservado"
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:25
 #: woocommerce-bookings/emails/customer-booking-notification.php:18
 #: woocommerce-bookings/emails/customer-booking-reminder.php:22
-#, fuzzy
 msgid "Booking ID"
-msgstr "ID de reserva"
+msgstr "ID da reserva"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:28
 #: woocommerce-bookings/emails/admin-new-booking.php:34
@@ -511,7 +509,6 @@ msgstr "ID de reserva"
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:30
 #: woocommerce-bookings/emails/customer-booking-notification.php:23
 #: woocommerce-bookings/emails/customer-booking-reminder.php:27
-#, fuzzy
 msgid "Booking Type"
 msgstr "Tipo de reserva"
 
@@ -521,9 +518,8 @@ msgstr "Tipo de reserva"
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:35
 #: woocommerce-bookings/emails/customer-booking-notification.php:28
 #: woocommerce-bookings/emails/customer-booking-reminder.php:32
-#, fuzzy
 msgid "Booking Start Date"
-msgstr "Data de Início da Reserva"
+msgstr "Data de início da reserva"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:37
 #: woocommerce-bookings/emails/admin-new-booking.php:43
@@ -531,9 +527,8 @@ msgstr "Data de Início da Reserva"
 #: woocommerce-bookings/emails/customer-booking-confirmed.php:39
 #: woocommerce-bookings/emails/customer-booking-notification.php:32
 #: woocommerce-bookings/emails/customer-booking-reminder.php:36
-#, fuzzy
 msgid "Booking End Date"
-msgstr "Data de Término da Reserva: %s"
+msgstr "Data de término da reserva"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:47
 #: woocommerce-bookings/emails/admin-new-booking.php:53
@@ -547,16 +542,15 @@ msgstr "Data de Término da Reserva: %s"
 #: woocommerce-bookings/emails/plain/customer-booking-confirmed.php:33
 #: woocommerce-bookings/emails/plain/customer-booking-notification.php:31
 #: woocommerce-bookings/emails/plain/customer-booking-reminder.php:33
-#, fuzzy
 msgid "Person(s)"
-msgstr "Pessoa (s)"
+msgstr "Pessoa(s)"
 
 #: woocommerce-bookings/emails/admin-booking-cancelled.php:58
 #: woocommerce-bookings/emails/admin-new-booking.php:68
 #: woocommerce-bookings/emails/plain/admin-booking-cancelled.php:36
-#, fuzzy, php-format
+#, php-format
 msgid "You can view and edit this booking in the dashboard here: %s"
-msgstr "Você pode visualizar esta reserva no dashboard aqui: %s"
+msgstr "Você pode visualizar e editar a reserva neste painel: %s"
 
 #: woocommerce-bookings/emails/admin-new-booking.php:10
 #: woocommerce-bookings/emails/plain/admin-new-booking.php:12
@@ -1939,14 +1933,14 @@ msgstr "fora de %s5%s"
 #, php-format
 msgid "based on %s customer rating"
 msgid_plural "based on %s customer ratings"
-msgstr[0] ""
+msgstr[0] "Com base na opinião de %s clientes"
 msgstr[1] ""
 
 #: woocommerce/single-product/rating.php:42
 #, php-format
 msgid "%s customer review"
 msgid_plural "%s customer reviews"
-msgstr[0] ""
+msgstr[0] "%s clientes avaliaram"
 msgstr[1] ""
 
 #: woocommerce/single-product/related.php:51

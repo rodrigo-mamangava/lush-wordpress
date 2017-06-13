@@ -1,4 +1,4 @@
-<?php woocommerce_template_loop_product_title() ?> 
+<?php woocommerce_template_loop_product_title_mmgv(); ?> 
 <p><span class="price"><?php _e('from', 'lush_2-0')?></span></p>
 <?php wc_get_template( 'loop/price-simple-loop.php' ); ?>
 <?php get_suite_price();?>

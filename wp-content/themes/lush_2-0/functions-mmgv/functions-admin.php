@@ -69,3 +69,8 @@ function mmgv_config_pass() {
 }
 
 add_action('admin_menu', 'mmgv_config_pass');
+
+
+
+
+

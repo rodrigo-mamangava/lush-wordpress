@@ -18,7 +18,7 @@ get_template_part('template-parts/menu/geral');
 
 
     <?php
-    $img = get_template_directory_uri() . '/img/img-centro@2x_1.jpg';
+    $img = get_template_directory_uri() . '/img/Gift_Card_Lush_1.jpg';
     $titulo = 'Gift Card';
     get_new_vitrine_tradutor($img, $titulo);
     ?>
@@ -46,8 +46,8 @@ get_template_part('template-parts/menu/geral');
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                         <h2>
                             <?php
-                            $pb = 'O Gift Card é um presente inovador que vai proporcionar uma experiência surpreendente para um Casal no LUSH. O valor pode ser utilizado na locação de nossas suítes e todo consumo de bebidas e comidas do nosso restaurante.';
-                            $en = 'The Gift Card is an innovative gift that will provide an amazing experience for a couple in LUSH. The amount can be used in the rental of our suites and all consumption of drinks and food in our restaurant.';
+                            $pb = 'O Gift Card é um vale presente em 3 opções de valores que podem ser utilizado em todas as categorias de suítes e no consumo do nosso restaurante. Com validade de 3 meses, e em qualquer dia da semana. Temos uma versão digital por e-mail ou com a caixa de presente com laço que enviamos pelo correio. Escolhe a melhor opção para presentear uma pessoa especial.';
+                            $en = 'The Gift Card is a gift voucher in 3 options of values that can be used in all as suite categories and in the consumption of our restaurant. Valid for 3 months, and on any day of the week. We have a digital version by e-mail or with a gift box with what is mailed. Choose the best option to gift a special person.';
                             _traduz($pb, $en);
                             ?>
                         </h2>

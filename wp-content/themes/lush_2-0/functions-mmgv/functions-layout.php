@@ -85,12 +85,32 @@ function get_new_vitrine_tradutor($img, $titulo) {
 function get_new_vitrine_completo() {
 
     global $post;
+    
     ?>
     <div class = "container-fluid vitrine-interna">
         <div class = "row">
             <div class="vitrine-content" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID); ?>)">
                 <div class = " sub-titulo">
-                    <h1><?php echo get_the_title(); ?></h1>                    
+                    <h1><?php echo get_the_title(); ?> </h1>                    
+                </div>
+                <div class="img-filter"></div>
+            </div>
+        </div>
+    </div>
+    <?php
+}
+function get_new_vitrine_completo_suite() {
+
+    global $post;
+    
+    $acessivel = wheelchair_access();
+    
+    ?>
+    <div class = "container-fluid vitrine-interna">
+        <div class = "row">
+            <div class="vitrine-content" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID); ?>)">
+                <div class = " sub-titulo">
+                    <h1><?php echo get_the_title(); ?> <?php echo $acessivel;?></h1>                    
                 </div>
                 <div class="img-filter"></div>
             </div>

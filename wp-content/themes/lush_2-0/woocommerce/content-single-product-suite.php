@@ -37,7 +37,7 @@ if (post_password_required()) {
 
 <div  itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class('suite-single'); ?> >
 
-    <?php get_new_vitrine_completo(); ?>
+    <?php get_new_vitrine_completo_suite(); ?>
 
     <div  class="container-fluid faixa-detalhes">
         <div class="row">

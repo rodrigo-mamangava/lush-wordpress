@@ -6,7 +6,7 @@ get_template_part('template-parts/menu/geral');
 ?>
 <div class="menu-cardapio"> 
 
-    <?php while (have_posts()) : the_post(); ?>
+    <?php //while (have_posts()) : the_post(); ?>
 
         <?php get_template_part('template-parts/gastronomia/lista', 'top'); ?>
 
@@ -28,7 +28,7 @@ get_template_part('template-parts/menu/geral');
 
 
 
-    <?php endwhile; ?>
+    <?php //endwhile; ?>
 
 </div>
 <?php

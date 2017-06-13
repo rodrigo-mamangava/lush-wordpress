@@ -8,9 +8,9 @@ get_template_part('template-parts/menu/geral');
 ?>
 <div class="menu-cardapio"> 
 
-    <?php while (have_posts()) : the_post(); ?>
+    <?php //while (have_posts()) : the_post(); ?>
 
-        <?php get_template_part('template-parts/gastronomia/lista', 'top'); ?>
+        <?php //get_template_part('template-parts/gastronomia/lista', 'top'); ?>
 
         <div class="container">
             <div class="row">
@@ -18,7 +18,7 @@ get_template_part('template-parts/menu/geral');
 
                     <div class="row is-flex">
 
-                        <?php get_template_part('template-parts/gastronomia/lista', 'cat'); ?>
+                        <?php //get_template_part('template-parts/gastronomia/lista', 'cat'); ?>
 
                     </div>
 
@@ -30,7 +30,7 @@ get_template_part('template-parts/menu/geral');
 
 
 
-    <?php endwhile; ?>
+    <?php //endwhile; ?>
 
 </div>
 <?php
