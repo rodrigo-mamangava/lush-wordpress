@@ -34,14 +34,18 @@ get_header('home');
                                         'menu_class' => 'list-social',
                                     )
                             );
-
-                            wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'idioma',
-                                        'menu_class' => 'list-language',
-                                    )
-                            );
                             ?>
+
+                            <div class="menu-menu-idiomas-container">
+                                <ul id="menu-menu-idiomas" class="list-language">
+                                    <li id="menu-item-8208" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8208">
+                                        <a href="?lang=pb">PT</a>
+                                    </li>
+                                    <li id="menu-item-8209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8209">
+                                        <a href="?lang=en">EN</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div><!-- container menu-header -->
@@ -52,13 +56,13 @@ get_header('home');
             <div class="col-lg-offset-1 col-lg-6 col-md-8 col-xs-12">
                 <div class="vitrine-chamada">
                     <h1>
-                        <?php echo get_field('texto_destaque'); ?>                    
+<?php echo get_field('texto_destaque'); ?>                    
                     </h1>
                     <h2>
-                        <?php echo get_field('texto_desc'); ?>
+<?php echo get_field('texto_desc'); ?>
                     </h2>
                     <p>
-                        <?php echo get_field('hashtag'); ?>
+<?php echo get_field('hashtag'); ?>
                     </p>
                 </div>
             </div>
@@ -75,13 +79,13 @@ get_header('home');
 
     </div><!-- .faixa-vitrine -->
 
-    <?php
-    get_template_part('template-parts/menu/home');
-    get_template_part('template-parts/menu/geral');
-    ?>
+<?php
+get_template_part('template-parts/menu/home');
+get_template_part('template-parts/menu/geral');
+?>
 
     <div id="suites">
-        <?php wc_get_template('home/content-loop-suite-home.php'); ?>
+<?php wc_get_template('home/content-loop-suite-home.php'); ?>
     </div>
 
 </section>
@@ -105,15 +109,15 @@ get_header('home');
         <div>
             <div class="row">
                 <section>
-                    <?php
-                    faixa_destaque_par(
-                            getCustomImage('faixa_destaque_01_foto', 'faixa-intercalada'), get_field('faixa_destaque_01_icone'), get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_link_page_by_slug('experiencia'), __('[:pb]VER EXPERIÊNCIAS[:en]VIEW EXPERIENCES[:]')
-                    );
+<?php
+faixa_destaque_par(
+        getCustomImage('faixa_destaque_01_foto', 'faixa-intercalada'), get_field('faixa_destaque_01_icone'), get_field('faixa_destaque_01_titulo'), get_field('faixa_destaque_01_texto'), get_link_page_by_slug('experiencia'), __('[:pb]VER EXPERIÊNCIAS[:en]VIEW EXPERIENCES[:]')
+);
 
-                    faixa_destaque_impar(
-                            getCustomImage('faixa_destaque_02_foto', 'faixa-intercalada'), get_field('faixa_destaque_02_icone'), get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_02_texto'), get_link_page_by_slug('menu'), __('[:pb]EXPLORAR CARDÁPIO[:en]EXPLORE CARDIO[:]')
-                    );
-                    ?>
+faixa_destaque_impar(
+        getCustomImage('faixa_destaque_02_foto', 'faixa-intercalada'), get_field('faixa_destaque_02_icone'), get_field('faixa_destaque_02_titulo'), get_field('faixa_destaque_02_texto'), get_link_page_by_slug('menu'), __('[:pb]EXPLORAR CARDÁPIO[:en]EXPLORE CARDIO[:]')
+);
+?>
                 </section>
 
             </div>
@@ -126,8 +130,8 @@ get_header('home');
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 col-md-12">
                 <h2 class=""><?php echo get_field('como_chegar'); ?></h2>
-                <!--<a href="" id="waze"><img src="<?php // uri() ?>/img/waze.png"><a/>-->
-               
+                <!--<a href="" id="waze"><img src="<?php // uri()  ?>/img/waze.png"><a/>-->
+
             </div>
             <div class="col-lg-10 col-lg-offset-1 col-md-12">
                 <div class="mapa-wrap">
@@ -146,7 +150,7 @@ get_header('home');
                 <a class="waze" 
                    href="waze://?ll=-23.5655499,-46.6131636,17" 
                    target="_blank" >
-                    <p>Abrir no Waze</p>
+                    <p><?php _traduz('Abrir no Waze', 'Open on Waze') ?></p>
                 </a>
             </div>
 
@@ -161,10 +165,10 @@ get_header('home');
             <div class="col-xs-12">
                 <h2><?php _e("LUSH PREMIUM GUEST", 'lush_2-0'); ?></h2>
                 <h3>
-                    <?php echo get_field('frase_form'); ?>
+<?php echo get_field('frase_form'); ?>
                 </h3>
                 <p>
-                    <?php echo get_field('frase_novidades'); ?>
+<?php echo get_field('frase_novidades'); ?>
                 </p>
                 <div class="mailchimp-footer">
 
@@ -242,7 +246,7 @@ get_header('home');
 
                         <div class="row">
                             <div class="col-sm-6 texto">
-                                <?php echo get_field('frase_presentei_com_estilo') ?>
+<?php echo get_field('frase_presentei_com_estilo') ?>
                             </div>
                         </div>
 

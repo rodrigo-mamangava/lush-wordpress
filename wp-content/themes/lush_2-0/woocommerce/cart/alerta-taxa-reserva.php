@@ -42,12 +42,8 @@ foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
             <div class="alert alert-warning" role="alert">
                 <span class="glyphicon glyphicon glyphicon-alert" aria-hidden="true"></span>
                 <span class="sr-only"></span>
-                As reservas tem o acréscimo da taxa de conveniência de R$ 220, 
-                devido ao custo operacional de deixar a suíte bloqueada durante 
-                todo o dia até a hora da sua hospedagem.<br/>
-                Adicionando na sua reserva um ou mais dos pacotes acima 
-                (com valor igual ou superior a taxa) você receberá 
-                R$ 220 de desconto no total dessa reserva.
+                <?php _traduz('As reservas tem o acréscimo da taxa de conveniência de R$ 220, devido ao custo operacional de deixar a suíte bloqueada durante todo o dia até a hora da sua hospedagem.', 'Reservations have an added convenience fee of R$ 220, due to the operating cost of leaving the suite locked throughout the day until the time of your stay.')?><br/>
+                <?php _traduz('Adicionando na sua reserva um ou mais dos pacotes acima (com valor igual ou superior a taxa) você receberá R$ 220 de desconto no total dessa reserva.', 'Adding one or more of the above packages (with a value equal to or higher than the rate) to your reservation, you will receive a R$ 220 discount on the total of that reservation.')?>
             </div>
         </td>
 
@@ -63,13 +59,13 @@ foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
         <td colspan="5">
             <div class="alert alert-info" role="alert">
                 <span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"></span>
-                <span class="sr-only">Desconto:</span>
-                Como foi adicionado um pacote na sua reserva, 
-                você ganhou R$ 220 de desconto, confira abaixo
+                <span class="sr-only"><?php _traduz('Desconto', 'Discount')?>:</span>
+                <?php _traduz('Como foi adicionado um pacote na sua reserva, você ganhou R$ 220 de desconto, confira abaixo', 'As a package has been added to your booking, you have earned R$ 220 off, check below')?>
             </div>
         </td>
     </tr>
 
 <?php endif; ?>
 
+    
 

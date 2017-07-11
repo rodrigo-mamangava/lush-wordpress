@@ -49,6 +49,38 @@ if (post_password_required()) {
                 ?>
             </div><!-- descricao --> 
 
+            <script>
+                jQuery(document).ready(function ($) {
+
+                    console.log('suite');
+
+                    $('.form-field').find('label').hide();
+
+                    $('body').on('change', $('.block-picker'), function () {
+
+                        $(document).ajaxComplete(function () {
+                            $('.block-picker').find('li').each(function (index) {
+                                if ($(this).data('block') == '1200') {
+                                    $(this).find('a').text('<?php _traduz('Diária', 'Daily')?>');
+                                }
+                                if ($(this).data('block') == '1500') {
+                                    $(this).find('a').text('<?php _traduz('Período', 'Period')?>');
+                                }
+                                if ($(this).data('block') == '2000') {
+                                    $(this).find('a').text('<?php _traduz('Pernoite', 'Overnight')?>');
+                                }
+                            });
+                        });
+
+                    });
+
+
+                });
+
+
+
+            </script>
+
             <div class="col-sm-6 col-sm-offset-1 info-preco">
 
                 <div class="tabela-preco">

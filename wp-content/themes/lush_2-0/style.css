@@ -1563,17 +1563,17 @@ kbd kbd {
   box-shadow: none;
 }
 pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 1.42857143;
+  /*  display: block;
+  padding: ((@line-height-computed - 1) / 2);
+  margin: 0 0 (@line-height-computed / 2);
+  font-size: (@font-size-base - 1); // 14px to 13px
+  line-height: @line-height-base;
   word-break: break-all;
   word-wrap: break-word;
-  color: #333333;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  color: @pre-color;
+  background-color: @pre-bg;
+  border: 1px solid @pre-border-color;
+  border-radius: @border-radius-base;*/
 }
 pre code {
   padding: 0;
@@ -6989,6 +6989,15 @@ https://scotch.io/bar-talk/different-tricks-on-how-to-make-bootstrap-columns-all
   text-align: center;
   color: #969696;
 }
+pre {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+}
 /*--------------------------------------------------------------
 # Botoes
 --------------------------------------------------------------*/
@@ -9434,7 +9443,8 @@ fieldset[disabled] .btn-perido.focus {
   letter-spacing: 0.5px;
   color: #ffffff;
 }
-.faixa-vitrine .vitrine-chamada p {
+.faixa-vitrine .vitrine-chamada p,
+.faixa-vitrine .vitrine-chamada pre {
   /*padding-top: 139px;*/
   padding-top: 18%;
   font-family: 'FairfieldLTW01-46LightI';
@@ -9447,7 +9457,8 @@ fieldset[disabled] .btn-perido.focus {
   text-transform: initial;
 }
 @media (max-width: 767px) {
-  .faixa-vitrine .vitrine-chamada p {
+  .faixa-vitrine .vitrine-chamada p,
+  .faixa-vitrine .vitrine-chamada pre {
     padding-top: 5px;
     line-height: 1.56;
     font-size: 18px;
@@ -9543,7 +9554,8 @@ fieldset[disabled] .btn-perido.focus {
     margin-bottom: 8px;
   }
 }
-.faixa-carousel-suites .carousel-slick .suite .suite-card p {
+.faixa-carousel-suites .carousel-slick .suite .suite-card p,
+.faixa-carousel-suites .carousel-slick .suite .suite-card pre {
   font-family: 'FairfieldLTW01-55Medium 706181';
   font-size: 18px;
   font-weight: 500;
@@ -9553,7 +9565,8 @@ fieldset[disabled] .btn-perido.focus {
   margin-bottom: 48px;
 }
 @media (max-width: 767px) {
-  .faixa-carousel-suites .carousel-slick .suite .suite-card p {
+  .faixa-carousel-suites .carousel-slick .suite .suite-card p,
+  .faixa-carousel-suites .carousel-slick .suite .suite-card pre {
     font-size: 16px;
     margin-bottom: 30px;
   }
@@ -9748,7 +9761,8 @@ fieldset[disabled] .btn-perido.focus {
     line-height: 1.07;
   }
 }
-.faixa-intercalada .subfaixa-destaque .destaque-texto p {
+.faixa-intercalada .subfaixa-destaque .destaque-texto p,
+.faixa-intercalada .subfaixa-destaque .destaque-texto pre {
   margin-top: 22px;
   margin-bottom: 47px;
   font-family: 'FairfieldLTW01-56Medium';
@@ -9762,7 +9776,8 @@ fieldset[disabled] .btn-perido.focus {
   padding: 0 4em;
 }
 @media (max-width: 767px) {
-  .faixa-intercalada .subfaixa-destaque .destaque-texto p {
+  .faixa-intercalada .subfaixa-destaque .destaque-texto p,
+  .faixa-intercalada .subfaixa-destaque .destaque-texto pre {
     padding: initial;
   }
 }
@@ -9883,7 +9898,8 @@ fieldset[disabled] .btn-perido.focus {
     line-height: 1.07;
   }
 }
-.faixa-saiba-mais .subfaixa-destaque .destaque-texto p {
+.faixa-saiba-mais .subfaixa-destaque .destaque-texto p,
+.faixa-saiba-mais .subfaixa-destaque .destaque-texto pre {
   margin-top: 22px;
   margin-bottom: 47px;
   font-family: 'FairfieldLTW01-56Medium';
@@ -9897,7 +9913,8 @@ fieldset[disabled] .btn-perido.focus {
   padding: 0 4em;
 }
 @media (max-width: 767px) {
-  .faixa-saiba-mais .subfaixa-destaque .destaque-texto p {
+  .faixa-saiba-mais .subfaixa-destaque .destaque-texto p,
+  .faixa-saiba-mais .subfaixa-destaque .destaque-texto pre {
     padding: initial;
   }
 }
@@ -10533,6 +10550,11 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   text-align: center;
   color: #3f2658;
   font-size: 40px;
+}
+.lista-suites .item-suite .detalhes .acessivel {
+  color: #3f2658;
+  font-size: 27px;
+  padding-bottom: 8px;
 }
 .lista-suites .item-suite .detalhes h3 {
   padding-bottom: 17px;
@@ -12079,7 +12101,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
     line-height: 1.07;
   }
 }
-.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto p {
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto p,
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto pre {
   margin-top: 22px;
   margin-bottom: 47px;
   font-family: 'FairfieldLTW01-56Medium';
@@ -12093,7 +12116,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
   padding: 0 4em;
 }
 @media (max-width: 767px) {
-  .gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto p {
+  .gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto p,
+  .gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto pre {
     padding: initial;
   }
 }
@@ -12239,7 +12263,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
     line-height: 1.07;
   }
 }
-.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto p {
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto p,
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto pre {
   margin-top: 22px;
   margin-bottom: 47px;
   font-family: 'FairfieldLTW01-56Medium';
@@ -12253,7 +12278,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
   padding: 0 4em;
 }
 @media (max-width: 767px) {
-  .gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto p {
+  .gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto p,
+  .gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto pre {
     padding: initial;
   }
 }
@@ -12431,7 +12457,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
     line-height: 1.07;
   }
 }
-.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto p {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto p,
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto pre {
   margin-top: 22px;
   margin-bottom: 47px;
   font-family: 'FairfieldLTW01-56Medium';
@@ -12445,7 +12472,8 @@ fieldset[disabled] .suite-single #wc-bookings-booking-form .block-picker li a.fo
   padding: 0 4em;
 }
 @media (max-width: 767px) {
-  .experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto p {
+  .experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto p,
+  .experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto pre {
     padding: initial;
   }
 }

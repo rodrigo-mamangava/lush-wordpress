@@ -354,7 +354,7 @@ function df_add_ticket_surcharge($cart_object) {
 
     if ($spfee > 0) {
 
-        $woocommerce->cart->add_fee('Taxa de conveniência', $spfee, true, 'standard');
+        $woocommerce->cart->add_fee(print_traduzido('Taxa de conveniência', 'Convenience fee'), $spfee, true, 'standard');
     }
 }
 
@@ -454,7 +454,8 @@ add_action('woocommerce_order_item_meta_end', 'action_woocommerce_order_item_met
 function woocommerce_template_loop_product_title_mmgv() {
     
     $acessivel = wheelchair_access(); 
-    echo '<h2 class="woocommerce-loop-product__title">' . get_the_title() . ' ' . $acessivel . '</h2>';
+    echo '<p class="acessivel"> ' . $acessivel . '</p>';
+    echo '<h2 class="woocommerce-loop-product__title">' . get_the_title().'</h2>';
 }
 
 function wheelchair_access(){

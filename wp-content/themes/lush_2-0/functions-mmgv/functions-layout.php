@@ -110,7 +110,7 @@ function get_new_vitrine_completo_suite() {
         <div class = "row">
             <div class="vitrine-content" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID); ?>)">
                 <div class = " sub-titulo">
-                    <h1><?php echo get_the_title(); ?> <?php echo $acessivel;?></h1>                    
+                    <h1><?php echo get_the_title(); ?> <?php //echo $acessivel;?></h1>                    
                 </div>
                 <div class="img-filter"></div>
             </div>

@@ -189,7 +189,7 @@ wc_get_template_part('cart/add', 'cross-sells');
 
                     </div>
 
-                    <a class="btn-continuar-comprando " href="<?php echo get_term_link('pacote', 'product_cat') ?>" ><?php _e('Continuar comprando', 'lush_2-0'); ?></a>
+                    <a class="btn-continuar-comprando " href="<?php echo get_term_link('pacote', 'product_cat') ?>" ><?php _traduz('Continuar comprando', 'Keep buying') ?></a>
 
                     <?php do_action('woocommerce_after_cart'); ?>
                 </div>

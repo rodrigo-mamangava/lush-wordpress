@@ -1,16 +1,20 @@
 <?php ?>
 
-<?php get_new_vitrine_completo(); ?>
+<?php
+$img = get_template_directory_uri() . "/img/lush_concierge.jpg";
+get_new_vitrine($img, 'CONCIERGE')
+?>
 
 <div class="container faixa-explore-concierge">
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
             <p>
-                Bem-vindo ao Lush, um novo conceito de hospedagem Private 
-                Urban Resort. Esse concierge digital vai ajudá-lo a 
-                aproveitar ao máximo todos os serviços que estão a sua 
-                disposição e tornar sua experiência conosco ainda mais 
-                especial. Navegue pelos campos abaixo e divirta-se!
+                <?php
+                _traduz(
+                        'Bem-vindo ao Lush, um novo conceito de hospedagem Urban Resort. Esse concierge digital vai ajudá-lo a aproveitar ao máximo todos os serviços que estão a sua disposição e tornar sua experiência conosco ainda mais especial. Navegue pelos campos abaixo e divirta-se!', 
+                        'Welcome to Lush, a new concept of Urban Resort hosting. This digital concierge will help you make the most of all the services that are at your disposal and make your experience with us even more special. Browse the fields below and enjoy!'
+                );
+                ?>
             </p>
         </div>
     </div>
@@ -23,7 +27,6 @@ $terms = get_terms(array(
     'orderby' => 'name',
     'hide_empty' => false,
         ));
-
 ?>
 
 <div class="container lista-cat-concierge">

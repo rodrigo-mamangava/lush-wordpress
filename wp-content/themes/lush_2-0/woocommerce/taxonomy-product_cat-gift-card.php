@@ -18,7 +18,7 @@ get_template_part('template-parts/menu/geral');
 
 
     <?php
-    $img = get_template_directory_uri() . '/img/Gift_Card_Lush_1.jpg';
+    $img = get_template_directory_uri() . '/img/gift-card-2.jpg';
     $titulo = 'Gift Card';
     get_new_vitrine_tradutor($img, $titulo);
     ?>

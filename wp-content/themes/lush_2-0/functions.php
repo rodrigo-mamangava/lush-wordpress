@@ -142,7 +142,7 @@ function lush_2_0_scripts() {
     //
 
     if (is_singular('product')) {
-        wp_enqueue_script('suite-reserva', get_template_directory_uri() . '/js/reserva-suite.js', array('jquery'), '', true);
+        //wp_enqueue_script('suite-reserva', get_template_directory_uri() . '/js/reserva-suite.js', array('jquery'), '', true);
     }
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
